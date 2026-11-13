@@ -1,0 +1,5902 @@
+{
+  "id": "living-room-pool-013",
+  "title": "Living room with pool",
+  "description": "An open-plan living area with sofas around coffee tables, a round dining table, a grand piano and a bar, opening through glass doors onto a sunroom and an outdoor pool.",
+  "dimensions": [
+    18.799999234812752,
+    15.970000267028809,
+    10.47000027071911
+  ],
+  "dimensionSource": "visible geometry bounds",
+  "bounds": {
+    "min": [
+      -4.699999809265138,
+      -1.5,
+      -8.25
+    ],
+    "max": [
+      14.099999425547614,
+      8.97000027071911,
+      7.720000267028809
+    ]
+  },
+  "tasks": [
+    {
+      "id": "push_1",
+      "kind": "Robot",
+      "text": "Find the small vase between the two table lamps on the wooden console that also holds a cup. Push the vase 20 cm along the console, away from the cup and toward the nearer lamp, leaving it upright on the console.",
+      "objects": [
+        "vase__2",
+        "console__1",
+        "cup__0",
+        "table_lamp__5"
+      ],
+      "locatorSteps": [
+        {
+          "object": "vase__2",
+          "label": "Push the small vase 20 cm away from the cup",
+          "point": [
+            -4.1436,
+            0.8352,
+            4.1488
+          ]
+        },
+        {
+          "object": "console__1",
+          "label": "Leave the vase upright on the console",
+          "point": [
+            -4.13,
+            0.8335,
+            3.96
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_1",
+      "kind": "Robot",
+      "text": "Slide open the glass door between the living room and sunroom. Pick up the cup beside the vase on the indoor bar, carry it through the sunroom to the pool terrace, and set it upright on the round side table beside the pool lounge chair.",
+      "objects": [
+        "door__0",
+        "cup__3",
+        "side_table__6",
+        "drawer__1"
+      ],
+      "locatorSteps": [
+        {
+          "object": "door__0",
+          "label": "Slide open the glass door to the sunroom",
+          "point": [
+            4.34,
+            1.1,
+            -6.85
+          ]
+        },
+        {
+          "object": "cup__3",
+          "label": "Lift the cup from the bar and carry it through",
+          "point": [
+            2.832,
+            0.9693,
+            -7.09
+          ]
+        },
+        {
+          "object": "side_table__6",
+          "label": "Set the cup upright on the poolside table",
+          "point": [
+            9.05,
+            0.6534,
+            -0.28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_2",
+      "kind": "Robot",
+      "text": "At the grand piano, press and release one key at a time. Play middle C, E, G, the next C up, B, A, G, E, then middle C. Let the last key rise after the ninth note.",
+      "objects": [
+        "piano__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "piano__0",
+          "label": "Press and release middle C",
+          "point": [
+            -2.7094,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Press and release E",
+          "point": [
+            -2.6552,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Press and release G",
+          "point": [
+            -2.6011,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Press and release the next C up",
+          "point": [
+            -2.5198,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Press and release B",
+          "point": [
+            -2.5469,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Press and release A",
+          "point": [
+            -2.574,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Press and release G",
+          "point": [
+            -2.6011,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Press and release E",
+          "point": [
+            -2.6552,
+            0.828,
+            -5.3627
+          ]
+        },
+        {
+          "object": "piano__0",
+          "label": "Finish on middle C and release it",
+          "point": [
+            -2.7094,
+            0.828,
+            -5.3627
+          ]
+        }
+      ]
+    },
+    {
+      "id": "display_cabinet_door",
+      "kind": "Interaction",
+      "text": "Find the pair of glass display cabinets on the south wall and use the cabinet at the west end, nearest the wooden console with the cup. Swing open its outer glass door, the one nearest the corner, then close it and let go so it stays shut.",
+      "objects": [
+        "cabinet__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cabinet__0",
+          "label": "Swing open the glass door nearest the corner",
+          "point": [
+            -2.6372,
+            1.2547,
+            6.9222
+          ]
+        },
+        {
+          "object": "cabinet__0",
+          "label": "Close the same door and release it",
+          "point": [
+            -2.6372,
+            1.2547,
+            6.9222
+          ]
+        }
+      ]
+    },
+    {
+      "id": "console_drawer",
+      "kind": "Interaction",
+      "text": "At the bar with two lamps and a vase, use the end drawer nearest the piano, directly below a table lamp. Pull the drawer 25 cm out toward the room, push it fully closed, then let go.",
+      "objects": [
+        "drawer__0",
+        "cabinet__2",
+        "table_lamp__2"
+      ],
+      "locatorSteps": [
+        {
+          "object": "drawer__0",
+          "label": "Pull the end drawer nearest the piano out 25 cm",
+          "point": [
+            1.78,
+            0.8754,
+            -6.9747
+          ]
+        },
+        {
+          "object": "drawer__0",
+          "label": "Push it fully closed and release it",
+          "point": [
+            1.78,
+            0.8754,
+            -6.9747
+          ]
+        }
+      ]
+    },
+    {
+      "id": "piano_bench_out",
+      "kind": "Interaction",
+      "text": "At the grand piano, pull the bench 20 cm straight away from the keyboard toward the west wall behind the bench. Keep it upright and let it come to rest there.",
+      "objects": [
+        "bench__0",
+        "piano__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bench__0",
+          "label": "Pull the bench 20 cm back from the keyboard",
+          "point": [
+            -4.1853,
+            0.3457,
+            -6.2
+          ]
+        },
+        {
+          "object": "bench__0",
+          "label": "Leave it upright facing the piano",
+          "point": [
+            -4.2,
+            0.0,
+            -6.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vase_to_floor",
+      "kind": "Interaction",
+      "text": "At the sofa nearest the piano, lift the vase off the side table at the sofa’s piano-side end. Set it upright on the floor immediately north of that table, toward the piano, and release it so it stands on its own.",
+      "objects": [
+        "vase__3",
+        "side_table__4",
+        "sofa__2"
+      ],
+      "locatorSteps": [
+        {
+          "object": "vase__3",
+          "label": "Lift the vase from the sofa’s piano-side end",
+          "point": [
+            -1.7928,
+            0.5908,
+            -2.89
+          ]
+        },
+        {
+          "object": "side_table__4",
+          "label": "Set it upright on the floor just north of this table",
+          "point": [
+            -1.86,
+            -0.0,
+            -3.38
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nest_bowls",
+      "kind": "Interaction",
+      "text": "Lift the small bowl from the coffee table that also holds a vase in front of the east sofa. Carry it to the coffee table near the piano and release it upright inside the larger bowl at the center of that table.",
+      "objects": [
+        "bowl__1",
+        "bowl__2",
+        "coffee_table__1",
+        "coffee_table__2"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bowl__1",
+          "label": "Lift the small bowl from the east sofa’s coffee table",
+          "point": [
+            1.8834,
+            0.465,
+            0.3
+          ]
+        },
+        {
+          "object": "bowl__2",
+          "label": "Release it upright inside the larger bowl near the piano",
+          "point": [
+            -0.0,
+            0.4996,
+            -4.33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turn_plant",
+      "kind": "Interaction",
+      "text": "Find the potted plant on the dark round table with the cups. Turn the pot halfway around in its original spot, then release it so it stays upright with the opposite side facing you.",
+      "objects": [
+        "plant__2",
+        "table__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "plant__2",
+          "label": "Rotate the pot half a turn in place",
+          "point": [
+            -1.759,
+            0.8885,
+            0.15
+          ]
+        },
+        {
+          "object": "plant__2",
+          "label": "Release it upright in the same spot",
+          "point": [
+            -1.93,
+            0.7435,
+            0.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tuck_chair",
+      "kind": "Interaction",
+      "text": "At the dark round table with the potted plant, find the chair on the east side, between the table and the room’s central seating area. Push it 25 cm straight toward the table and leave its seat tucked under the tabletop with the chair upright.",
+      "objects": [
+        "chair__9",
+        "table__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "chair__9",
+          "label": "Push the east chair 25 cm toward the round table",
+          "point": [
+            -0.8067,
+            0.6807,
+            0.15
+          ]
+        },
+        {
+          "object": "table__0",
+          "label": "Leave the seat tucked under the tabletop",
+          "point": [
+            -1.6714,
+            0.481,
+            0.15
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "sofa__0": "object",
+    "coffee_table__0": "object",
+    "chair__0": "object",
+    "chair__1": "object",
+    "chair__2": "object",
+    "chair__3": "object",
+    "stool__0": "object",
+    "stool__1": "object",
+    "side_table__0": "object",
+    "side_table__1": "object",
+    "floor_lamp__0": "object",
+    "plant__0": "object",
+    "book__0": "object",
+    "book__1": "object",
+    "sofa__1": "object",
+    "chair__4": "object",
+    "chair__5": "object",
+    "coffee_table__1": "object",
+    "side_table__2": "object",
+    "bowl__0": "object",
+    "vase__0": "object",
+    "bowl__1": "object",
+    "plant__1": "object",
+    "table__0": "object",
+    "chair__6": "object",
+    "chair__7": "object",
+    "chair__8": "object",
+    "chair__9": "object",
+    "cup__0": "object",
+    "vase__2": "object",
+    "sofa__2": "object",
+    "coffee_table__2": "object",
+    "chair__10": "object",
+    "chair__11": "object",
+    "chair__12": "object",
+    "chair__13": "object",
+    "side_table__3": "object",
+    "side_table__4": "object",
+    "vase__3": "object",
+    "floor_lamp__1": "object",
+    "side_table__5": "object",
+    "vase__4": "object",
+    "floor_lamp__2": "object",
+    "bowl__2": "object",
+    "piano__0": "object",
+    "bench__0": "object",
+    "ottoman__0": "object",
+    "console__0": "object",
+    "table_lamp__0": "object",
+    "table_lamp__1": "object",
+    "wall_art__0": "object",
+    "sculpture__0": "object",
+    "cabinet__0": "object",
+    "cabinet__1": "object",
+    "cabinet__2": "object",
+    "drawer__0": "object",
+    "cabinet__3": "object",
+    "drawer__1": "object",
+    "cabinet__4": "object",
+    "drawer__2": "object",
+    "table_lamp__2": "object",
+    "table_lamp__3": "object",
+    "vase__13": "object",
+    "wall_art__1": "object",
+    "cup__1": "object",
+    "coaster__0": "object",
+    "cup__2": "object",
+    "console__1": "object",
+    "wall_art__2": "object",
+    "table_lamp__4": "object",
+    "table_lamp__5": "object",
+    "plate__0": "object",
+    "vase__16": "object",
+    "vase__17": "object",
+    "vase__18": "object",
+    "vase__19": "object",
+    "vase__20": "object",
+    "plate__1": "object",
+    "bowl__3": "object",
+    "vase__21": "object",
+    "vase__22": "object",
+    "plate__2": "object",
+    "vase__23": "object",
+    "vase__24": "object",
+    "vase__25": "object",
+    "vase__26": "object",
+    "vase__27": "object",
+    "plate__3": "object",
+    "bowl__4": "object",
+    "vase__28": "object",
+    "vase__29": "object",
+    "plant__2": "object",
+    "walls": "walls",
+    "floor": "floor",
+    "backdrop": "backdrop",
+    "door__0": "object",
+    "side_table__6": "object",
+    "stool__2": "object",
+    "cup__3": "object"
+  },
+  "mobility": {
+    "free": 81,
+    "fixed": 14,
+    "jointOnly": 1,
+    "nonrigid": 0,
+    "objects": {
+      "sofa__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "coffee_table__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "side_table__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "side_table__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "floor_lamp__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plant__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sofa__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "coffee_table__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "side_table__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plant__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sofa__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "coffee_table__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "side_table__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "side_table__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "floor_lamp__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "side_table__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "floor_lamp__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "piano__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ottoman__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "console__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table_lamp__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table_lamp__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sculpture__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table_lamp__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table_lamp__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "coaster__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "console__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table_lamp__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table_lamp__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__21": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__22": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__24": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__25": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__27": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__28": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vase__29": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plant__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__0": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "side_table__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/living-room-pool-013/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "a367b46379e41b66516b4247b7554f1ae97af401c897c956f1597ce3de088278",
+      "previewSha256": "b178829c5b1dcb3bf09931c5d2b673331291202b5e7790b47fe3c7ce74a4af8e",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.907904687084915
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "20200c0eae2068c19c901644673f705d2f60e3087ce1cdad3175fba77bdff779",
+      "previewSha256": "ff7fb2dac0732ae450e201838425363acb17c1559e559da5da58c772ab350f77",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.80583547866809
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "d06a6ea5052cd76f11c0139016f46a62900e2bbfc733cab3a2ee4674585ba3e9",
+      "previewSha256": "23861dbbb778911a4e85166af9372e497dfc38004bbec94c101864a7264d51f7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.886577811366784
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "cb880a07c20a461cd22ba0195d3bb278e4c213f4eafd6fff6b332da234c517d7",
+      "previewSha256": "28bd558b887a899994e1204bb788ec250b507c49dfb74ca980020ffc1522a9b9",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.835346372938254
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "6070adb468bb9f2e93290c625341ab9169b696355f76107a1b84898d4943edf8",
+      "previewSha256": "18050f35d3f02370b2bd018f00cfeba2099b2e035f838e8d3fc13b3cc2ee56b4",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.2926184754065
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "e121635dca9751873a40497edfca991fdb74cff36d3b2f424b0fa8d0b2a07765",
+      "previewSha256": "a8ec03dfb6f90300d32d1df7cfd7ba21af1e86175ddfc85e29170ad4a84ab9ad",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.50382712444636
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "fe9a5d8b3627a1a53f225b925193c7b78349da653e9c48a45f98b3ef963fccd3",
+      "previewSha256": "f0c81f8e422b9a8522215ee878fe2812c969a462ba5f853d7e3383b736cc1459",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.61949921122521
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "08b961f96811e16e5edd13f6d950f1b78537fef87af07d3fd8284c4c2af03599",
+      "previewSha256": "392165cf48a95e64f1e6cb6aaab2e86a15b55203672817d5235a779ec286cce7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.567737104687296
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "d6d9edab590ea02ec3bda4599dac8255cb189d5732ad523b325403d88b96e957",
+      "previewSha256": "14dfb734580d9cf5683bf13ae9b8942b6df7b1821ead9c8fffee8e3950a57d4f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.7649155979899
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "3818dd2fed5ee7ff14bd44e1e38c9cda8d1ff7f1e63c9370605c2c35d20c9f75",
+      "previewSha256": "e1916e4e3f5ba9fbe37395df66e75e62c00bf835c70b24b1801b81fe7af63ed1",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.09340216655583
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "5eff44dde13febf09e2c1ed7ea3bd309ed3af2a6cee6023e84fe7037c3e1d1f7",
+      "previewSha256": "2096e39f959a53453e75e9ed64d78d7eab764e4661bec467cedd632710e623f4",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.18131888221763
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "871f77ae2e175fca30255637759aed53f0441db5209022fe6f742c75c4b96873",
+      "previewSha256": "3641fd596c98b15de27ecc2def143417df4163b2cdd6778a3ed275123c9e841a",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.04572752339436
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "3c0caa628349306e5ac8f88883d9f63780a3ed3759c78bfef8be946137f1851b",
+      "previewSha256": "fd0ef4bde472943b7f32c0b322d9c731587a3b090ee9c5fe7cd8593df76a24e3",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.36426731849693
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "cc473d32e7ff8321782443a0e4c2924da16a299fd95da83cf6daf2eb86051fc7",
+      "previewSha256": "fb500b200ab0737ab4c40e07c0c864a17b6fbe50bd898e6f3bd4e31526de61e2",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.87008412504275
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "4b870ba4f350291aa34df677a29e1db72166e6371875831d4853d4e1bb2eddc0",
+      "previewSha256": "b297e2cb565f8a67f0798440b115d23ffa13df882e54a0dda6a2a5a42a6aa900",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.33434051554502
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "e9fadb236f64a1563934b612e01194766c2c704c89064658fdd2dad3f11ac676",
+      "previewSha256": "bfa210922814228b494b5da20c42999ce2a05d69e39660858f9321f2b1c88c11",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.58453832071297
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "ce28158ff3c2b1d1e0ef7658d4963766c80df5f4e0058d160853a346bf6cd420",
+      "previewSha256": "e8189c04ca745832f02d5aef56cfb375e0804fd69040e97b4067232f4bcd59fa",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.75370950895195
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "6e52d0c49b2cd778b7a95409028331f87be8027b7c81c9fd2c24bc2bd21a75b4",
+      "previewSha256": "c986ca818c8ff34426dca5eda9105454145f6b973d2d65bf46eba755cedf373f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.179041108205105
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "c91e9eb5d6b25e234b957c5a58d82962bce3958dab8f836664ec3c6785f8fd75",
+      "previewSha256": "e88eefa319966f04ba8d25fbb0d27cdb87c4f444b29e393ea5e49337ea652010",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.09292259559082
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "ba392c8c4ec5c6f2e93a1516f6283c1a59333a5d22768afd165ec90d2a71b7b3",
+      "previewSha256": "fd19d02579297d762586051f654bd67193708cd6bf714990b94e5d7f5e735df3",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.478183002025645
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "5331f411a6b9536f94227489011fdd57d0051c550ca08bb8d1f5dd1fd7fb8f35",
+      "previewSha256": "1fd4c4401c29a37a7daf9f575660f6f25c37446b0340d7d599f670317a547a1e",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.225692745671594
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "d7ab7f68d37ff0cb6deb6b0df1fb4469522b5be0c0f2b94c166d42c76b83ef60",
+      "previewSha256": "8a3e9844c77012e751b07c9652b2f6116be45f7309a43adb4920ae495d45e71e",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.866346797089086
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "9373819e13c7d3a904b5faf322dba1efdd3eb253f835f7ba5d5226c8ec12a642",
+      "previewSha256": "3618946d60aff3c64a788f895ac8eb3720c6ce6088648fb48fd3197ab0a610cc",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.2398800355016
+    },
+    {
+      "src": "assets/rooms/living-room-pool-013/extra-15.webp",
+      "label": "Extra 16",
+      "group": "extra",
+      "sourceSha256": "e4944ac6e8535ec44c0546e040ed74734e39e5ba2fd4c5df490e81f78ff65699",
+      "previewSha256": "6991771eaa85866cceb7431cd087b1382c4aacfcc2f030b30c6fcf0d73028280",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.17116360254428
+    }
+  ],
+  "joints": [
+    {
+      "id": "piano_key_021_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_021",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_022_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_022",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_023_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_023",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_024_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_024",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_025_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_025",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_026_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_026",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_027_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_027",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_028_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_028",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_029_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_029",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_030_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_030",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_031_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_031",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_032_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_032",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_033_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_033",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_034_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_034",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_035_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_035",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_036_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_036",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_037_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_037",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_038_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_038",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_039_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_039",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_040_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_040",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_041_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_041",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_042_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_042",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_043_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_043",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_044_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_044",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_045_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_045",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_046_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_046",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_047_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_047",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_048_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_048",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_049_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_049",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_050_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_050",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_051_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_051",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_052_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_052",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_053_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_053",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_054_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_054",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_055_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_055",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_056_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_056",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_057_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_057",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_058_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_058",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_059_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_059",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_060_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_060",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_061_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_061",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_062_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_062",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_063_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_063",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_064_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_064",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_065_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_065",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_066_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_066",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_067_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_067",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_068_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_068",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_069_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_069",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_070_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_070",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_071_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_071",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_072_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_072",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_073_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_073",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_074_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_074",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_075_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_075",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_076_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_076",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_077_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_077",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_078_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_078",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_079_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_079",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_080_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_080",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_081_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_081",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_082_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_082",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_083_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_083",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_084_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_084",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_085_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_085",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_086_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_086",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_087_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_087",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_088_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_088",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_089_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_089",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_090_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_090",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_091_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_091",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_092_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_092",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_093_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_093",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_094_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_094",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_095_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_095",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_096_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_096",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_097_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_097",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_098_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_098",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_099_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_099",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_100_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_100",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_101_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_101",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_102_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_102",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_103_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_103",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_104_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_104",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_105_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_105",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_106_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_106",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_107_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_107",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "piano_key_108_slide",
+      "objectId": "piano__0",
+      "body": "piano_key_108",
+      "type": "slide",
+      "pivot": [
+        -2.641693325,
+        -1.734723476e-18,
+        -6.298980128
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.01,
+      "closed": 0,
+      "open": 0.01,
+      "range": [
+        0,
+        0.01
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__0_cabinet_hinge_0",
+      "objectId": "cabinet__0",
+      "body": "cabinet__0_link_1",
+      "type": "hinge",
+      "pivot": [
+        -1.4759992662999997,
+        1.20570006003,
+        6.937495521090001
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999713897705,
+      "closed": 0,
+      "open": 2.299999713897705,
+      "range": [
+        0,
+        2.299999713897705
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__0_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__0",
+      "body": "cabinet__0_link_2",
+      "type": "hinge",
+      "pivot": [
+        -3.0240007941000004,
+        1.20570001393,
+        6.93749551927
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999713897705,
+      "closed": 0,
+      "open": 2.299999713897705,
+      "range": [
+        0,
+        2.299999713897705
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__1_cabinet_hinge_0",
+      "objectId": "cabinet__1",
+      "body": "cabinet__1_link_1",
+      "type": "hinge",
+      "pivot": [
+        3.0240007337000003,
+        1.20570006003,
+        6.937495521090001
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999713897705,
+      "closed": 0,
+      "open": 2.299999713897705,
+      "range": [
+        0,
+        2.299999713897705
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__1_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__1",
+      "body": "cabinet__1_link_2",
+      "type": "hinge",
+      "pivot": [
+        1.4759992058999996,
+        1.20570001393,
+        6.93749551927
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999713897705,
+      "closed": 0,
+      "open": 2.299999713897705,
+      "range": [
+        0,
+        2.299999713897705
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__2_cabinet_hinge_0",
+      "objectId": "cabinet__2",
+      "body": "cabinet__2_link_1",
+      "type": "hinge",
+      "pivot": [
+        1.3624992329999999,
+        0.41370000362,
+        -6.96349834916
+      ],
+      "axis": [
+        -3.308722450212111e-24,
+        -1,
+        7.450580485901531e-09
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999952316284,
+      "closed": 0,
+      "open": 2.299999952316284,
+      "range": [
+        0,
+        2.299999952316284
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__2_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__2",
+      "body": "cabinet__2_link_2",
+      "type": "hinge",
+      "pivot": [
+        2.1975008208,
+        0.41370000983,
+        -6.963498350015
+      ],
+      "axis": [
+        -3.308722450212111e-24,
+        1,
+        7.450580485901531e-09
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999952316284,
+      "closed": 0,
+      "open": 2.299999952316284,
+      "range": [
+        0,
+        2.299999952316284
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__0_drawer_slider_0",
+      "objectId": "drawer__0",
+      "body": "drawer__0_link_1",
+      "type": "slide",
+      "pivot": [
+        1.78,
+        0.8754000170305059,
+        -7.19549999763
+      ],
+      "axis": [
+        -4.440892098500626e-16,
+        -3.7252902429507637e-09,
+        1.0000000000000004
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3610000312,
+      "closed": 0,
+      "open": 0.3610000312,
+      "range": [
+        0,
+        0.3610000312
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__3_cabinet_hinge_0",
+      "objectId": "cabinet__3",
+      "body": "cabinet__3_link_1",
+      "type": "hinge",
+      "pivot": [
+        2.2034992329999996,
+        0.41370000362,
+        -6.96349834916
+      ],
+      "axis": [
+        -3.308722450212111e-24,
+        -1,
+        7.450580485901531e-09
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999952316284,
+      "closed": 0,
+      "open": 2.299999952316284,
+      "range": [
+        0,
+        2.299999952316284
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__3_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__3",
+      "body": "cabinet__3_link_2",
+      "type": "hinge",
+      "pivot": [
+        3.0385008208,
+        0.41370000983,
+        -6.963498350015
+      ],
+      "axis": [
+        -3.308722450212111e-24,
+        1,
+        7.450580485901531e-09
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999952316284,
+      "closed": 0,
+      "open": 2.299999952316284,
+      "range": [
+        0,
+        2.299999952316284
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__1_drawer_slider_0",
+      "objectId": "drawer__1",
+      "body": "drawer__1_link_1",
+      "type": "slide",
+      "pivot": [
+        2.621,
+        0.8754000170305059,
+        -7.19549999763
+      ],
+      "axis": [
+        -4.440892098500626e-16,
+        -3.7252902429507637e-09,
+        1.0000000000000004
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3610000312,
+      "closed": 0,
+      "open": 0.3610000312,
+      "range": [
+        0,
+        0.3610000312
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__4_cabinet_hinge_0",
+      "objectId": "cabinet__4",
+      "body": "cabinet__4_link_1",
+      "type": "hinge",
+      "pivot": [
+        3.044499233,
+        0.41370000362,
+        -6.96349834916
+      ],
+      "axis": [
+        -3.308722450212111e-24,
+        -1,
+        7.450580485901531e-09
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999952316284,
+      "closed": 0,
+      "open": 2.299999952316284,
+      "range": [
+        0,
+        2.299999952316284
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cabinet__4_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__4",
+      "body": "cabinet__4_link_2",
+      "type": "hinge",
+      "pivot": [
+        3.8795008208,
+        0.41370000983,
+        -6.963498350015
+      ],
+      "axis": [
+        -3.308722450212111e-24,
+        1,
+        7.450580485901531e-09
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.299999952316284,
+      "closed": 0,
+      "open": 2.299999952316284,
+      "range": [
+        0,
+        2.299999952316284
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__2_drawer_slider_0",
+      "objectId": "drawer__2",
+      "body": "drawer__2_link_1",
+      "type": "slide",
+      "pivot": [
+        3.462,
+        0.8754000170305059,
+        -7.19549999763
+      ],
+      "axis": [
+        -4.440892098500626e-16,
+        -3.7252902429507637e-09,
+        1.0000000000000004
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3610000312,
+      "closed": 0,
+      "open": 0.3610000312,
+      "range": [
+        0,
+        0.3610000312
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "patio_door__0_slide",
+      "objectId": "door__0",
+      "body": "door__0",
+      "type": "slide",
+      "pivot": [
+        4.4,
+        1.515,
+        -6.25
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.42,
+      "closed": 0,
+      "open": 2.42,
+      "range": [
+        0,
+        2.42
+      ],
+      "parentJointId": null
+    }
+  ],
+  "previewPolicy": {
+    "method": "Preserve source geometry; exclude exterior backdrops from initial framing. Oversized architecture crossing a source-derived room footprint is partitioned into room/backdrop triangles with interpolated UVs and normals.",
+    "backdropGeoms": [
+      "room_geometry_v652",
+      "room_geometry_v1590",
+      "room_geometry_v1591",
+      "room_geometry_v369",
+      "room_geometry_v370",
+      "room_geometry_v371",
+      "room_geometry_v372",
+      "room_geometry_v373",
+      "room_geometry_v374",
+      "room_geometry_v375",
+      "room_geometry_v376",
+      "room_geometry_v377",
+      "room_geometry_v378",
+      "room_geometry_v379",
+      "room_geometry_v380",
+      "room_geometry_v381",
+      "room_geometry_v382",
+      "room_geometry_v383",
+      "room_geometry_v384",
+      "room_geometry_v385",
+      "room_geometry_v386",
+      "room_geometry_v387",
+      "room_geometry_v388",
+      "room_geometry_v389",
+      "room_geometry_v390",
+      "room_geometry_v391",
+      "room_geometry_v392",
+      "room_geometry_v393",
+      "room_geometry_v394",
+      "room_geometry_v395",
+      "room_geometry_v396",
+      "room_geometry_v397",
+      "room_geometry_v398",
+      "room_geometry_v399",
+      "room_geometry_v400",
+      "room_geometry_v401",
+      "room_geometry_v402",
+      "room_geometry_v403",
+      "room_geometry_v404",
+      "room_geometry_v405",
+      "room_geometry_v406",
+      "room_geometry_v407",
+      "room_geometry_v408",
+      "room_geometry_v409",
+      "room_geometry_v410",
+      "room_geometry_v411",
+      "room_geometry_v412",
+      "room_geometry_v413",
+      "room_geometry_v414",
+      "room_geometry_v415",
+      "room_geometry_v416",
+      "room_geometry_v417",
+      "room_geometry_v418",
+      "room_geometry_v419",
+      "room_geometry_v420",
+      "room_geometry_v421",
+      "room_geometry_v422",
+      "room_geometry_v423",
+      "room_geometry_v424",
+      "room_geometry_v425",
+      "room_geometry_v426",
+      "room_geometry_v427",
+      "room_geometry_v428",
+      "room_geometry_v429",
+      "room_geometry_v430",
+      "room_geometry_v431",
+      "room_geometry_v432",
+      "room_geometry_v433",
+      "room_geometry_v434",
+      "room_geometry_v435",
+      "room_geometry_v436",
+      "room_geometry_v437",
+      "room_geometry_v438",
+      "room_geometry_v439",
+      "room_geometry_v440",
+      "room_geometry_v441",
+      "room_geometry_v442",
+      "room_geometry_v443",
+      "room_geometry_v444",
+      "room_geometry_v445",
+      "room_geometry_v446",
+      "room_geometry_v447",
+      "room_geometry_v448",
+      "room_geometry_v449",
+      "room_geometry_v450",
+      "room_geometry_v451",
+      "room_geometry_v452",
+      "room_geometry_v453",
+      "room_geometry_v454",
+      "room_geometry_v455",
+      "room_geometry_v456",
+      "room_geometry_v457",
+      "room_geometry_v458",
+      "room_geometry_v459",
+      "room_geometry_v460",
+      "room_geometry_v461",
+      "room_geometry_v462",
+      "room_geometry_v463",
+      "room_geometry_v464",
+      "room_geometry_v465",
+      "room_geometry_v466",
+      "room_geometry_v467",
+      "room_geometry_v468",
+      "room_geometry_v469",
+      "room_geometry_v470",
+      "room_geometry_v471",
+      "room_geometry_v472",
+      "room_geometry_v473",
+      "room_geometry_v474",
+      "room_geometry_v475",
+      "room_geometry_v476",
+      "room_geometry_v477",
+      "room_geometry_v478",
+      "room_geometry_v479",
+      "room_geometry_v480",
+      "room_geometry_v481",
+      "room_geometry_v482",
+      "room_geometry_v483",
+      "room_geometry_v484",
+      "room_geometry_v485",
+      "room_geometry_v486",
+      "room_geometry_v487",
+      "room_geometry_v488",
+      "room_geometry_v489",
+      "room_geometry_v490",
+      "room_geometry_v491",
+      "room_geometry_v492",
+      "room_geometry_v493",
+      "room_geometry_v494",
+      "room_geometry_v495",
+      "room_geometry_v496",
+      "room_geometry_v497",
+      "room_geometry_v498",
+      "room_geometry_v499",
+      "room_geometry_v500",
+      "room_geometry_v501",
+      "room_geometry_v502",
+      "room_geometry_v503",
+      "room_geometry_v504",
+      "room_geometry_v505",
+      "room_geometry_v506",
+      "room_geometry_v507",
+      "room_geometry_v508",
+      "room_geometry_v509",
+      "room_geometry_v510",
+      "room_geometry_v511",
+      "room_geometry_v512",
+      "room_geometry_v513",
+      "room_geometry_v514",
+      "room_geometry_v515",
+      "room_geometry_v516",
+      "room_geometry_v517",
+      "room_geometry_v518",
+      "room_geometry_v519",
+      "room_geometry_v520",
+      "room_geometry_v521",
+      "room_geometry_v522",
+      "room_geometry_v523",
+      "room_geometry_v524",
+      "room_geometry_v525",
+      "room_geometry_v526",
+      "room_geometry_v527",
+      "room_geometry_v528",
+      "room_geometry_v529",
+      "room_geometry_v530",
+      "room_geometry_v531",
+      "room_geometry_v532",
+      "room_geometry_v533",
+      "room_geometry_v534",
+      "room_geometry_v535",
+      "room_geometry_v536",
+      "room_geometry_v537",
+      "room_geometry_v538",
+      "room_geometry_v539",
+      "room_geometry_v540",
+      "room_geometry_v541",
+      "room_geometry_v542",
+      "room_geometry_v543",
+      "room_geometry_v544",
+      "room_geometry_v545",
+      "room_geometry_v546",
+      "room_geometry_v547",
+      "room_geometry_v548",
+      "room_geometry_v549",
+      "room_geometry_v550",
+      "room_geometry_v551",
+      "room_geometry_v552",
+      "room_geometry_v553",
+      "room_geometry_v554",
+      "room_geometry_v555",
+      "room_geometry_v556",
+      "room_geometry_v557",
+      "room_geometry_v558",
+      "room_geometry_v559",
+      "room_geometry_v560",
+      "room_geometry_v561",
+      "room_geometry_v562",
+      "room_geometry_v563",
+      "room_geometry_v564",
+      "room_geometry_v565",
+      "room_geometry_v566",
+      "room_geometry_v567",
+      "room_geometry_v568",
+      "room_geometry_v569",
+      "room_geometry_v570",
+      "room_geometry_v571",
+      "room_geometry_v572",
+      "room_geometry_v573",
+      "room_geometry_v574",
+      "room_geometry_v575",
+      "room_geometry_v576",
+      "room_geometry_v577",
+      "room_geometry_v578",
+      "room_geometry_v651",
+      "room_geometry_v1308",
+      "room_geometry_v1309",
+      "room_geometry_v1310",
+      "room_geometry_v1311",
+      "room_geometry_v1312",
+      "room_geometry_v1313",
+      "room_geometry_v1314",
+      "room_geometry_v1315",
+      "room_geometry_v1316",
+      "room_geometry_v1317",
+      "room_geometry_v1318",
+      "room_geometry_v1319",
+      "room_geometry_v1320",
+      "room_geometry_v1321",
+      "room_geometry_v1322",
+      "room_geometry_v1323",
+      "room_geometry_v1324",
+      "room_geometry_v1325",
+      "room_geometry_v1326",
+      "room_geometry_v1327",
+      "room_geometry_v1328",
+      "room_geometry_v1329",
+      "room_geometry_v1330",
+      "room_geometry_v1331",
+      "room_geometry_v1332",
+      "room_geometry_v1333",
+      "room_geometry_v1334",
+      "room_geometry_v1335",
+      "room_geometry_v1336",
+      "room_geometry_v1337",
+      "room_geometry_v1338",
+      "room_geometry_v1339",
+      "room_geometry_v1340",
+      "room_geometry_v1341",
+      "room_geometry_v1342",
+      "room_geometry_v1343",
+      "room_geometry_v1344",
+      "room_geometry_v1345",
+      "room_geometry_v1346",
+      "room_geometry_v1347",
+      "room_geometry_v1348",
+      "room_geometry_v1349",
+      "room_geometry_v1350",
+      "room_geometry_v1351",
+      "room_geometry_v1352",
+      "room_geometry_v1353",
+      "room_geometry_v1354",
+      "room_geometry_v1355",
+      "room_geometry_v1356",
+      "room_geometry_v1357",
+      "room_geometry_v1358",
+      "room_geometry_v1359",
+      "room_geometry_v1360",
+      "room_geometry_v1361",
+      "room_geometry_v1362",
+      "room_geometry_v1363",
+      "room_geometry_v1364",
+      "room_geometry_v1365",
+      "room_geometry_v1366",
+      "room_geometry_v1367",
+      "room_geometry_v1368",
+      "room_geometry_v1369",
+      "room_geometry_v1370",
+      "room_geometry_v1371",
+      "room_geometry_v1372",
+      "room_geometry_v1373",
+      "room_geometry_v1374",
+      "room_geometry_v1375",
+      "room_geometry_v1376",
+      "room_geometry_v1377",
+      "room_geometry_v1378",
+      "room_geometry_v1379",
+      "room_geometry_v1380",
+      "room_geometry_v1381",
+      "room_geometry_v1382",
+      "room_geometry_v1383",
+      "room_geometry_v1384",
+      "room_geometry_v1385",
+      "room_geometry_v1386",
+      "room_geometry_v1387",
+      "room_geometry_v1388",
+      "room_geometry_v1389",
+      "room_geometry_v1390",
+      "room_geometry_v1391",
+      "room_geometry_v1392",
+      "room_geometry_v1393",
+      "room_geometry_v1394",
+      "room_geometry_v1395",
+      "room_geometry_v1396",
+      "room_geometry_v1397",
+      "room_geometry_v1398",
+      "room_geometry_v1399",
+      "room_geometry_v1400",
+      "room_geometry_v1401",
+      "room_geometry_v1402",
+      "room_geometry_v1403",
+      "room_geometry_v1404",
+      "room_geometry_v1405",
+      "room_geometry_v1406",
+      "room_geometry_v1407",
+      "room_geometry_v1408",
+      "room_geometry_v1409",
+      "room_geometry_v1410",
+      "room_geometry_v1411",
+      "room_geometry_v1412",
+      "room_geometry_v1413",
+      "room_geometry_v1414",
+      "room_geometry_v1415",
+      "room_geometry_v1416",
+      "room_geometry_v1417",
+      "room_geometry_v1418",
+      "room_geometry_v1419",
+      "room_geometry_v1420",
+      "room_geometry_v1421",
+      "room_geometry_v1422",
+      "room_geometry_v1423",
+      "room_geometry_v1424",
+      "room_geometry_v1425",
+      "room_geometry_v1426",
+      "room_geometry_v1427",
+      "room_geometry_v1533",
+      "room_geometry_v1534",
+      "room_geometry_v1535",
+      "room_geometry_v1536",
+      "room_geometry_v1537",
+      "room_geometry_v1543",
+      "room_geometry_v1544",
+      "room_geometry_v1545",
+      "room_geometry_v1546",
+      "room_geometry_v1547",
+      "room_geometry_v1548",
+      "room_geometry_v1549",
+      "room_geometry_v1550",
+      "room_geometry_v1551",
+      "room_geometry_v1552",
+      "room_geometry_v1553",
+      "room_geometry_v1554",
+      "room_geometry_v1555",
+      "room_geometry_v1556",
+      "room_geometry_v1557",
+      "room_geometry_v1558",
+      "room_geometry_v1559",
+      "room_geometry_v1560",
+      "room_geometry_v1561",
+      "room_geometry_v1562",
+      "room_geometry_v1563",
+      "room_geometry_v1564",
+      "room_geometry_v1565",
+      "room_geometry_v1566",
+      "room_geometry_v1567"
+    ],
+    "partitionedGeoms": [],
+    "planes": [],
+    "footprintBasis": "Main room, pool-side and sunroom floor extents (v302,v656,v1706,v758), with 20 cm wall allowance; source exterior grounds retained as backdrop.",
+    "roomFootprintXY": [
+      -4.850000095367457,
+      14.299999427795413,
+      -7.850000095367473,
+      8.300000381469745
+    ]
+  },
+  "fullGeometryBounds": {
+    "min": [
+      -6.55749988555909,
+      -1.5,
+      -80.00000049457677
+    ],
+    "max": [
+      159.9999985632562,
+      8.97000027071911,
+      49.99999950542375
+    ]
+  },
+  "nonrigidPreview": {
+    "added": [],
+    "unsupported": []
+  },
+  "equalityJoints": [],
+  "equalityConstraintCount": 0,
+  "articulations": [
+    {
+      "id": "piano_key_021_slide",
+      "objectId": "piano__0",
+      "title": "piano key 021 slide",
+      "clip": "piano_key_021_slide_motion",
+      "joints": [
+        "piano_key_021_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_022_slide",
+      "objectId": "piano__0",
+      "title": "piano key 022 slide",
+      "clip": "piano_key_022_slide_motion",
+      "joints": [
+        "piano_key_022_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_023_slide",
+      "objectId": "piano__0",
+      "title": "piano key 023 slide",
+      "clip": "piano_key_023_slide_motion",
+      "joints": [
+        "piano_key_023_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_024_slide",
+      "objectId": "piano__0",
+      "title": "piano key 024 slide",
+      "clip": "piano_key_024_slide_motion",
+      "joints": [
+        "piano_key_024_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_025_slide",
+      "objectId": "piano__0",
+      "title": "piano key 025 slide",
+      "clip": "piano_key_025_slide_motion",
+      "joints": [
+        "piano_key_025_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_026_slide",
+      "objectId": "piano__0",
+      "title": "piano key 026 slide",
+      "clip": "piano_key_026_slide_motion",
+      "joints": [
+        "piano_key_026_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_027_slide",
+      "objectId": "piano__0",
+      "title": "piano key 027 slide",
+      "clip": "piano_key_027_slide_motion",
+      "joints": [
+        "piano_key_027_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_028_slide",
+      "objectId": "piano__0",
+      "title": "piano key 028 slide",
+      "clip": "piano_key_028_slide_motion",
+      "joints": [
+        "piano_key_028_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_029_slide",
+      "objectId": "piano__0",
+      "title": "piano key 029 slide",
+      "clip": "piano_key_029_slide_motion",
+      "joints": [
+        "piano_key_029_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_030_slide",
+      "objectId": "piano__0",
+      "title": "piano key 030 slide",
+      "clip": "piano_key_030_slide_motion",
+      "joints": [
+        "piano_key_030_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_031_slide",
+      "objectId": "piano__0",
+      "title": "piano key 031 slide",
+      "clip": "piano_key_031_slide_motion",
+      "joints": [
+        "piano_key_031_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_032_slide",
+      "objectId": "piano__0",
+      "title": "piano key 032 slide",
+      "clip": "piano_key_032_slide_motion",
+      "joints": [
+        "piano_key_032_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_033_slide",
+      "objectId": "piano__0",
+      "title": "piano key 033 slide",
+      "clip": "piano_key_033_slide_motion",
+      "joints": [
+        "piano_key_033_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_034_slide",
+      "objectId": "piano__0",
+      "title": "piano key 034 slide",
+      "clip": "piano_key_034_slide_motion",
+      "joints": [
+        "piano_key_034_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_035_slide",
+      "objectId": "piano__0",
+      "title": "piano key 035 slide",
+      "clip": "piano_key_035_slide_motion",
+      "joints": [
+        "piano_key_035_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_036_slide",
+      "objectId": "piano__0",
+      "title": "piano key 036 slide",
+      "clip": "piano_key_036_slide_motion",
+      "joints": [
+        "piano_key_036_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_037_slide",
+      "objectId": "piano__0",
+      "title": "piano key 037 slide",
+      "clip": "piano_key_037_slide_motion",
+      "joints": [
+        "piano_key_037_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_038_slide",
+      "objectId": "piano__0",
+      "title": "piano key 038 slide",
+      "clip": "piano_key_038_slide_motion",
+      "joints": [
+        "piano_key_038_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_039_slide",
+      "objectId": "piano__0",
+      "title": "piano key 039 slide",
+      "clip": "piano_key_039_slide_motion",
+      "joints": [
+        "piano_key_039_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_040_slide",
+      "objectId": "piano__0",
+      "title": "piano key 040 slide",
+      "clip": "piano_key_040_slide_motion",
+      "joints": [
+        "piano_key_040_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_041_slide",
+      "objectId": "piano__0",
+      "title": "piano key 041 slide",
+      "clip": "piano_key_041_slide_motion",
+      "joints": [
+        "piano_key_041_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_042_slide",
+      "objectId": "piano__0",
+      "title": "piano key 042 slide",
+      "clip": "piano_key_042_slide_motion",
+      "joints": [
+        "piano_key_042_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_043_slide",
+      "objectId": "piano__0",
+      "title": "piano key 043 slide",
+      "clip": "piano_key_043_slide_motion",
+      "joints": [
+        "piano_key_043_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_044_slide",
+      "objectId": "piano__0",
+      "title": "piano key 044 slide",
+      "clip": "piano_key_044_slide_motion",
+      "joints": [
+        "piano_key_044_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_045_slide",
+      "objectId": "piano__0",
+      "title": "piano key 045 slide",
+      "clip": "piano_key_045_slide_motion",
+      "joints": [
+        "piano_key_045_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_046_slide",
+      "objectId": "piano__0",
+      "title": "piano key 046 slide",
+      "clip": "piano_key_046_slide_motion",
+      "joints": [
+        "piano_key_046_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_047_slide",
+      "objectId": "piano__0",
+      "title": "piano key 047 slide",
+      "clip": "piano_key_047_slide_motion",
+      "joints": [
+        "piano_key_047_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_048_slide",
+      "objectId": "piano__0",
+      "title": "piano key 048 slide",
+      "clip": "piano_key_048_slide_motion",
+      "joints": [
+        "piano_key_048_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_049_slide",
+      "objectId": "piano__0",
+      "title": "piano key 049 slide",
+      "clip": "piano_key_049_slide_motion",
+      "joints": [
+        "piano_key_049_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_050_slide",
+      "objectId": "piano__0",
+      "title": "piano key 050 slide",
+      "clip": "piano_key_050_slide_motion",
+      "joints": [
+        "piano_key_050_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_051_slide",
+      "objectId": "piano__0",
+      "title": "piano key 051 slide",
+      "clip": "piano_key_051_slide_motion",
+      "joints": [
+        "piano_key_051_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_052_slide",
+      "objectId": "piano__0",
+      "title": "piano key 052 slide",
+      "clip": "piano_key_052_slide_motion",
+      "joints": [
+        "piano_key_052_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_053_slide",
+      "objectId": "piano__0",
+      "title": "piano key 053 slide",
+      "clip": "piano_key_053_slide_motion",
+      "joints": [
+        "piano_key_053_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_054_slide",
+      "objectId": "piano__0",
+      "title": "piano key 054 slide",
+      "clip": "piano_key_054_slide_motion",
+      "joints": [
+        "piano_key_054_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_055_slide",
+      "objectId": "piano__0",
+      "title": "piano key 055 slide",
+      "clip": "piano_key_055_slide_motion",
+      "joints": [
+        "piano_key_055_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_056_slide",
+      "objectId": "piano__0",
+      "title": "piano key 056 slide",
+      "clip": "piano_key_056_slide_motion",
+      "joints": [
+        "piano_key_056_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_057_slide",
+      "objectId": "piano__0",
+      "title": "piano key 057 slide",
+      "clip": "piano_key_057_slide_motion",
+      "joints": [
+        "piano_key_057_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_058_slide",
+      "objectId": "piano__0",
+      "title": "piano key 058 slide",
+      "clip": "piano_key_058_slide_motion",
+      "joints": [
+        "piano_key_058_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_059_slide",
+      "objectId": "piano__0",
+      "title": "piano key 059 slide",
+      "clip": "piano_key_059_slide_motion",
+      "joints": [
+        "piano_key_059_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_060_slide",
+      "objectId": "piano__0",
+      "title": "piano key 060 slide",
+      "clip": "piano_key_060_slide_motion",
+      "joints": [
+        "piano_key_060_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_061_slide",
+      "objectId": "piano__0",
+      "title": "piano key 061 slide",
+      "clip": "piano_key_061_slide_motion",
+      "joints": [
+        "piano_key_061_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_062_slide",
+      "objectId": "piano__0",
+      "title": "piano key 062 slide",
+      "clip": "piano_key_062_slide_motion",
+      "joints": [
+        "piano_key_062_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_063_slide",
+      "objectId": "piano__0",
+      "title": "piano key 063 slide",
+      "clip": "piano_key_063_slide_motion",
+      "joints": [
+        "piano_key_063_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_064_slide",
+      "objectId": "piano__0",
+      "title": "piano key 064 slide",
+      "clip": "piano_key_064_slide_motion",
+      "joints": [
+        "piano_key_064_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_065_slide",
+      "objectId": "piano__0",
+      "title": "piano key 065 slide",
+      "clip": "piano_key_065_slide_motion",
+      "joints": [
+        "piano_key_065_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_066_slide",
+      "objectId": "piano__0",
+      "title": "piano key 066 slide",
+      "clip": "piano_key_066_slide_motion",
+      "joints": [
+        "piano_key_066_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_067_slide",
+      "objectId": "piano__0",
+      "title": "piano key 067 slide",
+      "clip": "piano_key_067_slide_motion",
+      "joints": [
+        "piano_key_067_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_068_slide",
+      "objectId": "piano__0",
+      "title": "piano key 068 slide",
+      "clip": "piano_key_068_slide_motion",
+      "joints": [
+        "piano_key_068_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_069_slide",
+      "objectId": "piano__0",
+      "title": "piano key 069 slide",
+      "clip": "piano_key_069_slide_motion",
+      "joints": [
+        "piano_key_069_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_070_slide",
+      "objectId": "piano__0",
+      "title": "piano key 070 slide",
+      "clip": "piano_key_070_slide_motion",
+      "joints": [
+        "piano_key_070_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_071_slide",
+      "objectId": "piano__0",
+      "title": "piano key 071 slide",
+      "clip": "piano_key_071_slide_motion",
+      "joints": [
+        "piano_key_071_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_072_slide",
+      "objectId": "piano__0",
+      "title": "piano key 072 slide",
+      "clip": "piano_key_072_slide_motion",
+      "joints": [
+        "piano_key_072_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_073_slide",
+      "objectId": "piano__0",
+      "title": "piano key 073 slide",
+      "clip": "piano_key_073_slide_motion",
+      "joints": [
+        "piano_key_073_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_074_slide",
+      "objectId": "piano__0",
+      "title": "piano key 074 slide",
+      "clip": "piano_key_074_slide_motion",
+      "joints": [
+        "piano_key_074_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_075_slide",
+      "objectId": "piano__0",
+      "title": "piano key 075 slide",
+      "clip": "piano_key_075_slide_motion",
+      "joints": [
+        "piano_key_075_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_076_slide",
+      "objectId": "piano__0",
+      "title": "piano key 076 slide",
+      "clip": "piano_key_076_slide_motion",
+      "joints": [
+        "piano_key_076_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_077_slide",
+      "objectId": "piano__0",
+      "title": "piano key 077 slide",
+      "clip": "piano_key_077_slide_motion",
+      "joints": [
+        "piano_key_077_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_078_slide",
+      "objectId": "piano__0",
+      "title": "piano key 078 slide",
+      "clip": "piano_key_078_slide_motion",
+      "joints": [
+        "piano_key_078_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_079_slide",
+      "objectId": "piano__0",
+      "title": "piano key 079 slide",
+      "clip": "piano_key_079_slide_motion",
+      "joints": [
+        "piano_key_079_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_080_slide",
+      "objectId": "piano__0",
+      "title": "piano key 080 slide",
+      "clip": "piano_key_080_slide_motion",
+      "joints": [
+        "piano_key_080_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_081_slide",
+      "objectId": "piano__0",
+      "title": "piano key 081 slide",
+      "clip": "piano_key_081_slide_motion",
+      "joints": [
+        "piano_key_081_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_082_slide",
+      "objectId": "piano__0",
+      "title": "piano key 082 slide",
+      "clip": "piano_key_082_slide_motion",
+      "joints": [
+        "piano_key_082_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_083_slide",
+      "objectId": "piano__0",
+      "title": "piano key 083 slide",
+      "clip": "piano_key_083_slide_motion",
+      "joints": [
+        "piano_key_083_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_084_slide",
+      "objectId": "piano__0",
+      "title": "piano key 084 slide",
+      "clip": "piano_key_084_slide_motion",
+      "joints": [
+        "piano_key_084_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_085_slide",
+      "objectId": "piano__0",
+      "title": "piano key 085 slide",
+      "clip": "piano_key_085_slide_motion",
+      "joints": [
+        "piano_key_085_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_086_slide",
+      "objectId": "piano__0",
+      "title": "piano key 086 slide",
+      "clip": "piano_key_086_slide_motion",
+      "joints": [
+        "piano_key_086_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_087_slide",
+      "objectId": "piano__0",
+      "title": "piano key 087 slide",
+      "clip": "piano_key_087_slide_motion",
+      "joints": [
+        "piano_key_087_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_088_slide",
+      "objectId": "piano__0",
+      "title": "piano key 088 slide",
+      "clip": "piano_key_088_slide_motion",
+      "joints": [
+        "piano_key_088_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_089_slide",
+      "objectId": "piano__0",
+      "title": "piano key 089 slide",
+      "clip": "piano_key_089_slide_motion",
+      "joints": [
+        "piano_key_089_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_090_slide",
+      "objectId": "piano__0",
+      "title": "piano key 090 slide",
+      "clip": "piano_key_090_slide_motion",
+      "joints": [
+        "piano_key_090_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_091_slide",
+      "objectId": "piano__0",
+      "title": "piano key 091 slide",
+      "clip": "piano_key_091_slide_motion",
+      "joints": [
+        "piano_key_091_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_092_slide",
+      "objectId": "piano__0",
+      "title": "piano key 092 slide",
+      "clip": "piano_key_092_slide_motion",
+      "joints": [
+        "piano_key_092_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_093_slide",
+      "objectId": "piano__0",
+      "title": "piano key 093 slide",
+      "clip": "piano_key_093_slide_motion",
+      "joints": [
+        "piano_key_093_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_094_slide",
+      "objectId": "piano__0",
+      "title": "piano key 094 slide",
+      "clip": "piano_key_094_slide_motion",
+      "joints": [
+        "piano_key_094_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_095_slide",
+      "objectId": "piano__0",
+      "title": "piano key 095 slide",
+      "clip": "piano_key_095_slide_motion",
+      "joints": [
+        "piano_key_095_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_096_slide",
+      "objectId": "piano__0",
+      "title": "piano key 096 slide",
+      "clip": "piano_key_096_slide_motion",
+      "joints": [
+        "piano_key_096_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_097_slide",
+      "objectId": "piano__0",
+      "title": "piano key 097 slide",
+      "clip": "piano_key_097_slide_motion",
+      "joints": [
+        "piano_key_097_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_098_slide",
+      "objectId": "piano__0",
+      "title": "piano key 098 slide",
+      "clip": "piano_key_098_slide_motion",
+      "joints": [
+        "piano_key_098_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_099_slide",
+      "objectId": "piano__0",
+      "title": "piano key 099 slide",
+      "clip": "piano_key_099_slide_motion",
+      "joints": [
+        "piano_key_099_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_100_slide",
+      "objectId": "piano__0",
+      "title": "piano key 100 slide",
+      "clip": "piano_key_100_slide_motion",
+      "joints": [
+        "piano_key_100_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_101_slide",
+      "objectId": "piano__0",
+      "title": "piano key 101 slide",
+      "clip": "piano_key_101_slide_motion",
+      "joints": [
+        "piano_key_101_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_102_slide",
+      "objectId": "piano__0",
+      "title": "piano key 102 slide",
+      "clip": "piano_key_102_slide_motion",
+      "joints": [
+        "piano_key_102_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_103_slide",
+      "objectId": "piano__0",
+      "title": "piano key 103 slide",
+      "clip": "piano_key_103_slide_motion",
+      "joints": [
+        "piano_key_103_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_104_slide",
+      "objectId": "piano__0",
+      "title": "piano key 104 slide",
+      "clip": "piano_key_104_slide_motion",
+      "joints": [
+        "piano_key_104_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_105_slide",
+      "objectId": "piano__0",
+      "title": "piano key 105 slide",
+      "clip": "piano_key_105_slide_motion",
+      "joints": [
+        "piano_key_105_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_106_slide",
+      "objectId": "piano__0",
+      "title": "piano key 106 slide",
+      "clip": "piano_key_106_slide_motion",
+      "joints": [
+        "piano_key_106_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_107_slide",
+      "objectId": "piano__0",
+      "title": "piano key 107 slide",
+      "clip": "piano_key_107_slide_motion",
+      "joints": [
+        "piano_key_107_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "piano_key_108_slide",
+      "objectId": "piano__0",
+      "title": "piano key 108 slide",
+      "clip": "piano_key_108_slide_motion",
+      "joints": [
+        "piano_key_108_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 1,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__0_cabinet_hinge_0",
+      "objectId": "cabinet__0",
+      "title": "cabinet / 0 cabinet hinge 0",
+      "clip": "cabinet__0_cabinet_hinge_0_motion",
+      "joints": [
+        "cabinet__0_cabinet_hinge_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78027648763535,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__0_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__0",
+      "title": "cabinet / 0 cabinet hinge multiple 0",
+      "clip": "cabinet__0_cabinet_hinge_multiple_0_motion",
+      "joints": [
+        "cabinet__0_cabinet_hinge_multiple_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78027648763535,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__1_cabinet_hinge_0",
+      "objectId": "cabinet__1",
+      "title": "cabinet / 1 cabinet hinge 0",
+      "clip": "cabinet__1_cabinet_hinge_0_motion",
+      "joints": [
+        "cabinet__1_cabinet_hinge_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78027648763535,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__1_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__1",
+      "title": "cabinet / 1 cabinet hinge multiple 0",
+      "clip": "cabinet__1_cabinet_hinge_multiple_0_motion",
+      "joints": [
+        "cabinet__1_cabinet_hinge_multiple_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78027648763535,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__2_cabinet_hinge_0",
+      "objectId": "cabinet__2",
+      "title": "cabinet / 2 cabinet hinge 0",
+      "clip": "cabinet__2_cabinet_hinge_0_motion",
+      "joints": [
+        "cabinet__2_cabinet_hinge_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78029014801368,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__2_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__2",
+      "title": "cabinet / 2 cabinet hinge multiple 0",
+      "clip": "cabinet__2_cabinet_hinge_multiple_0_motion",
+      "joints": [
+        "cabinet__2_cabinet_hinge_multiple_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78029014801368,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__0_drawer_slider_0",
+      "objectId": "drawer__0",
+      "title": "drawer / 0 drawer slider 0",
+      "clip": "drawer__0_drawer_slider_0_motion",
+      "joints": [
+        "drawer__0_drawer_slider_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 36.100003120000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__3_cabinet_hinge_0",
+      "objectId": "cabinet__3",
+      "title": "cabinet / 3 cabinet hinge 0",
+      "clip": "cabinet__3_cabinet_hinge_0_motion",
+      "joints": [
+        "cabinet__3_cabinet_hinge_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78029014801368,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__3_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__3",
+      "title": "cabinet / 3 cabinet hinge multiple 0",
+      "clip": "cabinet__3_cabinet_hinge_multiple_0_motion",
+      "joints": [
+        "cabinet__3_cabinet_hinge_multiple_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78029014801368,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__1_drawer_slider_0",
+      "objectId": "drawer__1",
+      "title": "drawer / 1 drawer slider 0",
+      "clip": "drawer__1_drawer_slider_0_motion",
+      "joints": [
+        "drawer__1_drawer_slider_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 36.100003120000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__4_cabinet_hinge_0",
+      "objectId": "cabinet__4",
+      "title": "cabinet / 4 cabinet hinge 0",
+      "clip": "cabinet__4_cabinet_hinge_0_motion",
+      "joints": [
+        "cabinet__4_cabinet_hinge_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78029014801368,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cabinet__4_cabinet_hinge_multiple_0",
+      "objectId": "cabinet__4",
+      "title": "cabinet / 4 cabinet hinge multiple 0",
+      "clip": "cabinet__4_cabinet_hinge_multiple_0_motion",
+      "joints": [
+        "cabinet__4_cabinet_hinge_multiple_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78029014801368,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__2_drawer_slider_0",
+      "objectId": "drawer__2",
+      "title": "drawer / 2 drawer slider 0",
+      "clip": "drawer__2_drawer_slider_0_motion",
+      "joints": [
+        "drawer__2_drawer_slider_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 36.100003120000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "patio_door__0_slide",
+      "objectId": "door__0",
+      "title": "patio door / 0 slide",
+      "clip": "patio_door__0_slide_motion",
+      "joints": [
+        "patio_door__0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 242,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    }
+  ],
+  "unsupportedJoints": [],
+  "mainViewCount": 8,
+  "extraViewCount": 16,
+  "jointCouplings": {
+    "linearEqualities": 0,
+    "linkedClips": 0,
+    "unsupported": [],
+    "method": "Source zero-offset linear equalities, evaluated relative to each joint qpos0; common range intersection."
+  },
+  "modelBytes": 25117148,
+  "modelParts": [
+    "assets/rooms/living-room-pool-013/room.gzip-01.bin"
+  ],
+  "sourcePicturesArchiveSha256": "47fbcbda3aead4021c7ba6e0fcd570479de94ca7ab64b0771ce524fa75312b75",
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "187dbb6fd130de156173afc4fa894383a8dc344f469c189846eff21117ec6d35",
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 30186168,
+  "decodedModelSha256": "e036110491988d2b75b0e59a073220918b7e05393a4815a08dde0acd814649a6",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "taskCards": "assets/rooms/living-room-pool-013/tasks/manifest.json"
+}

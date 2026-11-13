@@ -1,0 +1,6914 @@
+{
+  "id": "school-front-office-001",
+  "title": "School front office",
+  "description": "A school front office with visitor reception, staff printing and filing, a homework lounge and a semi-open office.",
+  "dimensions": [
+    13.300000005960463,
+    11.719199135020688,
+    3.3
+  ],
+  "dimensionSource": "visible geometry bounds",
+  "bounds": {
+    "min": [
+      -0.15000000298023233,
+      -0.2,
+      -10.317500000074507
+    ],
+    "max": [
+      13.150000002980232,
+      3.0999999999999996,
+      1.401699134946182
+    ]
+  },
+  "tasks": [
+    {
+      "id": "pick_place_1",
+      "kind": "Robot",
+      "text": "Pick up the closed blue-and-black binder at the front-left of the work table, directly in front of the letter tray. Lay it flat near the middle of the same front edge, directly in front of the hole punch.",
+      "objects": [
+        "binder__5027007",
+        "table__2101001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "binder__5027007",
+          "label": "Lift the closed blue-and-black binder",
+          "point": [
+            9.1588,
+            0.8048,
+            -7.48
+          ]
+        },
+        {
+          "object": "table__2101001",
+          "label": "Lay it flat in front of the hole punch",
+          "point": [
+            10.05,
+            0.75,
+            -7.48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "push_1",
+      "kind": "Robot",
+      "text": "Find the freestanding brochure holder on the floor beside the reception counter, near the smaller holder on the counter. Push the floor holder 20 cm toward the entrance doors, leaving it upright.",
+      "objects": [
+        "brochure_holder__4309002"
+      ],
+      "locatorSteps": [
+        {
+          "object": "brochure_holder__4309002",
+          "label": "Push the floor holder 20 cm toward the entrance",
+          "point": [
+            9.4,
+            0.026,
+            -5.28
+          ]
+        },
+        {
+          "object": "brochure_holder__4309002",
+          "label": "Leave the holder upright",
+          "point": [
+            9.4,
+            0.0,
+            -4.925
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retrieve_return_folder",
+      "kind": "Interaction",
+      "text": "At the east-wall file cabinet closest to the mail cubby, open the middle drawer. Lift the front hanging folder clear of the rails, hang it back in front of the second folder, then close the drawer with both folders inside.",
+      "objects": [
+        "folder__1811004",
+        "drawer__1811003",
+        "folder__1811005",
+        "file_cabinet__1811001",
+        "mail_cubby__1708001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "drawer__1811003",
+          "label": "Open the middle drawer nearest the mail cubby",
+          "point": [
+            12.2828,
+            0.6,
+            -7.95
+          ]
+        },
+        {
+          "object": "folder__1811004",
+          "label": "Lift the front folder clear of the rails",
+          "point": [
+            12.09,
+            0.724,
+            -7.95
+          ]
+        },
+        {
+          "object": "drawer__1811003",
+          "label": "Rehang it on the rails ahead of the other folder",
+          "point": [
+            12.09,
+            0.699,
+            -8.17
+          ]
+        },
+        {
+          "object": "drawer__1811003",
+          "label": "Close the drawer with both folders inside",
+          "point": [
+            12.2828,
+            0.6,
+            -7.95
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raise_connected_desk",
+      "kind": "Interaction",
+      "text": "Find the height-adjustable desk in the separate office with two chairs facing it. Press its up control to raise the desktop to standing height. Keep the cables connected, then use the down control to return it to its original sitting height and release the button.",
+      "objects": [
+        "desk__325001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "desk__325001",
+          "label": "Press up to raise the connected desk to standing height",
+          "point": [
+            1.87,
+            0.685,
+            -8.4505
+          ]
+        },
+        {
+          "object": "desk__325001",
+          "label": "Press down to restore sitting height, then release",
+          "point": [
+            1.92,
+            0.685,
+            -8.4505
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open_copier_access",
+      "kind": "Interaction",
+      "text": "Find the large printer against the back wall between the supply cabinet and the bookcases. On the printer’s left side, move the release lever to retract the latch and swing the jam-access cover fully open. Close the cover, then return the lever to its starting position.",
+      "objects": [
+        "printer__1426001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "printer__1426001",
+          "label": "Move the left-side release lever to unlatch the cover",
+          "point": [
+            6.3535,
+            0.71,
+            -9.215
+          ]
+        },
+        {
+          "object": "printer__1426001",
+          "label": "Swing the jam-access cover fully open",
+          "point": [
+            6.39,
+            0.565,
+            -9.45
+          ]
+        },
+        {
+          "object": "printer__1426001",
+          "label": "Close the jam-access cover",
+          "point": [
+            6.39,
+            0.565,
+            -9.45
+          ]
+        },
+        {
+          "object": "printer__1426001",
+          "label": "Return the lever to its starting position",
+          "point": [
+            6.3535,
+            0.71,
+            -9.215
+          ]
+        }
+      ]
+    },
+    {
+      "id": "access_supply_cupboard",
+      "kind": "Interaction",
+      "text": "Face the two-door supply cabinet on the back wall to the left of the printer. Open the left door first, then the right, until the stocked shelves are exposed. Close the right door, then the left, and leave both shut.",
+      "objects": [
+        "cabinet__1307001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cabinet__1307001",
+          "label": "Open the left cabinet door",
+          "point": [
+            4.515,
+            1.02,
+            -9.0798
+          ]
+        },
+        {
+          "object": "cabinet__1307001",
+          "label": "Open the right door to expose the shelves",
+          "point": [
+            4.635,
+            1.02,
+            -9.0798
+          ]
+        },
+        {
+          "object": "cabinet__1307001",
+          "label": "Close the right door",
+          "point": [
+            4.635,
+            1.02,
+            -9.0798
+          ]
+        },
+        {
+          "object": "cabinet__1307001",
+          "label": "Close the left door",
+          "point": [
+            4.515,
+            1.02,
+            -9.0798
+          ]
+        }
+      ]
+    },
+    {
+      "id": "open_staple_magazine",
+      "kind": "Interaction",
+      "text": "Hold the base of the stapler on the work table, beside the hole punch. Lift its head and slide the staple magazine out to expose the loading channel. Slide the magazine fully back in, then lower and release the head.",
+      "objects": [
+        "stapler__4513001",
+        "table__2101001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "stapler__4513001",
+          "label": "Steady the base and lift the stapler head",
+          "point": [
+            9.622,
+            0.8168,
+            -7.88
+          ]
+        },
+        {
+          "object": "stapler__4513001",
+          "label": "Slide the staple magazine out",
+          "point": [
+            9.698,
+            0.7948,
+            -7.88
+          ]
+        },
+        {
+          "object": "stapler__4513001",
+          "label": "Slide the magazine all the way back in",
+          "point": [
+            9.698,
+            0.7948,
+            -7.88
+          ]
+        },
+        {
+          "object": "stapler__4513001",
+          "label": "Lower and release the head",
+          "point": [
+            9.622,
+            0.8168,
+            -7.88
+          ]
+        }
+      ]
+    },
+    {
+      "id": "distribute_mail_folder",
+      "kind": "Interaction",
+      "text": "Face the mail cubby beside the row of file cabinets. Take the loose manila folder from the left column, third shelf from the bottom. Lay it on the clear front-right part of the work table, directly in front of the binding machine, and release it.",
+      "objects": [
+        "folder__5927010",
+        "mail_cubby__1708001",
+        "table__2101001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "folder__5927010",
+          "label": "Lift the manila folder from the cubby’s third shelf",
+          "point": [
+            12.5765,
+            0.696,
+            -9.24
+          ]
+        },
+        {
+          "object": "table__2101001",
+          "label": "Lay it flat in front of the binding machine",
+          "point": [
+            10.62,
+            0.75,
+            -7.48
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cycle_hole_punch",
+      "kind": "Interaction",
+      "text": "Steady the hole punch on the work table between the stapler and the binding machine. Slide its paper guide to the left stop, then press the handle until the pins descend. Release the handle so the pins rise and return the guide to its starting position.",
+      "objects": [
+        "hole_punch__4614001",
+        "table__2101001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "hole_punch__4614001",
+          "label": "Steady the punch and slide the guide fully left",
+          "point": [
+            9.986,
+            0.7788,
+            -7.847
+          ]
+        },
+        {
+          "object": "hole_punch__4614001",
+          "label": "Press the handle until the pins descend",
+          "point": [
+            10.04,
+            0.8218,
+            -7.869
+          ]
+        },
+        {
+          "object": "hole_punch__4614001",
+          "label": "Release the handle so the pins rise",
+          "point": [
+            10.04,
+            0.8218,
+            -7.869
+          ]
+        },
+        {
+          "object": "hole_punch__4614001",
+          "label": "Return the guide to its starting position",
+          "point": [
+            9.986,
+            0.7788,
+            -7.847
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reset_binding_comb",
+      "kind": "Interaction",
+      "text": "Hold the binding machine steady at the right end of the work table. Slide the paper-edge guide to the left stop, then move the side lever until the comb rack and fingers open. Return the lever to close the rack and fingers, then reset the guide.",
+      "objects": [
+        "binding_machine__4715001",
+        "table__2101001"
+      ],
+      "locatorSteps": [
+        {
+          "object": "binding_machine__4715001",
+          "label": "Steady the machine and slide the guide fully left",
+          "point": [
+            10.45,
+            0.8648,
+            -7.844
+          ]
+        },
+        {
+          "object": "binding_machine__4715001",
+          "label": "Move the side lever to open the comb fingers",
+          "point": [
+            10.768,
+            0.9013,
+            -7.9575
+          ]
+        },
+        {
+          "object": "binding_machine__4715001",
+          "label": "Return the lever to close the rack and fingers",
+          "point": [
+            10.768,
+            0.9013,
+            -7.9575
+          ]
+        },
+        {
+          "object": "binding_machine__4715001",
+          "label": "Reset the paper-edge guide",
+          "point": [
+            10.45,
+            0.8648,
+            -7.844
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "floor": "floor",
+    "walls": "walls",
+    "partition__121003": "object",
+    "partition__121004": "object",
+    "partition__121005": "object",
+    "partition__121006": "object",
+    "partition__121007": "object",
+    "partition__121008": "object",
+    "partition__121009": "object",
+    "partition__121010": "object",
+    "partition__121011": "object",
+    "partition__121012": "object",
+    "door__121013": "object",
+    "door__121014": "object",
+    "door__121015": "object",
+    "door__121016": "object",
+    "door__121017": "object",
+    "door__121018": "object",
+    "power_socket__121019": "object",
+    "power_socket__121020": "object",
+    "power_socket__121021": "object",
+    "power_socket__121022": "object",
+    "counter__210001": "object",
+    "desk__325001": "object",
+    "desk__424001": "object",
+    "keyboard__424016": "object",
+    "telephone__424019": "object",
+    "office_chair__516017": "object",
+    "desk__624001": "object",
+    "keyboard__624016": "object",
+    "telephone__624019": "object",
+    "office_chair__716017": "object",
+    "office_chair__816017": "object",
+    "office_chair__916017": "object",
+    "office_chair__1016017": "object",
+    "bookcase__1106002": "object",
+    "file_cabinet__1211007": "object",
+    "drawer__1211008": "object",
+    "drawer__1211009": "object",
+    "folder__1211010": "object",
+    "folder__1211011": "object",
+    "drawer__1211012": "object",
+    "cabinet__1307001": "object",
+    "printer__1426001": "object",
+    "bookcase__1506001": "object",
+    "bookcase__1606001": "object",
+    "mail_cubby__1708001": "object",
+    "file_cabinet__1811001": "object",
+    "drawer__1811002": "object",
+    "drawer__1811003": "object",
+    "folder__1811004": "object",
+    "folder__1811005": "object",
+    "drawer__1811006": "object",
+    "file_cabinet__1911001": "object",
+    "drawer__1911002": "object",
+    "drawer__1911003": "object",
+    "folder__1911004": "object",
+    "folder__1911005": "object",
+    "drawer__1911006": "object",
+    "file_cabinet__2011001": "object",
+    "drawer__2011002": "object",
+    "drawer__2011003": "object",
+    "folder__2011004": "object",
+    "folder__2011005": "object",
+    "drawer__2011006": "object",
+    "table__2101001": "object",
+    "cart__2212001": "object",
+    "sofa__2318001": "object",
+    "coffee_table__2405001": "object",
+    "armchair__2520005": "object",
+    "cushion__2520007": "object",
+    "armchair__2620001": "object",
+    "cushion__2620003": "object",
+    "armchair__2720005": "object",
+    "cushion__2720007": "object",
+    "armchair__2820001": "object",
+    "cushion__2820003": "object",
+    "table__2904001": "object",
+    "table__3004001": "object",
+    "table__3104001": "object",
+    "table__3204001": "object",
+    "counter__3303001": "object",
+    "television__3422001": "object",
+    "pinboard__3523001": "object",
+    "shelf__3523002": "object",
+    "sculpture__3523003": "object",
+    "sculpture__3523004": "object",
+    "sculpture__3523005": "object",
+    "sculpture__3523006": "object",
+    "sculpture__3523007": "object",
+    "bench__3602001": "object",
+    "stool__3719001": "object",
+    "stool__3819001": "object",
+    "stool__3919001": "object",
+    "stool__4019003": "object",
+    "stool__4119003": "object",
+    "stool__4219003": "object",
+    "brochure_holder__4309002": "object",
+    "brochure_holder__4409001": "object",
+    "stapler__4513001": "object",
+    "hole_punch__4614001": "object",
+    "letter_tray__4614005": "object",
+    "binding_machine__4715001": "object",
+    "letter_tray__4715007": "object",
+    "letter_tray__4827013": "object",
+    "binder__4927001": "object",
+    "binder__5027007": "object",
+    "letter_tray__5127015": "object",
+    "book__5227018": "object",
+    "magazine__5327019": "object",
+    "paper__5427012": "object",
+    "paper__5527012": "object",
+    "paper__5627012": "object",
+    "toner_cartridge__5727021": "object",
+    "folder__5827008": "object",
+    "folder__5927010": "object",
+    "book__6027022": "object",
+    "book__6127022": "object",
+    "binder__6227007": "object",
+    "binder__6327007": "object",
+    "binder__6427007": "object",
+    "binder__6527007": "object",
+    "book__6627022": "object",
+    "binder__6727007": "object",
+    "binder__6827007": "object",
+    "binder__6927007": "object",
+    "binder__7027007": "object",
+    "book__7127022": "object",
+    "binder__7227007": "object",
+    "binder__7327007": "object",
+    "binder__7427007": "object",
+    "binder__7527007": "object",
+    "book__7627022": "object",
+    "binder__7727007": "object",
+    "binder__7827007": "object",
+    "binder__7927007": "object",
+    "binder__8027007": "object",
+    "book__8127022": "object",
+    "binder__8227007": "object",
+    "binder__8327007": "object",
+    "binder__8427007": "object",
+    "binder__8527007": "object",
+    "book__8627022": "object",
+    "binder__8727007": "object",
+    "binder__8827007": "object",
+    "binder__8927007": "object",
+    "binder__9027007": "object",
+    "book__9127022": "object",
+    "binder__9227007": "object",
+    "binder__9327007": "object",
+    "binder__9427007": "object",
+    "binder__9527007": "object",
+    "book__9627022": "object",
+    "binder__9727007": "object",
+    "binder__9827007": "object",
+    "binder__9927007": "object",
+    "binder__10027007": "object",
+    "book__10127022": "object",
+    "binder__10227007": "object",
+    "binder__10327007": "object",
+    "binder__10427007": "object",
+    "binder__10527007": "object",
+    "book__10627022": "object",
+    "binder__10727007": "object",
+    "binder__10827007": "object",
+    "binder__10927007": "object",
+    "binder__11027007": "object",
+    "binder__11327007": "object",
+    "binder__11427007": "object",
+    "binder__11527007": "object",
+    "binder__11627007": "object",
+    "binder__11727007": "object",
+    "binder__11827007": "object",
+    "binder__11927007": "object",
+    "binder__12027007": "object",
+    "binder__12127007": "object",
+    "binder__12227007": "object",
+    "binder__12327007": "object",
+    "binder__12427007": "object",
+    "binder__12527007": "object",
+    "binder__12627007": "object",
+    "binder__12727007": "object",
+    "binder__12827007": "object",
+    "book__12927022": "object",
+    "binder__13027007": "object",
+    "binder__13127007": "object",
+    "binder__13227007": "object",
+    "binder__13327007": "object",
+    "binder__13427007": "object",
+    "book__13527022": "object",
+    "binder__13627007": "object",
+    "binder__13727007": "object",
+    "binder__13827007": "object",
+    "binder__13927007": "object",
+    "binder__14027007": "object",
+    "book__14127022": "object",
+    "binder__14227007": "object",
+    "binder__14327007": "object",
+    "binder__14427007": "object",
+    "binder__14527007": "object",
+    "binder__14627007": "object",
+    "book__14727022": "object",
+    "binder__14827007": "object",
+    "binder__14927007": "object",
+    "binder__15027007": "object",
+    "binder__15127007": "object",
+    "binder__15227007": "object"
+  },
+  "mobility": {
+    "free": 58,
+    "fixed": 129,
+    "jointOnly": 18,
+    "nonrigid": 0,
+    "objects": {
+      "partition__121003": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121004": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121005": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121006": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121008": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121009": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121010": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121011": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partition__121012": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__121013": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__121014": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__121015": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__121016": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__121017": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__121018": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "power_socket__121019": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "power_socket__121020": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "power_socket__121021": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "power_socket__121022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "counter__210001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "desk__325001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "desk__424001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__424016": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "telephone__424019": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "office_chair__516017": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "desk__624001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__624016": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "telephone__624019": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "office_chair__716017": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "office_chair__816017": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "office_chair__916017": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "office_chair__1016017": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bookcase__1106002": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "file_cabinet__1211007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1211008": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1211009": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__1211010": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__1211011": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1211012": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__1307001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "printer__1426001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bookcase__1506001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bookcase__1606001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mail_cubby__1708001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "file_cabinet__1811001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1811002": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1811003": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__1811004": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__1811005": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1811006": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "file_cabinet__1911001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1911002": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1911003": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__1911004": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__1911005": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__1911006": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "file_cabinet__2011001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__2011002": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__2011003": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__2011004": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__2011005": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer__2011006": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table__2101001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__2212001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sofa__2318001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "coffee_table__2405001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "armchair__2520005": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cushion__2520007": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "armchair__2620001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cushion__2620003": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "armchair__2720005": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cushion__2720007": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "armchair__2820001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cushion__2820003": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table__2904001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table__3004001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table__3104001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table__3204001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "counter__3303001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "television__3422001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pinboard__3523001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shelf__3523002": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sculpture__3523003": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sculpture__3523004": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sculpture__3523005": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sculpture__3523006": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sculpture__3523007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench__3602001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__3719001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__3819001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__3919001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__4019003": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__4119003": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__4219003": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "brochure_holder__4309002": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "brochure_holder__4409001": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stapler__4513001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hole_punch__4614001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "letter_tray__4614005": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binding_machine__4715001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "letter_tray__4715007": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "letter_tray__4827013": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__4927001": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__5027007": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "letter_tray__5127015": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__5227018": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "magazine__5327019": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__5427012": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__5527012": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__5627012": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toner_cartridge__5727021": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__5827008": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "folder__5927010": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__6027022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__6127022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__6227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__6327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__6427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__6527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__6627022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__6727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__6827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__6927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__7127022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__7627022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__7927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__8127022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__8627022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__8927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__9127022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__9627022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__9927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__10127022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__10627022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__10927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11627007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__11927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12127007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12627007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__12827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__12927022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13127007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__13527022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13627007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13727007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__13927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__14127022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14327007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14427007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14527007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14627007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__14727022": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14827007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__14927007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__15027007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__15127007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "binder__15227007": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/school-front-office-001/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "174ae22d8da9fd02a653934fe1954b96de91446415e470da4b6881b8b51e6a42",
+      "previewSha256": "bb2b4a4953649483cefbc90ef639250981fc6a0e391c1385ebe13092f9379ff3",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.71093061769818
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "bf01b8a94e11d1d54a272391ed7fbdabd2f623001dcb76296a508ac856466820",
+      "previewSha256": "ed791dee2620bb0dd0846d5c9397193ebcfde7fdc6438c27ab00be6cd58b0777",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.5377703382371
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "d176f3f568779a940da286b9669d2cebcd10f6cd1147c7762378de34a43a25c2",
+      "previewSha256": "bd6864eaf5d93e6ec56a8483633938551e6eb654eb70634c43aa373325da6ca4",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.44844748932962
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "fca34bc632b44579d36c1422201beb1e0c136ac9fd16d4453601f4fd465ec471",
+      "previewSha256": "5c0c25898c91dfbcb15f883444bbcf7e337986a7f4f2d7dd09811165f395aa61",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.952053086397186
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "1889508672d3b2317cfd8d4d6279c8f93f9006d1ce976b8e5d93c06c4bc8755f",
+      "previewSha256": "c257ce68a4f8be127887a327a0f5404b35fd8abb226f71ed56c9361f73c340a6",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.12353923846327
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "1ca8fa684e62eebf5ac514241b65ab6ff88b7b42e27a5aa1077d7013d5fce720",
+      "previewSha256": "bb19fd98d1330b3893bdbcf8c17adb2b6604813e6f71964bbf640f916cbed89c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.070667533580405
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "b1d9320891d04fd4327d76736ad3e2f0c5339eace2608d823a1e9dd413e3b004",
+      "previewSha256": "8aafc14beb363f4aaa913bfa612d7e1a6b57811fffe2dcc3abba05da89f6d64c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.945170004922105
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "7d029a71a117b0b03967230ce6d877b100e03cacd3371b75a64fe695b3586ed7",
+      "previewSha256": "cd65fe0d39442773a4ee9f381dcffd6443c7033dc7157a311f46d562cfb75271",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.10537987700353
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "2fdf8f1c1c1286616080f7c7e29de742f9052816ebaee36b615fa29479c9f970",
+      "previewSha256": "41409b939ce36090304e29b1cb8b2b69e6c1eee4e451fc37633b3ad3f1be6d9e",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.85217476038096
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "759bb2ea61dcc43285c26a51fb69b0c654b3cd1632fe04791dc359eca5a97231",
+      "previewSha256": "05dc934d4d68bd46ca12df16bfff53fdef5ae95f94423d6d51353cb576fdcdeb",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.36380705776168
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "7e89e190ab9b78524a6efa16084183bd9984dd6b11b7cd834d0cfffd57f70e65",
+      "previewSha256": "af46322eda6e2994a9fb63f1fc659646513ef996f8421c06dde2a7ed7cc5efd8",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.059035534674734
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "d41d53c401b49e38d59b9e1a68300316cf150ade4170984ecf7cf7ce4e2b009c",
+      "previewSha256": "66361537cc49f5c35e5a5bb1e482cb429c0cb4ed43bd328323ac2c332752a846",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.045666277410916
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "81f7b9ce17da703506657d79c5c09cd62307cfaa781701c96ba73135622daba9",
+      "previewSha256": "60e0f13231afd71905ad33640f1c2c4245cc3d30e901201f645fd03460fd8594",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.03401770934104
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "b9fae9c0b8cc0fb4a323636b9de59abea0da83d6db3a553ab9daefc2fc926ca3",
+      "previewSha256": "4159b5f76b5e77b95008c8d71ab3f99df51cfafbb918e033e02b3f0916f3995f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.226811347714595
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "b12c0039dad628a757da7206730b19611e129965bbadff9500daa4d027846852",
+      "previewSha256": "6561e4cfddac3b5c0c3eb840bd95ab0f9cc95dc5dbf073ffc60e88e2aa4558c2",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.36094119462742
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "4adbacd64b3e5f6d868e33af8c2d11614fbbf3ba45868ec51e3248d058f0e895",
+      "previewSha256": "ae74ae9ab9c59e1778d134b1e780ea3ef21480b0c42f0b312078dd77d7bcb5fd",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.05986471544319
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "00bae10fb79ad96b44c21218c805eca1bbbfe226dbe532f88e9d423702941143",
+      "previewSha256": "e5f74c65e92ffd3eb47619d9ffadadd9326cd51cb6cab4fc4fa2740a8155d6e4",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.3182931779744
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "7f1ed5c5500185f3f3bf53432836f0bb5f0d73649787781c6e381b63bbc6f89b",
+      "previewSha256": "8df48beb11b8f3c7026c000d20e4e6b158fa6e4d59c60d404448d71573602232",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.977077262122336
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "59eb7d68e7da5b2460fc19a76cc1552e1b4e22958333e8ac3b72f3be23b96555",
+      "previewSha256": "1515d913c1a1e8e87342b17cad1ee8f104bcc50961ef08b1fb3be9fc5410da88",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.59518473980214
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "d3075637930abf15aa2b819a9375b085bab36a0f2d367b3bc2ca696839eb1307",
+      "previewSha256": "d28f358ce8e37927c103a90f61d7560b0257f2f71c550a4182fc28fd45dd19af",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.831074984329646
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "249ed5648325f69258da5c3643550cf58ed0b9347c32234a216b13ca6ad47e79",
+      "previewSha256": "21f432fcc22cb966eb00c9beebbd204d5cf7328dd8f5e7d4e4948ac04a6b2fb1",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.50085694172065
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "ebbb3b72f5e058aec54fc1fd4ba6498daf18c77a14d8648f207ee2be6f2fbebe",
+      "previewSha256": "31aed49e2eb99287622a7907841ba8598029a812e0d1ba047e3955b70133b358",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.22922513923784
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "3f152353a8b6441970b65e12538ec372935bbc94b36fdfbf36fe2543811b6b1c",
+      "previewSha256": "b72834c789a0734a47738cd35dbf55af548e00824a44080d1d5749c418012326",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.43793867862445
+    },
+    {
+      "src": "assets/rooms/school-front-office-001/extra-15.webp",
+      "label": "Extra 16",
+      "group": "extra",
+      "sourceSha256": "af4301fde45b7a5872ebffb01beb45cf78712959fd4875800f72951160f63040",
+      "previewSha256": "99cd0e056ec9c7c718f79c66f608499db84e64a1c3f62c5b59533971804b2815",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.36767765107902
+    }
+  ],
+  "joints": [
+    {
+      "id": "door__21013_joint_i1",
+      "objectId": "door__121013",
+      "body": "door__121013",
+      "type": "hinge",
+      "pivot": [
+        9.35,
+        0,
+        0.03
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.48,
+      "closed": 0,
+      "open": -1.48,
+      "range": [
+        -1.48,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__21014_joint_i1",
+      "objectId": "door__121014",
+      "body": "door__121014",
+      "type": "hinge",
+      "pivot": [
+        11.45,
+        0,
+        0.03
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.48,
+      "closed": 0,
+      "open": 1.48,
+      "range": [
+        0,
+        1.48
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__21015_joint_i1",
+      "objectId": "door__121015",
+      "body": "door__121015",
+      "type": "hinge",
+      "pivot": [
+        9.35,
+        0,
+        1.33
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.48,
+      "closed": 0,
+      "open": -1.48,
+      "range": [
+        -1.48,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__21016_joint_i1",
+      "objectId": "door__121016",
+      "body": "door__121016",
+      "type": "hinge",
+      "pivot": [
+        11.45,
+        0,
+        1.33
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.48,
+      "closed": 0,
+      "open": 1.48,
+      "range": [
+        0,
+        1.48
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__21017_joint_i1",
+      "objectId": "door__121017",
+      "body": "door__121017",
+      "type": "hinge",
+      "pivot": [
+        5.025,
+        0,
+        -9.925
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.62,
+      "closed": 0,
+      "open": -1.62,
+      "range": [
+        -1.62,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__21018_joint_i1",
+      "objectId": "door__121018",
+      "body": "door__121018",
+      "type": "hinge",
+      "pivot": [
+        7.775,
+        0,
+        -9.925
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.62,
+      "closed": 0,
+      "open": -1.62,
+      "range": [
+        -1.62,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "desk__25002_joint_i3",
+      "objectId": "desk__325001",
+      "body": "desk__325002",
+      "type": "slide",
+      "pivot": [
+        1.25,
+        0.73,
+        -8.075
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "button__25003_joint_i3",
+      "objectId": "desk__325001",
+      "body": "button__325003",
+      "type": "slide",
+      "pivot": [
+        1.87,
+        0.6849999999999999,
+        -8.44
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": "desk__25002_joint_i3"
+    },
+    {
+      "id": "button__25004_joint_i3",
+      "objectId": "desk__325001",
+      "body": "button__325004",
+      "type": "slide",
+      "pivot": [
+        1.92,
+        0.6849999999999999,
+        -8.44
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": "desk__25002_joint_i3"
+    },
+    {
+      "id": "monitor_arm__25006_joint_i3",
+      "objectId": "desk__325001",
+      "body": "monitor_arm__325006",
+      "type": "slide",
+      "pivot": [
+        0.98,
+        0.96,
+        -7.805
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.18,
+      "closed": 0,
+      "open": 0.18,
+      "range": [
+        -0.07,
+        0.18
+      ],
+      "parentJointId": "desk__25002_joint_i3"
+    },
+    {
+      "id": "monitor_arm__25006_swivel_i3",
+      "objectId": "desk__325001",
+      "body": "monitor_arm__325006",
+      "type": "hinge",
+      "pivot": [
+        0.98,
+        0.96,
+        -7.805
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.85,
+      "closed": 0,
+      "open": 0.85,
+      "range": [
+        -0.85,
+        0.85
+      ],
+      "parentJointId": "monitor_arm__25006_joint_i3"
+    },
+    {
+      "id": "monitor_arm__25007_joint_i3",
+      "objectId": "desk__325001",
+      "body": "monitor_arm__325007",
+      "type": "hinge",
+      "pivot": [
+        1.23,
+        0.96,
+        -7.885
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.8,
+      "closed": 0,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": "monitor_arm__25006_swivel_i3"
+    },
+    {
+      "id": "monitor__25008_joint_i3",
+      "objectId": "desk__325001",
+      "body": "monitor__325008",
+      "type": "hinge",
+      "pivot": [
+        1.35,
+        0.96,
+        -8.035
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3,
+      "closed": 0,
+      "open": 0.3,
+      "range": [
+        -0.18,
+        0.3
+      ],
+      "parentJointId": "monitor_arm__25007_joint_i3"
+    },
+    {
+      "id": "monitor__24003_joint_i4",
+      "objectId": "desk__424001",
+      "body": "monitor__424003",
+      "type": "hinge",
+      "pivot": [
+        5.35,
+        0.995,
+        -5.975
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3,
+      "closed": 0,
+      "open": 0.3,
+      "range": [
+        -0.18,
+        0.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "monitor__24010_joint_i4",
+      "objectId": "desk__424001",
+      "body": "monitor__424010",
+      "type": "hinge",
+      "pivot": [
+        5.85,
+        0.995,
+        -5.975
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3,
+      "closed": 0,
+      "open": 0.3,
+      "range": [
+        -0.18,
+        0.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "office_chair__16017_swivel_i5",
+      "objectId": "office_chair__516017",
+      "body": "office_chair__516001",
+      "type": "hinge",
+      "pivot": [
+        5.6,
+        0,
+        -6.65
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 3.14,
+      "closed": 0,
+      "open": 3.14,
+      "range": [
+        -3.14,
+        3.14
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "office_chair__16017_joint_i5",
+      "objectId": "office_chair__516017",
+      "body": "office_chair__516001",
+      "type": "slide",
+      "pivot": [
+        5.6,
+        0,
+        -6.65
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "office_chair__16017_swivel_i5"
+    },
+    {
+      "id": "pedal__16004_joint_i5",
+      "objectId": "office_chair__516017",
+      "body": "pedal__516004",
+      "type": "hinge",
+      "pivot": [
+        5.835,
+        0.07500000000000001,
+        -6.65
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i5"
+    },
+    {
+      "id": "pedal__16007_joint_i5",
+      "objectId": "office_chair__516017",
+      "body": "pedal__516007",
+      "type": "hinge",
+      "pivot": [
+        5.66916408,
+        0.07500000000000001,
+        -6.878253600000001
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i5"
+    },
+    {
+      "id": "pedal__16010_joint_i5",
+      "objectId": "office_chair__516017",
+      "body": "pedal__516010",
+      "type": "hinge",
+      "pivot": [
+        5.4008359,
+        0.07500000000000001,
+        -6.791068500000001
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i5"
+    },
+    {
+      "id": "pedal__16013_joint_i5",
+      "objectId": "office_chair__516017",
+      "body": "pedal__516013",
+      "type": "hinge",
+      "pivot": [
+        5.4008359,
+        0.07500000000000001,
+        -6.5089315
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i5"
+    },
+    {
+      "id": "pedal__16016_joint_i5",
+      "objectId": "office_chair__516017",
+      "body": "pedal__516016",
+      "type": "hinge",
+      "pivot": [
+        5.66916408,
+        0.07500000000000001,
+        -6.4217464
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i5"
+    },
+    {
+      "id": "monitor__24003_joint_i6",
+      "objectId": "desk__624001",
+      "body": "monitor__624003",
+      "type": "hinge",
+      "pivot": [
+        7.1,
+        0.995,
+        -5.975
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3,
+      "closed": 0,
+      "open": 0.3,
+      "range": [
+        -0.18,
+        0.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "monitor__24010_joint_i6",
+      "objectId": "desk__624001",
+      "body": "monitor__624010",
+      "type": "hinge",
+      "pivot": [
+        7.6,
+        0.995,
+        -5.975
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3,
+      "closed": 0,
+      "open": 0.3,
+      "range": [
+        -0.18,
+        0.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "office_chair__16017_swivel_i7",
+      "objectId": "office_chair__716017",
+      "body": "office_chair__716001",
+      "type": "hinge",
+      "pivot": [
+        7.35,
+        0,
+        -6.65
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 3.14,
+      "closed": 0,
+      "open": 3.14,
+      "range": [
+        -3.14,
+        3.14
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "office_chair__16017_joint_i7",
+      "objectId": "office_chair__716017",
+      "body": "office_chair__716001",
+      "type": "slide",
+      "pivot": [
+        7.35,
+        0,
+        -6.65
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "office_chair__16017_swivel_i7"
+    },
+    {
+      "id": "pedal__16004_joint_i7",
+      "objectId": "office_chair__716017",
+      "body": "pedal__716004",
+      "type": "hinge",
+      "pivot": [
+        7.585,
+        0.07500000000000001,
+        -6.65
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i7"
+    },
+    {
+      "id": "pedal__16007_joint_i7",
+      "objectId": "office_chair__716017",
+      "body": "pedal__716007",
+      "type": "hinge",
+      "pivot": [
+        7.41916408,
+        0.07500000000000001,
+        -6.878253600000001
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i7"
+    },
+    {
+      "id": "pedal__16010_joint_i7",
+      "objectId": "office_chair__716017",
+      "body": "pedal__716010",
+      "type": "hinge",
+      "pivot": [
+        7.1508359,
+        0.07500000000000001,
+        -6.791068500000001
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i7"
+    },
+    {
+      "id": "pedal__16013_joint_i7",
+      "objectId": "office_chair__716017",
+      "body": "pedal__716013",
+      "type": "hinge",
+      "pivot": [
+        7.1508359,
+        0.07500000000000001,
+        -6.5089315
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i7"
+    },
+    {
+      "id": "pedal__16016_joint_i7",
+      "objectId": "office_chair__716017",
+      "body": "pedal__716016",
+      "type": "hinge",
+      "pivot": [
+        7.41916408,
+        0.07500000000000001,
+        -6.4217464
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i7"
+    },
+    {
+      "id": "office_chair__16017_swivel_i8",
+      "objectId": "office_chair__816017",
+      "body": "office_chair__816001",
+      "type": "hinge",
+      "pivot": [
+        1.25,
+        0,
+        -8.75
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 3.14,
+      "closed": 0,
+      "open": 3.14,
+      "range": [
+        -3.14,
+        3.14
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "office_chair__16017_joint_i8",
+      "objectId": "office_chair__816017",
+      "body": "office_chair__816001",
+      "type": "slide",
+      "pivot": [
+        1.25,
+        0,
+        -8.75
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "office_chair__16017_swivel_i8"
+    },
+    {
+      "id": "pedal__16004_joint_i8",
+      "objectId": "office_chair__816017",
+      "body": "pedal__816004",
+      "type": "hinge",
+      "pivot": [
+        1.485,
+        0.07500000000000001,
+        -8.75
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i8"
+    },
+    {
+      "id": "pedal__16007_joint_i8",
+      "objectId": "office_chair__816017",
+      "body": "pedal__816007",
+      "type": "hinge",
+      "pivot": [
+        1.3191640800000002,
+        0.07500000000000001,
+        -8.9782536
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i8"
+    },
+    {
+      "id": "pedal__16010_joint_i8",
+      "objectId": "office_chair__816017",
+      "body": "pedal__816010",
+      "type": "hinge",
+      "pivot": [
+        1.0508359,
+        0.07500000000000001,
+        -8.8910685
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i8"
+    },
+    {
+      "id": "pedal__16013_joint_i8",
+      "objectId": "office_chair__816017",
+      "body": "pedal__816013",
+      "type": "hinge",
+      "pivot": [
+        1.0508359,
+        0.07500000000000001,
+        -8.6089315
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i8"
+    },
+    {
+      "id": "pedal__16016_joint_i8",
+      "objectId": "office_chair__816017",
+      "body": "pedal__816016",
+      "type": "hinge",
+      "pivot": [
+        1.3191640800000002,
+        0.07500000000000001,
+        -8.5217464
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i8"
+    },
+    {
+      "id": "office_chair__16017_swivel_i9",
+      "objectId": "office_chair__916017",
+      "body": "office_chair__916001",
+      "type": "hinge",
+      "pivot": [
+        0.8,
+        0,
+        -7.05
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 3.14,
+      "closed": 0,
+      "open": 3.14,
+      "range": [
+        -3.14,
+        3.14
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "office_chair__16017_joint_i9",
+      "objectId": "office_chair__916017",
+      "body": "office_chair__916001",
+      "type": "slide",
+      "pivot": [
+        0.8,
+        0,
+        -7.05
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "office_chair__16017_swivel_i9"
+    },
+    {
+      "id": "pedal__16004_joint_i9",
+      "objectId": "office_chair__916017",
+      "body": "pedal__916004",
+      "type": "hinge",
+      "pivot": [
+        0.5650000000000001,
+        0.07500000000000001,
+        -7.05
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i9"
+    },
+    {
+      "id": "pedal__16007_joint_i9",
+      "objectId": "office_chair__916017",
+      "body": "pedal__916007",
+      "type": "hinge",
+      "pivot": [
+        0.73083592,
+        0.07500000000000001,
+        -6.821746399999999
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i9"
+    },
+    {
+      "id": "pedal__16010_joint_i9",
+      "objectId": "office_chair__916017",
+      "body": "pedal__916010",
+      "type": "hinge",
+      "pivot": [
+        0.9991641,
+        0.07500000000000001,
+        -6.9089315
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i9"
+    },
+    {
+      "id": "pedal__16013_joint_i9",
+      "objectId": "office_chair__916017",
+      "body": "pedal__916013",
+      "type": "hinge",
+      "pivot": [
+        0.9991641000000001,
+        0.07500000000000001,
+        -7.1910685
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i9"
+    },
+    {
+      "id": "pedal__16016_joint_i9",
+      "objectId": "office_chair__916017",
+      "body": "pedal__916016",
+      "type": "hinge",
+      "pivot": [
+        0.7308359200000001,
+        0.07500000000000001,
+        -7.2782536
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i9"
+    },
+    {
+      "id": "office_chair__16017_swivel_i10",
+      "objectId": "office_chair__1016017",
+      "body": "office_chair__1016001",
+      "type": "hinge",
+      "pivot": [
+        1.7,
+        0,
+        -7.05
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 3.14,
+      "closed": 0,
+      "open": 3.14,
+      "range": [
+        -3.14,
+        3.14
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "office_chair__16017_joint_i10",
+      "objectId": "office_chair__1016017",
+      "body": "office_chair__1016001",
+      "type": "slide",
+      "pivot": [
+        1.7,
+        0,
+        -7.05
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "office_chair__16017_swivel_i10"
+    },
+    {
+      "id": "pedal__16004_joint_i10",
+      "objectId": "office_chair__1016017",
+      "body": "pedal__1016004",
+      "type": "hinge",
+      "pivot": [
+        1.4649999999999999,
+        0.07500000000000001,
+        -7.05
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i10"
+    },
+    {
+      "id": "pedal__16007_joint_i10",
+      "objectId": "office_chair__1016017",
+      "body": "pedal__1016007",
+      "type": "hinge",
+      "pivot": [
+        1.6308359199999998,
+        0.07500000000000001,
+        -6.821746399999999
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i10"
+    },
+    {
+      "id": "pedal__16010_joint_i10",
+      "objectId": "office_chair__1016017",
+      "body": "pedal__1016010",
+      "type": "hinge",
+      "pivot": [
+        1.8991641,
+        0.07500000000000001,
+        -6.9089315
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i10"
+    },
+    {
+      "id": "pedal__16013_joint_i10",
+      "objectId": "office_chair__1016017",
+      "body": "pedal__1016013",
+      "type": "hinge",
+      "pivot": [
+        1.8991641,
+        0.07500000000000001,
+        -7.1910685
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i10"
+    },
+    {
+      "id": "pedal__16016_joint_i10",
+      "objectId": "office_chair__1016017",
+      "body": "pedal__1016016",
+      "type": "hinge",
+      "pivot": [
+        1.63083592,
+        0.07500000000000001,
+        -7.2782536
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": "office_chair__16017_joint_i10"
+    },
+    {
+      "id": "drawer__11008_joint_i12",
+      "objectId": "drawer__1211008",
+      "body": "drawer__1211008",
+      "type": "slide",
+      "pivot": [
+        0.425,
+        0.09,
+        -6.225
+      ],
+      "axis": [
+        1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.37,
+      "closed": 0,
+      "open": 0.37,
+      "range": [
+        0,
+        0.37
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11009_joint_i12",
+      "objectId": "drawer__1211009",
+      "body": "drawer__1211009",
+      "type": "slide",
+      "pivot": [
+        0.425,
+        0.43,
+        -6.225
+      ],
+      "axis": [
+        1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.37,
+      "closed": 0,
+      "open": 0.37,
+      "range": [
+        0,
+        0.37
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11012_joint_i12",
+      "objectId": "drawer__1211012",
+      "body": "drawer__1211012",
+      "type": "slide",
+      "pivot": [
+        0.425,
+        0.77,
+        -6.225
+      ],
+      "axis": [
+        1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.37,
+      "closed": 0,
+      "open": 0.37,
+      "range": [
+        0,
+        0.37
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__7002_joint_i13",
+      "objectId": "cabinet__1307001",
+      "body": "door__1307002",
+      "type": "hinge",
+      "pivot": [
+        4.215,
+        0,
+        -9.136
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.8,
+      "closed": 0,
+      "open": 1.8,
+      "range": [
+        0,
+        1.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__7003_joint_i13",
+      "objectId": "cabinet__1307001",
+      "body": "door__1307003",
+      "type": "hinge",
+      "pivot": [
+        4.9350000000000005,
+        0,
+        -9.136
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.8,
+      "closed": 0,
+      "open": 1.8,
+      "range": [
+        0,
+        1.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__26002_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "drawer__1426002",
+      "type": "slide",
+      "pivot": [
+        6.995,
+        0.16,
+        -9.459999999999999
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ruler__26003_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "ruler__1426003",
+      "type": "slide",
+      "pivot": [
+        6.875,
+        0.175,
+        -9.479999999999999
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.15,
+      "closed": 0,
+      "open": 0.15,
+      "range": [
+        -0.1,
+        0.15
+      ],
+      "parentJointId": "drawer__26002_joint_i14"
+    },
+    {
+      "id": "drawer__26004_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "drawer__1426004",
+      "type": "slide",
+      "pivot": [
+        6.995,
+        0.355,
+        -9.459999999999999
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ruler__26005_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "ruler__1426005",
+      "type": "slide",
+      "pivot": [
+        6.875,
+        0.37,
+        -9.479999999999999
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.15,
+      "closed": 0,
+      "open": 0.15,
+      "range": [
+        -0.1,
+        0.15
+      ],
+      "parentJointId": "drawer__26004_joint_i14"
+    },
+    {
+      "id": "drawer__26006_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "drawer__1426006",
+      "type": "slide",
+      "pivot": [
+        6.995,
+        0.55,
+        -9.459999999999999
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ruler__26007_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "ruler__1426007",
+      "type": "slide",
+      "pivot": [
+        6.875,
+        0.5650000000000001,
+        -9.479999999999999
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.15,
+      "closed": 0,
+      "open": 0.15,
+      "range": [
+        -0.1,
+        0.15
+      ],
+      "parentJointId": "drawer__26006_joint_i14"
+    },
+    {
+      "id": "door__26008_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "door__1426008",
+      "type": "hinge",
+      "pivot": [
+        6.402,
+        0.29,
+        -9.764999999999999
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.1,
+      "closed": 0,
+      "open": 1.1,
+      "range": [
+        0,
+        1.1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "lever__26009_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "lever__1426009",
+      "type": "hinge",
+      "pivot": [
+        6.381,
+        0.71,
+        -9.214999999999998
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": "door__26008_joint_i14"
+    },
+    {
+      "id": "latch__26010_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "latch__1426010",
+      "type": "slide",
+      "pivot": [
+        6.4270000000000005,
+        0.73,
+        -9.129
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.03,
+      "closed": 0,
+      "open": 0.03,
+      "range": [
+        0,
+        0.03
+      ],
+      "parentJointId": "door__26008_joint_i14"
+    },
+    {
+      "id": "roller__26011_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "roller__1426011",
+      "type": "hinge",
+      "pivot": [
+        6.57,
+        0.49,
+        -9.45
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 30,
+      "closed": 0,
+      "open": 30,
+      "range": [
+        -30,
+        30
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "roller__26012_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "roller__1426012",
+      "type": "hinge",
+      "pivot": [
+        6.47,
+        0.49,
+        -9.45
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 30,
+      "closed": 0,
+      "open": 30,
+      "range": [
+        -30,
+        30
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "roller__26013_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "roller__1426013",
+      "type": "hinge",
+      "pivot": [
+        6.57,
+        0.63,
+        -9.45
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 30,
+      "closed": 0,
+      "open": 30,
+      "range": [
+        -30,
+        30
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "roller__26014_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "roller__1426014",
+      "type": "hinge",
+      "pivot": [
+        6.47,
+        0.63,
+        -9.45
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 30,
+      "closed": 0,
+      "open": 30,
+      "range": [
+        -30,
+        30
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "lid__26016_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "lid__1426016",
+      "type": "hinge",
+      "pivot": [
+        6.88,
+        1.125,
+        -9.774999999999999
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.18,
+      "closed": 0,
+      "open": 1.18,
+      "range": [
+        0,
+        1.18
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ruler__26017_joint_i14",
+      "objectId": "printer__1426001",
+      "body": "ruler__1426017",
+      "type": "slide",
+      "pivot": [
+        6.8,
+        1.207,
+        -9.454999999999998
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.19,
+      "closed": 0,
+      "open": 0.19,
+      "range": [
+        0,
+        0.19
+      ],
+      "parentJointId": "lid__26016_joint_i14"
+    },
+    {
+      "id": "drawer__11002_joint_i18",
+      "objectId": "drawer__1811002",
+      "body": "drawer__1811002",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.09,
+        -7.95
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11003_joint_i18",
+      "objectId": "drawer__1811003",
+      "body": "drawer__1811003",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.43,
+        -7.95
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11006_joint_i18",
+      "objectId": "drawer__1811006",
+      "body": "drawer__1811006",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.77,
+        -7.95
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11002_joint_i19",
+      "objectId": "drawer__1911002",
+      "body": "drawer__1911002",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.09,
+        -7.35
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11003_joint_i19",
+      "objectId": "drawer__1911003",
+      "body": "drawer__1911003",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.43,
+        -7.35
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11006_joint_i19",
+      "objectId": "drawer__1911006",
+      "body": "drawer__1911006",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.77,
+        -7.35
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11002_joint_i20",
+      "objectId": "drawer__2011002",
+      "body": "drawer__2011002",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.09,
+        -6.7
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11003_joint_i20",
+      "objectId": "drawer__2011003",
+      "body": "drawer__2011003",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.43,
+        -6.7
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer__11006_joint_i20",
+      "objectId": "drawer__2011006",
+      "body": "drawer__2011006",
+      "type": "slide",
+      "pivot": [
+        12.6,
+        0.77,
+        -6.7
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal__12004_joint_i22",
+      "objectId": "cart__2212001",
+      "body": "pedal__2212004",
+      "type": "hinge",
+      "pivot": [
+        7.43,
+        0.118,
+        -7.215
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal__12007_joint_i22",
+      "objectId": "cart__2212001",
+      "body": "pedal__2212007",
+      "type": "hinge",
+      "pivot": [
+        7.43,
+        0.118,
+        -7.635
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal__12010_joint_i22",
+      "objectId": "cart__2212001",
+      "body": "pedal__2212010",
+      "type": "hinge",
+      "pivot": [
+        7.949999999999999,
+        0.118,
+        -7.215
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal__12013_joint_i22",
+      "objectId": "cart__2212001",
+      "body": "pedal__2212013",
+      "type": "hinge",
+      "pivot": [
+        7.949999999999999,
+        0.118,
+        -7.635
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "stapler__13002_joint_i45",
+      "objectId": "stapler__4513001",
+      "body": "stapler__4513002",
+      "type": "hinge",
+      "pivot": [
+        9.546999999999999,
+        0.7858,
+        -7.88
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.55,
+      "closed": 0,
+      "open": -0.55,
+      "range": [
+        -0.55,
+        0.1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "stapler__13003_joint_i45",
+      "objectId": "stapler__4513001",
+      "body": "stapler__4513003",
+      "type": "slide",
+      "pivot": [
+        9.559,
+        0.7888000000000001,
+        -7.88
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.07,
+      "closed": 0,
+      "open": 0.07,
+      "range": [
+        0,
+        0.07
+      ],
+      "parentJointId": "stapler__13002_joint_i45"
+    },
+    {
+      "id": "button__13004_joint_i45",
+      "objectId": "stapler__4513001",
+      "body": "button__4513004",
+      "type": "slide",
+      "pivot": [
+        9.549999999999999,
+        0.8038000000000001,
+        -7.906
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": "stapler__13002_joint_i45"
+    },
+    {
+      "id": "hole_punch__14002_joint_i46",
+      "objectId": "hole_punch__4614001",
+      "body": "hole_punch__4614002",
+      "type": "hinge",
+      "pivot": [
+        10.04,
+        0.7918000000000001,
+        -7.922
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.11,
+      "closed": 0,
+      "open": 0.11,
+      "range": [
+        0,
+        0.11
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "hole_punch__14003_joint_i46",
+      "objectId": "hole_punch__4614001",
+      "body": "hole_punch__4614003",
+      "type": "slide",
+      "pivot": [
+        10.04,
+        0.7848,
+        -7.88
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.009,
+      "closed": 0,
+      "open": 0.009,
+      "range": [
+        0,
+        0.009
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ruler__14004_joint_i46",
+      "objectId": "hole_punch__4614001",
+      "body": "ruler__4614004",
+      "type": "slide",
+      "pivot": [
+        10.04,
+        0.7718,
+        -7.8469999999999995
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.035,
+      "closed": 0,
+      "open": 0.035,
+      "range": [
+        -0.03,
+        0.035
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "binding_machine__15002_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "body": "binding_machine__4715002",
+      "type": "hinge",
+      "pivot": [
+        10.55,
+        0.8838,
+        -8.024000000000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.55,
+      "closed": 0,
+      "open": 0.55,
+      "range": [
+        0,
+        0.55
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "binding_machine__15003_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "body": "binding_machine__4715003",
+      "type": "slide",
+      "pivot": [
+        10.55,
+        0.8948,
+        -8.012
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.032,
+      "closed": 0,
+      "open": 0.032,
+      "range": [
+        0,
+        0.032
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "binder__15004_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "body": "binder__4715004",
+      "type": "hinge",
+      "pivot": [
+        10.55,
+        0.9048,
+        -8.054
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1,
+      "closed": 0,
+      "open": 1,
+      "range": [
+        0,
+        1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "binding_machine__15005_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "body": "binding_machine__4715005",
+      "type": "hinge",
+      "pivot": [
+        10.768,
+        0.8298,
+        -8.01
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.8,
+      "closed": 0,
+      "open": 0.8,
+      "range": [
+        0,
+        0.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ruler__15006_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "body": "ruler__4715006",
+      "type": "slide",
+      "pivot": [
+        10.450000000000001,
+        0.8568,
+        -7.844
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.045,
+      "closed": 0,
+      "open": -0.045,
+      "range": [
+        -0.045,
+        0.04
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "folder__27009_joint_i58",
+      "objectId": "folder__5827008",
+      "body": "folder__5827009",
+      "type": "hinge",
+      "pivot": [
+        4.452500000000001,
+        0.9753000000000001,
+        -9.49
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "folder__27011_joint_i59",
+      "objectId": "folder__5927010",
+      "body": "folder__5927011",
+      "type": "hinge",
+      "pivot": [
+        12.575,
+        0.6948,
+        -9.3625
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    }
+  ],
+  "previewPolicy": {
+    "method": "Preserve source geometry; exclude exterior backdrops from initial framing. Oversized architecture crossing a source-derived room footprint is partitioned into room/backdrop triangles with interpolated UVs and normals.",
+    "backdropGeoms": [],
+    "partitionedGeoms": [],
+    "planes": [],
+    "roomFootprintXY": null
+  },
+  "fullGeometryBounds": {
+    "min": [
+      -0.15000000298023233,
+      -0.2,
+      -10.317500000074507
+    ],
+    "max": [
+      13.150000002980232,
+      3.0999999999999996,
+      1.401699134946182
+    ]
+  },
+  "nonrigidPreview": {
+    "added": [],
+    "unsupported": []
+  },
+  "equalityJoints": [
+    {
+      "joint1": "latch__26010_joint_i14",
+      "joint2": "lever__26009_joint_i14",
+      "polycoef": "0 0.046 0 0 0",
+      "solref": ".004 1"
+    },
+    {
+      "joint1": "hole_punch__14003_joint_i46",
+      "joint2": "hole_punch__14002_joint_i46",
+      "polycoef": "0 0.08 0 0 0",
+      "solref": ".008 1"
+    },
+    {
+      "joint1": "binding_machine__15003_joint_i47",
+      "joint2": "binding_machine__15005_joint_i47",
+      "polycoef": "0 0.04 0 0 0",
+      "solref": ".008 1"
+    },
+    {
+      "joint1": "binder__15004_joint_i47",
+      "joint2": "binding_machine__15005_joint_i47",
+      "polycoef": "0 1.2 0 0 0",
+      "solref": ".008 1"
+    }
+  ],
+  "equalityConstraintCount": 14,
+  "articulations": [
+    {
+      "id": "door__21013_joint_i1",
+      "objectId": "door__121013",
+      "title": "door / 21013 joint i1",
+      "clip": "door__21013_joint_i1_motion",
+      "joints": [
+        "door__21013_joint_i1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 84.79775367936183,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__21014_joint_i1",
+      "objectId": "door__121014",
+      "title": "door / 21014 joint i1",
+      "clip": "door__21014_joint_i1_motion",
+      "joints": [
+        "door__21014_joint_i1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 84.79775367936183,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__21015_joint_i1",
+      "objectId": "door__121015",
+      "title": "door / 21015 joint i1",
+      "clip": "door__21015_joint_i1_motion",
+      "joints": [
+        "door__21015_joint_i1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 84.79775367936183,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__21016_joint_i1",
+      "objectId": "door__121016",
+      "title": "door / 21016 joint i1",
+      "clip": "door__21016_joint_i1_motion",
+      "joints": [
+        "door__21016_joint_i1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 84.79775367936183,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__21017_joint_i1",
+      "objectId": "door__121017",
+      "title": "door / 21017 joint i1",
+      "clip": "door__21017_joint_i1_motion",
+      "joints": [
+        "door__21017_joint_i1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 92.81916281119337,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__21018_joint_i1",
+      "objectId": "door__121018",
+      "title": "door / 21018 joint i1",
+      "clip": "door__21018_joint_i1_motion",
+      "joints": [
+        "door__21018_joint_i1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 92.81916281119337,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "desk__25002_joint_i3",
+      "objectId": "desk__325001",
+      "title": "desk / 25002 joint i3",
+      "clip": "desk__25002_joint_i3_motion",
+      "joints": [
+        "desk__25002_joint_i3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 45,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "button__25003_joint_i3",
+      "objectId": "desk__325001",
+      "title": "button / 25003 joint i3",
+      "clip": "button__25003_joint_i3_motion",
+      "joints": [
+        "button__25003_joint_i3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "button__25004_joint_i3",
+      "objectId": "desk__325001",
+      "title": "button / 25004 joint i3",
+      "clip": "button__25004_joint_i3_motion",
+      "joints": [
+        "button__25004_joint_i3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor_arm__25006_joint_i3",
+      "objectId": "desk__325001",
+      "title": "monitor arm / 25006 joint i3",
+      "clip": "monitor_arm__25006_joint_i3_motion",
+      "joints": [
+        "monitor_arm__25006_joint_i3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 18,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor_arm__25006_swivel_i3",
+      "objectId": "desk__325001",
+      "title": "monitor arm / 25006 swivel i3",
+      "clip": "monitor_arm__25006_swivel_i3_motion",
+      "joints": [
+        "monitor_arm__25006_swivel_i3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 48.70141258611997,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor_arm__25007_joint_i3",
+      "objectId": "desk__325001",
+      "title": "monitor arm / 25007 joint i3",
+      "clip": "monitor_arm__25007_joint_i3_motion",
+      "joints": [
+        "monitor_arm__25007_joint_i3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 45.836623610465864,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor__25008_joint_i3",
+      "objectId": "desk__325001",
+      "title": "monitor / 25008 joint i3",
+      "clip": "monitor__25008_joint_i3_motion",
+      "joints": [
+        "monitor__25008_joint_i3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 17.188733853924695,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor__24003_joint_i4",
+      "objectId": "desk__424001",
+      "title": "monitor / 24003 joint i4",
+      "clip": "monitor__24003_joint_i4_motion",
+      "joints": [
+        "monitor__24003_joint_i4"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 17.188733853924695,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor__24010_joint_i4",
+      "objectId": "desk__424001",
+      "title": "monitor / 24010 joint i4",
+      "clip": "monitor__24010_joint_i4_motion",
+      "joints": [
+        "monitor__24010_joint_i4"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 17.188733853924695,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_swivel_i5",
+      "objectId": "office_chair__516017",
+      "title": "office chair / 16017 swivel i5",
+      "clip": "office_chair__16017_swivel_i5_motion",
+      "joints": [
+        "office_chair__16017_swivel_i5"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 179.9087476710785,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_joint_i5",
+      "objectId": "office_chair__516017",
+      "title": "office chair / 16017 joint i5",
+      "clip": "office_chair__16017_joint_i5_motion",
+      "joints": [
+        "office_chair__16017_joint_i5"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16004_joint_i5",
+      "objectId": "office_chair__516017",
+      "title": "pedal / 16004 joint i5",
+      "clip": "pedal__16004_joint_i5_motion",
+      "joints": [
+        "pedal__16004_joint_i5"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16007_joint_i5",
+      "objectId": "office_chair__516017",
+      "title": "pedal / 16007 joint i5",
+      "clip": "pedal__16007_joint_i5_motion",
+      "joints": [
+        "pedal__16007_joint_i5"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16010_joint_i5",
+      "objectId": "office_chair__516017",
+      "title": "pedal / 16010 joint i5",
+      "clip": "pedal__16010_joint_i5_motion",
+      "joints": [
+        "pedal__16010_joint_i5"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16013_joint_i5",
+      "objectId": "office_chair__516017",
+      "title": "pedal / 16013 joint i5",
+      "clip": "pedal__16013_joint_i5_motion",
+      "joints": [
+        "pedal__16013_joint_i5"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16016_joint_i5",
+      "objectId": "office_chair__516017",
+      "title": "pedal / 16016 joint i5",
+      "clip": "pedal__16016_joint_i5_motion",
+      "joints": [
+        "pedal__16016_joint_i5"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor__24003_joint_i6",
+      "objectId": "desk__624001",
+      "title": "monitor / 24003 joint i6",
+      "clip": "monitor__24003_joint_i6_motion",
+      "joints": [
+        "monitor__24003_joint_i6"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 17.188733853924695,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "monitor__24010_joint_i6",
+      "objectId": "desk__624001",
+      "title": "monitor / 24010 joint i6",
+      "clip": "monitor__24010_joint_i6_motion",
+      "joints": [
+        "monitor__24010_joint_i6"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 17.188733853924695,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_swivel_i7",
+      "objectId": "office_chair__716017",
+      "title": "office chair / 16017 swivel i7",
+      "clip": "office_chair__16017_swivel_i7_motion",
+      "joints": [
+        "office_chair__16017_swivel_i7"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 179.9087476710785,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_joint_i7",
+      "objectId": "office_chair__716017",
+      "title": "office chair / 16017 joint i7",
+      "clip": "office_chair__16017_joint_i7_motion",
+      "joints": [
+        "office_chair__16017_joint_i7"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16004_joint_i7",
+      "objectId": "office_chair__716017",
+      "title": "pedal / 16004 joint i7",
+      "clip": "pedal__16004_joint_i7_motion",
+      "joints": [
+        "pedal__16004_joint_i7"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16007_joint_i7",
+      "objectId": "office_chair__716017",
+      "title": "pedal / 16007 joint i7",
+      "clip": "pedal__16007_joint_i7_motion",
+      "joints": [
+        "pedal__16007_joint_i7"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16010_joint_i7",
+      "objectId": "office_chair__716017",
+      "title": "pedal / 16010 joint i7",
+      "clip": "pedal__16010_joint_i7_motion",
+      "joints": [
+        "pedal__16010_joint_i7"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16013_joint_i7",
+      "objectId": "office_chair__716017",
+      "title": "pedal / 16013 joint i7",
+      "clip": "pedal__16013_joint_i7_motion",
+      "joints": [
+        "pedal__16013_joint_i7"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16016_joint_i7",
+      "objectId": "office_chair__716017",
+      "title": "pedal / 16016 joint i7",
+      "clip": "pedal__16016_joint_i7_motion",
+      "joints": [
+        "pedal__16016_joint_i7"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_swivel_i8",
+      "objectId": "office_chair__816017",
+      "title": "office chair / 16017 swivel i8",
+      "clip": "office_chair__16017_swivel_i8_motion",
+      "joints": [
+        "office_chair__16017_swivel_i8"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 179.9087476710785,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_joint_i8",
+      "objectId": "office_chair__816017",
+      "title": "office chair / 16017 joint i8",
+      "clip": "office_chair__16017_joint_i8_motion",
+      "joints": [
+        "office_chair__16017_joint_i8"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16004_joint_i8",
+      "objectId": "office_chair__816017",
+      "title": "pedal / 16004 joint i8",
+      "clip": "pedal__16004_joint_i8_motion",
+      "joints": [
+        "pedal__16004_joint_i8"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16007_joint_i8",
+      "objectId": "office_chair__816017",
+      "title": "pedal / 16007 joint i8",
+      "clip": "pedal__16007_joint_i8_motion",
+      "joints": [
+        "pedal__16007_joint_i8"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16010_joint_i8",
+      "objectId": "office_chair__816017",
+      "title": "pedal / 16010 joint i8",
+      "clip": "pedal__16010_joint_i8_motion",
+      "joints": [
+        "pedal__16010_joint_i8"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16013_joint_i8",
+      "objectId": "office_chair__816017",
+      "title": "pedal / 16013 joint i8",
+      "clip": "pedal__16013_joint_i8_motion",
+      "joints": [
+        "pedal__16013_joint_i8"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16016_joint_i8",
+      "objectId": "office_chair__816017",
+      "title": "pedal / 16016 joint i8",
+      "clip": "pedal__16016_joint_i8_motion",
+      "joints": [
+        "pedal__16016_joint_i8"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_swivel_i9",
+      "objectId": "office_chair__916017",
+      "title": "office chair / 16017 swivel i9",
+      "clip": "office_chair__16017_swivel_i9_motion",
+      "joints": [
+        "office_chair__16017_swivel_i9"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 179.9087476710785,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_joint_i9",
+      "objectId": "office_chair__916017",
+      "title": "office chair / 16017 joint i9",
+      "clip": "office_chair__16017_joint_i9_motion",
+      "joints": [
+        "office_chair__16017_joint_i9"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16004_joint_i9",
+      "objectId": "office_chair__916017",
+      "title": "pedal / 16004 joint i9",
+      "clip": "pedal__16004_joint_i9_motion",
+      "joints": [
+        "pedal__16004_joint_i9"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16007_joint_i9",
+      "objectId": "office_chair__916017",
+      "title": "pedal / 16007 joint i9",
+      "clip": "pedal__16007_joint_i9_motion",
+      "joints": [
+        "pedal__16007_joint_i9"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16010_joint_i9",
+      "objectId": "office_chair__916017",
+      "title": "pedal / 16010 joint i9",
+      "clip": "pedal__16010_joint_i9_motion",
+      "joints": [
+        "pedal__16010_joint_i9"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16013_joint_i9",
+      "objectId": "office_chair__916017",
+      "title": "pedal / 16013 joint i9",
+      "clip": "pedal__16013_joint_i9_motion",
+      "joints": [
+        "pedal__16013_joint_i9"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16016_joint_i9",
+      "objectId": "office_chair__916017",
+      "title": "pedal / 16016 joint i9",
+      "clip": "pedal__16016_joint_i9_motion",
+      "joints": [
+        "pedal__16016_joint_i9"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_swivel_i10",
+      "objectId": "office_chair__1016017",
+      "title": "office chair / 16017 swivel i10",
+      "clip": "office_chair__16017_swivel_i10_motion",
+      "joints": [
+        "office_chair__16017_swivel_i10"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 179.9087476710785,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "office_chair__16017_joint_i10",
+      "objectId": "office_chair__1016017",
+      "title": "office chair / 16017 joint i10",
+      "clip": "office_chair__16017_joint_i10_motion",
+      "joints": [
+        "office_chair__16017_joint_i10"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16004_joint_i10",
+      "objectId": "office_chair__1016017",
+      "title": "pedal / 16004 joint i10",
+      "clip": "pedal__16004_joint_i10_motion",
+      "joints": [
+        "pedal__16004_joint_i10"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16007_joint_i10",
+      "objectId": "office_chair__1016017",
+      "title": "pedal / 16007 joint i10",
+      "clip": "pedal__16007_joint_i10_motion",
+      "joints": [
+        "pedal__16007_joint_i10"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16010_joint_i10",
+      "objectId": "office_chair__1016017",
+      "title": "pedal / 16010 joint i10",
+      "clip": "pedal__16010_joint_i10_motion",
+      "joints": [
+        "pedal__16010_joint_i10"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16013_joint_i10",
+      "objectId": "office_chair__1016017",
+      "title": "pedal / 16013 joint i10",
+      "clip": "pedal__16013_joint_i10_motion",
+      "joints": [
+        "pedal__16013_joint_i10"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__16016_joint_i10",
+      "objectId": "office_chair__1016017",
+      "title": "pedal / 16016 joint i10",
+      "clip": "pedal__16016_joint_i10_motion",
+      "joints": [
+        "pedal__16016_joint_i10"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 22.918311805232932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11008_joint_i12",
+      "objectId": "drawer__1211008",
+      "title": "drawer / 11008 joint i12",
+      "clip": "drawer__11008_joint_i12_motion",
+      "joints": [
+        "drawer__11008_joint_i12"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 37,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11009_joint_i12",
+      "objectId": "drawer__1211009",
+      "title": "drawer / 11009 joint i12",
+      "clip": "drawer__11009_joint_i12_motion",
+      "joints": [
+        "drawer__11009_joint_i12"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 37,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11012_joint_i12",
+      "objectId": "drawer__1211012",
+      "title": "drawer / 11012 joint i12",
+      "clip": "drawer__11012_joint_i12_motion",
+      "joints": [
+        "drawer__11012_joint_i12"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 37,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__7002_joint_i13",
+      "objectId": "cabinet__1307001",
+      "title": "door / 7002 joint i13",
+      "clip": "door__7002_joint_i13_motion",
+      "joints": [
+        "door__7002_joint_i13"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 103.13240312354819,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__7003_joint_i13",
+      "objectId": "cabinet__1307001",
+      "title": "door / 7003 joint i13",
+      "clip": "door__7003_joint_i13_motion",
+      "joints": [
+        "door__7003_joint_i13"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 103.13240312354819,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__26002_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "drawer / 26002 joint i14",
+      "clip": "drawer__26002_joint_i14_motion",
+      "joints": [
+        "drawer__26002_joint_i14"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 45,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ruler__26003_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "ruler / 26003 joint i14",
+      "clip": "ruler__26003_joint_i14_motion",
+      "joints": [
+        "ruler__26003_joint_i14"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 15,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__26004_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "drawer / 26004 joint i14",
+      "clip": "drawer__26004_joint_i14_motion",
+      "joints": [
+        "drawer__26004_joint_i14"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 45,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ruler__26005_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "ruler / 26005 joint i14",
+      "clip": "ruler__26005_joint_i14_motion",
+      "joints": [
+        "ruler__26005_joint_i14"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 15,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__26006_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "drawer / 26006 joint i14",
+      "clip": "drawer__26006_joint_i14_motion",
+      "joints": [
+        "drawer__26006_joint_i14"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 45,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ruler__26007_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "ruler / 26007 joint i14",
+      "clip": "ruler__26007_joint_i14_motion",
+      "joints": [
+        "ruler__26007_joint_i14"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 15,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__26008_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "door / 26008 joint i14",
+      "clip": "door__26008_joint_i14_motion",
+      "joints": [
+        "door__26008_joint_i14"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 63.02535746439056,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "roller__26011_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "roller / 26011 joint i14",
+      "clip": "roller__26011_joint_i14_motion",
+      "joints": [
+        "roller__26011_joint_i14"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 1718.8733853924696,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "roller__26012_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "roller / 26012 joint i14",
+      "clip": "roller__26012_joint_i14_motion",
+      "joints": [
+        "roller__26012_joint_i14"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 1718.8733853924696,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "roller__26013_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "roller / 26013 joint i14",
+      "clip": "roller__26013_joint_i14_motion",
+      "joints": [
+        "roller__26013_joint_i14"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 1718.8733853924696,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "roller__26014_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "roller / 26014 joint i14",
+      "clip": "roller__26014_joint_i14_motion",
+      "joints": [
+        "roller__26014_joint_i14"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 1718.8733853924696,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lid__26016_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "lid / 26016 joint i14",
+      "clip": "lid__26016_joint_i14_motion",
+      "joints": [
+        "lid__26016_joint_i14"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 67.60901982543714,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ruler__26017_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "ruler / 26017 joint i14",
+      "clip": "ruler__26017_joint_i14_motion",
+      "joints": [
+        "ruler__26017_joint_i14"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 19,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11002_joint_i18",
+      "objectId": "drawer__1811002",
+      "title": "drawer / 11002 joint i18",
+      "clip": "drawer__11002_joint_i18_motion",
+      "joints": [
+        "drawer__11002_joint_i18"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11003_joint_i18",
+      "objectId": "drawer__1811003",
+      "title": "drawer / 11003 joint i18",
+      "clip": "drawer__11003_joint_i18_motion",
+      "joints": [
+        "drawer__11003_joint_i18"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11006_joint_i18",
+      "objectId": "drawer__1811006",
+      "title": "drawer / 11006 joint i18",
+      "clip": "drawer__11006_joint_i18_motion",
+      "joints": [
+        "drawer__11006_joint_i18"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11002_joint_i19",
+      "objectId": "drawer__1911002",
+      "title": "drawer / 11002 joint i19",
+      "clip": "drawer__11002_joint_i19_motion",
+      "joints": [
+        "drawer__11002_joint_i19"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11003_joint_i19",
+      "objectId": "drawer__1911003",
+      "title": "drawer / 11003 joint i19",
+      "clip": "drawer__11003_joint_i19_motion",
+      "joints": [
+        "drawer__11003_joint_i19"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11006_joint_i19",
+      "objectId": "drawer__1911006",
+      "title": "drawer / 11006 joint i19",
+      "clip": "drawer__11006_joint_i19_motion",
+      "joints": [
+        "drawer__11006_joint_i19"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11002_joint_i20",
+      "objectId": "drawer__2011002",
+      "title": "drawer / 11002 joint i20",
+      "clip": "drawer__11002_joint_i20_motion",
+      "joints": [
+        "drawer__11002_joint_i20"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11003_joint_i20",
+      "objectId": "drawer__2011003",
+      "title": "drawer / 11003 joint i20",
+      "clip": "drawer__11003_joint_i20_motion",
+      "joints": [
+        "drawer__11003_joint_i20"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer__11006_joint_i20",
+      "objectId": "drawer__2011006",
+      "title": "drawer / 11006 joint i20",
+      "clip": "drawer__11006_joint_i20_motion",
+      "joints": [
+        "drawer__11006_joint_i20"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__12004_joint_i22",
+      "objectId": "cart__2212001",
+      "title": "pedal / 12004 joint i22",
+      "clip": "pedal__12004_joint_i22_motion",
+      "joints": [
+        "pedal__12004_joint_i22"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__12007_joint_i22",
+      "objectId": "cart__2212001",
+      "title": "pedal / 12007 joint i22",
+      "clip": "pedal__12007_joint_i22_motion",
+      "joints": [
+        "pedal__12007_joint_i22"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__12010_joint_i22",
+      "objectId": "cart__2212001",
+      "title": "pedal / 12010 joint i22",
+      "clip": "pedal__12010_joint_i22_motion",
+      "joints": [
+        "pedal__12010_joint_i22"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal__12013_joint_i22",
+      "objectId": "cart__2212001",
+      "title": "pedal / 12013 joint i22",
+      "clip": "pedal__12013_joint_i22_motion",
+      "joints": [
+        "pedal__12013_joint_i22"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "stapler__13002_joint_i45",
+      "objectId": "stapler__4513001",
+      "title": "stapler / 13002 joint i45",
+      "clip": "stapler__13002_joint_i45_motion",
+      "joints": [
+        "stapler__13002_joint_i45"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 31.51267873219528,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "stapler__13003_joint_i45",
+      "objectId": "stapler__4513001",
+      "title": "stapler / 13003 joint i45",
+      "clip": "stapler__13003_joint_i45_motion",
+      "joints": [
+        "stapler__13003_joint_i45"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 7.000000000000001,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "button__13004_joint_i45",
+      "objectId": "stapler__4513001",
+      "title": "button / 13004 joint i45",
+      "clip": "button__13004_joint_i45_motion",
+      "joints": [
+        "button__13004_joint_i45"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ruler__14004_joint_i46",
+      "objectId": "hole_punch__4614001",
+      "title": "ruler / 14004 joint i46",
+      "clip": "ruler__14004_joint_i46_motion",
+      "joints": [
+        "ruler__14004_joint_i46"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 3.5000000000000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "binding_machine__15002_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "title": "binding machine / 15002 joint i47",
+      "clip": "binding_machine__15002_joint_i47_motion",
+      "joints": [
+        "binding_machine__15002_joint_i47"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 31.51267873219528,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ruler__15006_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "title": "ruler / 15006 joint i47",
+      "clip": "ruler__15006_joint_i47_motion",
+      "joints": [
+        "ruler__15006_joint_i47"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 4.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "folder__27009_joint_i58",
+      "objectId": "folder__5827008",
+      "title": "folder / 27009 joint i58",
+      "clip": "folder__27009_joint_i58_motion",
+      "joints": [
+        "folder__27009_joint_i58"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "folder__27011_joint_i59",
+      "objectId": "folder__5927010",
+      "title": "folder / 27011 joint i59",
+      "clip": "folder__27011_joint_i59_motion",
+      "joints": [
+        "folder__27011_joint_i59"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "binding_machine__15005_joint_i47",
+      "objectId": "binding_machine__4715001",
+      "title": "binding machine / 15005 joint i47 (linked parts)",
+      "clip": "binding_machine__15005_joint_i47_motion",
+      "joints": [
+        "binding_machine__15005_joint_i47",
+        "binding_machine__15003_joint_i47",
+        "binder__15004_joint_i47"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 45.836623610465864,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "binding_machine__15005_joint_i47": 0.8,
+        "binding_machine__15003_joint_i47": 0.032,
+        "binder__15004_joint_i47": 0.96
+      },
+      "linked": true,
+      "couplingGains": {
+        "binding_machine__15005_joint_i47": 1,
+        "binding_machine__15003_joint_i47": 0.04,
+        "binder__15004_joint_i47": 1.2
+      }
+    },
+    {
+      "id": "hole_punch__14002_joint_i46",
+      "objectId": "hole_punch__4614001",
+      "title": "hole punch / 14002 joint i46 (linked parts)",
+      "clip": "hole_punch__14002_joint_i46_motion",
+      "joints": [
+        "hole_punch__14002_joint_i46",
+        "hole_punch__14003_joint_i46"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 6.302535746439055,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "hole_punch__14002_joint_i46": 0.11,
+        "hole_punch__14003_joint_i46": 0.0088
+      },
+      "linked": true,
+      "couplingGains": {
+        "hole_punch__14002_joint_i46": 1,
+        "hole_punch__14003_joint_i46": 0.08
+      }
+    },
+    {
+      "id": "lever__26009_joint_i14",
+      "objectId": "printer__1426001",
+      "title": "lever / 26009 joint i14 (linked parts)",
+      "clip": "lever__26009_joint_i14_motion",
+      "joints": [
+        "lever__26009_joint_i14",
+        "latch__26010_joint_i14"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "lever__26009_joint_i14": 0.65,
+        "latch__26010_joint_i14": 0.0299
+      },
+      "linked": true,
+      "couplingGains": {
+        "lever__26009_joint_i14": 1,
+        "latch__26010_joint_i14": 0.046
+      }
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "cable__25009_bend_i3",
+      "body": "cable__325009",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25010_bend_i3",
+      "body": "cable__325010",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25011_bend_i3",
+      "body": "cable__325011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25012_bend_i3",
+      "body": "cable__325012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25013_bend_i3",
+      "body": "cable__325013",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25014_bend_i3",
+      "body": "cable__325014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25015_bend_i3",
+      "body": "cable__325015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25016_bend_i3",
+      "body": "cable__325016",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25017_bend_i3",
+      "body": "cable__325017",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25018_bend_i3",
+      "body": "cable__325018",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25019_bend_i3",
+      "body": "cable__325019",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25020_bend_i3",
+      "body": "cable__325020",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25021_bend_i3",
+      "body": "cable__325021",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25022_bend_i3",
+      "body": "cable__325022",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25023_bend_i3",
+      "body": "cable__325023",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25024_bend_i3",
+      "body": "cable__325024",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25025_bend_i3",
+      "body": "cable__325025",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25026_bend_i3",
+      "body": "cable__325026",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25027_bend_i3",
+      "body": "cable__325027",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25028_bend_i3",
+      "body": "cable__325028",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25029_bend_i3",
+      "body": "cable__325029",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25030_bend_i3",
+      "body": "cable__325030",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25031_bend_i3",
+      "body": "cable__325031",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25032_bend_i3",
+      "body": "cable__325032",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25033_bend_i3",
+      "body": "cable__325033",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25034_bend_i3",
+      "body": "cable__325034",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25035_bend_i3",
+      "body": "cable__325035",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25036_bend_i3",
+      "body": "cable__325036",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25037_bend_i3",
+      "body": "cable__325037",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25038_bend_i3",
+      "body": "cable__325038",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25039_bend_i3",
+      "body": "cable__325039",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25040_bend_i3",
+      "body": "cable__325040",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25041_bend_i3",
+      "body": "cable__325041",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25042_bend_i3",
+      "body": "cable__325042",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25043_bend_i3",
+      "body": "cable__325043",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25044_bend_i3",
+      "body": "cable__325044",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25045_bend_i3",
+      "body": "cable__325045",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25046_bend_i3",
+      "body": "cable__325046",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25047_bend_i3",
+      "body": "cable__325047",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25048_bend_i3",
+      "body": "cable__325048",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25049_bend_i3",
+      "body": "cable__325049",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25050_bend_i3",
+      "body": "cable__325050",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25051_bend_i3",
+      "body": "cable__325051",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25052_bend_i3",
+      "body": "cable__325052",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25053_bend_i3",
+      "body": "cable__325053",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25055_bend_i3",
+      "body": "cable__325055",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25056_bend_i3",
+      "body": "cable__325056",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25057_bend_i3",
+      "body": "cable__325057",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25058_bend_i3",
+      "body": "cable__325058",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25059_bend_i3",
+      "body": "cable__325059",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25060_bend_i3",
+      "body": "cable__325060",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25061_bend_i3",
+      "body": "cable__325061",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25062_bend_i3",
+      "body": "cable__325062",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25063_bend_i3",
+      "body": "cable__325063",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25064_bend_i3",
+      "body": "cable__325064",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25065_bend_i3",
+      "body": "cable__325065",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25066_bend_i3",
+      "body": "cable__325066",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25067_bend_i3",
+      "body": "cable__325067",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25068_bend_i3",
+      "body": "cable__325068",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25069_bend_i3",
+      "body": "cable__325069",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25070_bend_i3",
+      "body": "cable__325070",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25071_bend_i3",
+      "body": "cable__325071",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25072_bend_i3",
+      "body": "cable__325072",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25073_bend_i3",
+      "body": "cable__325073",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25074_bend_i3",
+      "body": "cable__325074",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25075_bend_i3",
+      "body": "cable__325075",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25076_bend_i3",
+      "body": "cable__325076",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25077_bend_i3",
+      "body": "cable__325077",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25078_bend_i3",
+      "body": "cable__325078",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25079_bend_i3",
+      "body": "cable__325079",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25080_bend_i3",
+      "body": "cable__325080",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25081_bend_i3",
+      "body": "cable__325081",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25082_bend_i3",
+      "body": "cable__325082",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25083_bend_i3",
+      "body": "cable__325083",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25084_bend_i3",
+      "body": "cable__325084",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25085_bend_i3",
+      "body": "cable__325085",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25086_bend_i3",
+      "body": "cable__325086",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25087_bend_i3",
+      "body": "cable__325087",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25088_bend_i3",
+      "body": "cable__325088",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25089_bend_i3",
+      "body": "cable__325089",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25090_bend_i3",
+      "body": "cable__325090",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25091_bend_i3",
+      "body": "cable__325091",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25092_bend_i3",
+      "body": "cable__325092",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25093_bend_i3",
+      "body": "cable__325093",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__25094_bend_i3",
+      "body": "cable__325094",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24004_bend_i4",
+      "body": "cable__424004",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24005_bend_i4",
+      "body": "cable__424005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24006_bend_i4",
+      "body": "cable__424006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24007_bend_i4",
+      "body": "cable__424007",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24008_bend_i4",
+      "body": "cable__424008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24011_bend_i4",
+      "body": "cable__424011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24012_bend_i4",
+      "body": "cable__424012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24013_bend_i4",
+      "body": "cable__424013",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24014_bend_i4",
+      "body": "cable__424014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24015_bend_i4",
+      "body": "cable__424015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24020_bend_i4",
+      "body": "cable__424020",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24021_bend_i4",
+      "body": "cable__424021",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24022_bend_i4",
+      "body": "cable__424022",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24023_bend_i4",
+      "body": "cable__424023",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24024_bend_i4",
+      "body": "cable__424024",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16002_joint_i5",
+      "body": "caster__516002",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16003_joint_i5",
+      "body": "wheel__516003",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16005_joint_i5",
+      "body": "caster__516005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16006_joint_i5",
+      "body": "wheel__516006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16008_joint_i5",
+      "body": "caster__516008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16009_joint_i5",
+      "body": "wheel__516009",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16011_joint_i5",
+      "body": "caster__516011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16012_joint_i5",
+      "body": "wheel__516012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16014_joint_i5",
+      "body": "caster__516014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16015_joint_i5",
+      "body": "wheel__516015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24004_bend_i6",
+      "body": "cable__624004",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24005_bend_i6",
+      "body": "cable__624005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24006_bend_i6",
+      "body": "cable__624006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24007_bend_i6",
+      "body": "cable__624007",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24008_bend_i6",
+      "body": "cable__624008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24011_bend_i6",
+      "body": "cable__624011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24012_bend_i6",
+      "body": "cable__624012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24013_bend_i6",
+      "body": "cable__624013",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24014_bend_i6",
+      "body": "cable__624014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24015_bend_i6",
+      "body": "cable__624015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24020_bend_i6",
+      "body": "cable__624020",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24021_bend_i6",
+      "body": "cable__624021",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24022_bend_i6",
+      "body": "cable__624022",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24023_bend_i6",
+      "body": "cable__624023",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cable__24024_bend_i6",
+      "body": "cable__624024",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16002_joint_i7",
+      "body": "caster__716002",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16003_joint_i7",
+      "body": "wheel__716003",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16005_joint_i7",
+      "body": "caster__716005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16006_joint_i7",
+      "body": "wheel__716006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16008_joint_i7",
+      "body": "caster__716008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16009_joint_i7",
+      "body": "wheel__716009",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16011_joint_i7",
+      "body": "caster__716011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16012_joint_i7",
+      "body": "wheel__716012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16014_joint_i7",
+      "body": "caster__716014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16015_joint_i7",
+      "body": "wheel__716015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16002_joint_i8",
+      "body": "caster__816002",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16003_joint_i8",
+      "body": "wheel__816003",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16005_joint_i8",
+      "body": "caster__816005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16006_joint_i8",
+      "body": "wheel__816006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16008_joint_i8",
+      "body": "caster__816008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16009_joint_i8",
+      "body": "wheel__816009",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16011_joint_i8",
+      "body": "caster__816011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16012_joint_i8",
+      "body": "wheel__816012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16014_joint_i8",
+      "body": "caster__816014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16015_joint_i8",
+      "body": "wheel__816015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16002_joint_i9",
+      "body": "caster__916002",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16003_joint_i9",
+      "body": "wheel__916003",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16005_joint_i9",
+      "body": "caster__916005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16006_joint_i9",
+      "body": "wheel__916006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16008_joint_i9",
+      "body": "caster__916008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16009_joint_i9",
+      "body": "wheel__916009",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16011_joint_i9",
+      "body": "caster__916011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16012_joint_i9",
+      "body": "wheel__916012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16014_joint_i9",
+      "body": "caster__916014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16015_joint_i9",
+      "body": "wheel__916015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16002_joint_i10",
+      "body": "caster__1016002",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16003_joint_i10",
+      "body": "wheel__1016003",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16005_joint_i10",
+      "body": "caster__1016005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16006_joint_i10",
+      "body": "wheel__1016006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16008_joint_i10",
+      "body": "caster__1016008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16009_joint_i10",
+      "body": "wheel__1016009",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16011_joint_i10",
+      "body": "caster__1016011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16012_joint_i10",
+      "body": "wheel__1016012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__16014_joint_i10",
+      "body": "caster__1016014",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__16015_joint_i10",
+      "body": "wheel__1016015",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__12002_joint_i22",
+      "body": "caster__2212002",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__12003_joint_i22",
+      "body": "wheel__2212003",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__12005_joint_i22",
+      "body": "caster__2212005",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__12006_joint_i22",
+      "body": "wheel__2212006",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__12008_joint_i22",
+      "body": "caster__2212008",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__12009_joint_i22",
+      "body": "wheel__2212009",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "caster__12011_joint_i22",
+      "body": "caster__2212011",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheel__12012_joint_i22",
+      "body": "wheel__2212012",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 16,
+  "jointCouplings": {
+    "linearEqualities": 4,
+    "linkedClips": 3,
+    "unsupported": [],
+    "method": "Source zero-offset linear equalities, evaluated relative to each joint qpos0; common range intersection."
+  },
+  "modelBytes": 2219276,
+  "sourcePicturesArchiveSha256": "f2d76ee5fa82736e49dfd8afc640e90b74c70861a0bba7372cd50b445d7ec2f8",
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "a85f4b47610c4f9b96181ed8610c98d3e9a1d03796f02909d16b1e173391794a",
+  "modelParts": [
+    "assets/rooms/school-front-office-001/room.gzip-01.bin"
+  ],
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 4419736,
+  "decodedModelSha256": "623f0f7f0b276af2c1c85bc2b11f331ef1854219d57799e3ab6c4920e52fef34",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "taskCards": "assets/rooms/school-front-office-001/tasks/manifest.json"
+}

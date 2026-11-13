@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3DSceneBench: Can Coding Agents Build Functional and Versatile 3D Worlds?</title>
+<meta name="description" content="3DSceneBench is a benchmark for building functional and versatile worlds from posed observations: 49 whole-room scenes in seven categories, 471 tasks and 36,871 per-object tests.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=20261113035012">
+<script type="importmap">{"imports":{"three":"./scenes/vendor/three.module.js"}}</script>
+</head>
+<body data-page="landing">
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="logo/mark.svg" alt=""><span class="word"><b>3D</b><span>Scene</span><b>Bench</b></span></a>
+  <nav class="nav" aria-label="Site">
+    <a href="#scenes">Scenes</a>
+    <a href="#how">How it works</a>
+    <a href="#caught">Results</a>
+    <a href="#leaderboard" class="navcta">Leaderboard</a>
+    <button class="theme" type="button" aria-label="Switch between light and dark">◐</button>
+  </nav>
+</div></header>
+
+<section class="hero">
+  <video class="bg on" muted loop playsinline autoplay preload="auto" poster="media/hero-poster.jpg"><source src="media/hero.mp4" type="video/mp4"></video>
+  <video class="bg" muted loop playsinline preload="none"></video>
+  <div class="veil"></div>
+  <div class="reel" hidden><span class="reelname"></span><span class="reeldots" role="group" aria-label="Choose a scene film"></span></div>
+  <div class="wrap">
+    <h1 class="rise"><b>3D</b><span>Scene</span><b>Bench</b></h1>
+    <div class="authors rise">
+      <p class="names"><span>Yani Zhang<sup>1*</sup></span> <span>Xinyu Wang<sup>1*</sup></span> <span>Hanwei Wu<sup>1*</sup></span> <span>Jindu Wang<sup>1</sup></span> <span>Wenkai Li<sup>1</sup></span> <span>Siyuan Luo<sup>1</sup></span> <span>Zonglin Di<sup>2</sup></span> <span>Yiyou Sun<sup>2</sup></span> <span>Yi Zhu<sup>1†</sup></span></p>
+      <p class="affil"><span><sup>1</sup>Prana Labs</span><span><sup>2</sup>University of California, Berkeley</span></p>
+      <p class="notes"><span><sup>*</sup>Equal Contribution</span><span><sup>†</sup>Corresponding Author</span></p>
+    </div>
+    <div class="links rise">
+      <a class="pill" href="#" aria-disabled="true" data-todo="paper">Paper <small>soon</small></a>
+      <a class="pill" href="#leaderboard">Leaderboard</a>
+      <a class="pill" href="https://hub.harborframework.com/datasets/pranalabs-ai-team/3dscenebench-mini">Data</a>
+      <a class="pill" href="https://github.com/PranaLabs/3DSceneBench">Code</a>
+    </div>
+  </div>
+  <a class="cue" href="#intro" aria-label="Scroll to the scenes"><i></i></a>
+</section>
+
+<section class="intro" id="intro"><div class="wrap">
+  <p class="ask reveal">Can coding agents build <em>functional</em> and <em>versatile</em> 3D worlds?</p>
+  <p class="about reveal">Can coding agents build one simulated world that supports a scene's many uses? 3DSceneBench covers 49 whole-room scenes in seven categories, with up to 3,002 objects per scene, 471 tasks and 36,871 per-object tests. Each world is scored for appearance, geometry and functionality.</p>
+  <div class="demo reveal">
+    <video playsinline preload="none" poster="media/cover-of-3DSceneBench-demo.jpg"><source src="media/3DSceneBench-demo.mp4" type="video/mp4"></video>
+    <button type="button" class="democover" aria-label="Watch the film"><span><i>▶</i>Watch the film</span></button>
+  </div>
+  <p class="skip reveal"><a href="#leaderboard">or go straight to the leaderboard</a></p>
+</div></section>
+
+<section class="block" id="scenes"><div class="wrap">
+  <h2 class="reveal edge">Scenes</h2>
+
+  <div id="gallery" class="reveal">
+    <div class="roomchips" role="group" aria-label="Choose a scene"></div>
+    <div class="sceneinfo"></div>
+    <div class="scene">
+      <div class="stage">
+        <canvas aria-label="Interactive 3D view of the scene"></canvas>
+        <video class="coverfilm" muted loop playsinline preload="none" aria-hidden="true"></video>
+        <button class="cover" type="button"><span class="enter"><i>▶</i><b></b><em>Preview film. Choose <u>Explore in 3D</u> or <u>Watch the tasks</u> above to start.</em><small></small></span></button>
+        <div class="status" hidden></div>
+        <div class="picked" hidden></div>
+        <div class="replaybar" hidden><div class="rrow"><button type="button" class="rplay">Pause</button><input class="rseek" type="range" min="0" max="1000" value="0" aria-label="Position in the recording"><span class="rtime"></span><span class="rdots" role="group" aria-label="Choose a task"></span><button type="button" class="rclose" aria-label="Close the recording">×</button></div><p><b class="rtitle"></b> <span class="rcap"></span></p></div>
+        <div class="tools">
+          <button type="button" data-view="angled" title="Dollhouse view">Dollhouse</button>
+          <button type="button" data-view="top" title="Top view">Top</button>
+          <button type="button" data-view="inside" title="Stand inside the scene">Inside</button>
+          <button type="button" data-act="walls" aria-pressed="false" title="Show or hide the walls">Walls</button>
+          <button type="button" data-act="spin" aria-pressed="true" title="Turn the scene slowly">Spin</button>
+          <button type="button" data-act="openall" title="Open every door and drawer, then close them">Open all</button>
+        </div>
+        <div class="modes" role="group" aria-label="What to do in this scene"><button type="button" data-mode="explore" aria-pressed="false">Explore in 3D</button><button type="button" data-mode="tasks" aria-pressed="false">Watch the tasks</button></div>
+        <div class="zoomers tools2"><button type="button" data-zoom="1.3" aria-label="Zoom out" title="Zoom out">−</button><button type="button" data-zoom="0.77" aria-label="Zoom in" title="Zoom in">+</button></div>
+      </div>
+    </div>
+    <p class="missing-note">The 3D scenes are not in this copy of the site. Run <code>fetch_scenes.sh</code> to add them.</p>
+  </div>
+</div></section>
+
+<section class="wall" aria-label="All 49 scenes">
+  <div class="row a"><div class="track" id="wall-a"></div></div>
+  <div class="row b"><div class="track" id="wall-b"></div></div>
+</section>
+
+<section class="block" id="how"><div class="wrap">
+  <h2 class="reveal">How it works</h2>
+  <div class="steps">
+    <article class="step reveal">
+      <div class="art fan" id="fan"></div>
+      <p class="num">1</p><h3>See</h3>
+      <p>The agent gets eight pictures of a scene with their camera poses, up to 16 close-ups, and the scene's tasks in plain words. Weights and friction are never given.</p>
+    </article>
+    <article class="step reveal">
+      <div class="art code"><pre id="typed" aria-label="Example of the scene file an agent writes"></pre></div>
+      <p class="num">2</p><h3>Build</h3>
+      <p>In a closed container, with up to 180 minutes or 10M output tokens, it writes one MuJoCo scene. Every object is a named body; every door and drawer is a real joint.</p>
+    </article>
+    <article class="step reveal">
+      <div class="art dials">
+        <div class="dial" style="--c:var(--app)"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32"/><circle class="v" cx="40" cy="40" r="32" data-dial="A"/></svg><b data-count="A">0</b><span>Appearance</span></div>
+        <div class="dial" style="--c:var(--geo)"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32"/><circle class="v" cx="40" cy="40" r="32" data-dial="G"/></svg><b data-count="G">0</b><span>Geometry</span></div>
+        <div class="dial" style="--c:var(--fun)"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="32"/><circle class="v" cx="40" cy="40" r="32" data-dial="F"/></svg><b data-count="F">0</b><span>Functionality</span></div>
+      </div>
+      <p class="num">3</p><h3>Score</h3>
+      <p>Verifiers load the world, render it, measure it, push its objects, open its doors and let a robot work in it, then do the same in the reference room. The dials show the best score any agent reaches.</p>
+    </article>
+  </div>
+</div></section>
+
+<section class="block alt" id="works"><div class="wrap">
+  <h2 class="reveal">Built to be <em>used</em>, not just seen.</h2>
+  <p class="lede reveal subline">A picture can't tell you if it <em id="duelword">carries</em>.</p>
+  <div class="duel reveal" id="duel">
+    <div class="dueltabs" role="group" aria-label="Choose a test"></div>
+    <div class="duelgrid">
+      <div>
+        <h3>Reference world</h3>
+        <figure class="dfig dtrue"><canvas aria-label="The reference world: the red toy car is pushed and rolls across the rug"></canvas><span class="spin2"></span>
+          <figcaption>Pushed once, the car rolls across the rug.</figcaption></figure>
+      </div>
+      <div>
+        <h3>Submitted world</h3>
+        <figure class="dfig dworld"><canvas aria-label="The submitted world: the same push, and the car moves 4.7 centimetres and stops"></canvas><span class="spin2"></span>
+          <figcaption class="no">Same push. The car moves 4.7 cm and stops.</figcaption></figure>
+      </div>
+    </div>
+    <p class="duelnote"><b class="duelwho"></b> Same scene, same camera, same test, both recorded in the simulator. The submitted world is drawn in plain colours, without its textures.</p>
+  </div>
+</div></section>
+
+<section class="block" id="caught"><div class="wrap">
+  <h2 class="reveal">Results</h2>
+  <div id="cases" class="reveal duel">
+    <div class="casetabs" role="group" aria-label="Choose a world"></div>
+    <div class="testchips" role="group" aria-label="Choose a test"></div>
+    <div class="duelgrid">
+      <div><h3>Reference world</h3><figure class="dfig dtrue"><canvas aria-label="The reference world doing the test"></canvas><span class="spin2"></span><figcaption></figcaption></figure></div>
+      <div><h3>Submitted world</h3><figure class="dfig dworld"><canvas aria-label="The submitted world doing the same test"></canvas><span class="spin2"></span><figcaption></figcaption></figure></div>
+    </div>
+    <p class="verdictline"></p>
+    <p class="duelnote">Same scene, same camera, same test, both recorded in the simulator. Marks are from each build's grade report. The submitted world is drawn in plain colours, without its textures.</p>
+  </div>
+</div></section>
+
+<section class="block alt" id="leaderboard"><div class="wrap">
+  <h2 class="reveal">Leaderboard</h2>
+  <div class="controls reveal">
+    <div class="seg" role="group" aria-label="Columns">
+      <button type="button" data-view="main" aria-pressed="true">Scores</button>
+      <button type="button" data-view="parts" aria-pressed="false">Score parts</button>
+    </div>
+  </div>
+  <div class="tablewrap reveal" id="board"></div>
+</div></section>
+
+<section class="block" id="enter"><div class="wrap">
+  <h2 class="reveal">Bring your <em>agent</em>.</h2>
+  <p class="lede reveal">3DSceneBench mini is out: seven of the 49 scenes, one from each category, each with its reference room inside the task, so a run ends with the full scores on your own machine. The seven are the Shared Office, Pipe Maintenance Room, Outdoor Gear Store, Rehabilitation Center, Chemistry Lab, Bakery and Home Office. The other 42 scenes are coming soon. <a class="guide" href="https://github.com/PranaLabs/3DSceneBench#getting-started">Getting started, step by step →</a></p>
+  <div class="way start reveal"><p class="kicker">First</p><h3>Get the code and the benchmark</h3>
+<pre class="cmd">git clone https://github.com/PranaLabs/3DSceneBench
+cd 3DSceneBench
+uv tool install harbor==0.23.0
+harbor auth login
+harbor download pranalabs-ai-team/3dscenebench-mini@v1.0.0</pre>
+    <p>Then build the grader once and check your setup for free, as the guide shows. The benchmark scores a world and does not mind how the world was made, so there are two ways to produce one.</p></div>
+  <div class="two">
+    <div class="way reveal"><p class="kicker">Way 1</p><h3>Your agent builds the worlds</h3>
+      <p>For testing a coding agent or a model. Harbor starts your agent inside each scene's container, the agent builds the world there, and the grader scores it. Claude Code, Codex and OpenCode are supported.</p>
+<pre class="cmd">harbor run -p 3dscenebench-mini -a claude-code \
+  -m anthropic/&lt;model&gt; \
+  --ak disallowed_tools=WebFetch,WebSearch -n 1</pre></div>
+    <div class="way reveal"><p class="kicker">Way 2</p><h3>You bring worlds your own pipeline built</h3>
+      <p>For testing a method you already have, such as a reconstruction pipeline or a scene generator. Build the worlds anywhere, with no limits, and hand in the files. Harbor only grades them.</p>
+<pre class="cmd">PYTHONPATH=$PWD harbor run -p 3dscenebench-mini \
+  -a scenebench_harbor.submit_files:SubmitFiles \
+  --ak folder=$PWD/my_copies -n 1</pre></div>
+  </div>
+  <dl class="facts reveal">
+    <div><dt>Limits per scene, way 1</dt><dd>3 hours or 10M output tokens, no internet</dd></div>
+    <div><dt>Machine</dt><dd>Linux or macOS with Docker. No GPU needed</dd></div>
+    <div><dt>Memory for Docker</dt><dd>16 GB for the small scenes, 48 GB for all seven</dd></div>
+    <div><dt>Licence</dt><dd>Apache-2.0</dd></div>
+  </dl>
+  <p class="lede reveal board">To have your run added to the <a href="#leaderboard">leaderboard</a>, write to <a href="mailto:contact@pranalab.ai">contact@pranalab.ai</a>.</p>
+</div></section>
+
+<footer><div class="wrap">
+  <span><img src="logo/mark.svg" alt="" width="18" height="18"> 3DSceneBench</span>
+</div></footer>
+
+<dialog id="film" class="film"><div class="filmhead"><h3></h3><button type="button" aria-label="Close">×</button></div><video controls playsinline preload="none"></video></dialog>
+
+<script src="data/rooms.js?v=20261113035012"></script>
+<script src="data/results.js?v=20261113035012"></script>
+<script src="data/cases.js?v=20261113035012"></script>
+<script src="assets/site.js?v=20261113035012"></script>
+<script type="module" src="assets/scene.js?v=20261113035012"></script>
+<script type="module" src="assets/copy.js?v=20261113035012"></script>
+</body>
+</html>

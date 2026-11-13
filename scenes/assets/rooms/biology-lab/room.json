@@ -1,0 +1,4280 @@
+{
+  "id": "biology-lab",
+  "title": "Biology lab",
+  "description": "A teaching biology laboratory with rows of benches, microscopes and glassware, sinks, fume hoods and a chalkboard.",
+  "dimensions": [
+    9.539999997317791,
+    7.939999997317791,
+    2.954000000840053
+  ],
+  "dimensionSource": "visible geometry bounds",
+  "bounds": {
+    "min": [
+      -4.7699999986588955,
+      -0.0040000000949949105,
+      -3.9699999986588956
+    ],
+    "max": [
+      4.7699999986588955,
+      2.950000000745058,
+      3.9699999986588956
+    ]
+  },
+  "tasks": [
+    {
+      "id": "pick_place_1",
+      "kind": "Robot",
+      "text": "On the middle island bench in the row with the cover tray, pick up the middle reagent bottle in the row of three beside the tissue box. Set it on the seat of the wood stool nearest the microscope across that same bench from the bottle.",
+      "objects": [
+        "reagent_bottle__13",
+        "wood_stool__9",
+        "island_bench__4",
+        "microscope__4"
+      ],
+      "locatorSteps": [
+        {
+          "object": "reagent_bottle__13",
+          "label": "Pick up the middle reagent bottle.",
+          "point": [
+            -0.44,
+            1.0,
+            1.32
+          ]
+        },
+        {
+          "object": "wood_stool__9",
+          "label": "Place the bottle on this stool seat.",
+          "point": [
+            0.72001,
+            0.52565,
+            0.75
+          ]
+        }
+      ]
+    },
+    {
+      "id": "push_1",
+      "kind": "Robot",
+      "text": "Find the row of three glove boxes near the microcentrifuge. Push the middle glove box from the edge toward the middle of that island bench.",
+      "objects": [
+        "glove_box__1",
+        "island_bench__1"
+      ],
+      "locatorSteps": [
+        {
+          "object": "glove_box__1",
+          "label": "Push the middle glove box inward along the bench.",
+          "point": [
+            0.13,
+            0.9,
+            -0.815
+          ]
+        }
+      ]
+    },
+    {
+      "id": "microscope_slide_preparation",
+      "kind": "Interaction",
+      "text": "Lift the glass slide from the open slide box. Set it in the stage guide of the microscope closest to that box, release the slide, then close the slide box.",
+      "objects": [
+        "microscope__0",
+        "slide_box__0",
+        "glass_slide__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "glass_slide__0",
+          "label": "Lift this glass slide from its open box.",
+          "point": [
+            -2.9775,
+            0.91,
+            -1.2
+          ]
+        },
+        {
+          "object": "microscope__0",
+          "label": "Release the slide in this microscope’s stage guide.",
+          "point": [
+            -2.7833,
+            1.0594,
+            -0.8213
+          ]
+        },
+        {
+          "object": "slide_box__0",
+          "label": "Close the empty slide box.",
+          "point": [
+            -2.95,
+            0.98545,
+            -1.25724
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incubator_to_biosafety_transfer",
+      "kind": "Interaction",
+      "text": "Open the lower of the two stacked incubators and lift out the sample dish. Set the dish upright on the work surface inside the biosafety cabinet beside the stack, on the side away from the refrigerator. Release the dish and close the lower incubator.",
+      "objects": [
+        "incubator__0",
+        "biosafety_cabinet__0",
+        "sample_dish__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "incubator__0",
+          "label": "Open the lower incubator.",
+          "point": [
+            3.83559,
+            1.26524,
+            0.52503
+          ]
+        },
+        {
+          "object": "sample_dish__0",
+          "label": "Lift the dish out.",
+          "point": [
+            4.12,
+            1.2902,
+            0.53
+          ]
+        },
+        {
+          "object": "biosafety_cabinet__0",
+          "label": "Set the dish upright inside this cabinet.",
+          "point": [
+            4.08,
+            1.002,
+            -0.52
+          ]
+        },
+        {
+          "object": "incubator__0",
+          "label": "Close the lower incubator.",
+          "point": [
+            3.83559,
+            1.26524,
+            0.52503
+          ]
+        }
+      ]
+    },
+    {
+      "id": "centrifuge_balanced_loading",
+      "kind": "Interaction",
+      "text": "Open the microcentrifuge beside the two tube stands. Take one microtube from each stand, place the two microtubes in opposite sockets in the rotor, release them, and close the lid.",
+      "objects": [
+        "microcentrifuge__0",
+        "microtube__0",
+        "microtube__1",
+        "tube_stand__0",
+        "tube_stand__1"
+      ],
+      "locatorSteps": [
+        {
+          "object": "microcentrifuge__0",
+          "label": "Open the microcentrifuge.",
+          "point": [
+            -0.52817,
+            1.00768,
+            -0.83
+          ]
+        },
+        {
+          "object": "microtube__0",
+          "label": "Take the first microtube from its stand.",
+          "point": [
+            -0.48,
+            0.9437,
+            -1.16
+          ]
+        },
+        {
+          "object": "microcentrifuge__0",
+          "label": "Seat the tube in a rotor socket.",
+          "point": [
+            -0.40897,
+            1.00784,
+            -0.79901
+          ],
+          "radius": 0.012
+        },
+        {
+          "object": "microtube__1",
+          "label": "Take the second microtube.",
+          "point": [
+            -0.435,
+            0.9437,
+            -1.16
+          ]
+        },
+        {
+          "object": "microcentrifuge__0",
+          "label": "Seat it opposite the first tube and close the lid.",
+          "point": [
+            -0.40897,
+            1.00784,
+            -0.86101
+          ],
+          "radius": 0.012
+        }
+      ]
+    },
+    {
+      "id": "cloth_remove",
+      "kind": "Interaction",
+      "text": "Lift the cloth covering the microscope beside the cover tray. Lay the cloth in the cover tray and release it.",
+      "objects": [
+        "cloth__0",
+        "microscope__1",
+        "cover_tray__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cloth__0",
+          "label": "Lift the cloth off the microscope.",
+          "point": [
+            -2.85285,
+            1.31826,
+            2.2491
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "cover_tray__0",
+          "label": "Lay the cloth in this tray and release it.",
+          "point": [
+            -1.97,
+            0.906,
+            2.34
+          ],
+          "referenceArea": true
+        }
+      ]
+    },
+    {
+      "id": "cloth_replace",
+      "kind": "Interaction",
+      "text": "Start with the cloth in the cover tray. Lift it from the tray and spread it over the optics of the microscope beside the tray. Release the cloth so it stays draped over the optics.",
+      "objects": [
+        "cloth__0",
+        "microscope__1",
+        "cover_tray__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cover_tray__0",
+          "label": "Start with the cloth in this tray.",
+          "point": [
+            -1.97,
+            0.906,
+            2.34
+          ]
+        },
+        {
+          "object": "microscope__1",
+          "label": "Spread the cloth over this microscope and release it.",
+          "point": [
+            -2.9,
+            1.31,
+            2.28
+          ],
+          "referenceArea": true
+        }
+      ]
+    },
+    {
+      "id": "sash_raise",
+      "kind": "Interaction",
+      "text": "Find the biosafety cabinet nearest the refrigerator. Slide its front sash upward and leave it raised.",
+      "objects": [
+        "biosafety_cabinet__1",
+        "refrigerator__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "biosafety_cabinet__1",
+          "label": "Raise the front sash and leave it up.",
+          "point": [
+            3.78,
+            1.365,
+            1.55
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notebook_to_drawer",
+      "kind": "Interaction",
+      "text": "Open the top drawer of the drawer cabinet. Pick up the lab notebook beside the dry bath on the nearest island bench, put it in that drawer, and close the drawer.",
+      "objects": [
+        "drawer_cabinet__0",
+        "lab_notebook__0",
+        "island_bench__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "drawer_cabinet__0",
+          "label": "Open the top drawer.",
+          "point": [
+            -2.62,
+            0.66259,
+            -3.15205
+          ]
+        },
+        {
+          "object": "lab_notebook__0",
+          "label": "Pick up this notebook.",
+          "point": [
+            -1.92162,
+            0.91764,
+            -1.74082
+          ]
+        },
+        {
+          "object": "drawer_cabinet__0",
+          "label": "Place the notebook inside and close the drawer.",
+          "point": [
+            -2.62,
+            0.64734,
+            -2.97765
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottle_to_fridge",
+      "kind": "Interaction",
+      "text": "Open the refrigerator. In the adjacent biosafety cabinet, pick up the culture bottle closest to the refrigerator. Set it on a shelf inside the refrigerator and close the door.",
+      "objects": [
+        "refrigerator__0",
+        "biosafety_cabinet__1",
+        "culture_bottle__3"
+      ],
+      "locatorSteps": [
+        {
+          "object": "refrigerator__0",
+          "label": "Open this refrigerator.",
+          "point": [
+            3.90181,
+            0.4884,
+            3.53832
+          ]
+        },
+        {
+          "object": "culture_bottle__3",
+          "label": "Pick up this bottle from the adjacent cabinet.",
+          "point": [
+            4.3,
+            1.14293,
+            1.85
+          ]
+        },
+        {
+          "object": "refrigerator__0",
+          "label": "Place it on a shelf and close the door.",
+          "point": [
+            4.2,
+            0.60084,
+            3.2
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "walls": "walls",
+    "floor": "floor",
+    "ceiling": "ceiling",
+    "window__0": "object",
+    "window__1": "object",
+    "window__2": "object",
+    "teaching_board__0": "object",
+    "projection_screen__0": "object",
+    "room_door__0": "object",
+    "room_door__1": "object",
+    "clock__0": "object",
+    "television__0": "object",
+    "island_bench__0": "object",
+    "bench_services__0": "object",
+    "island_bench__1": "object",
+    "bench_services__1": "object",
+    "island_bench__2": "object",
+    "bench_services__2": "object",
+    "island_bench__3": "object",
+    "bench_services__3": "object",
+    "island_bench__4": "object",
+    "bench_services__4": "object",
+    "island_bench__5": "object",
+    "bench_services__5": "object",
+    "microscopy_table__0": "object",
+    "microscopy_table__1": "object",
+    "drawer_cabinet__0": "object",
+    "culture_counter__0": "object",
+    "biosafety_cabinet__0": "object",
+    "biosafety_cabinet__1": "object",
+    "incubator__0": "object",
+    "incubator__1": "object",
+    "lab_chair__0": "object",
+    "lab_chair__1": "object",
+    "lab_chair__2": "object",
+    "microscope__0": "object",
+    "shaking_incubator__0": "object",
+    "test_tube_rack__0": "object",
+    "wash_bottle__0": "object",
+    "tissue_box__0": "object",
+    "storage_tray__0": "object",
+    "pipette__0": "object",
+    "pipette__1": "object",
+    "pipette__2": "object",
+    "petri_dish__0": "object",
+    "petri_dish__1": "object",
+    "pipette_tip_box__0": "object",
+    "slide_box__0": "object",
+    "reagent_bottle__0": "object",
+    "reagent_bottle__1": "object",
+    "reagent_bottle__2": "object",
+    "test_tube_rack__1": "object",
+    "wash_bottle__1": "object",
+    "tissue_box__1": "object",
+    "storage_tray__1": "object",
+    "pipette__3": "object",
+    "pipette__4": "object",
+    "pipette__5": "object",
+    "petri_dish__2": "object",
+    "petri_dish__3": "object",
+    "pipette_tip_box__1": "object",
+    "reagent_bottle__3": "object",
+    "reagent_bottle__4": "object",
+    "reagent_bottle__5": "object",
+    "test_tube_rack__2": "object",
+    "wash_bottle__2": "object",
+    "tissue_box__2": "object",
+    "storage_tray__2": "object",
+    "pipette__6": "object",
+    "pipette__7": "object",
+    "pipette__8": "object",
+    "petri_dish__4": "object",
+    "petri_dish__5": "object",
+    "pipette_tip_box__2": "object",
+    "reagent_bottle__6": "object",
+    "reagent_bottle__7": "object",
+    "reagent_bottle__8": "object",
+    "microscope__1": "object",
+    "microscope__2": "object",
+    "test_tube_rack__3": "object",
+    "wash_bottle__3": "object",
+    "tissue_box__3": "object",
+    "pipette__9": "object",
+    "pipette__10": "object",
+    "pipette__11": "object",
+    "petri_dish__6": "object",
+    "petri_dish__7": "object",
+    "pipette_tip_box__3": "object",
+    "reagent_bottle__9": "object",
+    "reagent_bottle__10": "object",
+    "reagent_bottle__11": "object",
+    "microscope__3": "object",
+    "microscope__4": "object",
+    "test_tube_rack__4": "object",
+    "wash_bottle__4": "object",
+    "tissue_box__4": "object",
+    "storage_tray__4": "object",
+    "pipette__12": "object",
+    "pipette__13": "object",
+    "pipette__14": "object",
+    "petri_dish__8": "object",
+    "petri_dish__9": "object",
+    "pipette_tip_box__4": "object",
+    "reagent_bottle__12": "object",
+    "reagent_bottle__13": "object",
+    "reagent_bottle__14": "object",
+    "microscope__5": "object",
+    "microscope__6": "object",
+    "test_tube_rack__5": "object",
+    "wash_bottle__5": "object",
+    "tissue_box__5": "object",
+    "storage_tray__5": "object",
+    "pipette__15": "object",
+    "pipette__16": "object",
+    "pipette__17": "object",
+    "petri_dish__10": "object",
+    "petri_dish__11": "object",
+    "pipette_tip_box__5": "object",
+    "reagent_bottle__15": "object",
+    "reagent_bottle__16": "object",
+    "reagent_bottle__17": "object",
+    "blue_supply_box__0": "object",
+    "microscope__7": "object",
+    "microscope__8": "object",
+    "microscope__9": "object",
+    "microscope__10": "object",
+    "keyboard__0": "object",
+    "mouse__0": "object",
+    "keyboard__1": "object",
+    "mouse__1": "object",
+    "keyboard__2": "object",
+    "mouse__2": "object",
+    "keyboard__3": "object",
+    "mouse__3": "object",
+    "microscope__11": "object",
+    "microscope__12": "object",
+    "dry_bath__0": "object",
+    "wood_stool__0": "object",
+    "wood_stool__1": "object",
+    "wood_stool__2": "object",
+    "wood_stool__3": "object",
+    "wood_stool__4": "object",
+    "wood_stool__5": "object",
+    "wood_stool__6": "object",
+    "wood_stool__7": "object",
+    "wood_stool__8": "object",
+    "wood_stool__9": "object",
+    "refrigerator__0": "object",
+    "refrigerator__1": "object",
+    "refrigerator__2": "object",
+    "cabinet__0": "object",
+    "microcentrifuge__0": "object",
+    "microcentrifuge__1": "object",
+    "trash_can__0": "object",
+    "trash_can__1": "object",
+    "lab_notebook__0": "object",
+    "lab_notebook__1": "object",
+    "lab_notebook__2": "object",
+    "lab_notebook__3": "object",
+    "lab_notebook__4": "object",
+    "lab_notebook__5": "object",
+    "supply_box__0": "object",
+    "supply_box__1": "object",
+    "supply_box__2": "object",
+    "supply_box__3": "object",
+    "supply_box__4": "object",
+    "supply_box__5": "object",
+    "supply_box__6": "object",
+    "supply_box__7": "object",
+    "supply_box__8": "object",
+    "supply_box__9": "object",
+    "supply_box__10": "object",
+    "monitor__0": "object",
+    "monitor__1": "object",
+    "monitor__2": "object",
+    "monitor__3": "object",
+    "computer_tower__0": "object",
+    "computer_tower__1": "object",
+    "culture_bottle__0": "object",
+    "culture_bottle__1": "object",
+    "culture_bottle__2": "object",
+    "culture_bottle__3": "object",
+    "culture_bottle__4": "object",
+    "culture_bottle__5": "object",
+    "glove_box__0": "object",
+    "glove_box__1": "object",
+    "glove_box__2": "object",
+    "pipette_tip_box__6": "object",
+    "petri_dish__12": "object",
+    "pipette_tip_box__7": "object",
+    "petri_dish__13": "object",
+    "glass_slide__0": "object",
+    "sample_dish__0": "object",
+    "microtube__0": "object",
+    "tube_stand__0": "object",
+    "microtube__1": "object",
+    "tube_stand__1": "object",
+    "cloth__0": "object",
+    "cover_tray__0": "object"
+  },
+  "mobility": {
+    "free": 173,
+    "fixed": 23,
+    "jointOnly": 0,
+    "objects": {
+      "window__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "window__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "window__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "teaching_board__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "projection_screen__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "room_door__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "room_door__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "clock__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "television__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "island_bench__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench_services__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "island_bench__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench_services__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "island_bench__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench_services__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "island_bench__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench_services__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "island_bench__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench_services__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "island_bench__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bench_services__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscopy_table__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscopy_table__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drawer_cabinet__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "culture_counter__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "biosafety_cabinet__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "biosafety_cabinet__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "incubator__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "incubator__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_chair__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_chair__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_chair__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shaking_incubator__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "test_tube_rack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wash_bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tissue_box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "storage_tray__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "slide_box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "test_tube_rack__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wash_bottle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tissue_box__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "storage_tray__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "test_tube_rack__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wash_bottle__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tissue_box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "storage_tray__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "test_tube_rack__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wash_bottle__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tissue_box__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "test_tube_rack__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wash_bottle__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tissue_box__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "storage_tray__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "test_tube_rack__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wash_bottle__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tissue_box__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "storage_tray__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reagent_bottle__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "blue_supply_box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mouse__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mouse__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mouse__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mouse__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microscope__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dry_bath__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wood_stool__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "refrigerator__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "refrigerator__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "refrigerator__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microcentrifuge__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microcentrifuge__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "trash_can__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "trash_can__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_notebook__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_notebook__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_notebook__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_notebook__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_notebook__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lab_notebook__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "supply_box__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "computer_tower__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "computer_tower__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "culture_bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "culture_bottle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "culture_bottle__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "culture_bottle__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "culture_bottle__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "culture_bottle__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "glove_box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "glove_box__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "glove_box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pipette_tip_box__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "petri_dish__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "glass_slide__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sample_dish__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microtube__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tube_stand__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "microtube__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tube_stand__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cloth__0": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "cover_tray__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/biology-lab/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "4497a1cb63d91bf9f62b2858625437da376274d1d1ec7fb3404b492266093a08",
+      "previewSha256": "52cb981bbaf878c7a1dc55af5d1f16ea48a168e4be90204606f98c18181deaf1",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.07236838233137
+    },
+    {
+      "src": "assets/rooms/biology-lab/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "4fd44f21acb12cc33eb32b32f0812b2aba04854857b9c87e20fbfae8e8b0dff6",
+      "previewSha256": "d197b684166b8a073b491088bb9f69f2ec6263f590dc50197ccd24170605af0f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.79786572239777
+    },
+    {
+      "src": "assets/rooms/biology-lab/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "fdb3a9867098db11bc7619d7a3e27b64dfa745f81e7e26929441b659335e501c",
+      "previewSha256": "994f219b4014171195cba40a7cea690420709bdf0e69ea408c1ae7e425420e85",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.90303349003278
+    },
+    {
+      "src": "assets/rooms/biology-lab/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "4555458ee6ec0d5f5762029a38ca0f909ff709afd4e96bbde9ac02c4812c9637",
+      "previewSha256": "13e4defca9c29229c3232aa9ee11e91b3ff8407aaa9f420c625932afa5b11a15",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.57738920126124
+    },
+    {
+      "src": "assets/rooms/biology-lab/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "5823d4f7b3709b5be3cbb52c56b2ff13af16e4f295ef9e2b510a09ba9e5b7485",
+      "previewSha256": "5733381126b9bf380ac981298d97271570fcae6995808c4a8060a7ddb7e56c66",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.8630030367483
+    },
+    {
+      "src": "assets/rooms/biology-lab/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "6065ec2eb5aee7782eba29916fa51117f5edc94afc653958352c337bdab89328",
+      "previewSha256": "f2482bf1b36892723214e594112647195d9e0342c82f36e9e5dae66e96948dd1",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.60114090530215
+    },
+    {
+      "src": "assets/rooms/biology-lab/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "dc291f4068f37dd9a46eb1f73e096fbc03cea7a59aa18afcb221841a6fbedaad",
+      "previewSha256": "c5837216f668d741a3db88504355218dc4ff4fd83d595679e33c47800a5e1f9c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.024805091658585
+    },
+    {
+      "src": "assets/rooms/biology-lab/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "98b90edfbe6254dcb0fd2e60c9d33c09b0a84ab1adf2e2abe545d038c0925595",
+      "previewSha256": "5bdc7665d45d2b79ce2f3a8bc2eee8c5811e54842fde01fbb4cbfaa9e23decd2",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.07434784298802
+    },
+    {
+      "src": "assets/rooms/biology-lab/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "de5f44836dbc4dd8bc391658f7e236669a5eefa4f45697a4b5beab96c0836a9d",
+      "previewSha256": "a30234bcee0d42d96ec14d2b6ac3733a9abf9143c6fa7568fec2e295a6a2c5e1",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.16536346448254
+    },
+    {
+      "src": "assets/rooms/biology-lab/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "a6ce9e65b69e5b04777116ae2d7f970081ed3ee286165dabc4f29603846e7f00",
+      "previewSha256": "f516d790ae6da233c521c2acc3639db690aa4219b6c1440db993bc68f0097dd5",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.414493797667284
+    },
+    {
+      "src": "assets/rooms/biology-lab/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "aa68186cbfba4411070275d9a79fd98e6375d47494df5d1ad2cc4787065be1c7",
+      "previewSha256": "f80492fff8388549b86dcd3e2f698cd44b961dfe2c4f3edf3faef7c35874f4c0",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.424511860375546
+    },
+    {
+      "src": "assets/rooms/biology-lab/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "d90b724667160f8ae9b66f35166a33f8b294fce68f2c313225c1ba7b9c1a3db6",
+      "previewSha256": "f4947746f6845b097b11bf63f0701eb013b90b25cb378b8a2210af914b0b0690",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.48436633324721
+    }
+  ],
+  "joints": [
+    {
+      "id": "room_door__0_hinge",
+      "objectId": "room_door__0",
+      "body": "room_door__0_leaf",
+      "type": "hinge",
+      "pivot": [
+        -4.570000156861551,
+        0,
+        -1.6700000000000257
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.48,
+      "closed": 0,
+      "open": 1.48,
+      "range": [
+        0,
+        1.48
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "room_door__1_hinge",
+      "objectId": "room_door__1",
+      "body": "room_door__1_leaf",
+      "type": "hinge",
+      "pivot": [
+        4.589999843138449,
+        0,
+        -2.9699999999999744
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.48,
+      "closed": 0,
+      "open": 1.48,
+      "range": [
+        0,
+        1.48
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__0_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__0",
+      "body": "island_bench__0_cab_1_0_door_0",
+      "type": "hinge",
+      "pivot": [
+        -1.6990000794111775,
+        0.16,
+        -0.48199989281128697
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__0_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__0",
+      "body": "island_bench__0_cab_1_2_door_0",
+      "type": "hinge",
+      "pivot": [
+        -1.6990000794111775,
+        0.16,
+        -1.581999892811287
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__0_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__0",
+      "body": "island_bench__0_cab_-1_1_door_0",
+      "type": "hinge",
+      "pivot": [
+        -3.0010000794111424,
+        0.16,
+        -1.5179998928112608
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__0_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__0",
+      "body": "island_bench__0_cab_-1_3_door_0",
+      "type": "hinge",
+      "pivot": [
+        -3.0010000794111424,
+        0.16,
+        -2.6179998928112607
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__1_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__1",
+      "body": "island_bench__1_cab_1_0_door_0",
+      "type": "hinge",
+      "pivot": [
+        0.6509999205888226,
+        0.16,
+        -0.48199989281128697
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__1_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__1",
+      "body": "island_bench__1_cab_1_2_door_0",
+      "type": "hinge",
+      "pivot": [
+        0.6509999205888226,
+        0.16,
+        -1.581999892811287
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__1_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__1",
+      "body": "island_bench__1_cab_-1_1_door_0",
+      "type": "hinge",
+      "pivot": [
+        -0.6510000794111424,
+        0.16,
+        -1.5179998928112608
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__1_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__1",
+      "body": "island_bench__1_cab_-1_3_door_0",
+      "type": "hinge",
+      "pivot": [
+        -0.6510000794111424,
+        0.16,
+        -2.6179998928112607
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__2_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__2",
+      "body": "island_bench__2_cab_1_0_door_0",
+      "type": "hinge",
+      "pivot": [
+        3.0009999205888227,
+        0.16,
+        -0.48199989281128697
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__2_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__2",
+      "body": "island_bench__2_cab_1_2_door_0",
+      "type": "hinge",
+      "pivot": [
+        3.0009999205888227,
+        0.16,
+        -1.581999892811287
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__2_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__2",
+      "body": "island_bench__2_cab_-1_1_door_0",
+      "type": "hinge",
+      "pivot": [
+        1.6989999205888577,
+        0.16,
+        -1.5179998928112608
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__2_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__2",
+      "body": "island_bench__2_cab_-1_3_door_0",
+      "type": "hinge",
+      "pivot": [
+        1.6989999205888577,
+        0.16,
+        -2.6179998928112607
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__3_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__3",
+      "body": "island_bench__3_cab_1_0_door_0",
+      "type": "hinge",
+      "pivot": [
+        -1.6990000794111775,
+        0.16,
+        2.6180001071887133
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__3_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__3",
+      "body": "island_bench__3_cab_1_2_door_0",
+      "type": "hinge",
+      "pivot": [
+        -1.6990000794111775,
+        0.16,
+        1.518000107188713
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__3_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__3",
+      "body": "island_bench__3_cab_-1_1_door_0",
+      "type": "hinge",
+      "pivot": [
+        -3.0010000794111424,
+        0.16,
+        1.5820001071887393
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__3_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__3",
+      "body": "island_bench__3_cab_-1_3_door_0",
+      "type": "hinge",
+      "pivot": [
+        -3.0010000794111424,
+        0.16,
+        0.4820001071887392
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__4_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__4",
+      "body": "island_bench__4_cab_1_0_door_0",
+      "type": "hinge",
+      "pivot": [
+        0.6509999205888226,
+        0.16,
+        2.6180001071887133
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__4_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__4",
+      "body": "island_bench__4_cab_1_2_door_0",
+      "type": "hinge",
+      "pivot": [
+        0.6509999205888226,
+        0.16,
+        1.518000107188713
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__4_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__4",
+      "body": "island_bench__4_cab_-1_1_door_0",
+      "type": "hinge",
+      "pivot": [
+        -0.6510000794111424,
+        0.16,
+        1.5820001071887393
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__4_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__4",
+      "body": "island_bench__4_cab_-1_3_door_0",
+      "type": "hinge",
+      "pivot": [
+        -0.6510000794111424,
+        0.16,
+        0.4820001071887392
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__5_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__5",
+      "body": "island_bench__5_cab_1_0_door_0",
+      "type": "hinge",
+      "pivot": [
+        3.0009999205888227,
+        0.16,
+        2.6180001071887133
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__5_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__5",
+      "body": "island_bench__5_cab_1_2_door_0",
+      "type": "hinge",
+      "pivot": [
+        3.0009999205888227,
+        0.16,
+        1.518000107188713
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__5_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__5",
+      "body": "island_bench__5_cab_-1_1_door_0",
+      "type": "hinge",
+      "pivot": [
+        1.6989999205888577,
+        0.16,
+        1.5820001071887393
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "island_bench__5_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__5",
+      "body": "island_bench__5_cab_-1_3_door_0",
+      "type": "hinge",
+      "pivot": [
+        1.6989999205888577,
+        0.16,
+        0.4820001071887392
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.45,
+      "closed": 0,
+      "open": -1.45,
+      "range": [
+        -1.45,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_up1",
+      "objectId": "drawer_cabinet__0",
+      "body": "drawer_cabinet__0__E_drawer1_11",
+      "type": "slide",
+      "pivot": [
+        -2.609994,
+        0.5735940300000001,
+        -3.157153
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.4,
+      "closed": 0,
+      "open": -0.4,
+      "range": [
+        -0.4,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_down",
+      "objectId": "drawer_cabinet__0",
+      "body": "drawer_cabinet__0__E_drawer_20",
+      "type": "slide",
+      "pivot": [
+        -2.592194,
+        0.26601503,
+        -3.1620530000000002
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.4,
+      "closed": 0,
+      "open": -0.4,
+      "range": [
+        -0.4,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_up",
+      "objectId": "drawer_cabinet__0",
+      "body": "drawer_cabinet__0__E_drawer2_29",
+      "type": "slide",
+      "pivot": [
+        -2.614933,
+        0.6547300300000001,
+        -3.1620530000000002
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.4,
+      "closed": 0,
+      "open": -0.4,
+      "range": [
+        -0.4,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_middle",
+      "objectId": "drawer_cabinet__0",
+      "body": "drawer_cabinet__0__E_drawer1_37",
+      "type": "slide",
+      "pivot": [
+        -2.609994,
+        0.42859403,
+        -3.157153
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.4,
+      "closed": 0,
+      "open": -0.4,
+      "range": [
+        -0.4,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "biosafety_cabinet__0_sash_slide",
+      "objectId": "biosafety_cabinet__0",
+      "body": "biosafety_cabinet__0_sash",
+      "type": "slide",
+      "pivot": [
+        4.18,
+        0.92,
+        -0.52
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        -0.325,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "biosafety_cabinet__1_sash_slide",
+      "objectId": "biosafety_cabinet__1",
+      "body": "biosafety_cabinet__1_sash",
+      "type": "slide",
+      "pivot": [
+        4.18,
+        0.92,
+        1.55
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        -0.325,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "incubator__0__RevoluteJoint_glassware010_left",
+      "objectId": "incubator__0",
+      "body": "incubator__0__E_door_1",
+      "type": "hinge",
+      "pivot": [
+        3.9482969003360666,
+        1.5525547,
+        0.22502608225527215
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.5708,
+      "closed": 0,
+      "open": -1.5708,
+      "range": [
+        -1.5708,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "incubator__0__RevoluteJoint_glassware010_up",
+      "objectId": "incubator__0",
+      "body": "incubator__0__E_button1_6",
+      "type": "hinge",
+      "pivot": [
+        4.051394091234608,
+        1.5594147,
+        0.8091800485636675
+      ],
+      "axis": [
+        3.2679489669895645e-07,
+        0,
+        0.9999999999999466
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.2618,
+      "closed": 0,
+      "open": 0.2618,
+      "range": [
+        0,
+        0.2618
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "incubator__0__RevoluteJoint_glassware010_up1",
+      "objectId": "incubator__0",
+      "body": "incubator__0__E_button_7",
+      "type": "hinge",
+      "pivot": [
+        4.024734078587646,
+        1.5594147,
+        0.7704800572760215
+      ],
+      "axis": [
+        3.2679489669895645e-07,
+        0,
+        0.9999999999999466
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.2618,
+      "closed": 0,
+      "open": -0.2618,
+      "range": [
+        -0.2618,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "incubator__1__RevoluteJoint_glassware010_left",
+      "objectId": "incubator__1",
+      "body": "incubator__1__E_door_1",
+      "type": "hinge",
+      "pivot": [
+        3.9482969003360666,
+        2.232555,
+        0.22502608225527215
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.5708,
+      "closed": 0,
+      "open": -1.5708,
+      "range": [
+        -1.5708,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "incubator__1__RevoluteJoint_glassware010_up",
+      "objectId": "incubator__1",
+      "body": "incubator__1__E_button1_6",
+      "type": "hinge",
+      "pivot": [
+        4.051394091234608,
+        2.239415,
+        0.8091800485636675
+      ],
+      "axis": [
+        3.2679489669895645e-07,
+        0,
+        0.9999999999999466
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.2618,
+      "closed": 0,
+      "open": 0.2618,
+      "range": [
+        0,
+        0.2618
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "incubator__1__RevoluteJoint_glassware010_up1",
+      "objectId": "incubator__1",
+      "body": "incubator__1__E_button_7",
+      "type": "hinge",
+      "pivot": [
+        4.024734078587646,
+        2.239415,
+        0.7704800572760215
+      ],
+      "axis": [
+        3.2679489669895645e-07,
+        0,
+        0.9999999999999466
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.2618,
+      "closed": 0,
+      "open": -0.2618,
+      "range": [
+        -0.2618,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "shaking_incubator__0__RevoluteJoint_oscillator_up",
+      "objectId": "shaking_incubator__0",
+      "body": "shaking_incubator__0__E_button_1",
+      "type": "hinge",
+      "pivot": [
+        -2.2080477000000003,
+        1.206504,
+        -2.2303640000000002
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.17453,
+      "closed": 0,
+      "open": -0.17453,
+      "range": [
+        -0.17453,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "shaking_incubator__0__RevoluteJoint_oscillator_up1",
+      "objectId": "shaking_incubator__0",
+      "body": "shaking_incubator__0__E_door_2",
+      "type": "hinge",
+      "pivot": [
+        -2.48329775,
+        1.285347,
+        -2.320325
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.5708,
+      "closed": 0,
+      "open": -1.5708,
+      "range": [
+        -1.5708,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "slide_box_hinge",
+      "objectId": "slide_box__0",
+      "body": "slide_box_lid",
+      "type": "hinge",
+      "pivot": [
+        -2.95,
+        0.926,
+        -1.2375
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "reference": 1.6,
+      "start": 1.6,
+      "end": 0,
+      "closed": 1.6,
+      "open": 0,
+      "range": [
+        0,
+        1.75
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down",
+      "objectId": "dry_bath__0",
+      "body": "dry_bath__0__E_button_80",
+      "type": "slide",
+      "pivot": [
+        -1.9515120462159719,
+        0.9745327,
+        -2.1634140029403217
+      ],
+      "axis": [
+        -2.4126037090290175e-07,
+        0.7175969655140368,
+        -0.696458609742882
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.002,
+      "closed": 0,
+      "open": -0.002,
+      "range": [
+        -0.002,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down1",
+      "objectId": "dry_bath__0",
+      "body": "dry_bath__0__E_button_81",
+      "type": "slide",
+      "pivot": [
+        -1.9295120462159732,
+        0.9745327,
+        -2.163414010561346
+      ],
+      "axis": [
+        -2.4126037090290175e-07,
+        0.7175969655140368,
+        -0.696458609742882
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.002,
+      "closed": 0,
+      "open": -0.002,
+      "range": [
+        -0.002,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down2",
+      "objectId": "dry_bath__0",
+      "body": "dry_bath__0__E_button_82",
+      "type": "slide",
+      "pivot": [
+        -1.9077620462159743,
+        0.9745327,
+        -2.1634140180957684
+      ],
+      "axis": [
+        -2.4126037090290175e-07,
+        0.7175969655140368,
+        -0.696458609742882
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.002,
+      "closed": 0,
+      "open": -0.002,
+      "range": [
+        -0.002,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down3",
+      "objectId": "dry_bath__0",
+      "body": "dry_bath__0__E_button_83",
+      "type": "slide",
+      "pivot": [
+        -1.8860120462159757,
+        0.9745327,
+        -2.1634140256301904
+      ],
+      "axis": [
+        -2.4126037090290175e-07,
+        0.7175969655140368,
+        -0.696458609742882
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.002,
+      "closed": 0,
+      "open": -0.002,
+      "range": [
+        -0.002,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_up",
+      "objectId": "dry_bath__0",
+      "body": "dry_bath__0__E_lid_84",
+      "type": "slide",
+      "pivot": [
+        -1.935755000851824,
+        1.0695027,
+        -2.0324590083987153
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.1,
+      "closed": 0,
+      "open": 0.1,
+      "range": [
+        0,
+        0.1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_refrigerator__0__Fridge_1_joint",
+      "objectId": "refrigerator__0",
+      "body": "real_refrigerator__0__Fridge_1_Mesh_77a1be5e",
+      "type": "hinge",
+      "pivot": [
+        4.0174567524,
+        1.1860692000000002,
+        2.8448252400000005
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5708,
+      "closed": 0,
+      "open": 1.5708,
+      "range": [
+        0,
+        1.5708
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_refrigerator__0__Fridge_1_Mesh_78210b38__1",
+      "objectId": "refrigerator__0",
+      "body": "real_refrigerator__0__Fridge_1_Mesh_78210b38",
+      "type": "hinge",
+      "pivot": [
+        4.0174559924,
+        0.4949723200000001,
+        2.8448252400000005
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5708,
+      "closed": 0,
+      "open": 1.5708,
+      "range": [
+        0,
+        1.5708
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_refrigerator__1__Fridge_1_joint",
+      "objectId": "refrigerator__1",
+      "body": "real_refrigerator__1__Fridge_1_Mesh_77a1be5e",
+      "type": "hinge",
+      "pivot": [
+        3.22052363,
+        1.3577154,
+        -3.2082728613
+      ],
+      "axis": [
+        0,
+        -0.9999999999999998,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5708,
+      "closed": 0,
+      "open": 1.5708,
+      "range": [
+        0,
+        1.5708
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_refrigerator__1__Fridge_1_Mesh_78210b38__1",
+      "objectId": "refrigerator__1",
+      "body": "real_refrigerator__1__Fridge_1_Mesh_78210b38",
+      "type": "hinge",
+      "pivot": [
+        3.22052363,
+        0.5665913400000001,
+        -3.2082719912999997
+      ],
+      "axis": [
+        0,
+        -0.9999999999999998,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5708,
+      "closed": 0,
+      "open": 1.5708,
+      "range": [
+        0,
+        1.5708
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_refrigerator__2__Fridge_1_joint",
+      "objectId": "refrigerator__2",
+      "body": "real_refrigerator__2__Fridge_1_Mesh_77a1be5e",
+      "type": "hinge",
+      "pivot": [
+        -4.0183846336,
+        0.9988188,
+        3.2159366400000002
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5708,
+      "closed": 0,
+      "open": 1.5708,
+      "range": [
+        0,
+        1.5708
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_refrigerator__2__Fridge_1_Mesh_78210b38__1",
+      "objectId": "refrigerator__2",
+      "body": "real_refrigerator__2__Fridge_1_Mesh_78210b38",
+      "type": "hinge",
+      "pivot": [
+        -4.0183839936000005,
+        0.41684247999999996,
+        3.2159366400000002
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5708,
+      "closed": 0,
+      "open": 1.5708,
+      "range": [
+        0,
+        1.5708
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_left",
+      "objectId": "cabinet__0",
+      "body": "real_storage_cabinet__0__E_doorl1_1",
+      "type": "hinge",
+      "pivot": [
+        -4.02025,
+        1.8721500001090006,
+        -2.739982
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.5708,
+      "closed": 0,
+      "open": -1.5708,
+      "range": [
+        -1.5708,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_right",
+      "objectId": "cabinet__0",
+      "body": "real_storage_cabinet__0__E_doorr2_8",
+      "type": "hinge",
+      "pivot": [
+        -4.02025,
+        1.8721500001090006,
+        -3.459982
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5708,
+      "closed": 0,
+      "open": 1.5708,
+      "range": [
+        0,
+        1.5708
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_microcentrifuge__0__RevoluteJoint_centrifuge001_up",
+      "objectId": "microcentrifuge__0",
+      "body": "real_microcentrifuge__0__E_lid_1",
+      "type": "hinge",
+      "pivot": [
+        -0.28973804499999994,
+        0.9513197379999999,
+        -0.83000513
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        3.2268625222156327e-20,
+        1.0000000000000002
+      ],
+      "reference": 1.309,
+      "start": 1.309,
+      "end": 0,
+      "closed": 1.309,
+      "open": 0,
+      "range": [
+        0,
+        1.309
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "real_microcentrifuge__1__RevoluteJoint_centrifuge001_up",
+      "objectId": "microcentrifuge__1",
+      "body": "real_microcentrifuge__1__E_lid_1",
+      "type": "hinge",
+      "pivot": [
+        2.06026195,
+        0.9513197379999999,
+        -0.83000513
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.309,
+      "closed": 0,
+      "open": 1.309,
+      "range": [
+        0,
+        1.309
+      ],
+      "parentJointId": null
+    }
+  ],
+  "articulations": [
+    {
+      "id": "room_door__0_hinge",
+      "objectId": "room_door__0",
+      "title": "room door / 0 hinge",
+      "clip": "room_door__0_hinge_motion",
+      "joints": [
+        "room_door__0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 84.79775367936183,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "room_door__1_hinge",
+      "objectId": "room_door__1",
+      "title": "room door / 1 hinge",
+      "clip": "room_door__1_hinge_motion",
+      "joints": [
+        "room_door__1_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 84.79775367936183,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__0_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__0",
+      "title": "island bench / 0 cab 1 0 door 0 hinge",
+      "clip": "island_bench__0_cab_1_0_door_0_hinge_motion",
+      "joints": [
+        "island_bench__0_cab_1_0_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__0_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__0",
+      "title": "island bench / 0 cab 1 2 door 0 hinge",
+      "clip": "island_bench__0_cab_1_2_door_0_hinge_motion",
+      "joints": [
+        "island_bench__0_cab_1_2_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__0_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__0",
+      "title": "island bench / 0 cab -1 1 door 0 hinge",
+      "clip": "island_bench__0_cab_-1_1_door_0_hinge_motion",
+      "joints": [
+        "island_bench__0_cab_-1_1_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__0_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__0",
+      "title": "island bench / 0 cab -1 3 door 0 hinge",
+      "clip": "island_bench__0_cab_-1_3_door_0_hinge_motion",
+      "joints": [
+        "island_bench__0_cab_-1_3_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__1_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__1",
+      "title": "island bench / 1 cab 1 0 door 0 hinge",
+      "clip": "island_bench__1_cab_1_0_door_0_hinge_motion",
+      "joints": [
+        "island_bench__1_cab_1_0_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__1_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__1",
+      "title": "island bench / 1 cab 1 2 door 0 hinge",
+      "clip": "island_bench__1_cab_1_2_door_0_hinge_motion",
+      "joints": [
+        "island_bench__1_cab_1_2_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__1_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__1",
+      "title": "island bench / 1 cab -1 1 door 0 hinge",
+      "clip": "island_bench__1_cab_-1_1_door_0_hinge_motion",
+      "joints": [
+        "island_bench__1_cab_-1_1_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__1_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__1",
+      "title": "island bench / 1 cab -1 3 door 0 hinge",
+      "clip": "island_bench__1_cab_-1_3_door_0_hinge_motion",
+      "joints": [
+        "island_bench__1_cab_-1_3_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__2_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__2",
+      "title": "island bench / 2 cab 1 0 door 0 hinge",
+      "clip": "island_bench__2_cab_1_0_door_0_hinge_motion",
+      "joints": [
+        "island_bench__2_cab_1_0_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__2_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__2",
+      "title": "island bench / 2 cab 1 2 door 0 hinge",
+      "clip": "island_bench__2_cab_1_2_door_0_hinge_motion",
+      "joints": [
+        "island_bench__2_cab_1_2_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__2_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__2",
+      "title": "island bench / 2 cab -1 1 door 0 hinge",
+      "clip": "island_bench__2_cab_-1_1_door_0_hinge_motion",
+      "joints": [
+        "island_bench__2_cab_-1_1_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__2_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__2",
+      "title": "island bench / 2 cab -1 3 door 0 hinge",
+      "clip": "island_bench__2_cab_-1_3_door_0_hinge_motion",
+      "joints": [
+        "island_bench__2_cab_-1_3_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__3_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__3",
+      "title": "island bench / 3 cab 1 0 door 0 hinge",
+      "clip": "island_bench__3_cab_1_0_door_0_hinge_motion",
+      "joints": [
+        "island_bench__3_cab_1_0_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__3_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__3",
+      "title": "island bench / 3 cab 1 2 door 0 hinge",
+      "clip": "island_bench__3_cab_1_2_door_0_hinge_motion",
+      "joints": [
+        "island_bench__3_cab_1_2_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__3_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__3",
+      "title": "island bench / 3 cab -1 1 door 0 hinge",
+      "clip": "island_bench__3_cab_-1_1_door_0_hinge_motion",
+      "joints": [
+        "island_bench__3_cab_-1_1_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__3_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__3",
+      "title": "island bench / 3 cab -1 3 door 0 hinge",
+      "clip": "island_bench__3_cab_-1_3_door_0_hinge_motion",
+      "joints": [
+        "island_bench__3_cab_-1_3_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__4_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__4",
+      "title": "island bench / 4 cab 1 0 door 0 hinge",
+      "clip": "island_bench__4_cab_1_0_door_0_hinge_motion",
+      "joints": [
+        "island_bench__4_cab_1_0_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__4_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__4",
+      "title": "island bench / 4 cab 1 2 door 0 hinge",
+      "clip": "island_bench__4_cab_1_2_door_0_hinge_motion",
+      "joints": [
+        "island_bench__4_cab_1_2_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__4_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__4",
+      "title": "island bench / 4 cab -1 1 door 0 hinge",
+      "clip": "island_bench__4_cab_-1_1_door_0_hinge_motion",
+      "joints": [
+        "island_bench__4_cab_-1_1_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__4_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__4",
+      "title": "island bench / 4 cab -1 3 door 0 hinge",
+      "clip": "island_bench__4_cab_-1_3_door_0_hinge_motion",
+      "joints": [
+        "island_bench__4_cab_-1_3_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__5_cab_1_0_door_0_hinge",
+      "objectId": "island_bench__5",
+      "title": "island bench / 5 cab 1 0 door 0 hinge",
+      "clip": "island_bench__5_cab_1_0_door_0_hinge_motion",
+      "joints": [
+        "island_bench__5_cab_1_0_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__5_cab_1_2_door_0_hinge",
+      "objectId": "island_bench__5",
+      "title": "island bench / 5 cab 1 2 door 0 hinge",
+      "clip": "island_bench__5_cab_1_2_door_0_hinge_motion",
+      "joints": [
+        "island_bench__5_cab_1_2_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__5_cab_-1_1_door_0_hinge",
+      "objectId": "island_bench__5",
+      "title": "island bench / 5 cab -1 1 door 0 hinge",
+      "clip": "island_bench__5_cab_-1_1_door_0_hinge_motion",
+      "joints": [
+        "island_bench__5_cab_-1_1_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "island_bench__5_cab_-1_3_door_0_hinge",
+      "objectId": "island_bench__5",
+      "title": "island bench / 5 cab -1 3 door 0 hinge",
+      "clip": "island_bench__5_cab_-1_3_door_0_hinge_motion",
+      "joints": [
+        "island_bench__5_cab_-1_3_door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_up1",
+      "objectId": "drawer_cabinet__0",
+      "title": "drawer cabinet / 0 / PrismaticJoint cabinet up1",
+      "clip": "drawer_cabinet__0__PrismaticJoint_cabinet_up1_motion",
+      "joints": [
+        "drawer_cabinet__0__PrismaticJoint_cabinet_up1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_down",
+      "objectId": "drawer_cabinet__0",
+      "title": "drawer cabinet / 0 / PrismaticJoint cabinet down",
+      "clip": "drawer_cabinet__0__PrismaticJoint_cabinet_down_motion",
+      "joints": [
+        "drawer_cabinet__0__PrismaticJoint_cabinet_down"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_up",
+      "objectId": "drawer_cabinet__0",
+      "title": "drawer cabinet / 0 / PrismaticJoint cabinet up",
+      "clip": "drawer_cabinet__0__PrismaticJoint_cabinet_up_motion",
+      "joints": [
+        "drawer_cabinet__0__PrismaticJoint_cabinet_up"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_cabinet__0__PrismaticJoint_cabinet_middle",
+      "objectId": "drawer_cabinet__0",
+      "title": "drawer cabinet / 0 / PrismaticJoint cabinet middle",
+      "clip": "drawer_cabinet__0__PrismaticJoint_cabinet_middle_motion",
+      "joints": [
+        "drawer_cabinet__0__PrismaticJoint_cabinet_middle"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "biosafety_cabinet__0_sash_slide",
+      "objectId": "biosafety_cabinet__0",
+      "title": "biosafety cabinet / 0 sash slide",
+      "clip": "biosafety_cabinet__0_sash_slide_motion",
+      "joints": [
+        "biosafety_cabinet__0_sash_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "biosafety_cabinet__1_sash_slide",
+      "objectId": "biosafety_cabinet__1",
+      "title": "biosafety cabinet / 1 sash slide",
+      "clip": "biosafety_cabinet__1_sash_slide_motion",
+      "joints": [
+        "biosafety_cabinet__1_sash_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "incubator__0__RevoluteJoint_glassware010_left",
+      "objectId": "incubator__0",
+      "title": "incubator / 0 / RevoluteJoint glassware010 left",
+      "clip": "incubator__0__RevoluteJoint_glassware010_left_motion",
+      "joints": [
+        "incubator__0__RevoluteJoint_glassware010_left"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "incubator__0__RevoluteJoint_glassware010_up",
+      "objectId": "incubator__0",
+      "title": "incubator / 0 / RevoluteJoint glassware010 up",
+      "clip": "incubator__0__RevoluteJoint_glassware010_up_motion",
+      "joints": [
+        "incubator__0__RevoluteJoint_glassware010_up"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 15.00003507652495,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "incubator__0__RevoluteJoint_glassware010_up1",
+      "objectId": "incubator__0",
+      "title": "incubator / 0 / RevoluteJoint glassware010 up1",
+      "clip": "incubator__0__RevoluteJoint_glassware010_up1_motion",
+      "joints": [
+        "incubator__0__RevoluteJoint_glassware010_up1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 15.00003507652495,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "incubator__1__RevoluteJoint_glassware010_left",
+      "objectId": "incubator__1",
+      "title": "incubator / 1 / RevoluteJoint glassware010 left",
+      "clip": "incubator__1__RevoluteJoint_glassware010_left_motion",
+      "joints": [
+        "incubator__1__RevoluteJoint_glassware010_left"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "incubator__1__RevoluteJoint_glassware010_up",
+      "objectId": "incubator__1",
+      "title": "incubator / 1 / RevoluteJoint glassware010 up",
+      "clip": "incubator__1__RevoluteJoint_glassware010_up_motion",
+      "joints": [
+        "incubator__1__RevoluteJoint_glassware010_up"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 15.00003507652495,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "incubator__1__RevoluteJoint_glassware010_up1",
+      "objectId": "incubator__1",
+      "title": "incubator / 1 / RevoluteJoint glassware010 up1",
+      "clip": "incubator__1__RevoluteJoint_glassware010_up1_motion",
+      "joints": [
+        "incubator__1__RevoluteJoint_glassware010_up1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 15.00003507652495,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "shaking_incubator__0__RevoluteJoint_oscillator_up",
+      "objectId": "shaking_incubator__0",
+      "title": "shaking incubator / 0 / RevoluteJoint oscillator up",
+      "clip": "shaking_incubator__0__RevoluteJoint_oscillator_up_motion",
+      "joints": [
+        "shaking_incubator__0__RevoluteJoint_oscillator_up"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 9.999832398418258,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "shaking_incubator__0__RevoluteJoint_oscillator_up1",
+      "objectId": "shaking_incubator__0",
+      "title": "shaking incubator / 0 / RevoluteJoint oscillator up1",
+      "clip": "shaking_incubator__0__RevoluteJoint_oscillator_up1_motion",
+      "joints": [
+        "shaking_incubator__0__RevoluteJoint_oscillator_up1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "slide_box_hinge",
+      "objectId": "slide_box__0",
+      "title": "slide box hinge",
+      "clip": "slide_box_hinge_motion",
+      "joints": [
+        "slide_box_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 91.67324722093173,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down",
+      "objectId": "dry_bath__0",
+      "title": "dry bath / 0 / PrismaticJoint dry bath down",
+      "clip": "dry_bath__0__PrismaticJoint_dry_bath_down_motion",
+      "joints": [
+        "dry_bath__0__PrismaticJoint_dry_bath_down"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.2,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down1",
+      "objectId": "dry_bath__0",
+      "title": "dry bath / 0 / PrismaticJoint dry bath down1",
+      "clip": "dry_bath__0__PrismaticJoint_dry_bath_down1_motion",
+      "joints": [
+        "dry_bath__0__PrismaticJoint_dry_bath_down1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.2,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down2",
+      "objectId": "dry_bath__0",
+      "title": "dry bath / 0 / PrismaticJoint dry bath down2",
+      "clip": "dry_bath__0__PrismaticJoint_dry_bath_down2_motion",
+      "joints": [
+        "dry_bath__0__PrismaticJoint_dry_bath_down2"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.2,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_down3",
+      "objectId": "dry_bath__0",
+      "title": "dry bath / 0 / PrismaticJoint dry bath down3",
+      "clip": "dry_bath__0__PrismaticJoint_dry_bath_down3_motion",
+      "joints": [
+        "dry_bath__0__PrismaticJoint_dry_bath_down3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.2,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dry_bath__0__PrismaticJoint_dry_bath_up",
+      "objectId": "dry_bath__0",
+      "title": "dry bath / 0 / PrismaticJoint dry bath up",
+      "clip": "dry_bath__0__PrismaticJoint_dry_bath_up_motion",
+      "joints": [
+        "dry_bath__0__PrismaticJoint_dry_bath_up"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 10,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_refrigerator__0__Fridge_1_joint",
+      "objectId": "refrigerator__0",
+      "title": "real refrigerator / 0 / Fridge 1 joint",
+      "clip": "real_refrigerator__0__Fridge_1_joint_motion",
+      "joints": [
+        "real_refrigerator__0__Fridge_1_joint"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_refrigerator__0__Fridge_1_Mesh_78210b38__1",
+      "objectId": "refrigerator__0",
+      "title": "real refrigerator / 0 / Fridge 1 Mesh 78210b38 / 1",
+      "clip": "real_refrigerator__0__Fridge_1_Mesh_78210b38__1_motion",
+      "joints": [
+        "real_refrigerator__0__Fridge_1_Mesh_78210b38__1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_refrigerator__1__Fridge_1_joint",
+      "objectId": "refrigerator__1",
+      "title": "real refrigerator / 1 / Fridge 1 joint",
+      "clip": "real_refrigerator__1__Fridge_1_joint_motion",
+      "joints": [
+        "real_refrigerator__1__Fridge_1_joint"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_refrigerator__1__Fridge_1_Mesh_78210b38__1",
+      "objectId": "refrigerator__1",
+      "title": "real refrigerator / 1 / Fridge 1 Mesh 78210b38 / 1",
+      "clip": "real_refrigerator__1__Fridge_1_Mesh_78210b38__1_motion",
+      "joints": [
+        "real_refrigerator__1__Fridge_1_Mesh_78210b38__1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_refrigerator__2__Fridge_1_joint",
+      "objectId": "refrigerator__2",
+      "title": "real refrigerator / 2 / Fridge 1 joint",
+      "clip": "real_refrigerator__2__Fridge_1_joint_motion",
+      "joints": [
+        "real_refrigerator__2__Fridge_1_joint"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_refrigerator__2__Fridge_1_Mesh_78210b38__1",
+      "objectId": "refrigerator__2",
+      "title": "real refrigerator / 2 / Fridge 1 Mesh 78210b38 / 1",
+      "clip": "real_refrigerator__2__Fridge_1_Mesh_78210b38__1_motion",
+      "joints": [
+        "real_refrigerator__2__Fridge_1_Mesh_78210b38__1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_left",
+      "objectId": "cabinet__0",
+      "title": "real storage cabinet / 0 / RevoluteJoint lab cabinet003 left",
+      "clip": "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_left_motion",
+      "joints": [
+        "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_left"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_right",
+      "objectId": "cabinet__0",
+      "title": "real storage cabinet / 0 / RevoluteJoint lab cabinet003 right",
+      "clip": "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_right_motion",
+      "joints": [
+        "real_storage_cabinet__0__RevoluteJoint_lab_cabinet003_right"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90.00021045914971,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_microcentrifuge__0__RevoluteJoint_centrifuge001_up",
+      "objectId": "microcentrifuge__0",
+      "title": "real microcentrifuge / 0 / RevoluteJoint centrifuge001 up",
+      "clip": "real_microcentrifuge__0__RevoluteJoint_centrifuge001_up_motion",
+      "joints": [
+        "real_microcentrifuge__0__RevoluteJoint_centrifuge001_up"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 75.00017538262476,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "real_microcentrifuge__1__RevoluteJoint_centrifuge001_up",
+      "objectId": "microcentrifuge__1",
+      "title": "real microcentrifuge / 1 / RevoluteJoint centrifuge001 up",
+      "clip": "real_microcentrifuge__1__RevoluteJoint_centrifuge001_up_motion",
+      "joints": [
+        "real_microcentrifuge__1__RevoluteJoint_centrifuge001_up"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 75.00017538262476,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "microscope__0__RevoluteJoint_microscope002_up",
+      "body": "microscope__0__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__0__RevoluteJoint_microscope002_down",
+      "body": "microscope__0__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__0__RevoluteJoint_microscope002_middle",
+      "body": "microscope__0__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__1__RevoluteJoint_microscope002_up",
+      "body": "microscope__1__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__1__RevoluteJoint_microscope002_down",
+      "body": "microscope__1__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__1__RevoluteJoint_microscope002_middle",
+      "body": "microscope__1__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__2__RevoluteJoint_microscope002_up",
+      "body": "microscope__2__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__2__RevoluteJoint_microscope002_down",
+      "body": "microscope__2__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__2__RevoluteJoint_microscope002_middle",
+      "body": "microscope__2__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__3__RevoluteJoint_microscope002_up",
+      "body": "microscope__3__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__3__RevoluteJoint_microscope002_down",
+      "body": "microscope__3__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__3__RevoluteJoint_microscope002_middle",
+      "body": "microscope__3__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__4__RevoluteJoint_microscope002_up",
+      "body": "microscope__4__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__4__RevoluteJoint_microscope002_down",
+      "body": "microscope__4__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__4__RevoluteJoint_microscope002_middle",
+      "body": "microscope__4__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__5__RevoluteJoint_microscope002_up",
+      "body": "microscope__5__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__5__RevoluteJoint_microscope002_down",
+      "body": "microscope__5__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__5__RevoluteJoint_microscope002_middle",
+      "body": "microscope__5__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__6__RevoluteJoint_microscope002_up",
+      "body": "microscope__6__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__6__RevoluteJoint_microscope002_down",
+      "body": "microscope__6__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__6__RevoluteJoint_microscope002_middle",
+      "body": "microscope__6__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__8__RevoluteJoint_microscope002_up",
+      "body": "microscope__8__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__8__RevoluteJoint_microscope002_down",
+      "body": "microscope__8__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__8__RevoluteJoint_microscope002_middle",
+      "body": "microscope__8__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__10__RevoluteJoint_microscope002_up",
+      "body": "microscope__10__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__10__RevoluteJoint_microscope002_down",
+      "body": "microscope__10__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__10__RevoluteJoint_microscope002_middle",
+      "body": "microscope__10__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__11__RevoluteJoint_microscope002_up",
+      "body": "microscope__11__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__11__RevoluteJoint_microscope002_down",
+      "body": "microscope__11__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__11__RevoluteJoint_microscope002_middle",
+      "body": "microscope__11__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__12__RevoluteJoint_microscope002_up",
+      "body": "microscope__12__E_lens_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__12__RevoluteJoint_microscope002_down",
+      "body": "microscope__12__E_knob_91",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "microscope__12__RevoluteJoint_microscope002_middle",
+      "body": "microscope__12__E_knob1_108",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "dry_bath__0__RevoluteJoint_dry_bath_down",
+      "body": "dry_bath__0__E_knob_79",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__0__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__0__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__1__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__1__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__2__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__2__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__3__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__3__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__4__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__4__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__5__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__5__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__6__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__6__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__7__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__7__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__8__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__8__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_wood_stool__9__RevoluteJoint_stool_middle",
+      "body": "real_wood_stool__9__E_seat_mv_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_microcentrifuge__0__RevoluteJoint_centrifuge001_middle",
+      "body": "real_microcentrifuge__0__E_part001_11",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "real_microcentrifuge__1__RevoluteJoint_centrifuge001_middle",
+      "body": "real_microcentrifuge__1__E_part001_11",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 4,
+  "modelBytes": 17954034,
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "0a31423b038b5b5f8bdaa6950e994ed0a315217631c0a0018c0fee23d218027f",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "modelParts": [
+    "assets/rooms/biology-lab/room.gzip-01.bin"
+  ],
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 22279332,
+  "decodedModelSha256": "5e0fad7e48c9766e05d605cca024e90661b0e6fe9c5d75c6431cb86a2611097d",
+  "sourcePicturesArchiveSha256": "8a4743b6680932e593fcfa53a767c90d8dbcf9e48e3b887bcb7a156d04a024e5",
+  "taskCards": "assets/rooms/biology-lab/tasks/manifest.json"
+}

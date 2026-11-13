@@ -1,0 +1,5248 @@
+{
+  "id": "auto-repair-001",
+  "title": "Auto repair",
+  "description": "An automotive repair and bodywork training workshop with a passenger-car service bay, two-post lift, frame-repair bench, paint-booth entrance and wheel-service equipment. Along the tiled walls are tool panels, steel workbenches and drawer cabinets, with jacks, an oil-drain caddy, utility carts and parts storage around the bays; the hatchback's hood is raised above its engine bay.",
+  "dimensions": [
+    12.16,
+    14.21,
+    5.12
+  ],
+  "dimensionSource": "visible geometry bounds",
+  "bounds": {
+    "min": [
+      -6.08,
+      -0.2,
+      -7.08
+    ],
+    "max": [
+      6.08,
+      4.92,
+      7.130000000000001
+    ]
+  },
+  "tasks": [
+    {
+      "id": "activity_1",
+      "kind": "Robot",
+      "text": "Pick up the leftmost of the three sockets on the workbench, marked 19. Set it down in the middle of the freestanding red rolling toolbox’s top, then slide it to the right across the toolbox top and leave it at rest within reach.",
+      "objects": [
+        "socket__0",
+        "toolbox__0",
+        "workbench__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "socket__0",
+          "label": "Pick up the leftmost socket, marked 19.",
+          "point": [
+            -3.45,
+            0.91,
+            -6.15
+          ]
+        },
+        {
+          "object": "toolbox__0",
+          "label": "Set it in the middle of the toolbox top.",
+          "point": [
+            -2.3833,
+            0.882,
+            -6.4679
+          ]
+        },
+        {
+          "object": "toolbox__0",
+          "label": "Slide the socket to the right and let it stop.",
+          "point": [
+            -2.1833,
+            0.882,
+            -6.4679
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_2",
+      "kind": "Robot",
+      "text": "On the freestanding red rolling toolbox beside the workbench, slide the empty tool tray to the right. Pick up the rightmost of the three sockets on the workbench, marked 21, and set it down on the cleared left side of the toolbox top.",
+      "objects": [
+        "tray__0",
+        "socket__2",
+        "toolbox__0",
+        "workbench__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "tray__0",
+          "label": "Slide the empty tray to the right on the toolbox top.",
+          "point": [
+            -2.512,
+            0.882,
+            -6.28
+          ]
+        },
+        {
+          "object": "socket__2",
+          "label": "Pick up the rightmost socket, marked 21.",
+          "point": [
+            -3.21,
+            0.91,
+            -6.15
+          ]
+        },
+        {
+          "object": "toolbox__0",
+          "label": "Set it on the cleared left side of the toolbox top.",
+          "point": [
+            -2.7333,
+            0.882,
+            -6.4679
+          ]
+        }
+      ]
+    },
+    {
+      "id": "floorjack",
+      "kind": "Interaction",
+      "text": "Raise the saddle on the low red trolley jack. Press down lightly on the saddle and check that it stays raised and level. Lower it to its starting height and leave the jack’s base in place.",
+      "objects": [
+        "trolley_jack__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "trolley_jack__0",
+          "label": "Raise the saddle on the red jack.",
+          "point": [
+            1.1781,
+            0.5456,
+            5.7
+          ]
+        },
+        {
+          "object": "trolley_jack__0",
+          "label": "Press lightly and check that the saddle holds level.",
+          "point": [
+            1.1781,
+            0.5456,
+            5.7
+          ]
+        },
+        {
+          "object": "trolley_jack__0",
+          "label": "Lower the saddle to its starting height.",
+          "point": [
+            1.07,
+            0.2821,
+            5.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "door",
+      "kind": "Interaction",
+      "text": "Unlatch the aisle-side front door of the hatchback car on the two-post lift. Swing the door open and lower its window. With the window down, swing the door partly shut and open it again. Raise the window, close the door fully and seat the latch. Leave nearby equipment in place.",
+      "objects": [
+        "car__0",
+        "lift__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "car__0",
+          "label": "Unlatch and open the aisle-side front door.",
+          "point": [
+            -2.25,
+            0.968,
+            -1.9
+          ]
+        },
+        {
+          "object": "car__0",
+          "label": "Lower the window in the open door.",
+          "point": [
+            -1.847,
+            0.9543,
+            -1.2893
+          ]
+        },
+        {
+          "object": "car__0",
+          "label": "Swing the door partly shut, then open it again.",
+          "point": [
+            -1.5359,
+            0.968,
+            -1.674
+          ]
+        },
+        {
+          "object": "car__0",
+          "label": "Raise the window.",
+          "point": [
+            -1.847,
+            1.3243,
+            -1.2893
+          ]
+        },
+        {
+          "object": "car__0",
+          "label": "Close the door fully and seat the latch.",
+          "point": [
+            -2.25,
+            0.968,
+            -1.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wheel",
+      "kind": "Interaction",
+      "text": "Use the red two-post lift to raise the hatchback car and check that it holds level. Remove the five lug nuts from the front wheel nearest the aisle. Pull the wheel clear of the hub, carry it away, lay it flat on the floor and let go. Lift it again, turn it upright, align it on the same hub and refasten all five lug nuts. Lower the car until all four lift pads support it. Leave nearby equipment in place.",
+      "objects": [
+        "wheel__0",
+        "car__0",
+        "lug_nut__0",
+        "lug_nut__1",
+        "lug_nut__2",
+        "lug_nut__3",
+        "lug_nut__4",
+        "lift__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "lift__0",
+          "label": "Raise the car and check that it holds level."
+        },
+        {
+          "object": "wheel__0",
+          "label": "Remove all five lug nuts from the aisle-side front wheel.",
+          "point": [
+            -2.1155,
+            1.5244,
+            -0.3645
+          ]
+        },
+        {
+          "object": "wheel__0",
+          "label": "Pull the wheel off its hub and carry it clear.",
+          "point": [
+            -1.3905,
+            1.5255,
+            -0.3645
+          ]
+        },
+        {
+          "object": "wheel__0",
+          "label": "Lay it flat on the floor and let go.",
+          "point": [
+            -1.3905,
+            0.0,
+            -0.3645
+          ]
+        },
+        {
+          "object": "wheel__0",
+          "label": "Lift the wheel, turn it upright and align it on its hub.",
+          "point": [
+            -2.2405,
+            1.5242,
+            -0.3645
+          ]
+        },
+        {
+          "object": "wheel__0",
+          "label": "Refit the wheel and fasten all five lug nuts.",
+          "point": [
+            -2.1155,
+            1.5244,
+            -0.3645
+          ]
+        },
+        {
+          "object": "lift__0",
+          "label": "Lower the car until all four lift pads support it."
+        }
+      ]
+    },
+    {
+      "id": "drawer",
+      "kind": "Interaction",
+      "text": "Open the top drawer of the freestanding red rolling toolbox beside the workbench with the three sockets. Put the middle socket, marked 17, into the drawer, then add the torque wrench from the same workbench. Close the drawer and reopen it to check that both tools stayed inside. Close it again and leave the surrounding tools in place.",
+      "objects": [
+        "toolbox__0",
+        "socket__1",
+        "wrench__1",
+        "workbench__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "toolbox__0",
+          "label": "Open the top drawer of the freestanding red toolbox.",
+          "point": [
+            -2.412,
+            0.69,
+            -6.175
+          ]
+        },
+        {
+          "object": "socket__1",
+          "label": "Pick up the middle socket, marked 17.",
+          "point": [
+            -3.33,
+            0.91,
+            -6.15
+          ]
+        },
+        {
+          "object": "toolbox__0",
+          "label": "Put the socket in the open drawer.",
+          "point": [
+            -2.712,
+            0.648,
+            -5.96
+          ]
+        },
+        {
+          "object": "wrench__1",
+          "label": "Pick up the torque wrench from the same workbench.",
+          "point": [
+            -3.6008,
+            0.8782,
+            -6.45
+          ]
+        },
+        {
+          "object": "toolbox__0",
+          "label": "Put the wrench in the drawer and close it.",
+          "point": [
+            -2.242,
+            0.648,
+            -5.96
+          ]
+        },
+        {
+          "object": "toolbox__0",
+          "label": "Reopen the drawer and check that both tools stayed inside.",
+          "point": [
+            -2.412,
+            0.648,
+            -6.1
+          ]
+        },
+        {
+          "object": "toolbox__0",
+          "label": "Close the drawer again.",
+          "point": [
+            -2.412,
+            0.69,
+            -6.175
+          ]
+        }
+      ]
+    },
+    {
+      "id": "funnel",
+      "kind": "Interaction",
+      "text": "Roll the red oil-drain caddy (Oildrain) from its storage spot beside the lift into the clear aisle behind the hatchback car. Let it stop upright, then raise its funnel. Give the funnel a light touch and check that it holds its height and stays level. Lower the funnel, roll the caddy back to its original spot and leave it upright and still, with nearby equipment in place.",
+      "objects": [
+        "oildrain__0",
+        "car__0",
+        "lift__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "oildrain__0",
+          "label": "Roll the caddy behind the car and let it stop upright.",
+          "point": [
+            -4.4,
+            0.0,
+            -4.6
+          ]
+        },
+        {
+          "object": "oildrain__0",
+          "label": "Raise the funnel.",
+          "point": [
+            -4.4,
+            1.6599,
+            -4.6
+          ]
+        },
+        {
+          "object": "oildrain__0",
+          "label": "Touch it lightly and check that it holds level.",
+          "point": [
+            -4.4,
+            1.6599,
+            -4.6
+          ]
+        },
+        {
+          "object": "oildrain__0",
+          "label": "Lower the funnel.",
+          "point": [
+            -4.4,
+            1.3599,
+            -4.6
+          ]
+        },
+        {
+          "object": "oildrain__0",
+          "label": "Return the caddy to its storage spot and let it stop.",
+          "point": [
+            -4.65,
+            0.0,
+            -3.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "washer",
+      "kind": "Interaction",
+      "text": "Take the leftmost bolt from the blue parts tray on the freestanding red toolbox. Set it on the slatted insert inside the open red parts washer (Partswasher) on the workbench. Close the lid and leave the bolt covered for a moment. Reopen the lid, check that the bolt stayed in the basin and return it to its original spot in the blue tray. Close the washer and leave nearby objects in place.",
+      "objects": [
+        "partswasher__0",
+        "bolt__4",
+        "tray__1",
+        "toolbox__0",
+        "workbench__1"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bolt__4",
+          "label": "Lift the leftmost bolt from the blue tray.",
+          "point": [
+            -2.034,
+            0.942,
+            -6.58
+          ]
+        },
+        {
+          "object": "partswasher__0",
+          "label": "Place the bolt on the slatted insert in the basin.",
+          "point": [
+            1.14,
+            1.082,
+            -6.22
+          ]
+        },
+        {
+          "object": "partswasher__0",
+          "label": "Close the lid and leave the bolt covered briefly.",
+          "point": [
+            1.3,
+            1.2043,
+            -6.33
+          ]
+        },
+        {
+          "object": "partswasher__0",
+          "label": "Reopen the lid and check that the bolt stayed inside.",
+          "point": [
+            1.14,
+            1.082,
+            -6.22
+          ]
+        },
+        {
+          "object": "bolt__4",
+          "label": "Lift the bolt out of the basin.",
+          "point": [
+            1.14,
+            1.126,
+            -6.22
+          ]
+        },
+        {
+          "object": "tray__1",
+          "label": "Return it to its original spot in the blue tray.",
+          "point": [
+            -2.034,
+            0.898,
+            -6.58
+          ]
+        },
+        {
+          "object": "partswasher__0",
+          "label": "Close the washer lid.",
+          "point": [
+            1.3,
+            1.2043,
+            -6.33
+          ]
+        }
+      ]
+    },
+    {
+      "id": "masking",
+      "kind": "Interaction",
+      "text": "On the workbench with the row of sockets, lift the front edge of the large tan masking cloth clear of the bench lip. Pull the hanging edge back onto the work surface, then let go and let the cloth settle on the bench.",
+      "objects": [
+        "cloth__0",
+        "workbench__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cloth__0",
+          "label": "Lift the tan cloth’s front edge clear of the bench lip.",
+          "point": [
+            -4.7436,
+            0.5981,
+            -5.9333
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "workbench__0",
+          "label": "Pull the edge onto the workbench, release it and let it settle.",
+          "point": [
+            -4.7436,
+            0.85,
+            -6.4333
+          ],
+          "referenceArea": true
+        }
+      ]
+    },
+    {
+      "id": "rag",
+      "kind": "Interaction",
+      "text": "Find the small blue cloth beside the large tan masking cloth on the workbench with the row of sockets. Lift the blue cloth’s front edge, pull it farther onto the work surface and let go. Leave it resting on the bench.",
+      "objects": [
+        "cloth__1",
+        "workbench__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cloth__1",
+          "label": "Lift the front edge of the small blue cloth.",
+          "point": [
+            -4.203,
+            0.8585,
+            -6.192
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "workbench__0",
+          "label": "Pull the edge farther onto the bench, then release it.",
+          "point": [
+            -4.203,
+            0.85,
+            -6.312
+          ],
+          "referenceArea": true
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "floor": "floor",
+    "walls": "walls",
+    "lift__0": "object",
+    "car__0": "object",
+    "fender__0": "object",
+    "wheel__0": "object",
+    "lug_nut__0": "object",
+    "lug_nut__1": "object",
+    "lug_nut__2": "object",
+    "lug_nut__3": "object",
+    "lug_nut__4": "object",
+    "wheel__1": "object",
+    "lug_nut__5": "object",
+    "lug_nut__6": "object",
+    "lug_nut__7": "object",
+    "lug_nut__8": "object",
+    "lug_nut__9": "object",
+    "wheel__2": "object",
+    "lug_nut__10": "object",
+    "lug_nut__11": "object",
+    "lug_nut__12": "object",
+    "lug_nut__13": "object",
+    "lug_nut__14": "object",
+    "wheel__3": "object",
+    "lug_nut__15": "object",
+    "lug_nut__16": "object",
+    "lug_nut__17": "object",
+    "lug_nut__18": "object",
+    "lug_nut__19": "object",
+    "bolt__0": "object",
+    "bolt__1": "object",
+    "bolt__2": "object",
+    "bolt__3": "object",
+    "framebench__0": "object",
+    "rack__1": "object",
+    "fixture__0": "object",
+    "booth__0": "object",
+    "tire_changer__0": "object",
+    "wheel_balancer__0": "object",
+    "wheel__4": "object",
+    "workbench__0": "object",
+    "toolbox__0": "object",
+    "rack__0": "object",
+    "panel_stand__0": "object",
+    "stand__0": "object",
+    "drainpan__0": "object",
+    "hose_reel__0": "object",
+    "air_socket__0": "object",
+    "sign__0": "object",
+    "cloth__0_look": "object",
+    "cloth__1_look": "object",
+    "tray__0": "object",
+    "socket__0": "object",
+    "socket__1": "object",
+    "socket__2": "object",
+    "wrench__1": "object",
+    "tray__1": "object",
+    "bolt__4": "object",
+    "bolt__5": "object",
+    "pegboard__0": "object",
+    "wrench__0": "object",
+    "screwdriver__0": "object",
+    "toolbox__1": "object",
+    "toolbox__2": "object",
+    "workbench__1": "object",
+    "can__0": "object",
+    "can__1": "object",
+    "bottle__0": "object",
+    "spray_bottle__0": "object",
+    "box__0": "object",
+    "box__1": "object",
+    "box__2": "object",
+    "partswasher__0": "object",
+    "charger__0": "object",
+    "cabinet__1": "object",
+    "trolley_jack__0": "object",
+    "transmissionjack__0": "object",
+    "oildrain__0": "object",
+    "cart__0": "object",
+    "cart__1": "object",
+    "tire__0": "object",
+    "tire__1": "object",
+    "tire__2": "object",
+    "service_supplies__0": "object",
+    "auto_parts__0": "object",
+    "storage_bin__0": "object",
+    "body_materials__0": "object",
+    "paper_towel_holder__0": "object",
+    "paper_towel__0": "object",
+    "shelf__0": "object",
+    "cart__2": "object",
+    "trash_can__0": "object",
+    "barrel__0": "object",
+    "bag__0": "object",
+    "stand__1": "object",
+    "stand__2": "object",
+    "creeper__0": "object",
+    "stool__0": "object",
+    "wheeldolly__0": "object",
+    "cabinet__0": "object",
+    "sign__1": "object",
+    "sign__2": "object",
+    "rack__2": "object",
+    "cloth__0": "object",
+    "cloth__1": "object"
+  },
+  "mobility": {
+    "free": 66,
+    "fixed": 35,
+    "jointOnly": 0,
+    "nonrigid": 2,
+    "objects": {
+      "lift__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "car__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "fender__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheel__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheel__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheel__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheel__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lug_nut__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bolt__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bolt__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bolt__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bolt__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "framebench__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "fixture__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "booth__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tire_changer__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheel_balancer__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheel__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "workbench__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toolbox__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "panel_stand__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stand__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drainpan__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hose_reel__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "air_socket__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sign__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cloth__0_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cloth__1_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tray__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "socket__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "socket__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "socket__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wrench__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tray__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bolt__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bolt__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pegboard__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wrench__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "screwdriver__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toolbox__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toolbox__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "workbench__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "can__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "can__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "spray_bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "partswasher__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "charger__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "trolley_jack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "transmissionjack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "oildrain__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tire__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tire__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tire__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "service_supplies__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "auto_parts__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "storage_bin__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "body_materials__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper_towel_holder__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper_towel__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shelf__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "trash_can__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barrel__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stand__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stand__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "creeper__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheeldolly__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sign__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sign__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cloth__0": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "thin_shell",
+        "staticPreview": true
+      },
+      "cloth__1": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "thin_shell",
+        "staticPreview": true
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/auto-repair-001/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "882f33706c3d1dbc2e06d14c6fd088f6fc621630d1b5d6066d7a554eab850889",
+      "previewSha256": "4d74444e85f03708b7a270fec58c0c4f79c5d9f3bd97fd275a3d7d8e6ca18311",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.06875951217379
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "67a76e4e0ed79020add7fc837a3ea065f3d3356a9f4ccbbad2775905d57ee7e4",
+      "previewSha256": "08ae1697165d4cc5b6a83f840caaca52a95bc8ecd1028ac5900e922f4ed4194d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.196913764673155
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "311d6d1f05395c436c2ac66a39e55948e4a2100aa6af7fda77a824211c35cb13",
+      "previewSha256": "3317ebb6e694c11a28f9613f0f75f81074c3600a96c68594fb327cb0478d42c7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.04987306681623
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "95a2da7d440e41fcffb9a424b98452a359c231edad184983cb16a03a76a06bdc",
+      "previewSha256": "7dc038a33bdc28b55a204b51e3924b794a06cbc080c30eea6f52740624930e25",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.96177188214287
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "d7c1a3dd9295a47a4538c9c38621dacc3831511247e111c6c229c9dba1b91db2",
+      "previewSha256": "1784b05ff67185a5fee0599b3ad25618663bfd942ffdbb2775785e693ef86bb8",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.90011302235876
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "2b450df5c298181e6c30b34c2f21728823ccd0cd6cc3710781fa9748c7a48950",
+      "previewSha256": "022506b16750c5895928c1bbdca0f6c43758d3bdd1aa2da09db7a4c6de9938f8",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.34523775868769
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "76b53bda12fd7ca538db84493eac090b8d9a2c12e6c70ad35d73f266267492f1",
+      "previewSha256": "98dcb6e856d7bed57571aa5526a12b5f41d457dc39f0b62e292051a28bb39fa9",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.41607838360346
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "5cc88dd6a8ca2709a545b23fa383b9bd5076ede83889abda3c88ed634c2f1ea6",
+      "previewSha256": "e88109f884dd83d19e30fdde0e0a379ad0c6940dd8ab6eaeb4c8d8d38b750b7d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.39707924214804
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "d17ae17472007fb7e134871dcb637cf7cbd02d43f41daa764b02355df91c7958",
+      "previewSha256": "da400f54158f9011ec1ef0447728818becd1a8750a0e6baed57f5af566129c65",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.487227043486676
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "ed66e2c41cb6fef7cf94a736b22c4d8947a931ea40ce44ce52929e7f12a4dc43",
+      "previewSha256": "693d8345f94d0d1f13aedc20a869f02350cbce4f49d09dc8c5485cec961fd313",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.21055112428846
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "d371a950124bab7f4e530b288c6e81c0f7d8ee3976214028f8b73a105d3bc389",
+      "previewSha256": "107ff56d1ae91c684f815d9c4157ec808302c87d390cc5aef457711e66b92a2d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.96452801578286
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "8295dc5e864ca101e734e39a7425ae39709d0bc27bac8a08e981beb6d20faa04",
+      "previewSha256": "fc9b50057cae0e97e37049ee2447d5be24d637137b245a284fb33db187f45271",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.26015410508515
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "e4f8512d376dfe82f7e63ec7c2890bfcfb7016600590f1965ddfec4e715ebdf0",
+      "previewSha256": "e816f6eac3812d3db9d0f80cee7d853efdfebf28958c0c2b43439422861613a0",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.45327282457251
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "44ce55306b335665f2506d5cb9b080a7af87095bfa3aaffa18014d9b4d2b6909",
+      "previewSha256": "954a2afa7080fe91c6942356d531b5b3a85b4a80378efc3391a5d2703b5719e1",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.098289038622276
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "d5c5b451fe16263d18a4125b1915ebc49dd22ed1045876f24bbebc12ffaffac8",
+      "previewSha256": "d2c18dd00325855ddfbe29ecee6aeb5097828378e756aa278b8e92322045cb20",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.29292023246649
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "f32740780a76a118dc608c9cb9896e4a05d2d0da5d14458d162229b34da2b63d",
+      "previewSha256": "7f5c207ae22b0b64e1d7375bf896a9c57f338c4fcc329685e584984ffd8db395",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.075111612061384
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "9f30913be37c8a3ca6151be8273f08d87e88fe94fb9f005b581d795b7eb0c787",
+      "previewSha256": "19667a4df31a26f9e743f9fbb7329601cbf386cae03231d791bd90e001f80e28",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.98675955736858
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "d2e22161685c1c9eebf051ead3636bea897ae533a72f6c97da8900719ad11f60",
+      "previewSha256": "5f59fe4e3ff2035861b221c8a13ad0e210ca99ed5b8fad89ac82aa04709d2738",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.623695145335084
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "e931ae53884f26a9240706d14bfc3fa7661eecc203f402474be6c94705010d7d",
+      "previewSha256": "922b5652a225908d3a4287ccfbf49d53855c13dcf51b99523cc741bde2490896",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.36346394809779
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "9ebef366a808324e09ccaafc1d19ec0be9a862a3439b8a8e352800df0b2ac839",
+      "previewSha256": "45bff801ce18a0b0f31ad0bb7ab135ea9db84bae664057e6c8e9b9054b114a4c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.6338579305066
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "4665adda48d2887c29c70e103477c08995455ba454bdb7bdca1270b478947f92",
+      "previewSha256": "c46b76c597e484dd73b6e4d98eb9b2a0455a6098b15c45d5f8b955c7d9918610",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.111987752303115
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "ca9eb074f15a39ac72b7e316320c33c1a013d882c4fc6c557a730dbda03c1894",
+      "previewSha256": "6ce8de1152398ca6ce6b7b43dca66005feccd29bc344de4734585a9fb0f5569b",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.336620607660386
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "016d97bb95dc1705b7625306fd9fc997daa3d8edd3d1c4d3ca7b20803bcd0811",
+      "previewSha256": "894f4710e27ae20532da503a9daa8224b2fe90dc8b25922571557141d59bb347",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.46349327966428
+    },
+    {
+      "src": "assets/rooms/auto-repair-001/extra-15.webp",
+      "label": "Extra 16",
+      "group": "extra",
+      "sourceSha256": "c703df6815d75d572d86c0decb00afb0fa1ccd487daaea5375f44f1cf803b754",
+      "previewSha256": "180c8a69bd14e1f88863c419eb2a295e07631c6f22be0db1d712ee096e2f0524",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.44385502555106
+    }
+  ],
+  "joints": [
+    {
+      "id": "lift_slide_0",
+      "objectId": "lift__0",
+      "body": "lift_carriage_0__0",
+      "type": "slide",
+      "pivot": [
+        -1.28,
+        0.17,
+        -1.0499999999999998
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.8,
+      "closed": 0,
+      "open": 1.8,
+      "range": [
+        0,
+        1.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "lift_arm_swing_0_0",
+      "objectId": "lift__0",
+      "body": "lift_arm_0_0__0",
+      "type": "hinge",
+      "pivot": [
+        -1.53,
+        0.14,
+        -1.2699999999999998
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.5,
+      "closed": 0,
+      "open": 0.5,
+      "range": [
+        -0.5,
+        0.5
+      ],
+      "parentJointId": "lift_slide_0"
+    },
+    {
+      "id": "lift_arm_extension_0_0",
+      "objectId": "lift__0",
+      "body": "lift_pad_slider_0_0__0",
+      "type": "slide",
+      "pivot": [
+        -2.2,
+        0.14,
+        -2.5
+      ],
+      "axis": [
+        -0.47835179816118456,
+        0,
+        -0.8781682966242641
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "lift_arm_swing_0_0"
+    },
+    {
+      "id": "lift_arm_swing_0_1",
+      "objectId": "lift__0",
+      "body": "lift_arm_0_1__0",
+      "type": "hinge",
+      "pivot": [
+        -1.53,
+        0.14,
+        -0.8299999999999998
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.5,
+      "closed": 0,
+      "open": 0.5,
+      "range": [
+        -0.5,
+        0.5
+      ],
+      "parentJointId": "lift_slide_0"
+    },
+    {
+      "id": "lift_arm_extension_0_1",
+      "objectId": "lift__0",
+      "body": "lift_pad_slider_0_1__0",
+      "type": "slide",
+      "pivot": [
+        -2.2,
+        0.14,
+        -1.0499999999999998
+      ],
+      "axis": [
+        -0.9500918195227719,
+        0,
+        -0.31197040641046164
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "lift_arm_swing_0_1"
+    },
+    {
+      "id": "lift_slide_1",
+      "objectId": "lift__0",
+      "body": "lift_carriage_1__0",
+      "type": "slide",
+      "pivot": [
+        -4.72,
+        0.17,
+        -1.0500000000000003
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.8,
+      "closed": 0,
+      "open": 1.8,
+      "range": [
+        0,
+        1.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "lift_arm_swing_1_0",
+      "objectId": "lift__0",
+      "body": "lift_arm_1_0__0",
+      "type": "hinge",
+      "pivot": [
+        -4.47,
+        0.14,
+        -1.2700000000000002
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.5,
+      "closed": 0,
+      "open": 0.5,
+      "range": [
+        -0.5,
+        0.5
+      ],
+      "parentJointId": "lift_slide_1"
+    },
+    {
+      "id": "lift_arm_extension_1_0",
+      "objectId": "lift__0",
+      "body": "lift_pad_slider_1_0__0",
+      "type": "slide",
+      "pivot": [
+        -3.8,
+        0.14,
+        -2.5
+      ],
+      "axis": [
+        0.4783517981611848,
+        0,
+        -0.8781682966242641
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "lift_arm_swing_1_0"
+    },
+    {
+      "id": "lift_arm_swing_1_1",
+      "objectId": "lift__0",
+      "body": "lift_arm_1_1__0",
+      "type": "hinge",
+      "pivot": [
+        -4.47,
+        0.14,
+        -0.8300000000000003
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.5,
+      "closed": 0,
+      "open": 0.5,
+      "range": [
+        -0.5,
+        0.5
+      ],
+      "parentJointId": "lift_slide_1"
+    },
+    {
+      "id": "lift_arm_extension_1_1",
+      "objectId": "lift__0",
+      "body": "lift_pad_slider_1_1__0",
+      "type": "slide",
+      "pivot": [
+        -3.8,
+        0.14,
+        -1.0500000000000003
+      ],
+      "axis": [
+        0.9500918195227719,
+        0,
+        -0.3119704064104614
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        0,
+        0.12
+      ],
+      "parentJointId": "lift_arm_swing_1_1"
+    },
+    {
+      "id": "door_hinge",
+      "objectId": "car__0",
+      "body": "door__0",
+      "type": "hinge",
+      "pivot": [
+        -2.18,
+        0.928,
+        -0.8800000000000001
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.18,
+      "closed": 0,
+      "open": 1.18,
+      "range": [
+        0,
+        1.18
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "window_slide",
+      "objectId": "car__0",
+      "body": "window__0",
+      "type": "slide",
+      "pivot": [
+        -2.18,
+        0.928,
+        -0.8800000000000001
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.37,
+      "closed": 0,
+      "open": 0.37,
+      "range": [
+        0,
+        0.37
+      ],
+      "parentJointId": "door_hinge"
+    },
+    {
+      "id": "latch_slide",
+      "objectId": "car__0",
+      "body": "latch__0",
+      "type": "slide",
+      "pivot": [
+        -2.25,
+        0.9680000000000001,
+        -1.9000000000000001
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": "door_hinge"
+    },
+    {
+      "id": "hood_hinge",
+      "objectId": "car__0",
+      "body": "hood__0",
+      "type": "hinge",
+      "pivot": [
+        -3,
+        1.208,
+        -0.92
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.047198,
+      "closed": 0,
+      "open": 1.047198,
+      "range": [
+        0,
+        1.047198
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "frame_ramp_hinge_0",
+      "objectId": "framebench__0",
+      "body": "frame_ramp__0",
+      "type": "hinge",
+      "pivot": [
+        2.1199999999999997,
+        0.78,
+        0.44999999999999973
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1,
+      "closed": 0,
+      "open": 1,
+      "range": [
+        0,
+        1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "frame_ramp_hinge_1",
+      "objectId": "framebench__0",
+      "body": "frame_ramp__1",
+      "type": "hinge",
+      "pivot": [
+        3.48,
+        0.78,
+        0.44999999999999973
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1,
+      "closed": 0,
+      "open": 1,
+      "range": [
+        0,
+        1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "frame_clamp_slide_0",
+      "objectId": "framebench__0",
+      "body": "frame_clamp__0",
+      "type": "slide",
+      "pivot": [
+        2.15,
+        0.935,
+        -0.6000000000000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        -0.08,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "frame_clamp_slide_1",
+      "objectId": "framebench__0",
+      "body": "frame_clamp__1",
+      "type": "slide",
+      "pivot": [
+        3.4499999999999997,
+        0.935,
+        -0.6000000000000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        -0.08,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "frame_clamp_slide_2",
+      "objectId": "framebench__0",
+      "body": "frame_clamp__2",
+      "type": "slide",
+      "pivot": [
+        2.15,
+        0.935,
+        -2.6
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        -0.08,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "frame_clamp_slide_3",
+      "objectId": "framebench__0",
+      "body": "frame_clamp__3",
+      "type": "slide",
+      "pivot": [
+        3.4499999999999997,
+        0.935,
+        -2.6
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        -0.08,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "booth_door_hinge_0",
+      "objectId": "booth__0",
+      "body": "booth_door__0",
+      "type": "hinge",
+      "pivot": [
+        -3.73,
+        0.03500000000000001,
+        5.68
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5,
+      "closed": 0,
+      "open": 1.5,
+      "range": [
+        0,
+        1.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "booth_door_hinge_1",
+      "objectId": "booth__0",
+      "body": "booth_door__1",
+      "type": "hinge",
+      "pivot": [
+        -3.73,
+        0.03500000000000001,
+        3.5199999999999996
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5,
+      "closed": 0,
+      "open": 1.5,
+      "range": [
+        0,
+        1.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_pedal_0",
+      "objectId": "tire_changer__0",
+      "body": "changer_pedal__0",
+      "type": "hinge",
+      "pivot": [
+        2.037,
+        0.155,
+        4.604
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.2,
+      "closed": 0,
+      "open": -0.2,
+      "range": [
+        -0.2,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_pedal_1",
+      "objectId": "tire_changer__0",
+      "body": "changer_pedal__1",
+      "type": "hinge",
+      "pivot": [
+        2.179,
+        0.155,
+        4.604
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.2,
+      "closed": 0,
+      "open": -0.2,
+      "range": [
+        -0.2,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_pedal_2",
+      "objectId": "tire_changer__0",
+      "body": "changer_pedal__2",
+      "type": "hinge",
+      "pivot": [
+        2.321,
+        0.155,
+        4.604
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.2,
+      "closed": 0,
+      "open": -0.2,
+      "range": [
+        -0.2,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_pedal_3",
+      "objectId": "tire_changer__0",
+      "body": "changer_pedal__3",
+      "type": "hinge",
+      "pivot": [
+        2.463,
+        0.155,
+        4.604
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.2,
+      "closed": 0,
+      "open": -0.2,
+      "range": [
+        -0.2,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_rotation",
+      "objectId": "tire_changer__0",
+      "body": "changer_turntable__0",
+      "type": "hinge",
+      "pivot": [
+        2.25,
+        0.785,
+        4.3
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 3.14,
+      "closed": 0,
+      "open": 3.14,
+      "range": [
+        -3.14,
+        3.14
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_clamp_0",
+      "objectId": "tire_changer__0",
+      "body": "changer_clamp__0",
+      "type": "slide",
+      "pivot": [
+        2.485,
+        0.8300000000000001,
+        4.3
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.055,
+      "closed": 0,
+      "open": -0.055,
+      "range": [
+        -0.055,
+        0.035
+      ],
+      "parentJointId": "changer_rotation"
+    },
+    {
+      "id": "changer_clamp_1",
+      "objectId": "tire_changer__0",
+      "body": "changer_clamp__1",
+      "type": "slide",
+      "pivot": [
+        2.25,
+        0.8300000000000001,
+        4.0649999999999995
+      ],
+      "axis": [
+        3.2679489669895645e-07,
+        0,
+        -0.9999999999999466
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.055,
+      "closed": 0,
+      "open": -0.055,
+      "range": [
+        -0.055,
+        0.035
+      ],
+      "parentJointId": "changer_rotation"
+    },
+    {
+      "id": "changer_clamp_2",
+      "objectId": "tire_changer__0",
+      "body": "changer_clamp__2",
+      "type": "slide",
+      "pivot": [
+        2.015,
+        0.8300000000000001,
+        4.3
+      ],
+      "axis": [
+        -0.99999999999994,
+        0,
+        3.464102066193935e-07
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.055,
+      "closed": 0,
+      "open": -0.055,
+      "range": [
+        -0.055,
+        0.035
+      ],
+      "parentJointId": "changer_rotation"
+    },
+    {
+      "id": "changer_clamp_3",
+      "objectId": "tire_changer__0",
+      "body": "changer_clamp__3",
+      "type": "slide",
+      "pivot": [
+        2.25,
+        0.8300000000000001,
+        4.535
+      ],
+      "axis": [
+        1.9615309931886316e-08,
+        0,
+        0.9999999999999999
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.055,
+      "closed": 0,
+      "open": -0.055,
+      "range": [
+        -0.055,
+        0.035
+      ],
+      "parentJointId": "changer_rotation"
+    },
+    {
+      "id": "changer_arm_swing",
+      "objectId": "tire_changer__0",
+      "body": "changer_arm__0",
+      "type": "hinge",
+      "pivot": [
+        2.25,
+        1.8,
+        3.86
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.4,
+      "closed": 0,
+      "open": -1.4,
+      "range": [
+        -1.4,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_tool_height",
+      "objectId": "tire_changer__0",
+      "body": "changer_toolhead__0",
+      "type": "slide",
+      "pivot": [
+        2.25,
+        1.8,
+        4.41
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.17,
+      "closed": 0,
+      "open": -0.17,
+      "range": [
+        -0.17,
+        0.12
+      ],
+      "parentJointId": "changer_arm_swing"
+    },
+    {
+      "id": "changer_bead_breaker",
+      "objectId": "tire_changer__0",
+      "body": "changer_breaker__0",
+      "type": "hinge",
+      "pivot": [
+        2.67,
+        0.32,
+        4.05
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.75,
+      "closed": 0,
+      "open": 0.75,
+      "range": [
+        0,
+        0.75
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_breaker_ram_yaw",
+      "objectId": "tire_changer__0",
+      "body": "changer_breaker_barrel__0",
+      "type": "hinge",
+      "pivot": [
+        2.87,
+        0.32,
+        4.069999999999999
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.9,
+      "closed": 0,
+      "open": 0.9,
+      "range": [
+        -0.9,
+        0.9
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "changer_breaker_ram_extension",
+      "objectId": "tire_changer__0",
+      "body": "changer_breaker_rod__0",
+      "type": "slide",
+      "pivot": [
+        2.8098771430686793,
+        0.32,
+        4.207423586310414
+      ],
+      "axis": [
+        -0.4008190462088048,
+        0,
+        0.91615724206943
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.25,
+      "closed": 0,
+      "open": 0.25,
+      "range": [
+        -0.16,
+        0.25
+      ],
+      "parentJointId": "changer_breaker_ram_yaw"
+    },
+    {
+      "id": "balancer_hood_hinge",
+      "objectId": "wheel_balancer__0",
+      "body": "balancer_hood__0",
+      "type": "hinge",
+      "pivot": [
+        4.34,
+        0.78,
+        3.82
+      ],
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.3,
+      "closed": 0,
+      "open": 1.3,
+      "range": [
+        0,
+        1.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_slide_0",
+      "objectId": "toolbox__0",
+      "body": "drawer__0",
+      "type": "slide",
+      "pivot": [
+        -2.412,
+        0.3,
+        -6.48
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_slide_1",
+      "objectId": "toolbox__0",
+      "body": "drawer__1",
+      "type": "slide",
+      "pivot": [
+        -2.412,
+        0.43000000000000005,
+        -6.48
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_slide_2",
+      "objectId": "toolbox__0",
+      "body": "drawer__2",
+      "type": "slide",
+      "pivot": [
+        -2.412,
+        0.5599999999999999,
+        -6.48
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drawer_slide_3",
+      "objectId": "toolbox__0",
+      "body": "drawer__3",
+      "type": "slide",
+      "pivot": [
+        -2.412,
+        0.6900000000000001,
+        -6.48
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "chest_brake_pedal_0",
+      "objectId": "toolbox__0",
+      "body": "chest_brake_pedal__0",
+      "type": "hinge",
+      "pivot": [
+        -2.892,
+        0.14500000000000002,
+        -6.235
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "chest_brake_pedal_1",
+      "objectId": "toolbox__0",
+      "body": "chest_brake_pedal__1",
+      "type": "hinge",
+      "pivot": [
+        -2.892,
+        0.14500000000000002,
+        -6.635000000000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "chest_brake_pedal_2",
+      "objectId": "toolbox__0",
+      "body": "chest_brake_pedal__2",
+      "type": "hinge",
+      "pivot": [
+        -1.932,
+        0.14500000000000002,
+        -6.235
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "chest_brake_pedal_3",
+      "objectId": "toolbox__0",
+      "body": "chest_brake_pedal__3",
+      "type": "hinge",
+      "pivot": [
+        -1.932,
+        0.14500000000000002,
+        -6.635000000000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "panel_cradle_tilt",
+      "objectId": "panel_stand__0",
+      "body": "panel_cradle__0",
+      "type": "hinge",
+      "pivot": [
+        5,
+        0.76,
+        -4.2
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.35,
+      "closed": 0,
+      "open": 0.35,
+      "range": [
+        -0.35,
+        0.35
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "stand_height",
+      "objectId": "stand__0",
+      "body": "stand_post__0",
+      "type": "slide",
+      "pivot": [
+        -4.85,
+        0.42000000000000004,
+        1.9
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.3,
+      "closed": 0,
+      "open": 0.3,
+      "range": [
+        0,
+        0.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ratchet_selector",
+      "objectId": "wrench__1",
+      "body": "ratchet_selector__0",
+      "type": "hinge",
+      "pivot": [
+        -3.77,
+        0.902,
+        -6.45
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.6,
+      "closed": 0,
+      "open": 0.6,
+      "range": [
+        -0.6,
+        0.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_drawer_slide_0",
+      "objectId": "toolbox__1",
+      "body": "bench0_drawer__0",
+      "type": "slide",
+      "pivot": [
+        -1,
+        0.3,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_drawer_slide_1",
+      "objectId": "toolbox__1",
+      "body": "bench0_drawer__1",
+      "type": "slide",
+      "pivot": [
+        -1,
+        0.43000000000000005,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_drawer_slide_2",
+      "objectId": "toolbox__1",
+      "body": "bench0_drawer__2",
+      "type": "slide",
+      "pivot": [
+        -1,
+        0.5599999999999999,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_drawer_slide_3",
+      "objectId": "toolbox__1",
+      "body": "bench0_drawer__3",
+      "type": "slide",
+      "pivot": [
+        -1,
+        0.6900000000000001,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_chest_brake_pedal_0",
+      "objectId": "toolbox__1",
+      "body": "bench0_chest_brake_pedal__0",
+      "type": "hinge",
+      "pivot": [
+        -1.48,
+        0.14500000000000002,
+        -6.1049999999999995
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_chest_brake_pedal_1",
+      "objectId": "toolbox__1",
+      "body": "bench0_chest_brake_pedal__1",
+      "type": "hinge",
+      "pivot": [
+        -1.48,
+        0.14500000000000002,
+        -6.505
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_chest_brake_pedal_2",
+      "objectId": "toolbox__1",
+      "body": "bench0_chest_brake_pedal__2",
+      "type": "hinge",
+      "pivot": [
+        -0.52,
+        0.14500000000000002,
+        -6.1049999999999995
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench0_chest_brake_pedal_3",
+      "objectId": "toolbox__1",
+      "body": "bench0_chest_brake_pedal__3",
+      "type": "hinge",
+      "pivot": [
+        -0.52,
+        0.14500000000000002,
+        -6.505
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_drawer_slide_0",
+      "objectId": "toolbox__2",
+      "body": "bench1_drawer__0",
+      "type": "slide",
+      "pivot": [
+        1.6,
+        0.3,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_drawer_slide_1",
+      "objectId": "toolbox__2",
+      "body": "bench1_drawer__1",
+      "type": "slide",
+      "pivot": [
+        1.6,
+        0.43000000000000005,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_drawer_slide_2",
+      "objectId": "toolbox__2",
+      "body": "bench1_drawer__2",
+      "type": "slide",
+      "pivot": [
+        1.6,
+        0.5599999999999999,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_drawer_slide_3",
+      "objectId": "toolbox__2",
+      "body": "bench1_drawer__3",
+      "type": "slide",
+      "pivot": [
+        1.6,
+        0.6900000000000001,
+        -6.35
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_chest_brake_pedal_0",
+      "objectId": "toolbox__2",
+      "body": "bench1_chest_brake_pedal__0",
+      "type": "hinge",
+      "pivot": [
+        1.12,
+        0.14500000000000002,
+        -6.1049999999999995
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_chest_brake_pedal_1",
+      "objectId": "toolbox__2",
+      "body": "bench1_chest_brake_pedal__1",
+      "type": "hinge",
+      "pivot": [
+        1.12,
+        0.14500000000000002,
+        -6.505
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_chest_brake_pedal_2",
+      "objectId": "toolbox__2",
+      "body": "bench1_chest_brake_pedal__2",
+      "type": "hinge",
+      "pivot": [
+        2.08,
+        0.14500000000000002,
+        -6.1049999999999995
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bench1_chest_brake_pedal_3",
+      "objectId": "toolbox__2",
+      "body": "bench1_chest_brake_pedal__3",
+      "type": "hinge",
+      "pivot": [
+        2.08,
+        0.14500000000000002,
+        -6.505
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "partswasher_lid_hinge",
+      "objectId": "partswasher__0",
+      "body": "partswasher_lid__0",
+      "type": "hinge",
+      "pivot": [
+        1.3,
+        1.229,
+        -6.550000000000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.4,
+      "closed": 0,
+      "open": 1.4,
+      "range": [
+        0,
+        1.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "washer_switch",
+      "objectId": "partswasher__0",
+      "body": "washer_switch__0",
+      "type": "hinge",
+      "pivot": [
+        1.06,
+        1.129,
+        -6.051
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.16,
+      "closed": 0,
+      "open": 0.16,
+      "range": [
+        -0.16,
+        0.16
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "charger_selector",
+      "objectId": "charger__0",
+      "body": "charger_selector__0",
+      "type": "hinge",
+      "pivot": [
+        -0.679,
+        1.129,
+        -6.252000000000001
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.3,
+      "closed": 0,
+      "open": 2.3,
+      "range": [
+        0,
+        2.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "charger_power",
+      "objectId": "charger__0",
+      "body": "charger_power__0",
+      "type": "hinge",
+      "pivot": [
+        -0.81,
+        1.045,
+        -6.258
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.18,
+      "closed": 0,
+      "open": 0.18,
+      "range": [
+        -0.18,
+        0.18
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "charger_mode",
+      "objectId": "charger__0",
+      "body": "charger_mode__0",
+      "type": "hinge",
+      "pivot": [
+        -0.74,
+        1.045,
+        -6.258
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.18,
+      "closed": 0,
+      "open": 0.18,
+      "range": [
+        -0.18,
+        0.18
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "servicecabinet_hinge",
+      "objectId": "cabinet__1",
+      "body": "servicecabinet_door__0",
+      "type": "hinge",
+      "pivot": [
+        -5.55,
+        1.6000000000000005,
+        1.6400000000000001
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5,
+      "closed": 0,
+      "open": 1.5,
+      "range": [
+        0,
+        1.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "floorjack_lift",
+      "objectId": "trolley_jack__0",
+      "body": "floorjack_arm__0",
+      "type": "hinge",
+      "pivot": [
+        1.6400000000000001,
+        0.18000000000000005,
+        5.7
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "floorjack_level",
+      "objectId": "trolley_jack__0",
+      "body": "floorjack_saddle__0",
+      "type": "hinge",
+      "pivot": [
+        1.07,
+        0.26000000000000006,
+        5.7
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -0.7,
+      "closed": 0,
+      "open": -0.7,
+      "range": [
+        -0.7,
+        0.05
+      ],
+      "parentJointId": "floorjack_lift"
+    },
+    {
+      "id": "floorjack_ram_pitch",
+      "objectId": "trolley_jack__0",
+      "body": "floorjack_barrel__0",
+      "type": "hinge",
+      "pivot": [
+        1.6800000000000002,
+        0.14,
+        5.7
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1,
+      "closed": 0,
+      "open": 1,
+      "range": [
+        -0.1,
+        1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "floorjack_ram_extension",
+      "objectId": "trolley_jack__0",
+      "body": "floorjack_ram__0",
+      "type": "slide",
+      "pivot": [
+        1.5100000000000002,
+        0.14,
+        5.7
+      ],
+      "axis": [
+        -1.0000000000000002,
+        0,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.17,
+      "closed": 0,
+      "open": 0.17,
+      "range": [
+        -0.025,
+        0.17
+      ],
+      "parentJointId": "floorjack_ram_pitch"
+    },
+    {
+      "id": "floorjack_pump",
+      "objectId": "trolley_jack__0",
+      "body": "floorjack_handle__0",
+      "type": "hinge",
+      "pivot": [
+        1.7500000000000002,
+        0.23000000000000004,
+        5.7
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        0,
+        -1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.35,
+      "closed": 0,
+      "open": 0.35,
+      "range": [
+        -0.25,
+        0.35
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "transmission_pump",
+      "objectId": "transmissionjack__0",
+      "body": "transmission_pedal__0",
+      "type": "hinge",
+      "pivot": [
+        5.1,
+        0.32,
+        1.87
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.22,
+      "closed": 0,
+      "open": 0.22,
+      "range": [
+        -0.18,
+        0.22
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "transmission_height",
+      "objectId": "transmissionjack__0",
+      "body": "transmission_saddle__0",
+      "type": "slide",
+      "pivot": [
+        5,
+        1.12,
+        1.8
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.6,
+      "closed": 0,
+      "open": 0.6,
+      "range": [
+        0,
+        0.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "drain_funnel_height",
+      "objectId": "oildrain__0",
+      "body": "drainfunnel__0",
+      "type": "slide",
+      "pivot": [
+        -4.65,
+        1.2200000000000002,
+        -3.8
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    }
+  ],
+  "previewPolicy": {
+    "method": "Preserve source geometry; exclude exterior backdrops from initial framing. Oversized architecture crossing a source-derived room footprint is partitioned into room/backdrop triangles with interpolated UVs and normals.",
+    "backdropGeoms": [],
+    "partitionedGeoms": [],
+    "planes": [],
+    "roomFootprintXY": null
+  },
+  "fullGeometryBounds": {
+    "min": [
+      -6.08,
+      -0.2,
+      -7.08
+    ],
+    "max": [
+      6.08,
+      4.92,
+      7.130000000000001
+    ]
+  },
+  "nonrigidPreview": {
+    "added": [
+      {
+        "id": "cloth__0",
+        "kind": "thin_shell",
+        "shapeType": "mesh",
+        "staticPreview": true,
+        "geometrySource": "source mesh: maskingcloth__0.obj",
+        "bounds": {
+          "min": [
+            -5.01180279,
+            0.58193076,
+            -6.4787281199999995
+          ],
+          "max": [
+            -4.4675727,
+            0.86862427,
+            -5.91794322
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 4286,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      },
+      {
+        "id": "cloth__1",
+        "kind": "thin_shell",
+        "shapeType": "mesh",
+        "staticPreview": true,
+        "geometrySource": "source mesh: shoprag__0.obj",
+        "bounds": {
+          "min": [
+            -4.33860271,
+            0.85749996,
+            -6.47225528
+          ],
+          "max": [
+            -4.06337756,
+            0.86853701,
+            -6.17739209
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 1104,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      }
+    ],
+    "unsupported": []
+  },
+  "equalityJoints": [
+    {
+      "name": "lift_arm_swing_0_0_locked",
+      "joint1": "lift_arm_swing_0_0",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_arm_extension_0_0_locked",
+      "joint1": "lift_arm_extension_0_0",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_arm_swing_0_1_locked",
+      "joint1": "lift_arm_swing_0_1",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_arm_extension_0_1_locked",
+      "joint1": "lift_arm_extension_0_1",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_arm_swing_1_0_locked",
+      "joint1": "lift_arm_swing_1_0",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_arm_extension_1_0_locked",
+      "joint1": "lift_arm_extension_1_0",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_arm_swing_1_1_locked",
+      "joint1": "lift_arm_swing_1_1",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_arm_extension_1_1_locked",
+      "joint1": "lift_arm_extension_1_1",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "lift_synchronized",
+      "joint1": "lift_slide_1",
+      "joint2": "lift_slide_0",
+      "polycoef": "0 1 0 0 0"
+    },
+    {
+      "name": "door_latched",
+      "joint1": "door_hinge",
+      "polycoef": "0 0 0 0 0",
+      "solref": "0.003 1"
+    },
+    {
+      "name": "frame_ramp_hinge_0_locked",
+      "joint1": "frame_ramp_hinge_0",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "frame_ramp_hinge_1_locked",
+      "joint1": "frame_ramp_hinge_1",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "frame_clamp_slide_0_locked",
+      "joint1": "frame_clamp_slide_0",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "frame_clamp_slide_1_locked",
+      "joint1": "frame_clamp_slide_1",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "frame_clamp_slide_2_locked",
+      "joint1": "frame_clamp_slide_2",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "frame_clamp_slide_3_locked",
+      "joint1": "frame_clamp_slide_3",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "chest_caster_brake_0",
+      "joint1": "chest_caster_roll_0",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "chest_caster_brake_1",
+      "joint1": "chest_caster_roll_1",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "chest_caster_brake_2",
+      "joint1": "chest_caster_roll_2",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "chest_caster_brake_3",
+      "joint1": "chest_caster_roll_3",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "panel_cradle_tilt_locked",
+      "joint1": "panel_cradle_tilt",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "stand_height_locked",
+      "joint1": "stand_height",
+      "polycoef": "0 0 0 0 0"
+    },
+    {
+      "name": "bench0_chest_caster_brake_0",
+      "joint1": "bench0_chest_caster_roll_0",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "bench0_chest_caster_brake_1",
+      "joint1": "bench0_chest_caster_roll_1",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "bench0_chest_caster_brake_2",
+      "joint1": "bench0_chest_caster_roll_2",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "bench0_chest_caster_brake_3",
+      "joint1": "bench0_chest_caster_roll_3",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "bench1_chest_caster_brake_0",
+      "joint1": "bench1_chest_caster_roll_0",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "bench1_chest_caster_brake_1",
+      "joint1": "bench1_chest_caster_roll_1",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "bench1_chest_caster_brake_2",
+      "joint1": "bench1_chest_caster_roll_2",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "bench1_chest_caster_brake_3",
+      "joint1": "bench1_chest_caster_roll_3",
+      "polycoef": "0 0 0 0 0",
+      "solref": ".002 1",
+      "solimp": ".999 .999 .001",
+      "active": "true"
+    },
+    {
+      "name": "floorjack_saddle_level",
+      "joint1": "floorjack_level",
+      "joint2": "floorjack_lift",
+      "polycoef": "0 -1 0 0 0",
+      "solref": "0.002 1",
+      "solimp": "0.999 0.999 0.001"
+    }
+  ],
+  "equalityConstraintCount": 67,
+  "articulations": [
+    {
+      "id": "lift_arm_swing_0_0",
+      "objectId": "lift__0",
+      "title": "lift arm swing 0 0",
+      "clip": "lift_arm_swing_0_0_motion",
+      "joints": [
+        "lift_arm_swing_0_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 28.64788975654116,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lift_arm_extension_0_0",
+      "objectId": "lift__0",
+      "title": "lift arm extension 0 0",
+      "clip": "lift_arm_extension_0_0_motion",
+      "joints": [
+        "lift_arm_extension_0_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lift_arm_swing_0_1",
+      "objectId": "lift__0",
+      "title": "lift arm swing 0 1",
+      "clip": "lift_arm_swing_0_1_motion",
+      "joints": [
+        "lift_arm_swing_0_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 28.64788975654116,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lift_arm_extension_0_1",
+      "objectId": "lift__0",
+      "title": "lift arm extension 0 1",
+      "clip": "lift_arm_extension_0_1_motion",
+      "joints": [
+        "lift_arm_extension_0_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lift_arm_swing_1_0",
+      "objectId": "lift__0",
+      "title": "lift arm swing 1 0",
+      "clip": "lift_arm_swing_1_0_motion",
+      "joints": [
+        "lift_arm_swing_1_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 28.64788975654116,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lift_arm_extension_1_0",
+      "objectId": "lift__0",
+      "title": "lift arm extension 1 0",
+      "clip": "lift_arm_extension_1_0_motion",
+      "joints": [
+        "lift_arm_extension_1_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lift_arm_swing_1_1",
+      "objectId": "lift__0",
+      "title": "lift arm swing 1 1",
+      "clip": "lift_arm_swing_1_1_motion",
+      "joints": [
+        "lift_arm_swing_1_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 28.64788975654116,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "lift_arm_extension_1_1",
+      "objectId": "lift__0",
+      "title": "lift arm extension 1 1",
+      "clip": "lift_arm_extension_1_1_motion",
+      "joints": [
+        "lift_arm_extension_1_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door_hinge",
+      "objectId": "car__0",
+      "title": "door hinge",
+      "clip": "door_hinge_motion",
+      "joints": [
+        "door_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 67.60901982543714,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "window_slide",
+      "objectId": "car__0",
+      "title": "window slide",
+      "clip": "window_slide_motion",
+      "joints": [
+        "window_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 37,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "latch_slide",
+      "objectId": "car__0",
+      "title": "latch slide",
+      "clip": "latch_slide_motion",
+      "joints": [
+        "latch_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "hood_hinge",
+      "objectId": "car__0",
+      "title": "hood hinge",
+      "clip": "hood_hinge_motion",
+      "joints": [
+        "hood_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 60.00002571454079,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "frame_ramp_hinge_0",
+      "objectId": "framebench__0",
+      "title": "frame ramp hinge 0",
+      "clip": "frame_ramp_hinge_0_motion",
+      "joints": [
+        "frame_ramp_hinge_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 57.29577951308232,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "frame_ramp_hinge_1",
+      "objectId": "framebench__0",
+      "title": "frame ramp hinge 1",
+      "clip": "frame_ramp_hinge_1_motion",
+      "joints": [
+        "frame_ramp_hinge_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 57.29577951308232,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "frame_clamp_slide_0",
+      "objectId": "framebench__0",
+      "title": "frame clamp slide 0",
+      "clip": "frame_clamp_slide_0_motion",
+      "joints": [
+        "frame_clamp_slide_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "frame_clamp_slide_1",
+      "objectId": "framebench__0",
+      "title": "frame clamp slide 1",
+      "clip": "frame_clamp_slide_1_motion",
+      "joints": [
+        "frame_clamp_slide_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "frame_clamp_slide_2",
+      "objectId": "framebench__0",
+      "title": "frame clamp slide 2",
+      "clip": "frame_clamp_slide_2_motion",
+      "joints": [
+        "frame_clamp_slide_2"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "frame_clamp_slide_3",
+      "objectId": "framebench__0",
+      "title": "frame clamp slide 3",
+      "clip": "frame_clamp_slide_3_motion",
+      "joints": [
+        "frame_clamp_slide_3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "booth_door_hinge_0",
+      "objectId": "booth__0",
+      "title": "booth door hinge 0",
+      "clip": "booth_door_hinge_0_motion",
+      "joints": [
+        "booth_door_hinge_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 85.94366926962348,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "booth_door_hinge_1",
+      "objectId": "booth__0",
+      "title": "booth door hinge 1",
+      "clip": "booth_door_hinge_1_motion",
+      "joints": [
+        "booth_door_hinge_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 85.94366926962348,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_pedal_0",
+      "objectId": "tire_changer__0",
+      "title": "changer pedal 0",
+      "clip": "changer_pedal_0_motion",
+      "joints": [
+        "changer_pedal_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 11.459155902616466,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_pedal_1",
+      "objectId": "tire_changer__0",
+      "title": "changer pedal 1",
+      "clip": "changer_pedal_1_motion",
+      "joints": [
+        "changer_pedal_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 11.459155902616466,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_pedal_2",
+      "objectId": "tire_changer__0",
+      "title": "changer pedal 2",
+      "clip": "changer_pedal_2_motion",
+      "joints": [
+        "changer_pedal_2"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 11.459155902616466,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_pedal_3",
+      "objectId": "tire_changer__0",
+      "title": "changer pedal 3",
+      "clip": "changer_pedal_3_motion",
+      "joints": [
+        "changer_pedal_3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 11.459155902616466,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_rotation",
+      "objectId": "tire_changer__0",
+      "title": "changer rotation",
+      "clip": "changer_rotation_motion",
+      "joints": [
+        "changer_rotation"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 179.9087476710785,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_clamp_0",
+      "objectId": "tire_changer__0",
+      "title": "changer clamp 0",
+      "clip": "changer_clamp_0_motion",
+      "joints": [
+        "changer_clamp_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_clamp_1",
+      "objectId": "tire_changer__0",
+      "title": "changer clamp 1",
+      "clip": "changer_clamp_1_motion",
+      "joints": [
+        "changer_clamp_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_clamp_2",
+      "objectId": "tire_changer__0",
+      "title": "changer clamp 2",
+      "clip": "changer_clamp_2_motion",
+      "joints": [
+        "changer_clamp_2"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_clamp_3",
+      "objectId": "tire_changer__0",
+      "title": "changer clamp 3",
+      "clip": "changer_clamp_3_motion",
+      "joints": [
+        "changer_clamp_3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_arm_swing",
+      "objectId": "tire_changer__0",
+      "title": "changer arm swing",
+      "clip": "changer_arm_swing_motion",
+      "joints": [
+        "changer_arm_swing"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 80.21409131831524,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_tool_height",
+      "objectId": "tire_changer__0",
+      "title": "changer tool height",
+      "clip": "changer_tool_height_motion",
+      "joints": [
+        "changer_tool_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 17,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_bead_breaker",
+      "objectId": "tire_changer__0",
+      "title": "changer bead breaker",
+      "clip": "changer_bead_breaker_motion",
+      "joints": [
+        "changer_bead_breaker"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 42.97183463481174,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_breaker_ram_yaw",
+      "objectId": "tire_changer__0",
+      "title": "changer breaker ram yaw",
+      "clip": "changer_breaker_ram_yaw_motion",
+      "joints": [
+        "changer_breaker_ram_yaw"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 51.56620156177409,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "changer_breaker_ram_extension",
+      "objectId": "tire_changer__0",
+      "title": "changer breaker ram extension",
+      "clip": "changer_breaker_ram_extension_motion",
+      "joints": [
+        "changer_breaker_ram_extension"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "balancer_hood_hinge",
+      "objectId": "wheel_balancer__0",
+      "title": "balancer hood hinge",
+      "clip": "balancer_hood_hinge_motion",
+      "joints": [
+        "balancer_hood_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 74.48451336700703,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_slide_0",
+      "objectId": "toolbox__0",
+      "title": "drawer slide 0",
+      "clip": "drawer_slide_0_motion",
+      "joints": [
+        "drawer_slide_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_slide_1",
+      "objectId": "toolbox__0",
+      "title": "drawer slide 1",
+      "clip": "drawer_slide_1_motion",
+      "joints": [
+        "drawer_slide_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_slide_2",
+      "objectId": "toolbox__0",
+      "title": "drawer slide 2",
+      "clip": "drawer_slide_2_motion",
+      "joints": [
+        "drawer_slide_2"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drawer_slide_3",
+      "objectId": "toolbox__0",
+      "title": "drawer slide 3",
+      "clip": "drawer_slide_3_motion",
+      "joints": [
+        "drawer_slide_3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "chest_brake_pedal_0",
+      "objectId": "toolbox__0",
+      "title": "chest brake pedal 0",
+      "clip": "chest_brake_pedal_0_motion",
+      "joints": [
+        "chest_brake_pedal_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "chest_brake_pedal_1",
+      "objectId": "toolbox__0",
+      "title": "chest brake pedal 1",
+      "clip": "chest_brake_pedal_1_motion",
+      "joints": [
+        "chest_brake_pedal_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "chest_brake_pedal_2",
+      "objectId": "toolbox__0",
+      "title": "chest brake pedal 2",
+      "clip": "chest_brake_pedal_2_motion",
+      "joints": [
+        "chest_brake_pedal_2"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "chest_brake_pedal_3",
+      "objectId": "toolbox__0",
+      "title": "chest brake pedal 3",
+      "clip": "chest_brake_pedal_3_motion",
+      "joints": [
+        "chest_brake_pedal_3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "panel_cradle_tilt",
+      "objectId": "panel_stand__0",
+      "title": "panel cradle tilt",
+      "clip": "panel_cradle_tilt_motion",
+      "joints": [
+        "panel_cradle_tilt"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 20.05352282957881,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "stand_height",
+      "objectId": "stand__0",
+      "title": "stand height",
+      "clip": "stand_height_motion",
+      "joints": [
+        "stand_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 30,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ratchet_selector",
+      "objectId": "wrench__1",
+      "title": "ratchet selector",
+      "clip": "ratchet_selector_motion",
+      "joints": [
+        "ratchet_selector"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 34.37746770784939,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_drawer_slide_0",
+      "objectId": "toolbox__1",
+      "title": "bench0 drawer slide 0",
+      "clip": "bench0_drawer_slide_0_motion",
+      "joints": [
+        "bench0_drawer_slide_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_drawer_slide_1",
+      "objectId": "toolbox__1",
+      "title": "bench0 drawer slide 1",
+      "clip": "bench0_drawer_slide_1_motion",
+      "joints": [
+        "bench0_drawer_slide_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_drawer_slide_2",
+      "objectId": "toolbox__1",
+      "title": "bench0 drawer slide 2",
+      "clip": "bench0_drawer_slide_2_motion",
+      "joints": [
+        "bench0_drawer_slide_2"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_drawer_slide_3",
+      "objectId": "toolbox__1",
+      "title": "bench0 drawer slide 3",
+      "clip": "bench0_drawer_slide_3_motion",
+      "joints": [
+        "bench0_drawer_slide_3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_chest_brake_pedal_0",
+      "objectId": "toolbox__1",
+      "title": "bench0 chest brake pedal 0",
+      "clip": "bench0_chest_brake_pedal_0_motion",
+      "joints": [
+        "bench0_chest_brake_pedal_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_chest_brake_pedal_1",
+      "objectId": "toolbox__1",
+      "title": "bench0 chest brake pedal 1",
+      "clip": "bench0_chest_brake_pedal_1_motion",
+      "joints": [
+        "bench0_chest_brake_pedal_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_chest_brake_pedal_2",
+      "objectId": "toolbox__1",
+      "title": "bench0 chest brake pedal 2",
+      "clip": "bench0_chest_brake_pedal_2_motion",
+      "joints": [
+        "bench0_chest_brake_pedal_2"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench0_chest_brake_pedal_3",
+      "objectId": "toolbox__1",
+      "title": "bench0 chest brake pedal 3",
+      "clip": "bench0_chest_brake_pedal_3_motion",
+      "joints": [
+        "bench0_chest_brake_pedal_3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_drawer_slide_0",
+      "objectId": "toolbox__2",
+      "title": "bench1 drawer slide 0",
+      "clip": "bench1_drawer_slide_0_motion",
+      "joints": [
+        "bench1_drawer_slide_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_drawer_slide_1",
+      "objectId": "toolbox__2",
+      "title": "bench1 drawer slide 1",
+      "clip": "bench1_drawer_slide_1_motion",
+      "joints": [
+        "bench1_drawer_slide_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_drawer_slide_2",
+      "objectId": "toolbox__2",
+      "title": "bench1 drawer slide 2",
+      "clip": "bench1_drawer_slide_2_motion",
+      "joints": [
+        "bench1_drawer_slide_2"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_drawer_slide_3",
+      "objectId": "toolbox__2",
+      "title": "bench1 drawer slide 3",
+      "clip": "bench1_drawer_slide_3_motion",
+      "joints": [
+        "bench1_drawer_slide_3"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_chest_brake_pedal_0",
+      "objectId": "toolbox__2",
+      "title": "bench1 chest brake pedal 0",
+      "clip": "bench1_chest_brake_pedal_0_motion",
+      "joints": [
+        "bench1_chest_brake_pedal_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_chest_brake_pedal_1",
+      "objectId": "toolbox__2",
+      "title": "bench1 chest brake pedal 1",
+      "clip": "bench1_chest_brake_pedal_1_motion",
+      "joints": [
+        "bench1_chest_brake_pedal_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_chest_brake_pedal_2",
+      "objectId": "toolbox__2",
+      "title": "bench1 chest brake pedal 2",
+      "clip": "bench1_chest_brake_pedal_2_motion",
+      "joints": [
+        "bench1_chest_brake_pedal_2"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bench1_chest_brake_pedal_3",
+      "objectId": "toolbox__2",
+      "title": "bench1 chest brake pedal 3",
+      "clip": "bench1_chest_brake_pedal_3_motion",
+      "joints": [
+        "bench1_chest_brake_pedal_3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 25.783100780887047,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "partswasher_lid_hinge",
+      "objectId": "partswasher__0",
+      "title": "partswasher lid hinge",
+      "clip": "partswasher_lid_hinge_motion",
+      "joints": [
+        "partswasher_lid_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 80.21409131831524,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "washer_switch",
+      "objectId": "partswasher__0",
+      "title": "washer switch",
+      "clip": "washer_switch_motion",
+      "joints": [
+        "washer_switch"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 9.167324722093172,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "charger_selector",
+      "objectId": "charger__0",
+      "title": "charger selector",
+      "clip": "charger_selector_motion",
+      "joints": [
+        "charger_selector"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 131.78029288008932,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "charger_power",
+      "objectId": "charger__0",
+      "title": "charger power",
+      "clip": "charger_power_motion",
+      "joints": [
+        "charger_power"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 10.313240312354818,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "charger_mode",
+      "objectId": "charger__0",
+      "title": "charger mode",
+      "clip": "charger_mode_motion",
+      "joints": [
+        "charger_mode"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 10.313240312354818,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "servicecabinet_hinge",
+      "objectId": "cabinet__1",
+      "title": "servicecabinet hinge",
+      "clip": "servicecabinet_hinge_motion",
+      "joints": [
+        "servicecabinet_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 85.94366926962348,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "floorjack_ram_pitch",
+      "objectId": "trolley_jack__0",
+      "title": "floorjack ram pitch",
+      "clip": "floorjack_ram_pitch_motion",
+      "joints": [
+        "floorjack_ram_pitch"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 57.29577951308232,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "floorjack_ram_extension",
+      "objectId": "trolley_jack__0",
+      "title": "floorjack ram extension",
+      "clip": "floorjack_ram_extension_motion",
+      "joints": [
+        "floorjack_ram_extension"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 17,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "floorjack_pump",
+      "objectId": "trolley_jack__0",
+      "title": "floorjack pump",
+      "clip": "floorjack_pump_motion",
+      "joints": [
+        "floorjack_pump"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 20.05352282957881,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "transmission_pump",
+      "objectId": "transmissionjack__0",
+      "title": "transmission pump",
+      "clip": "transmission_pump_motion",
+      "joints": [
+        "transmission_pump"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 12.60507149287811,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "transmission_height",
+      "objectId": "transmissionjack__0",
+      "title": "transmission height",
+      "clip": "transmission_height_motion",
+      "joints": [
+        "transmission_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 60,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "drain_funnel_height",
+      "objectId": "oildrain__0",
+      "title": "drain funnel height",
+      "clip": "drain_funnel_height_motion",
+      "joints": [
+        "drain_funnel_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "floorjack_lift",
+      "objectId": "trolley_jack__0",
+      "title": "floorjack lift (linked parts)",
+      "clip": "floorjack_lift_motion",
+      "joints": [
+        "floorjack_lift",
+        "floorjack_level"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "floorjack_lift": 0.65,
+        "floorjack_level": -0.65
+      },
+      "linked": true,
+      "couplingGains": {
+        "floorjack_lift": 1,
+        "floorjack_level": -1
+      }
+    },
+    {
+      "id": "lift_slide_0",
+      "objectId": "lift__0",
+      "title": "lift slide 0 (linked parts)",
+      "clip": "lift_slide_0_motion",
+      "joints": [
+        "lift_slide_0",
+        "lift_slide_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 180,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "lift_slide_0": 1.8,
+        "lift_slide_1": 1.8
+      },
+      "linked": true,
+      "couplingGains": {
+        "lift_slide_0": 1,
+        "lift_slide_1": 1
+      }
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "hood_prop_ball",
+      "body": "hood_prop__0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "chest_caster_roll_0",
+      "body": "chest_caster__0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "chest_caster_roll_1",
+      "body": "chest_caster__1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "chest_caster_roll_2",
+      "body": "chest_caster__2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "chest_caster_roll_3",
+      "body": "chest_caster__3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "hose_ball_0",
+      "body": "hose_link__0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "hose_ball_1",
+      "body": "hose_link__1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "hose_ball_2",
+      "body": "hose_link__2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "hose_ball_3",
+      "body": "hose_link__3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "hose_ball_4",
+      "body": "hose_link__4",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "hose_ball_5",
+      "body": "hose_link__5",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench0_chest_caster_roll_0",
+      "body": "bench0_chest_caster__0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench0_chest_caster_roll_1",
+      "body": "bench0_chest_caster__1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench0_chest_caster_roll_2",
+      "body": "bench0_chest_caster__2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench0_chest_caster_roll_3",
+      "body": "bench0_chest_caster__3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench1_chest_caster_roll_0",
+      "body": "bench1_chest_caster__0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench1_chest_caster_roll_1",
+      "body": "bench1_chest_caster__1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench1_chest_caster_roll_2",
+      "body": "bench1_chest_caster__2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bench1_chest_caster_roll_3",
+      "body": "bench1_chest_caster__3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 16,
+  "jointCouplings": {
+    "linearEqualities": 2,
+    "linkedClips": 2,
+    "unsupported": [
+      {
+        "name": "lift_arm_swing_0_0_locked",
+        "joint1": "lift_arm_swing_0_0",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "lift_arm_extension_0_0_locked",
+        "joint1": "lift_arm_extension_0_0",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "lift_arm_swing_0_1_locked",
+        "joint1": "lift_arm_swing_0_1",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "lift_arm_extension_0_1_locked",
+        "joint1": "lift_arm_extension_0_1",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "lift_arm_swing_1_0_locked",
+        "joint1": "lift_arm_swing_1_0",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "lift_arm_extension_1_0_locked",
+        "joint1": "lift_arm_extension_1_0",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "lift_arm_swing_1_1_locked",
+        "joint1": "lift_arm_swing_1_1",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "lift_arm_extension_1_1_locked",
+        "joint1": "lift_arm_extension_1_1",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "door_latched",
+        "joint1": "door_hinge",
+        "polycoef": "0 0 0 0 0",
+        "solref": "0.003 1"
+      },
+      {
+        "name": "frame_ramp_hinge_0_locked",
+        "joint1": "frame_ramp_hinge_0",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "frame_ramp_hinge_1_locked",
+        "joint1": "frame_ramp_hinge_1",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "frame_clamp_slide_0_locked",
+        "joint1": "frame_clamp_slide_0",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "frame_clamp_slide_1_locked",
+        "joint1": "frame_clamp_slide_1",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "frame_clamp_slide_2_locked",
+        "joint1": "frame_clamp_slide_2",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "frame_clamp_slide_3_locked",
+        "joint1": "frame_clamp_slide_3",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "chest_caster_brake_0",
+        "joint1": "chest_caster_roll_0",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "chest_caster_brake_1",
+        "joint1": "chest_caster_roll_1",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "chest_caster_brake_2",
+        "joint1": "chest_caster_roll_2",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "chest_caster_brake_3",
+        "joint1": "chest_caster_roll_3",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "panel_cradle_tilt_locked",
+        "joint1": "panel_cradle_tilt",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "stand_height_locked",
+        "joint1": "stand_height",
+        "polycoef": "0 0 0 0 0"
+      },
+      {
+        "name": "bench0_chest_caster_brake_0",
+        "joint1": "bench0_chest_caster_roll_0",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "bench0_chest_caster_brake_1",
+        "joint1": "bench0_chest_caster_roll_1",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "bench0_chest_caster_brake_2",
+        "joint1": "bench0_chest_caster_roll_2",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "bench0_chest_caster_brake_3",
+        "joint1": "bench0_chest_caster_roll_3",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "bench1_chest_caster_brake_0",
+        "joint1": "bench1_chest_caster_roll_0",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "bench1_chest_caster_brake_1",
+        "joint1": "bench1_chest_caster_roll_1",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "bench1_chest_caster_brake_2",
+        "joint1": "bench1_chest_caster_roll_2",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      },
+      {
+        "name": "bench1_chest_caster_brake_3",
+        "joint1": "bench1_chest_caster_roll_3",
+        "polycoef": "0 0 0 0 0",
+        "solref": ".002 1",
+        "solimp": ".999 .999 .001",
+        "active": "true"
+      }
+    ],
+    "method": "Source zero-offset linear equalities, evaluated relative to each joint qpos0; common range intersection."
+  },
+  "modelBytes": 26649664,
+  "modelParts": [
+    "assets/rooms/auto-repair-001/room.gzip-01.bin",
+    "assets/rooms/auto-repair-001/room.gzip-02.bin"
+  ],
+  "sourcePicturesArchiveSha256": "008d34d8bdc21301939e7490936ab552aad0a20783d43787f59bc3400bf57646",
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "cb8e301f9774aadbced9126b1cc6b831108adad03039c57958cdedac223ea558",
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 30218096,
+  "decodedModelSha256": "4f21ac39cf441f96a15ad7a27f5f5018a0826a047f6ec5e73478f05fe628899a",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "taskCards": "assets/rooms/auto-repair-001/tasks/manifest.json"
+}

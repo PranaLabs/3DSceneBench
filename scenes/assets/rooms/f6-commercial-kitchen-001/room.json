@@ -1,0 +1,4058 @@
+{
+  "id": "f6-commercial-kitchen-001",
+  "title": "F6 commercial kitchen",
+  "description": "A dense commercial kitchen with cooking and prep counters, stocked pan shelving, cold storage, and a lifting-hood dishwasher at the dish-return line. Tasks cover cookware handling, dish return, appliance controls, and cotton towel and mat manipulation.",
+  "dimensions": [
+    6.839999997317792,
+    7.6399999973177914,
+    2.9799999986588954
+  ],
+  "dimensionSource": "visible geometry bounds",
+  "bounds": {
+    "min": [
+      -0.11999999865889557,
+      -0.11999999865889566,
+      -7.5199999986588955
+    ],
+    "max": [
+      6.719999998658896,
+      2.86,
+      0.11999999865889566
+    ]
+  },
+  "tasks": [
+    {
+      "id": "pick_place_1",
+      "kind": "Robot",
+      "text": "On the prep counter, pick up the sealed spice jar labeled “CHILLI” beside the row of four small stainless pans. Count the pans starting from the jar and place it in the third one (Hotel Pan Sixth). Release the jar upright and let it come to rest inside the pan.",
+      "objects": [
+        "jar__8",
+        "hotel_pan_sixth__13",
+        "prep_counter__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "jar__8",
+          "label": "Pick up the sealed jar marked “CHILLI”.",
+          "point": [
+            2.4801,
+            1.008,
+            -4.46
+          ]
+        },
+        {
+          "object": "hotel_pan_sixth__13",
+          "label": "Set it upright in the third pan from the jar and let go.",
+          "point": [
+            2.5,
+            0.9042,
+            -3.73
+          ]
+        }
+      ]
+    },
+    {
+      "id": "push_1",
+      "kind": "Robot",
+      "text": "Find the row of four small stainless pans on the prep counter beside the sealed jar labeled “CHILLI”. Slide the pan nearest the jar (Hotel Pan Sixth) away from the aisle edge toward the middle of the counter. Leave it upright and still.",
+      "objects": [
+        "hotel_pan_sixth__12",
+        "prep_counter__0",
+        "jar__8"
+      ],
+      "locatorSteps": [
+        {
+          "object": "hotel_pan_sixth__12",
+          "label": "Slide the pan nearest the CHILLI jar inward from the aisle.",
+          "point": [
+            2.5,
+            0.976,
+            -4.19
+          ]
+        },
+        {
+          "object": "prep_counter__0",
+          "label": "Leave the pan upright and still on the counter.",
+          "point": [
+            2.7,
+            0.9,
+            -4.19
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dish_return_cycle",
+      "kind": "Interaction",
+      "text": "Lift the top white plate from the stack beside the green bus tub on the pot sink landing. Turn the plate upright, seat it between the pegs of the grey plate rack beside the hood dishwasher and let go. Raise the dishwasher hood, align the loaded rack with the opening and slide it inside. Lower the hood, then raise it again. Move the rack onto the outlet table with the plate still standing. Lift the plate out, lay it flat on the stack farthest from the dishwasher on the drying shelf above the outlet table, and let go.",
+      "objects": [
+        "plate_rack__0",
+        "plate__5",
+        "hood_dishwasher__0",
+        "pot_sink__0",
+        "outlet_table__0",
+        "drying_shelf__0",
+        "plate__23",
+        "bus_tub__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "plate__5",
+          "label": "Lift the top plate beside the green tub and turn it upright.",
+          "point": [
+            1.36,
+            0.9475,
+            -7.05
+          ]
+        },
+        {
+          "object": "plate_rack__0",
+          "label": "Stand it between the rack pegs and release it.",
+          "point": [
+            3.311,
+            1.049,
+            -7.048
+          ]
+        },
+        {
+          "object": "hood_dishwasher__0",
+          "label": "Raise the dishwasher hood.",
+          "point": [
+            3.933,
+            1.0,
+            -6.5975
+          ]
+        },
+        {
+          "object": "plate_rack__0",
+          "label": "Align the loaded rack and slide it into the dishwasher.",
+          "point": [
+            3.933,
+            0.901,
+            -7.023
+          ]
+        },
+        {
+          "object": "hood_dishwasher__0",
+          "label": "Lower the hood, then raise it again.",
+          "point": [
+            3.933,
+            1.4,
+            -6.5975
+          ]
+        },
+        {
+          "object": "outlet_table__0",
+          "label": "Move the loaded rack onto the outlet table.",
+          "point": [
+            4.53,
+            0.901,
+            -7.023
+          ]
+        },
+        {
+          "object": "plate__5",
+          "label": "Lift the plate out of the rack.",
+          "point": [
+            4.541,
+            1.05,
+            -7.023
+          ]
+        },
+        {
+          "object": "plate__23",
+          "label": "Lay it flat on the farthest drying-shelf stack and let go.",
+          "point": [
+            5.5,
+            1.4515,
+            -7.22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fridge_door",
+      "kind": "Interaction",
+      "text": "At the two-door reach-in fridge, open the door farthest from the refrigerated counter. Hold it open briefly. Swing it back against its frame, let go and check that it stays closed.",
+      "objects": [
+        "reach_in_fridge__0",
+        "refrigerated_counter__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "reach_in_fridge__0",
+          "label": "Open the door farthest from the refrigerated counter.",
+          "point": [
+            4.933,
+            1.05,
+            -0.905
+          ]
+        },
+        {
+          "object": "reach_in_fridge__0",
+          "label": "Hold the door open briefly.",
+          "point": [
+            5.2751,
+            1.05,
+            -1.4176
+          ]
+        },
+        {
+          "object": "reach_in_fridge__0",
+          "label": "Close it against its frame and check that it stays shut.",
+          "point": [
+            4.933,
+            1.05,
+            -0.905
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tub_slide",
+      "kind": "Interaction",
+      "text": "Find the empty green bus tub on the landing beside the pot sink. Push it straight along the landing, away from the stack of white plates and toward the outer end. Release it and let it stop upright on the landing.",
+      "objects": [
+        "bus_tub__0",
+        "pot_sink__0",
+        "plate__5"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bus_tub__0",
+          "label": "Push the green tub away from the plates along the landing.",
+          "point": [
+            0.95,
+            0.986,
+            -7.05
+          ]
+        },
+        {
+          "object": "pot_sink__0",
+          "label": "Let it stop upright near the outer end of the landing.",
+          "point": [
+            0.6972,
+            0.896,
+            -7.0538
+          ],
+          "referenceArea": true
+        }
+      ]
+    },
+    {
+      "id": "prerinse_spray",
+      "kind": "Interaction",
+      "text": "At the prerinse unit over the pot sink, turn the spray nozzle clear of its hook, then swing the hose arm over the basin. Open the hot tap and close it again. Swing the arm back, park the nozzle on the same hook and let go.",
+      "objects": [
+        "prerinse_unit__0",
+        "pot_sink__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "prerinse_unit__0",
+          "label": "Turn the spray nozzle clear of its hook.",
+          "point": [
+            2.9125,
+            1.4144,
+            -7.078
+          ]
+        },
+        {
+          "object": "pot_sink__0",
+          "label": "Swing the hose arm over the sink basin.",
+          "point": [
+            2.9296,
+            1.4343,
+            -7.0673
+          ]
+        },
+        {
+          "object": "prerinse_unit__0",
+          "label": "Open the hot tap, then close it again.",
+          "point": [
+            2.6625,
+            1.0461,
+            -7.257
+          ]
+        },
+        {
+          "object": "prerinse_unit__0",
+          "label": "Swing the arm back and park the nozzle on its hook.",
+          "point": [
+            2.9125,
+            1.4144,
+            -7.078
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basket_return",
+      "kind": "Interaction",
+      "text": "Lift the wire cooking basket out of the boiler unit until the basket clears its rim. Carry it along the cooking line to the stainless corner worktable, set it on the worktop and let it come to rest upright.",
+      "objects": [
+        "cooking_basket__2",
+        "boiler_unit__0",
+        "corner_worktable__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cooking_basket__2",
+          "label": "Lift the wire basket clear of the boiler rim.",
+          "point": [
+            0.66,
+            1.1969,
+            -1.2289
+          ]
+        },
+        {
+          "object": "corner_worktable__0",
+          "label": "Set it upright on the corner worktable and let go.",
+          "point": [
+            0.483,
+            0.9,
+            -4.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stock_pot_to_burner",
+      "kind": "Interaction",
+      "text": "On the pan shelving across from the prep counter, take the stock pot on the bottom shelf closest to both the prep counter and the dish-return line. Pull it clear of the shelf, lift it and carry it around the dish-return end of the prep counter. Lower it onto the back burner nearest the boiler unit on the range with ovens. Let go and leave the pot level and still.",
+      "objects": [
+        "stock_pot__2",
+        "range_with_ovens__0",
+        "pan_shelving__4",
+        "prep_counter__0",
+        "boiler_unit__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "stock_pot__2",
+          "label": "Pull the stock pot clear of the bottom shelf and lift it.",
+          "point": [
+            4.35,
+            0.4499,
+            -4.44
+          ]
+        },
+        {
+          "object": "prep_counter__0",
+          "label": "Carry the pot around the dish-return end of the counter.",
+          "point": [
+            1.65,
+            1.3,
+            -5.8
+          ]
+        },
+        {
+          "object": "range_with_ovens__0",
+          "label": "Set it on the back burner nearest the boiler and let go.",
+          "point": [
+            0.35,
+            0.901,
+            -2.04
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "floor": "floor",
+    "walls": "walls",
+    "ceiling": "ceiling",
+    "boiler_unit__0": "object",
+    "range_with_ovens__0": "object",
+    "chargrill__0": "object",
+    "corner_worktable__0": "object",
+    "canopy_hood__0": "object",
+    "line_overshelf__0": "object",
+    "prep_counter__0": "object",
+    "pass_cabinet__0": "object",
+    "refrigerated_counter__0": "object",
+    "reach_in_fridge__0": "object",
+    "wall_isolator__0": "object",
+    "wall_shelf__0": "object",
+    "wall_shelf__1": "object",
+    "wall_shelf__2": "object",
+    "pot_sink__0": "object",
+    "hood_dishwasher__0": "object",
+    "wall_isolator__1": "object",
+    "outlet_table__0": "object",
+    "drying_shelf__0": "object",
+    "drying_shelf__1": "object",
+    "pan_shelving__0": "object",
+    "pan_shelving__1": "object",
+    "stainless_cart__0": "object",
+    "scrape_bin__0": "object",
+    "water_softener__0": "object",
+    "detergent_container__0": "object",
+    "detergent_container__1": "object",
+    "detergent_container__2": "object",
+    "prerinse_unit__0": "object",
+    "cooking_basket__2": "object",
+    "stock_pot__0": "object",
+    "stock_pot__1": "object",
+    "stock_pot__2": "object",
+    "stock_pot__3": "object",
+    "stock_pot__4": "object",
+    "stock_pot__5": "object",
+    "stock_pot__6": "object",
+    "hotel_pan_sixth__12": "object",
+    "hotel_pan_sixth__13": "object",
+    "hotel_pan_sixth__14": "object",
+    "hotel_pan_sixth__15": "object",
+    "hotel_pan_lid__0": "object",
+    "hotel_pan_lid__1": "object",
+    "hotel_pan_lid__2": "object",
+    "hotel_pan_lid__3": "object",
+    "hotel_pan_lid__4": "object",
+    "hotel_pan_lid__5": "object",
+    "cutting_board__0": "object",
+    "cutting_board__1": "object",
+    "cutting_board__2": "object",
+    "cutting_board__3": "object",
+    "cutting_board__4": "object",
+    "cutting_board__5": "object",
+    "food_box__18": "object",
+    "food_box__19": "object",
+    "food_box__20": "object",
+    "food_box__21": "object",
+    "food_box__22": "object",
+    "food_box__23": "object",
+    "food_box__24": "object",
+    "food_box__25": "object",
+    "food_box__26": "object",
+    "food_box__27": "object",
+    "food_box__28": "object",
+    "food_box__29": "object",
+    "food_box__30": "object",
+    "food_box__31": "object",
+    "food_box__32": "object",
+    "food_box__33": "object",
+    "food_box__34": "object",
+    "food_box__35": "object",
+    "food_box__36": "object",
+    "food_box__37": "object",
+    "food_box__38": "object",
+    "food_box__39": "object",
+    "food_box__40": "object",
+    "food_box__41": "object",
+    "squeeze_bottle__0": "object",
+    "squeeze_bottle__1": "object",
+    "squeeze_bottle__2": "object",
+    "squeeze_bottle__3": "object",
+    "squeeze_bottle__4": "object",
+    "squeeze_bottle__5": "object",
+    "squeeze_bottle__6": "object",
+    "squeeze_bottle__7": "object",
+    "squeeze_bottle__8": "object",
+    "squeeze_bottle__9": "object",
+    "squeeze_bottle__10": "object",
+    "squeeze_bottle__11": "object",
+    "plate_rack__0": "object",
+    "plate_rack__1": "object",
+    "plate_rack__2": "object",
+    "plate_rack__3": "object",
+    "cup_rack__0": "object",
+    "cup_rack__1": "object",
+    "flat_rack__0": "object",
+    "flat_rack__1": "object",
+    "rack_stack__0": "object",
+    "rack_stack__1": "object",
+    "cup__0": "object",
+    "cup__1": "object",
+    "cup__2": "object",
+    "cup__3": "object",
+    "cup__4": "object",
+    "cup__5": "object",
+    "cup__6": "object",
+    "cup__7": "object",
+    "cup__8": "object",
+    "cup__9": "object",
+    "cup__10": "object",
+    "cup__11": "object",
+    "cup__12": "object",
+    "cup__13": "object",
+    "cup__14": "object",
+    "cup__15": "object",
+    "cup__16": "object",
+    "cup__17": "object",
+    "cup__18": "object",
+    "cup__19": "object",
+    "cup__20": "object",
+    "cup__21": "object",
+    "cup__22": "object",
+    "cup__23": "object",
+    "plate__5": "object",
+    "plate__23": "object",
+    "bus_tub__0": "object",
+    "bus_tub__1": "object",
+    "bus_tub__2": "object",
+    "bus_tub__3": "object",
+    "bus_tub__4": "object",
+    "drying_mat__0": "object",
+    "pan_shelving__2": "object",
+    "stock_pot__8": "object",
+    "stock_pot__9": "object",
+    "food_box__42": "object",
+    "food_box__43": "object",
+    "pan_shelving__3": "object",
+    "stock_pot__10": "object",
+    "food_box__44": "object",
+    "food_box__45": "object",
+    "pan_shelving__4": "object",
+    "stock_pot__12": "object",
+    "stock_pot__13": "object",
+    "food_box__46": "object",
+    "food_box__47": "object",
+    "pan_shelving__5": "object",
+    "stock_pot__14": "object",
+    "food_box__48": "object",
+    "food_box__49": "object",
+    "hotel_pan_full__26": "object",
+    "stock_pot__16": "object",
+    "stock_pot__18": "object",
+    "stock_pot__20": "object",
+    "stock_pot__22": "object",
+    "food_box__50": "object",
+    "food_box__51": "object",
+    "food_box__52": "object",
+    "food_box__53": "object",
+    "food_box__54": "object",
+    "food_box__55": "object",
+    "food_box__56": "object",
+    "food_box__57": "object",
+    "squeeze_bottle__12": "object",
+    "squeeze_bottle__13": "object",
+    "squeeze_bottle__14": "object",
+    "squeeze_bottle__15": "object",
+    "squeeze_bottle__16": "object",
+    "squeeze_bottle__17": "object",
+    "squeeze_bottle__18": "object",
+    "squeeze_bottle__19": "object",
+    "cutlery_cylinder__12": "object",
+    "cutlery_cylinder__13": "object",
+    "cutlery_cylinder__14": "object",
+    "cutlery_cylinder__15": "object",
+    "cutlery_cylinder__16": "object",
+    "cutlery_cylinder__17": "object",
+    "cutlery_cylinder__18": "object",
+    "cutlery_cylinder__19": "object",
+    "cup__24": "object",
+    "cup__25": "object",
+    "cup__26": "object",
+    "cup__27": "object",
+    "cup__28": "object",
+    "cup__29": "object",
+    "cup__30": "object",
+    "cup__31": "object",
+    "pan__0": "object",
+    "pan__1": "object",
+    "pan__2": "object",
+    "pan__3": "object",
+    "pan__5": "object",
+    "jar__1": "object",
+    "jar__2": "object",
+    "jar__3": "object",
+    "jar__5": "object",
+    "jar__6": "object",
+    "jar__7": "object",
+    "jar__8": "object",
+    "jar__9": "object",
+    "olive_oil_bottle__0": "object",
+    "olive_oil_bottle__1": "object",
+    "olive_oil_bottle__2": "object",
+    "olive_oil_bottle__3": "object",
+    "olive_oil_bottle__4": "object",
+    "olive_oil_bottle__5": "object",
+    "crate__0": "object",
+    "crate__2": "object",
+    "bottle__0": "object",
+    "bottle__2": "object",
+    "bottle__3": "object",
+    "jar__10": "object",
+    "pepper_grinder__0": "object",
+    "jar__11": "object",
+    "pepper_grinder__1": "object",
+    "bottle__1": "object",
+    "bottle__4": "object",
+    "bottle__5": "object",
+    "jar__12": "object",
+    "pepper_grinder__2": "object",
+    "bottle__6": "object",
+    "bottle__7": "object",
+    "cutting_board__6": "object",
+    "utensil__0": "object",
+    "food_box__0": "object",
+    "food_box__2": "object",
+    "food_box__5": "object",
+    "tongs__0": "object",
+    "crate__5": "object",
+    "bin__0": "object",
+    "bin__1": "object",
+    "bin__2": "object",
+    "bin__3": "object",
+    "can__0": "object",
+    "hotel_pan_lid__9": "object",
+    "milk__0": "object",
+    "milk__1": "object",
+    "milk__2": "object",
+    "milk__3": "object",
+    "food_box__8": "object",
+    "food_box__9": "object",
+    "food_box__10": "object",
+    "food_box__11": "object",
+    "food_box__15": "object",
+    "hotel_pan_full__2": "object",
+    "hotel_pan_third__2": "object",
+    "hotel_pan_third__4": "object",
+    "hotel_pan_sixth__1": "object",
+    "hotel_pan_sixth__3": "object",
+    "hotel_pan_sixth__5": "object",
+    "hotel_pan_sixth__7": "object",
+    "hotel_pan_sixth__9": "object",
+    "hotel_pan_sixth__11": "object",
+    "plate__4": "object",
+    "plate__11": "object",
+    "plate__17": "object",
+    "plate__22": "object",
+    "hotel_pan_full__14": "object",
+    "hotel_pan_full__17": "object",
+    "hotel_pan_full__20": "object",
+    "hotel_pan_full__23": "object",
+    "hotel_pan_full__45": "object",
+    "onion__30": "object",
+    "vegetable__6": "object",
+    "vegetable__7": "object",
+    "egg__0": "object",
+    "potato__8": "object",
+    "potato__12": "object",
+    "potato__13": "object",
+    "potato__14": "object",
+    "potato__9": "object",
+    "potato__16": "object",
+    "potato__15": "object",
+    "potato__10": "object",
+    "potato__pile_core_0": "object",
+    "potato__27": "object",
+    "potato__30": "object",
+    "potato__31": "object",
+    "potato__32": "object",
+    "potato__33": "object",
+    "potato__26": "object",
+    "potato__35": "object",
+    "potato__34": "object",
+    "potato__28": "object",
+    "potato__29": "object",
+    "potato__pile_core_1": "object",
+    "onion__17": "object",
+    "onion__18": "object",
+    "onion__20": "object",
+    "onion__21": "object",
+    "onion__22": "object",
+    "onion__23": "object",
+    "onion__24": "object",
+    "onion__26": "object",
+    "onion__27": "object",
+    "onion__19": "object",
+    "onion__29": "object",
+    "onion__25": "object",
+    "onion__pile_core_2": "object",
+    "onion__50": "object",
+    "onion__52": "object",
+    "onion__54": "object",
+    "onion__55": "object",
+    "onion__56": "object",
+    "onion__57": "object",
+    "onion__58": "object",
+    "onion__59": "object",
+    "onion__61": "object",
+    "onion__62": "object",
+    "onion__63": "object",
+    "onion__64": "object",
+    "onion__49": "object",
+    "onion__65": "object",
+    "onion__53": "object",
+    "onion__60": "object",
+    "onion__51": "object",
+    "onion__pile_core_4": "object",
+    "lemon__24": "object",
+    "lemon__25": "object",
+    "lemon__27": "object",
+    "lemon__28": "object",
+    "lemon__29": "object",
+    "lemon__30": "object",
+    "lemon__31": "object",
+    "lemon__33": "object",
+    "lemon__34": "object",
+    "lemon__35": "object",
+    "lemon__36": "object",
+    "lemon__40": "object",
+    "lemon__41": "object",
+    "lemon__26": "object",
+    "lemon__44": "object",
+    "lemon__23": "object",
+    "lemon__39": "object",
+    "lemon__pile_core_5": "object",
+    "lemon__51": "object",
+    "lemon__52": "object",
+    "lemon__53": "object",
+    "lemon__54": "object",
+    "lemon__pile_core_6": "object",
+    "carrot__33": "object",
+    "carrot__34": "object",
+    "carrot__35": "object",
+    "carrot__36": "object",
+    "carrot__37": "object",
+    "carrot__39": "object",
+    "carrot__40": "object",
+    "carrot__41": "object",
+    "carrot__42": "object",
+    "carrot__45": "object",
+    "carrot__31": "object",
+    "carrot__43": "object",
+    "carrot__32": "object",
+    "carrot__38": "object",
+    "carrot__pile_core_7": "object",
+    "plate__stack_carrier_0": "object",
+    "plate__stack_carrier_1": "object",
+    "plate__stack_carrier_2": "object",
+    "plate__stack_carrier_3": "object",
+    "hotel_pan_full__stack_carrier_4": "object",
+    "hotel_pan_full__stack_carrier_5": "object",
+    "hotel_pan_full__stack_carrier_6": "object",
+    "hotel_pan_full__stack_carrier_7": "object",
+    "hotel_pan_full__stack_carrier_8": "object",
+    "hotel_pan_full__stack_carrier_12": "object",
+    "hotel_pan_third__stack_carrier_13": "object",
+    "hotel_pan_third__stack_carrier_14": "object",
+    "hotel_pan_sixth__stack_carrier_15": "object",
+    "hotel_pan_sixth__stack_carrier_16": "object",
+    "hotel_pan_sixth__stack_carrier_17": "object",
+    "hotel_pan_sixth__stack_carrier_18": "object",
+    "hotel_pan_sixth__stack_carrier_19": "object",
+    "hotel_pan_sixth__stack_carrier_20": "object",
+    "plate_stack__carrier_0": "object",
+    "plate_stack__carrier_1": "object",
+    "plate_stack__carrier_2": "object",
+    "plate_stack__carrier_3": "object",
+    "plate_stack__carrier_4": "object",
+    "plate_stack__carrier_5": "object",
+    "plate_stack__carrier_6": "object",
+    "plate_stack__carrier_7": "object",
+    "bowl_stack__carrier_0": "object",
+    "bowl_stack__carrier_1": "object",
+    "bowl_stack__carrier_2": "object",
+    "bowl_stack__carrier_3": "object",
+    "bowl_stack__carrier_8": "object",
+    "bowl_stack__carrier_9": "object",
+    "bowl_stack__carrier_10": "object",
+    "bowl_stack__carrier_11": "object",
+    "bowl_stack__carrier_12": "object",
+    "bowl_stack__carrier_13": "object",
+    "bowl_stack__carrier_14": "object",
+    "bowl_stack__carrier_15": "object",
+    "bowl_stack__carrier_16": "object",
+    "bowl_stack__carrier_18": "object",
+    "bowl_stack__carrier_19": "object",
+    "bowl_stack__carrier_20": "object",
+    "bowl_stack__carrier_21": "object",
+    "bowl_stack__carrier_22": "object",
+    "bowl_stack__carrier_23": "object",
+    "tomato__0": "object",
+    "tomato__1": "object",
+    "tomato__2": "object",
+    "tomato__4": "object",
+    "tomato__5": "object",
+    "tomato__6": "object",
+    "tomato__8": "object",
+    "tomato__9": "object",
+    "tomato__10": "object",
+    "tomato__11": "object",
+    "tomato__13": "object",
+    "tomato__14": "object",
+    "garlic__0": "object",
+    "garlic__5": "object",
+    "garlic__2": "object",
+    "garlic__3": "object",
+    "garlic__1": "object",
+    "tomato__3": "object",
+    "tomato__7": "object",
+    "tomato__12": "object",
+    "tomato__15": "object",
+    "garlic__4": "object"
+  },
+  "mobility": {
+    "free": 341,
+    "fixed": 80,
+    "jointOnly": 0,
+    "nonrigid": 0,
+    "objects": {
+      "boiler_unit__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "range_with_ovens__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chargrill__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "corner_worktable__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "canopy_hood__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "line_overshelf__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "prep_counter__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pass_cabinet__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "refrigerated_counter__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "reach_in_fridge__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_isolator__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_shelf__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_shelf__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_shelf__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pot_sink__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hood_dishwasher__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_isolator__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "outlet_table__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drying_shelf__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drying_shelf__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan_shelving__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan_shelving__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stainless_cart__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "scrape_bin__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "water_softener__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "detergent_container__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "detergent_container__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "detergent_container__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "prerinse_unit__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cooking_basket__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_lid__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_lid__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_lid__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_lid__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_lid__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_lid__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutting_board__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutting_board__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutting_board__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutting_board__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutting_board__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutting_board__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__21": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__22": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__24": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__25": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__27": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__28": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__29": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__30": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__31": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__32": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__33": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__34": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__35": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__36": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__37": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__38": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__39": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__40": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__41": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_rack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_rack__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_rack__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_rack__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup_rack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup_rack__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "flat_rack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "flat_rack__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack_stack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack_stack__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__21": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__22": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bus_tub__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bus_tub__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bus_tub__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bus_tub__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bus_tub__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "drying_mat__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan_shelving__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__42": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__43": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan_shelving__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__44": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__45": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan_shelving__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__46": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__47": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan_shelving__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__48": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__49": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stock_pot__22": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__50": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__51": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__52": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__53": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__54": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__55": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__56": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__57": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "squeeze_bottle__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutlery_cylinder__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__24": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__25": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__27": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__28": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__29": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__30": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__31": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pan__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "olive_oil_bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "olive_oil_bottle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "olive_oil_bottle__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "olive_oil_bottle__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "olive_oil_bottle__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "olive_oil_bottle__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pepper_grinder__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pepper_grinder__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "jar__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pepper_grinder__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bottle__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cutting_board__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "utensil__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tongs__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "can__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_lid__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "milk__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "milk__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "milk__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "milk__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "food_box__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_third__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_third__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__22": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__45": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__30": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vegetable__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "vegetable__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "egg__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__pile_core_0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__27": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__30": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__31": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__32": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__33": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__35": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__34": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__28": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__29": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "potato__pile_core_1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__21": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__22": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__24": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__27": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__29": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__25": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__pile_core_2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__50": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__52": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__54": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__55": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__56": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__57": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__58": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__59": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__61": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__62": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__63": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__64": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__49": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__65": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__53": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__60": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__51": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "onion__pile_core_4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__24": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__25": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__27": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__28": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__29": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__30": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__31": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__33": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__34": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__35": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__36": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__40": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__41": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__44": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__39": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__pile_core_5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__51": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__52": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__53": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__54": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "lemon__pile_core_6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__33": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__34": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__35": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__36": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__37": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__39": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__40": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__41": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__42": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__45": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__31": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__43": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__32": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__38": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "carrot__pile_core_7": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__stack_carrier_0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__stack_carrier_1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__stack_carrier_2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__stack_carrier_3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__stack_carrier_4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__stack_carrier_5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__stack_carrier_6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__stack_carrier_7": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__stack_carrier_8": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_full__stack_carrier_12": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_third__stack_carrier_13": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_third__stack_carrier_14": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__stack_carrier_15": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__stack_carrier_16": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__stack_carrier_17": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__stack_carrier_18": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__stack_carrier_19": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hotel_pan_sixth__stack_carrier_20": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate_stack__carrier_7": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_8": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_9": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_10": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_11": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_12": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_13": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_14": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_15": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_16": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_18": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_19": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_20": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_21": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_22": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl_stack__carrier_23": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "garlic__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "garlic__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "garlic__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "garlic__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "garlic__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tomato__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "garlic__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "ad559ff3b7617a2e64b3fe2caa03ea6f247c51557b2add7d001458a182a21212",
+      "previewSha256": "b2b21e1e3232f085c3aca51ef310e7df3973e60704d1ee48d54e56b0eaa4453f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.880254968468634
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "f222d3eb0308046c20ce7dcbb17033d8d25a66a68da830f409274fc7f594ae1c",
+      "previewSha256": "ed56936b0ce80feb7fb8de6814d94ac48acd129a7f3a7255a544bafe0983ebe9",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.34690172553247
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "5d7b2556d4e6c13d11979b505cd8347464c5d17438f130c83b48fc9784a094c7",
+      "previewSha256": "3ed878d03dbf5fb26119126b51ac4c2502fae799ea83eec35abb5f8c6318f5b1",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.746739663886444
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "aa8425d7096b806be2fb630d219b71efdf333e916517791c1266e76bfda173cc",
+      "previewSha256": "35d32c8eac39c7d2a8c1f0e394f1281ac665d87741454bcb2c937b2a737f1f20",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.01738585687776
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "23ed420df71bfda79d30c9fb6303bdc1350114595b8ceb210bad5a9b62deff80",
+      "previewSha256": "ae7622f4a99eed63d511c7ef9645654b8543a3b70af78741b536265294a2e7b7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.908742420409475
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "d86b7d1f9108bf8435e74fdd2cbf01c5f5380eb3866e2cf56dae4797c352dac8",
+      "previewSha256": "0824a269e7c8802cabb00d9c7af83396fa0c555977f196a8b5166c3a51d420b8",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.55032135746634
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "4f2a35110a97fc4be0320b4529cf43301689e2d16f7ae17f772c68ba9a01c3ef",
+      "previewSha256": "6c45ad3469ffae31dfc661e3a560fe15908c0239a10e251d8d40139ffb45986c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.03583708752748
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "dfa96e98dfa8b1c5b98e539e68dd40be8d8ad65b507fc071061447a34a0b41db",
+      "previewSha256": "c40f4e76833def2563e87225a645e95bfa29c5b8b3085f677d2e578cd08a27a0",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.759828242745755
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "229e8cc5201a9375133d0a039028065c2762a78cdeed2b9db321e5b4d70eab03",
+      "previewSha256": "2ffa5917a062df6490e322a777d60de91cee8ee5edab271b737faa21db949f58",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.43705123962099
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "a13b681747be0ed56a4ca75dc56a3e0442acb78fefa4d2be84022570612e104c",
+      "previewSha256": "86dad4c644e7213c16c1f5536a6e49aad09fcd7c2b35c22196e8f35705fde67b",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 48.5038362871124
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "f2f498bb98ff462b7e0e613fab6146076b8762ced8a9c06d98f7082a05d1c45f",
+      "previewSha256": "bbc995cee92f85b1075c1b105cba27eb88e4f97acf845494a4a2067274a8437d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.58173216153973
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "266024a1de82b4fb5205b6f0d536857e314d06e8df5ee99310e16c82ec3f7d22",
+      "previewSha256": "ba7daf787300ad0e8c2202f701d12fc0666964b259b337d24c46b6beae27ed89",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.973055895906
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "1ef8630b7b3f115ed4807c53ee6ad538d3cff86ae7cbf6c72aadabd29c04da85",
+      "previewSha256": "9d870300e322dfce27b66ffea6cc719d2c550f2b12ad2017c0332b2bbdf1712f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 49.56302784455868
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "5397e02257807d37a422111fe85c9093ad7ef7aa6adb08863ba3ecc33f84d157",
+      "previewSha256": "afd03d88a9d59bd50d30e8ca446e80b665c3c733bcb3eb4eb4f1ef0fb8ca4260",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.635543459107026
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "69caa532aa065449e7c3c484b5f2d260bcbf6d62b2badb986d4422d0ad78dab9",
+      "previewSha256": "29cbeb39b6f4590f149274eb72d22f29ab863cf23f72d2b9ee93d1b77b12b087",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.9889615193144
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "e1aa324ddf8a453d54d34dc8867bbc2e5c995e1115d540500858b42a808f19e9",
+      "previewSha256": "8efe171b920c39f5f3327d84917a211c7e6c84ee9738065f30b1bc4e3bd20762",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.81688901119143
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "d605d34d7ed1d5efa1ad48c586f300d5fe8d0da20bcb1f0bf32cff55477e5982",
+      "previewSha256": "f4b5ac100567afd297d65c4d205eccb9448b527f36246e4d0dcd2ba52102ab25",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.16271461295792
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "85257f9a1a688baf2eff9da752559690e4b8379ebe4989397889f86f7192697a",
+      "previewSha256": "2a08e3a4127355e66c84b0c6fe210c1991d7cc558fa2d297765e3c354838ed89",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.2228631494719
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "9060f879f3285c8c6cf9be8b1c31445ed1863c739af30d24c2e4337d5dfe6113",
+      "previewSha256": "efcfc9393d0a90a9db7eadf993300fca0e530d29ccbee29b5339ea0d6b8f6d1d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.18706510273803
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "f72d97dfed72232c6c0d672d054769ec9e14db338eceefefe56711cfaba94892",
+      "previewSha256": "28410190dd3e6f4f2ece827e357a926cf5556501af98f93524e557498404aaeb",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.3253560564291
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "f5f98b1d4cf99e4987cef97bfd8448958698cfece6c1a418e08b7498aba49c8f",
+      "previewSha256": "e570d369dac8e90ae4c925fefe921fca05244c3e72e8134ec5ec7fed1b41d762",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.44352251364412
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "fdf7e743734badad7f95ccc193352c5d8d2de50ff418a4701ee19bd59c3cb94a",
+      "previewSha256": "a555aa24e330427d859a83d1c05bbd99ee6ab640d024f08371807094f78be816",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 46.636216682544976
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "c85f46ba6ff5419ea0b148bd6f26510df980fa33b32df08f2fb89097c8b837ef",
+      "previewSha256": "c6a4ef11552fc27148a2bd2802c5b799b83b56501b55dde5f9f1f2ad861fe6e3",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.447513142968056
+    },
+    {
+      "src": "assets/rooms/f6-commercial-kitchen-001/extra-15.webp",
+      "label": "Extra 16",
+      "group": "extra",
+      "sourceSha256": "a0da84c25fc84ccfcee4c6cb03d258313506e3b1aab79da90cec0158db37c2ae",
+      "previewSha256": "c6a50353560d2ffb4ee8178b5907bd9cf9c9bbb5146c29246a04c3ddce0223cd",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.86074555137988
+    }
+  ],
+  "joints": [
+    {
+      "id": "range_with_ovens__0/range_with_ovens_door_left_hinge",
+      "objectId": "range_with_ovens__0",
+      "body": "range_with_ovens__0/range_with_ovens_door_left",
+      "type": "hinge",
+      "pivot": [
+        0.942,
+        0.155,
+        -2.005
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5707963267948966,
+      "closed": 0,
+      "open": 1.5707963267948966,
+      "range": [
+        0,
+        1.5707963267948966
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "range_with_ovens__0/range_with_ovens_door_right_hinge",
+      "objectId": "range_with_ovens__0",
+      "body": "range_with_ovens__0/range_with_ovens_door_right",
+      "type": "hinge",
+      "pivot": [
+        0.942,
+        0.155,
+        -2.5949999999999998
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5707963267948966,
+      "closed": 0,
+      "open": 1.5707963267948966,
+      "range": [
+        0,
+        1.5707963267948966
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prep_counter__0/cupboard_door_a_slide",
+      "objectId": "prep_counter__0",
+      "body": "prep_counter__0/cupboard_door_a",
+      "type": "slide",
+      "pivot": [
+        2.7,
+        0,
+        -4.4
+      ],
+      "axis": [
+        -1.2246467991473532e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.896,
+      "closed": 0,
+      "open": 0.896,
+      "range": [
+        0,
+        0.896
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prep_counter__0/cupboard_door_b_slide",
+      "objectId": "prep_counter__0",
+      "body": "prep_counter__0/cupboard_door_b",
+      "type": "slide",
+      "pivot": [
+        2.7,
+        0,
+        -4.4
+      ],
+      "axis": [
+        1.2246467991473532e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.896,
+      "closed": 0,
+      "open": 0.896,
+      "range": [
+        0,
+        0.896
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prep_counter__0/drawer_slide",
+      "objectId": "prep_counter__0",
+      "body": "prep_counter__0/drawer",
+      "type": "slide",
+      "pivot": [
+        2.7,
+        0,
+        -4.4
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246467991473532e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pass_cabinet__0/staff_door_a_slide",
+      "objectId": "pass_cabinet__0",
+      "body": "pass_cabinet__0/staff_door_a",
+      "type": "slide",
+      "pivot": [
+        2.7,
+        0,
+        -2.3499999999999996
+      ],
+      "axis": [
+        -1.2246467991473532e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.759,
+      "closed": 0,
+      "open": 0.759,
+      "range": [
+        0,
+        0.759
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pass_cabinet__0/staff_door_b_slide",
+      "objectId": "pass_cabinet__0",
+      "body": "pass_cabinet__0/staff_door_b",
+      "type": "slide",
+      "pivot": [
+        2.7,
+        0,
+        -2.3499999999999996
+      ],
+      "axis": [
+        1.2246467991473532e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.759,
+      "closed": 0,
+      "open": 0.759,
+      "range": [
+        0,
+        0.759
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "refrigerated_counter__0/door0_hinge",
+      "objectId": "refrigerated_counter__0",
+      "body": "refrigerated_counter__0/door0",
+      "type": "hinge",
+      "pivot": [
+        2.2520000000000002,
+        0,
+        -0.6799999999999999
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.7453292519943295,
+      "closed": 0,
+      "open": 1.7453292519943295,
+      "range": [
+        0,
+        1.7453292519943295
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "refrigerated_counter__0/door1_hinge",
+      "objectId": "refrigerated_counter__0",
+      "body": "refrigerated_counter__0/door1",
+      "type": "hinge",
+      "pivot": [
+        1.6640000000000001,
+        0,
+        -0.6800000000000002
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.7453292519943295,
+      "closed": 0,
+      "open": 1.7453292519943295,
+      "range": [
+        0,
+        1.7453292519943295
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "refrigerated_counter__0/door2_hinge",
+      "objectId": "refrigerated_counter__0",
+      "body": "refrigerated_counter__0/door2",
+      "type": "hinge",
+      "pivot": [
+        1.076,
+        0,
+        -0.6800000000000002
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.7453292519943295,
+      "closed": 0,
+      "open": 1.7453292519943295,
+      "range": [
+        0,
+        1.7453292519943295
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "refrigerated_counter__0/lid_hinge",
+      "objectId": "refrigerated_counter__0",
+      "body": "refrigerated_counter__0/lid",
+      "type": "hinge",
+      "pivot": [
+        2.16,
+        1.086,
+        -0.023999999999999966
+      ],
+      "axis": [
+        1,
+        0,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.4835298641951802,
+      "closed": 0,
+      "open": 1.4835298641951802,
+      "range": [
+        0,
+        1.4835298641951802
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "reach_in_fridge__0/door_0_hinge",
+      "objectId": "reach_in_fridge__0",
+      "body": "reach_in_fridge__0/door_0",
+      "type": "hinge",
+      "pivot": [
+        5.548,
+        0,
+        -0.8649999999999999
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.7453292519943295,
+      "closed": 0,
+      "open": 1.7453292519943295,
+      "range": [
+        0,
+        1.7453292519943295
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "reach_in_fridge__0/door_1_hinge",
+      "objectId": "reach_in_fridge__0",
+      "body": "reach_in_fridge__0/door_1",
+      "type": "hinge",
+      "pivot": [
+        4.252000000000001,
+        0,
+        -0.8650000000000002
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.7453292519943295,
+      "closed": 0,
+      "open": 1.7453292519943295,
+      "range": [
+        0,
+        1.7453292519943295
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "hood_dishwasher__0/hood_dishwasher_hood_lift",
+      "objectId": "hood_dishwasher__0",
+      "body": "hood_dishwasher__0/hood_dishwasher_hood",
+      "type": "slide",
+      "pivot": [
+        3.933,
+        0,
+        -7.023
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_hot_handle_turn",
+      "objectId": "prerinse_unit__0",
+      "body": "prerinse_unit__0/prerinse_unit_hot_handle",
+      "type": "hinge",
+      "pivot": [
+        2.6625,
+        1.012,
+        -7.318
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5707963267948966,
+      "closed": 0,
+      "open": 1.5707963267948966,
+      "range": [
+        0,
+        1.5707963267948966
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_cold_handle_turn",
+      "objectId": "prerinse_unit__0",
+      "body": "prerinse_unit__0/prerinse_unit_cold_handle",
+      "type": "hinge",
+      "pivot": [
+        2.8625000000000003,
+        1.012,
+        -7.318
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5707963267948966,
+      "closed": 0,
+      "open": 1.5707963267948966,
+      "range": [
+        0,
+        1.5707963267948966
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_spout_swing",
+      "objectId": "prerinse_unit__0",
+      "body": "prerinse_unit__0/prerinse_unit_spout",
+      "type": "hinge",
+      "pivot": [
+        2.7625,
+        1.147,
+        -7.318
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5707963267948966,
+      "closed": 0,
+      "open": 1.5707963267948966,
+      "range": [
+        -1.5707963267948966,
+        1.5707963267948966
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_hose_swing",
+      "objectId": "prerinse_unit__0",
+      "body": "prerinse_unit__0/prerinse_unit_hose_arm",
+      "type": "hinge",
+      "pivot": [
+        2.7625,
+        1.9,
+        -7.077999999999999
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.0471975511965976,
+      "closed": 0,
+      "open": 1.0471975511965976,
+      "range": [
+        -1.0471975511965976,
+        1.0471975511965976
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_valve_swivel",
+      "objectId": "prerinse_unit__0",
+      "body": "prerinse_unit__0/prerinse_unit_spray_valve",
+      "type": "hinge",
+      "pivot": [
+        2.9125,
+        1.563,
+        -7.077999999999999
+      ],
+      "axis": [
+        1,
+        0,
+        -2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.7853981633974483,
+      "closed": 0,
+      "open": 0.7853981633974483,
+      "range": [
+        -0.7853981633974483,
+        0.7853981633974483
+      ],
+      "parentJointId": "prerinse_unit__0/prerinse_unit_hose_swing"
+    }
+  ],
+  "previewPolicy": {
+    "method": "Preserve source geometry; exclude exterior backdrops from initial framing. Oversized architecture crossing a source-derived room footprint is partitioned into room/backdrop triangles with interpolated UVs and normals.",
+    "backdropGeoms": [],
+    "partitionedGeoms": [],
+    "planes": [],
+    "roomFootprintXY": null
+  },
+  "fullGeometryBounds": {
+    "min": [
+      -0.11999999865889557,
+      -0.11999999865889566,
+      -7.5199999986588955
+    ],
+    "max": [
+      6.719999998658896,
+      2.86,
+      0.11999999865889566
+    ]
+  },
+  "nonrigidPreview": {
+    "added": [],
+    "unsupported": []
+  },
+  "equalityJoints": [],
+  "equalityConstraintCount": 0,
+  "articulations": [
+    {
+      "id": "range_with_ovens__0/range_with_ovens_door_left_hinge",
+      "objectId": "range_with_ovens__0",
+      "title": "range with ovens / 0/range with ovens door left hinge",
+      "clip": "range_with_ovens__0/range_with_ovens_door_left_hinge_motion",
+      "joints": [
+        "range_with_ovens__0/range_with_ovens_door_left_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "range_with_ovens__0/range_with_ovens_door_right_hinge",
+      "objectId": "range_with_ovens__0",
+      "title": "range with ovens / 0/range with ovens door right hinge",
+      "clip": "range_with_ovens__0/range_with_ovens_door_right_hinge_motion",
+      "joints": [
+        "range_with_ovens__0/range_with_ovens_door_right_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prep_counter__0/cupboard_door_a_slide",
+      "objectId": "prep_counter__0",
+      "title": "prep counter / 0/cupboard door a slide",
+      "clip": "prep_counter__0/cupboard_door_a_slide_motion",
+      "joints": [
+        "prep_counter__0/cupboard_door_a_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 89.60000000000001,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prep_counter__0/cupboard_door_b_slide",
+      "objectId": "prep_counter__0",
+      "title": "prep counter / 0/cupboard door b slide",
+      "clip": "prep_counter__0/cupboard_door_b_slide_motion",
+      "joints": [
+        "prep_counter__0/cupboard_door_b_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 89.60000000000001,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prep_counter__0/drawer_slide",
+      "objectId": "prep_counter__0",
+      "title": "prep counter / 0/drawer slide",
+      "clip": "prep_counter__0/drawer_slide_motion",
+      "joints": [
+        "prep_counter__0/drawer_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pass_cabinet__0/staff_door_a_slide",
+      "objectId": "pass_cabinet__0",
+      "title": "pass cabinet / 0/staff door a slide",
+      "clip": "pass_cabinet__0/staff_door_a_slide_motion",
+      "joints": [
+        "pass_cabinet__0/staff_door_a_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 75.9,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pass_cabinet__0/staff_door_b_slide",
+      "objectId": "pass_cabinet__0",
+      "title": "pass cabinet / 0/staff door b slide",
+      "clip": "pass_cabinet__0/staff_door_b_slide_motion",
+      "joints": [
+        "pass_cabinet__0/staff_door_b_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 75.9,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "refrigerated_counter__0/door0_hinge",
+      "objectId": "refrigerated_counter__0",
+      "title": "refrigerated counter / 0/door0 hinge",
+      "clip": "refrigerated_counter__0/door0_hinge_motion",
+      "joints": [
+        "refrigerated_counter__0/door0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 100,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "refrigerated_counter__0/door1_hinge",
+      "objectId": "refrigerated_counter__0",
+      "title": "refrigerated counter / 0/door1 hinge",
+      "clip": "refrigerated_counter__0/door1_hinge_motion",
+      "joints": [
+        "refrigerated_counter__0/door1_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 100,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "refrigerated_counter__0/door2_hinge",
+      "objectId": "refrigerated_counter__0",
+      "title": "refrigerated counter / 0/door2 hinge",
+      "clip": "refrigerated_counter__0/door2_hinge_motion",
+      "joints": [
+        "refrigerated_counter__0/door2_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 100,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "refrigerated_counter__0/lid_hinge",
+      "objectId": "refrigerated_counter__0",
+      "title": "refrigerated counter / 0/lid hinge",
+      "clip": "refrigerated_counter__0/lid_hinge_motion",
+      "joints": [
+        "refrigerated_counter__0/lid_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 85,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "reach_in_fridge__0/door_0_hinge",
+      "objectId": "reach_in_fridge__0",
+      "title": "reach in fridge / 0/door 0 hinge",
+      "clip": "reach_in_fridge__0/door_0_hinge_motion",
+      "joints": [
+        "reach_in_fridge__0/door_0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 100,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "reach_in_fridge__0/door_1_hinge",
+      "objectId": "reach_in_fridge__0",
+      "title": "reach in fridge / 0/door 1 hinge",
+      "clip": "reach_in_fridge__0/door_1_hinge_motion",
+      "joints": [
+        "reach_in_fridge__0/door_1_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 100,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "hood_dishwasher__0/hood_dishwasher_hood_lift",
+      "objectId": "hood_dishwasher__0",
+      "title": "hood dishwasher / 0/hood dishwasher hood lift",
+      "clip": "hood_dishwasher__0/hood_dishwasher_hood_lift_motion",
+      "joints": [
+        "hood_dishwasher__0/hood_dishwasher_hood_lift"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_hot_handle_turn",
+      "objectId": "prerinse_unit__0",
+      "title": "prerinse unit / 0/prerinse unit hot handle turn",
+      "clip": "prerinse_unit__0/prerinse_unit_hot_handle_turn_motion",
+      "joints": [
+        "prerinse_unit__0/prerinse_unit_hot_handle_turn"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_cold_handle_turn",
+      "objectId": "prerinse_unit__0",
+      "title": "prerinse unit / 0/prerinse unit cold handle turn",
+      "clip": "prerinse_unit__0/prerinse_unit_cold_handle_turn_motion",
+      "joints": [
+        "prerinse_unit__0/prerinse_unit_cold_handle_turn"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_spout_swing",
+      "objectId": "prerinse_unit__0",
+      "title": "prerinse unit / 0/prerinse unit spout swing",
+      "clip": "prerinse_unit__0/prerinse_unit_spout_swing_motion",
+      "joints": [
+        "prerinse_unit__0/prerinse_unit_spout_swing"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 90,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_hose_swing",
+      "objectId": "prerinse_unit__0",
+      "title": "prerinse unit / 0/prerinse unit hose swing",
+      "clip": "prerinse_unit__0/prerinse_unit_hose_swing_motion",
+      "joints": [
+        "prerinse_unit__0/prerinse_unit_hose_swing"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 59.99999999999999,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "prerinse_unit__0/prerinse_unit_valve_swivel",
+      "objectId": "prerinse_unit__0",
+      "title": "prerinse unit / 0/prerinse unit valve swivel",
+      "clip": "prerinse_unit__0/prerinse_unit_valve_swivel_motion",
+      "joints": [
+        "prerinse_unit__0/prerinse_unit_valve_swivel"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 45,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "hood_dishwasher__0/hood_dishwasher_lower_arm_spin",
+      "body": "hood_dishwasher__0/hood_dishwasher_lower_arm",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "hood_dishwasher__0/hood_dishwasher_upper_arm_spin",
+      "body": "hood_dishwasher__0/hood_dishwasher_upper_arm",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 16,
+  "jointCouplings": {
+    "linearEqualities": 0,
+    "linkedClips": 0,
+    "unsupported": [],
+    "method": "Source zero-offset linear equalities, evaluated relative to each joint qpos0; common range intersection."
+  },
+  "modelBytes": 28055086,
+  "modelParts": [
+    "assets/rooms/f6-commercial-kitchen-001/room.gzip-01.bin",
+    "assets/rooms/f6-commercial-kitchen-001/room.gzip-02.bin"
+  ],
+  "sourcePicturesArchiveSha256": "3eaa989b7da4a3b2c3ed1948707b24327cae53640ac37cb5dc026e8401da4a5a",
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "a0166ebd366034c8de50a8ca05b13deb8358824d5420564d3e72ae2ea711ffa3",
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 34606456,
+  "decodedModelSha256": "9a9f054f9dea53ea182e5c4b5d54efe15114b3606c8d0c5b90d9f37ac4a95b2f",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "taskCards": "assets/rooms/f6-commercial-kitchen-001/tasks/manifest.json"
+}

@@ -1,0 +1,2261 @@
+{
+  "id": "parcel-sort-001",
+  "title": "Parcel sorting room",
+  "description": "A parcel sorting hall: an induction belt and roller lanes, a row of wire dispatch cages, packing tables with computers and scanners, and an exception bench with problem crates.",
+  "dimensions": [
+    12,
+    10,
+    3.4
+  ],
+  "dimensionSource": "authored room dimensions",
+  "bounds": {
+    "min": [
+      -0.12,
+      -0.1,
+      -10.120000000000001
+    ],
+    "max": [
+      12.120000000000001,
+      3.46,
+      0.1200000000000001
+    ]
+  },
+  "tasks": [
+    {
+      "id": "push_1",
+      "kind": "Robot",
+      "text": "At the packing workbench with the padded envelope, find the mouse beside the keyboard. Push the mouse 20 cm straight back from the operator’s edge toward the rear of the workbench, keeping it upright.",
+      "objects": [
+        "mouse__0",
+        "workbench__1",
+        "envelope__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "mouse__0",
+          "label": "Push the mouse 20 cm straight back, keeping it upright.",
+          "point": [
+            4.93,
+            0.82,
+            -1.15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_1",
+      "kind": "Robot",
+      "text": "Take the small top box from the crate on the inspection workbench beside the inclined conveyor. Set it on the clear spot in front of the handheld scanner, to the right of the keyboard. Press and release the workbench’s confirmation button, then place the same box on the clear edge of the conveyor’s flat lower end nearest the workbench.",
+      "objects": [
+        "box__3",
+        "workbench__0",
+        "conveyor__0",
+        "crate__2",
+        "scanner__3"
+      ],
+      "locatorSteps": [
+        {
+          "object": "box__3",
+          "label": "Lift the top box from the inspection crate."
+        },
+        {
+          "object": "workbench__0",
+          "label": "Set it on the clear spot in front of the scanner.",
+          "point": [
+            1.92,
+            0.82,
+            -5.98
+          ]
+        },
+        {
+          "object": "workbench__0",
+          "label": "Press and release the confirmation button.",
+          "point": [
+            2.12,
+            0.854,
+            -5.77
+          ]
+        },
+        {
+          "object": "box__3",
+          "label": "Pick up the same box again.",
+          "point": [
+            1.92,
+            0.82,
+            -5.98
+          ]
+        },
+        {
+          "object": "conveyor__0",
+          "label": "Set it at the flat lower end, on the edge near the bench.",
+          "point": [
+            2.59,
+            0.82,
+            -5.96
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_2",
+      "kind": "Robot",
+      "text": "Counting from the inclined conveyor, open the gate of the cage cart at the third roller chute. Pick up the small box beside the envelope at the end of that chute. Place it on the cart’s raised shelf in the clear front-left spot by the gate, then close the gate.",
+      "objects": [
+        "cart__2",
+        "box__23",
+        "chute__2"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cart__2",
+          "label": "Open the cage gate at the third roller chute.",
+          "point": [
+            8.12,
+            0.635,
+            -4.205
+          ]
+        },
+        {
+          "object": "box__23",
+          "label": "Pick up the small box beside the chute-end envelope."
+        },
+        {
+          "object": "cart__2",
+          "label": "Set it on the raised shelf’s front-left spot.",
+          "point": [
+            7.9,
+            0.651,
+            -3.86
+          ]
+        },
+        {
+          "object": "cart__2",
+          "label": "Close the cage gate.",
+          "point": [
+            8.12,
+            0.635,
+            -4.205
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flip_label_up",
+      "kind": "Interaction",
+      "text": "Find the small upside-down box on the flat lower end of the inclined induction conveyor, beside a bag. Lift the box, turn it over and release it back on that same flat section. Leave it at rest with its label facing up.",
+      "objects": [
+        "box__4",
+        "conveyor__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "box__4",
+          "label": "Lift the upside-down box at the low end of the belt."
+        },
+        {
+          "object": "box__4",
+          "label": "Turn the box label side up."
+        },
+        {
+          "object": "conveyor__0",
+          "label": "Release it on the same flat section and let it rest.",
+          "point": [
+            2.85,
+            0.82,
+            -5.94
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mailer_to_scan",
+      "kind": "Interaction",
+      "text": "Lift the filled plastic mailing bag from the crate on the inspection workbench beside the inclined conveyor. Lay it flat on the same workbench in the clear scanning space in front of the handheld scanner, to the right of the keyboard.",
+      "objects": [
+        "bag__0",
+        "workbench__0",
+        "crate__2",
+        "scanner__3"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bag__0",
+          "label": "Lift the filled mailing bag out of the crate."
+        },
+        {
+          "object": "workbench__0",
+          "label": "Lay it flat in front of the handheld scanner.",
+          "point": [
+            1.92,
+            0.82,
+            -5.98
+          ]
+        }
+      ]
+    },
+    {
+      "id": "padded_to_packing",
+      "kind": "Interaction",
+      "text": "On the packing workbench with the padded envelope, lift the envelope from in front of the scanner rack. Lay it flat near the middle of the same workbench’s front edge, in the clear space between the envelope’s starting spot and the mouse.",
+      "objects": [
+        "envelope__0",
+        "workbench__1",
+        "rack__0",
+        "mouse__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "envelope__0",
+          "label": "Lift the padded envelope in front of the scanner rack."
+        },
+        {
+          "object": "workbench__1",
+          "label": "Lay it flat near the middle of the bench’s front edge.",
+          "point": [
+            4.7,
+            0.82,
+            -1.4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "packing_drawer",
+      "kind": "Interaction",
+      "text": "At the packing workbench with the padded envelope on top, pull the drawer beneath the tabletop 20 cm open. Push it fully closed and let go.",
+      "objects": [
+        "workbench__1",
+        "envelope__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "workbench__1",
+          "label": "Pull the drawer on the envelope bench out 20 cm.",
+          "point": [
+            4.86,
+            0.655,
+            -1.642
+          ]
+        },
+        {
+          "object": "workbench__1",
+          "label": "Push the drawer fully closed and let go.",
+          "point": [
+            4.86,
+            0.655,
+            -1.642
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tape_spool_half_turn",
+      "kind": "Interaction",
+      "text": "Find the packing workbench with a small box on top, across the short conveyor from the workbench with the padded envelope. Turn the spool on that bench’s tape dispenser half a turn. Release it and leave the dispenser in place.",
+      "objects": [
+        "tape_dispenser__1",
+        "workbench__2",
+        "box__2"
+      ],
+      "locatorSteps": [
+        {
+          "object": "tape_dispenser__1",
+          "label": "Turn the tape spool half a turn.",
+          "point": [
+            7.54,
+            0.908,
+            -0.932
+          ]
+        },
+        {
+          "object": "tape_dispenser__1",
+          "label": "Release the spool with the dispenser still in place.",
+          "point": [
+            7.54,
+            0.908,
+            -0.932
+          ]
+        }
+      ]
+    },
+    {
+      "id": "roll_cage_cart",
+      "kind": "Interaction",
+      "text": "Find the cage cart with two boxes on its bottom deck, standing out of line beside the end wall. Roll it 1 m on its castors toward the roller chutes, keeping both boxes aboard. Stop the cart and leave it at rest.",
+      "objects": [
+        "cart__5",
+        "box__53",
+        "box__54"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cart__5",
+          "label": "Roll the two-box cart 1 m toward the roller chutes.",
+          "point": [
+            11.0,
+            0.0,
+            -3.725
+          ]
+        },
+        {
+          "object": "cart__5",
+          "label": "Stop the cart and leave both boxes aboard.",
+          "point": [
+            11.0,
+            0.0,
+            -3.725
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scanner_out_of_holder",
+      "kind": "Interaction",
+      "text": "At the packing workbench with the padded envelope, lift the handheld scanner from its rack beside the printer. Stand it upright on the same workbench next to the mouse, on the side away from the keyboard. Let go and leave it standing.",
+      "objects": [
+        "scanner__1",
+        "workbench__1",
+        "rack__0",
+        "mouse__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "scanner__1",
+          "label": "Lift the handheld scanner out of its rack."
+        },
+        {
+          "object": "workbench__1",
+          "label": "Stand it by the mouse on the side away from the keyboard.",
+          "point": [
+            4.72,
+            0.82,
+            -1.35
+          ]
+        },
+        {
+          "object": "scanner__1",
+          "label": "Release the scanner upright.",
+          "point": [
+            4.72,
+            0.82,
+            -1.35
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "walls": "walls",
+    "floor": "floor",
+    "ceiling": "ceiling",
+    "conveyor__0": "object",
+    "conveyor__1": "object",
+    "scanner__0": "object",
+    "frame__0": "object",
+    "workbench__0": "object",
+    "chute__0": "object",
+    "frame__1": "object",
+    "monitor__0": "object",
+    "sign__0": "object",
+    "cart__0": "object",
+    "chute__1": "object",
+    "frame__2": "object",
+    "monitor__1": "object",
+    "sign__1": "object",
+    "cart__1": "object",
+    "chute__2": "object",
+    "frame__3": "object",
+    "monitor__2": "object",
+    "sign__2": "object",
+    "cart__2": "object",
+    "chute__3": "object",
+    "frame__4": "object",
+    "monitor__3": "object",
+    "sign__3": "object",
+    "cart__3": "object",
+    "cart__4": "object",
+    "cart__5": "object",
+    "conveyor__2": "object",
+    "box__0": "object",
+    "box__1": "object",
+    "workbench__1": "object",
+    "monitor__4": "object",
+    "keyboard__0": "object",
+    "mouse__0": "object",
+    "scanner__1": "object",
+    "rack__0": "object",
+    "printer__0": "object",
+    "frame__5": "object",
+    "tape_dispenser__0": "object",
+    "paper__0": "object",
+    "paper__1": "object",
+    "film__0": "object",
+    "crate__0": "object",
+    "envelope__0": "object",
+    "workbench__2": "object",
+    "monitor__5": "object",
+    "keyboard__1": "object",
+    "mouse__1": "object",
+    "scanner__2": "object",
+    "rack__1": "object",
+    "printer__1": "object",
+    "frame__6": "object",
+    "tape_dispenser__1": "object",
+    "paper__2": "object",
+    "paper__3": "object",
+    "film__1": "object",
+    "crate__1": "object",
+    "box__2": "object",
+    "crate__2": "object",
+    "monitor__6": "object",
+    "keyboard__2": "object",
+    "mouse__2": "object",
+    "scanner__3": "object",
+    "rack__2": "object",
+    "printer__2": "object",
+    "tape_dispenser__2": "object",
+    "paper__4": "object",
+    "box__3": "object",
+    "bag__0": "object",
+    "box__4": "object",
+    "box__5": "object",
+    "box__6": "object",
+    "box__7": "object",
+    "bag__1": "object",
+    "box__8": "object",
+    "box__9": "object",
+    "bag__2": "object",
+    "envelope__1": "object",
+    "box__10": "object",
+    "box__11": "object",
+    "box__12": "object",
+    "box__13": "object",
+    "bag__3": "object",
+    "envelope__2": "object",
+    "box__14": "object",
+    "box__15": "object",
+    "box__16": "object",
+    "box__17": "object",
+    "box__18": "object",
+    "box__19": "object",
+    "box__20": "object",
+    "box__21": "object",
+    "box__22": "object",
+    "box__23": "object",
+    "box__24": "object",
+    "bag__4": "object",
+    "envelope__3": "object",
+    "box__25": "object",
+    "box__26": "object",
+    "box__27": "object",
+    "box__28": "object",
+    "bag__5": "object",
+    "box__29": "object",
+    "envelope__4": "object",
+    "box__30": "object",
+    "box__31": "object",
+    "bag__6": "object",
+    "envelope__5": "object",
+    "box__32": "object",
+    "box__33": "object",
+    "box__34": "object",
+    "box__35": "object",
+    "box__36": "object",
+    "box__37": "object",
+    "box__38": "object",
+    "box__39": "object",
+    "box__40": "object",
+    "box__41": "object",
+    "box__42": "object",
+    "box__43": "object",
+    "box__44": "object",
+    "box__45": "object",
+    "box__46": "object",
+    "bag__7": "object",
+    "envelope__6": "object",
+    "envelope__7": "object",
+    "envelope__8": "object",
+    "bag__8": "object",
+    "bag__9": "object",
+    "box__47": "object",
+    "box__48": "object",
+    "box__49": "object",
+    "bag__10": "object",
+    "box__50": "object",
+    "box__51": "object",
+    "box__52": "object",
+    "envelope__9": "object",
+    "box__53": "object",
+    "box__54": "object",
+    "box__55": "object",
+    "crate__3": "object",
+    "crate__4": "object",
+    "crate__5": "object",
+    "pallet__0": "object",
+    "box__56": "object",
+    "box__57": "object",
+    "box__58": "object",
+    "box__59": "object",
+    "box__60": "object",
+    "box__61": "object",
+    "box__62": "object",
+    "box__63": "object",
+    "crate__6": "object",
+    "crate__7": "object",
+    "crate__8": "object",
+    "bag__11": "object",
+    "envelope__10": "object",
+    "box__64": "object",
+    "ceiling_lamp__0": "object",
+    "ceiling_lamp__1": "object",
+    "ceiling_lamp__2": "object",
+    "ceiling_lamp__3": "object",
+    "ceiling_lamp__4": "object",
+    "ceiling_lamp__5": "object",
+    "ceiling_lamp__6": "object",
+    "ceiling_lamp__7": "object",
+    "ceiling_lamp__8": "object",
+    "ceiling_lamp__9": "object",
+    "ceiling_lamp__10": "object",
+    "ceiling_lamp__11": "object"
+  },
+  "mobility": {
+    "free": 103,
+    "fixed": 67,
+    "jointOnly": 0,
+    "objects": {
+      "conveyor__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "conveyor__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "scanner__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "frame__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "workbench__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chute__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "frame__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sign__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chute__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "frame__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sign__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chute__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "frame__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sign__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chute__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "frame__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sign__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "conveyor__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "workbench__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mouse__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "scanner__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "printer__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "frame__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tape_dispenser__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "film__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "envelope__0": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "workbench__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mouse__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "scanner__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "printer__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "frame__6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tape_dispenser__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "film__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "monitor__6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "keyboard__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mouse__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "scanner__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "printer__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tape_dispenser__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__0": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__1": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__2": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__1": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__13": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__3": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__2": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__14": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__15": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__16": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__17": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__18": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__19": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__21": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__22": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__23": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__24": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__4": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__3": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__25": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__26": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__27": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__28": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__5": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__29": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "envelope__4": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__30": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__31": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__6": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__5": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__32": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__33": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__34": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__35": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__36": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__37": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__38": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__39": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__40": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__41": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__42": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__43": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__44": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__45": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__46": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__7": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__6": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__7": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__8": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "bag__8": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "bag__9": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__47": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__48": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__49": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__10": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__50": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__51": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__52": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "envelope__9": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__53": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__54": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__55": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pallet__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__56": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__57": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__58": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__59": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__60": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__61": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__62": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__63": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bag__11": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "envelope__10": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "box__64": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__7": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__8": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__9": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__10": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__11": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/parcel-sort-001/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "5e28c5c061c8b5aae69a2e91accaabcfd0ded877f5506fb9cc18d327184c5f7e",
+      "previewSha256": "ad14cb5c2d5e3c6804a50b4d61471f42e61b860fd1a712fa8f833c965fa5f1af",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.86877898018559
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "1228a28420e55169a97c500874266a99944b3b60676e33bec5fddda5ff9ca0f8",
+      "previewSha256": "9b86e2f75e2dcb4163f16a9b482759c5e630b55c124225ecff46d26f291255ea",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.88192536664999
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "ab1dee2be80d31b4b96ce1813bd0693568b71d6be353c9eb241d847db9e902a1",
+      "previewSha256": "b72351df97e98a1a3d03b94f43a7c1f2beb1d1321c89e9175809e42f47edb1cb",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.49157538660184
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "d889453340a19cb9384b1acb0cad587ebb01c1dea969a5dd0fba7a4fa08972ce",
+      "previewSha256": "ba63807c7f84325239427b753b217e5d6746eaf340522cc40969c8492b05990d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.06546664410649
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "ff997b926bcdcca8aa5e008b97d2cc29ff26c9f0ac0f96bf591a4e0c3bc13812",
+      "previewSha256": "8d7943b6709f40c5f726fe1ede817912560d8bea324edd1c1ffe2c564a06e12b",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.161883485445465
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "6df4bf989603e8d9d92fca1f5502006053281eddff2e805a2e892153b5d3afe1",
+      "previewSha256": "591033ad7e8738651131c6e44253c77260cb4d4d6b863fef78cc81971512c0f7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.39674669085898
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "973f3f1fe451fefc3960ec57df14434d3e75e28b2254d971d6f8739ac8e3038f",
+      "previewSha256": "04eb93b1219c9fe2f9796dd8cbefe512b5b2da00ca1c17eabebb20a968e46ef7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.92374096866109
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "ddb0e6d30468275030fe46788b7f0a2d647bf79df1eb99f7bd223c0659862e91",
+      "previewSha256": "142256c087ed3b9afe923beba38f586c7eac8daaebcce629b52407725c42f231",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.141982810829646
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "a466b294b03790e91db7cc4eb556c77ead3ab9d06b71eed3f06a602ddb750a1d",
+      "previewSha256": "cc182ffed3c75ab72d0d8f2638352b2e9461fe8b9c766034f2c5232020b0ff95",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.15310473580595
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "8278c6f9d30c2c53f96eeb13648dab66972efe7053996ac7b17c365a1415fe56",
+      "previewSha256": "261d7d2c0f7fa587633a4c705b4357a7f8e8fdedd04131457ab9c8d539cc5fc8",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.67851726288847
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "6106646779dfc9233675f077b7ca4078e85c78a54e16c9e97276c74bbebe812d",
+      "previewSha256": "046dabe49a5cff52e0d17465558792270fca0be3bcf4039b2dbca3468a5dda46",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.03805980221927
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "11dd69b344678ca92f34ab605a5a66bf0b30c984028d4ee24e27632151c5cf6b",
+      "previewSha256": "5c9e47bcda1348c746912a19c777ea97709992d83d4f53479957ccacf4bf4ec0",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.153632190617934
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "a55c7a93451fdd3b885e6bbffb3d85c59f5eab2cc96fedc1cb3ba5eae9d986dc",
+      "previewSha256": "5380d4f2a8e293b22f074f0ea5967556a93dd7e3d75c77a6dfa2a999b815078d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.957715292449116
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "a3e97ec1e9ce44838f58a459899a7d5f1612e412fb5522b3622291cf8adb8156",
+      "previewSha256": "0709163107e354d4a67d275163ebeda2b686f05243e40db64a902ac9f6801f5a",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.44841508942741
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "87be518f5fc0da7110e19fd7f73e6f6b207ff777bd7f44d0d33300861b676bf5",
+      "previewSha256": "cd6a759935e5214093219ebd8ba1b2fe1126f0ca9f832ee60dd51d536b85b10a",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.76679539352785
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "ab2d9eeff680e7d68b5f7ab8f0a13099141c8a1711c3e78c4779b30c5134ba43",
+      "previewSha256": "a86d62a58877c137e9a4d7081bc5f72543f27b435bacc6df2b8458781f14b294",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.29791486085386
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "82abacdeec73eca0d652f9e7153ece429082a1fa4bf3d2b168e7a0f566c8306e",
+      "previewSha256": "01751978e2ce96934b3aec60f4d21b8e140ca1b808a2be24ec50f097e3acb4ee",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.79934659715755
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "d91cbd6bbad3dddb87f71b33b23b6a72da9d48eeabab5cfc1cabf5a79cbd535c",
+      "previewSha256": "1de8336bdcb154867cb709fd3c167f7c287b5e6dc0a13d067a4393e14af777de",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.931903730967775
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "7b8bd668322fed676a5cee67e65d6fd4e43b80624900e1dbf4324a893cc80faf",
+      "previewSha256": "0f7f4d25ed054e699f399385dd3004a29b11f44fffe202f1daefc43b30887e92",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.741109226067955
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "c933990a30ab829ac346d87a941d6ae4c04c5607b55d4fbe3174053de9a37025",
+      "previewSha256": "d980d90bec68a610606f3f0337b2f2ace7da99ca08fb7c7945222bf7f5811cf7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.19747844227777
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "a7d29095a75f41888a08f00aa2526c56a336809e971889abc180618a644d1780",
+      "previewSha256": "9e83247a8174fe44ef64b6f98328b2c33ff26b60b6a6ab655c41fb350af6b38a",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.90060251291618
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "aa04136081cdd7e68816d0ce7c989c77eba4f92024b8a5c578e43f40a724453c",
+      "previewSha256": "243606521f3135f70629ab9d21e487cb500cc5b90a0c32c940fb9eca955fc86c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.7804389193345
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "b3f366ecb26c28baa562b3d7a78b2d71d0d14a2a37e7a32a662f8ba2b7ef3f3a",
+      "previewSha256": "87a644693299e990f56ae43bbfec127bd42539182bbea1891fea50b8bc76f9b2",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.90713621314879
+    },
+    {
+      "src": "assets/rooms/parcel-sort-001/extra-15.webp",
+      "label": "Extra 16",
+      "group": "extra",
+      "sourceSha256": "24ac1cd4f85eb5d4d1b1645f5bc2b473e5ddffc66e2b974ba1f3af05bfe34cf3",
+      "previewSha256": "1b59eea5539c7770931e06abe0e7cd9c0b9fbab0570ce7ce3020b5733dd730a7",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.17050515068903
+    }
+  ],
+  "joints": [
+    {
+      "id": "workbench__0_workstation_drawer_slide",
+      "objectId": "workbench__0",
+      "body": "drawer__0",
+      "type": "slide",
+      "pivot": [
+        1.19,
+        0.59,
+        -5.8999999999999995
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.25,
+      "closed": 0,
+      "open": 0.25,
+      "range": [
+        0,
+        0.25
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "workbench__0_station_button_slide",
+      "objectId": "workbench__0",
+      "body": "light_switch__0",
+      "type": "slide",
+      "pivot": [
+        2.12,
+        0.854,
+        -5.77
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.006,
+      "closed": 0,
+      "open": 0.006,
+      "range": [
+        0,
+        0.006
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart__0_cage_gate_hinge",
+      "objectId": "cart__0",
+      "body": "door__0",
+      "type": "hinge",
+      "pivot": [
+        4.89,
+        0.2498,
+        -4.16
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": -1.2217304763960306,
+      "closed": 0,
+      "open": -1.2217304763960306,
+      "range": [
+        -1.2217304763960306,
+        0
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart__1_cage_gate_hinge",
+      "objectId": "cart__1",
+      "body": "door__1",
+      "type": "hinge",
+      "pivot": [
+        6.6899999999999995,
+        0.2498,
+        -4.16
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.2217304763960306,
+      "closed": 0,
+      "open": 1.2217304763960306,
+      "range": [
+        0,
+        1.2217304763960306
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart__2_loading_cage_gate_hinge",
+      "objectId": "cart__2",
+      "body": "door__2",
+      "type": "hinge",
+      "pivot": [
+        8.49,
+        0.2498,
+        -4.16
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.2217304763960306,
+      "closed": 0,
+      "open": 1.2217304763960306,
+      "range": [
+        0,
+        1.2217304763960306
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart__3_cage_gate_hinge",
+      "objectId": "cart__3",
+      "body": "door__3",
+      "type": "hinge",
+      "pivot": [
+        10.290000000000001,
+        0.2498,
+        -4.16
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.2217304763960306,
+      "closed": 0,
+      "open": 1.2217304763960306,
+      "range": [
+        0,
+        1.2217304763960306
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart__4_cage_gate_hinge",
+      "objectId": "cart__4",
+      "body": "door__4",
+      "type": "hinge",
+      "pivot": [
+        2.39,
+        0.24980000000000005,
+        -4.4399999999999995
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.2217304763960306,
+      "closed": 0,
+      "open": 1.2217304763960306,
+      "range": [
+        0,
+        1.2217304763960306
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart__5_cage_gate_hinge",
+      "objectId": "cart__5",
+      "body": "door__5",
+      "type": "hinge",
+      "pivot": [
+        11.39,
+        0.2498,
+        -3.185
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.2217304763960306,
+      "closed": 0,
+      "open": 1.2217304763960306,
+      "range": [
+        0,
+        1.2217304763960306
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "workbench__1_workstation_drawer_slide",
+      "objectId": "workbench__1",
+      "body": "drawer__1",
+      "type": "slide",
+      "pivot": [
+        4.859999999999999,
+        0.59,
+        -1.3499999999999999
+      ],
+      "axis": [
+        1.2246468e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.25,
+      "closed": 0,
+      "open": 0.25,
+      "range": [
+        0,
+        0.25
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "workbench__2_workstation_drawer_slide",
+      "objectId": "workbench__2",
+      "body": "drawer__2",
+      "type": "slide",
+      "pivot": [
+        7.66,
+        0.59,
+        -1.3499999999999999
+      ],
+      "axis": [
+        1.2246468e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.25,
+      "closed": 0,
+      "open": 0.25,
+      "range": [
+        0,
+        0.25
+      ],
+      "parentJointId": null
+    }
+  ],
+  "articulations": [
+    {
+      "id": "workbench__0_workstation_drawer_slide",
+      "objectId": "workbench__0",
+      "title": "workbench / 0 workstation drawer slide",
+      "clip": "workbench__0_workstation_drawer_slide_motion",
+      "joints": [
+        "workbench__0_workstation_drawer_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "workbench__0_station_button_slide",
+      "objectId": "workbench__0",
+      "title": "workbench / 0 station button slide",
+      "clip": "workbench__0_station_button_slide_motion",
+      "joints": [
+        "workbench__0_station_button_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.6,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart__0_cage_gate_hinge",
+      "objectId": "cart__0",
+      "title": "cart / 0 cage gate hinge",
+      "clip": "cart__0_cage_gate_hinge_motion",
+      "joints": [
+        "cart__0_cage_gate_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 70,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart__1_cage_gate_hinge",
+      "objectId": "cart__1",
+      "title": "cart / 1 cage gate hinge",
+      "clip": "cart__1_cage_gate_hinge_motion",
+      "joints": [
+        "cart__1_cage_gate_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 70,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart__2_loading_cage_gate_hinge",
+      "objectId": "cart__2",
+      "title": "cart / 2 loading cage gate hinge",
+      "clip": "cart__2_loading_cage_gate_hinge_motion",
+      "joints": [
+        "cart__2_loading_cage_gate_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 70,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart__3_cage_gate_hinge",
+      "objectId": "cart__3",
+      "title": "cart / 3 cage gate hinge",
+      "clip": "cart__3_cage_gate_hinge_motion",
+      "joints": [
+        "cart__3_cage_gate_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 70,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart__4_cage_gate_hinge",
+      "objectId": "cart__4",
+      "title": "cart / 4 cage gate hinge",
+      "clip": "cart__4_cage_gate_hinge_motion",
+      "joints": [
+        "cart__4_cage_gate_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 70,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart__5_cage_gate_hinge",
+      "objectId": "cart__5",
+      "title": "cart / 5 cage gate hinge",
+      "clip": "cart__5_cage_gate_hinge_motion",
+      "joints": [
+        "cart__5_cage_gate_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 70,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "workbench__1_workstation_drawer_slide",
+      "objectId": "workbench__1",
+      "title": "workbench / 1 workstation drawer slide",
+      "clip": "workbench__1_workstation_drawer_slide_motion",
+      "joints": [
+        "workbench__1_workstation_drawer_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "workbench__2_workstation_drawer_slide",
+      "objectId": "workbench__2",
+      "title": "workbench / 2 workstation drawer slide",
+      "clip": "workbench__2_workstation_drawer_slide_motion",
+      "joints": [
+        "workbench__2_workstation_drawer_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "cart__0_castor_0_axle",
+      "body": "tire__0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__0_castor_1_axle",
+      "body": "tire__1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__0_castor_2_axle",
+      "body": "tire__2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__0_castor_3_axle",
+      "body": "tire__3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__1_castor_0_axle",
+      "body": "tire__4",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__1_castor_1_axle",
+      "body": "tire__5",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__1_castor_2_axle",
+      "body": "tire__6",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__1_castor_3_axle",
+      "body": "tire__7",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__2_loading_castor_0_axle",
+      "body": "tire__8",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__2_loading_castor_1_axle",
+      "body": "tire__9",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__2_loading_castor_2_axle",
+      "body": "tire__10",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__2_loading_castor_3_axle",
+      "body": "tire__11",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__3_castor_0_axle",
+      "body": "tire__12",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__3_castor_1_axle",
+      "body": "tire__13",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__3_castor_2_axle",
+      "body": "tire__14",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__3_castor_3_axle",
+      "body": "tire__15",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__4_castor_0_axle",
+      "body": "tire__16",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__4_castor_1_axle",
+      "body": "tire__17",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__4_castor_2_axle",
+      "body": "tire__18",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__4_castor_3_axle",
+      "body": "tire__19",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__5_castor_0_axle",
+      "body": "tire__20",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__5_castor_1_axle",
+      "body": "tire__21",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__5_castor_2_axle",
+      "body": "tire__22",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart__5_castor_3_axle",
+      "body": "tire__23",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "tape_dispenser__0_tape_spool_axle",
+      "body": "tape__0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "tape_dispenser__1_tape_spool_axle",
+      "body": "tape__1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "tape_dispenser__2_tape_spool_axle",
+      "body": "tape__2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 16,
+  "modelBytes": 2358944,
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "ab53e4b4db3c8eec5fd6f4f06b9f4ce0d584e82b61569c95778341f0cae014a2",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "modelParts": [
+    "assets/rooms/parcel-sort-001/room.gzip-01.bin"
+  ],
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 4247012,
+  "decodedModelSha256": "35309c3edc0dc05997efedabae8041d5c16fde6ba7082fc47ad669abaebcc78e",
+  "sourcePicturesArchiveSha256": "82714a10954cb6a0e3251ff5e4e8cb8627cf292e89b9473f4465c16adaade82b",
+  "taskCards": "assets/rooms/parcel-sort-001/tasks/manifest.json"
+}

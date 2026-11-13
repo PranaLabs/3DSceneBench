@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="3DSceneBench">
+  <!-- A room as an open box. Three greens from the company palette: two walls and the floor. The block is an object the verifiers push. -->
+  <path d="M60 14 L18 35 L18 83 L60 62 Z" fill="#1f4a39"/>
+  <path d="M60 14 L102 35 L102 83 L60 62 Z" fill="#6fae7a"/>
+  <path d="M60 62 L18 83 L60 104 L102 83 Z" fill="#d5efb4"/>
+  <path d="M60 58.7 L76.7 67.05 L60 75.4 L43.3 67.05 Z" fill="#f8f9f5"/>
+  <path d="M43.3 67.05 L60 75.4 L60 93.4 L43.3 85.05 Z" fill="#172d24"/>
+  <path d="M60 75.4 L76.7 67.05 L76.7 85.05 L60 93.4 Z" fill="#dce2d7"/>
+</svg>

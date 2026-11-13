@@ -1,0 +1,5990 @@
+{
+  "id": "childrens-room-001",
+  "title": "Children's room",
+  "description": "A children's playroom with a study corner: toys and play furniture, a wooden garage and railway, a bed, a desk and storage.",
+  "dimensions": [
+    4.8,
+    4.4,
+    2.7
+  ],
+  "dimensionSource": "authored room dimensions",
+  "bounds": {
+    "min": [
+      -2.605,
+      -0.07,
+      -2.3
+    ],
+    "max": [
+      2.5,
+      2.8,
+      3.1
+    ]
+  },
+  "tasks": [
+    {
+      "id": "pick_place_1",
+      "kind": "Robot",
+      "text": "Lift the white-and-navy toy police car from the end of the desk nearest the room door. Set it on its wheels near the middle of the same desk, slightly toward the chair.",
+      "objects": [
+        "toy__352",
+        "desk__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "toy__352",
+          "label": "Lift the white-and-navy police car",
+          "point": [
+            1.02,
+            0.7203,
+            1.78
+          ]
+        },
+        {
+          "object": "desk__0",
+          "label": "Set it near the desk center, toward the chair",
+          "point": [
+            1.27,
+            0.65,
+            1.81
+          ]
+        }
+      ]
+    },
+    {
+      "id": "push_1",
+      "kind": "Robot",
+      "text": "Find the white-and-navy toy police car on the desk, at the end nearest the room door. Push it away from the desk chair toward the wall behind the desk, keeping it upright on the tabletop.",
+      "objects": [
+        "toy__352",
+        "desk__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "toy__352",
+          "label": "Push the police car away from the desk chair",
+          "point": [
+            0.989,
+            0.6663,
+            1.75
+          ]
+        },
+        {
+          "object": "desk__0",
+          "label": "Leave the car upright toward the back of the desk",
+          "point": [
+            1.02,
+            0.65,
+            1.98
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garage_car_lift",
+      "kind": "Interaction",
+      "text": "Pick up the green wooden toy car on the road-patterned rug and set it on the toy garage’s lower lift platform. Turn the crank to raise the car to the upper level, let it hold there, then crank it back down with the car still on the platform.",
+      "objects": [
+        "toy__350",
+        "toy__440",
+        "rug__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "toy__350",
+          "label": "Pick up the green car from the rug",
+          "point": [
+            -0.8,
+            0.063,
+            -0.7
+          ]
+        },
+        {
+          "object": "toy__440",
+          "label": "Set the car on the lower lift platform",
+          "point": [
+            -1.2605,
+            0.025,
+            -1.03
+          ]
+        },
+        {
+          "object": "toy__440",
+          "label": "Crank the loaded lift up and hold it there",
+          "point": [
+            -1.2605,
+            0.225,
+            -1.03
+          ]
+        },
+        {
+          "object": "toy__440",
+          "label": "Crank the lift back down with the car aboard",
+          "point": [
+            -1.2605,
+            0.025,
+            -1.03
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clothes_drawer",
+      "kind": "Interaction",
+      "text": "Pull open the bottom drawer of the white chest at the foot of the bed. Keep all four folded shirts in the drawer as it opens, then push the drawer fully closed with the shirts inside.",
+      "objects": [
+        "chest__0",
+        "shirt__0",
+        "shirt__1",
+        "shirt__2",
+        "shirt__3"
+      ],
+      "locatorSteps": [
+        {
+          "object": "chest__0",
+          "label": "Pull open the bottom drawer with all four shirts inside",
+          "point": [
+            1.6895,
+            0.2365,
+            0.6
+          ]
+        },
+        {
+          "object": "chest__0",
+          "label": "Push the drawer shut with the shirts inside",
+          "point": [
+            1.6895,
+            0.2365,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loaded_bin_return",
+      "kind": "Interaction",
+      "text": "At the cabinet beside the workbench, pull the blue bin out of the bottom middle compartment. Lift it clear with the ball inside, then lower it and slide it back into the same compartment with the ball still in it.",
+      "objects": [
+        "bin__1",
+        "ball__0",
+        "cabinet__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bin__1",
+          "label": "Pull the blue bin straight out",
+          "point": [
+            -0.8363,
+            0.297,
+            -1.7533
+          ]
+        },
+        {
+          "object": "bin__1",
+          "label": "Lift it clear with the ball inside",
+          "point": [
+            -0.83,
+            0.217,
+            -1.475
+          ]
+        },
+        {
+          "object": "cabinet__0",
+          "label": "Return the loaded bin to the bottom middle compartment",
+          "point": [
+            -0.83,
+            0.067,
+            -1.955
+          ]
+        }
+      ]
+    },
+    {
+      "id": "push_road_car",
+      "kind": "Interaction",
+      "text": "Find the red wooden toy car on the desk side of the road-patterned rug. Push it straight ahead in the direction its nose points, then let it roll forward on its wheels and stay upright.",
+      "objects": [
+        "toy__351",
+        "rug__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "toy__351",
+          "label": "Push the red car straight ahead on the rug",
+          "point": [
+            -0.3744,
+            0.025,
+            0.071
+          ]
+        },
+        {
+          "object": "toy__351",
+          "label": "Let it roll forward on its wheels",
+          "point": [
+            -0.1901,
+            0.001,
+            0.2263
+          ],
+          "referenceArea": true
+        }
+      ]
+    },
+    {
+      "id": "teaching_clock",
+      "kind": "Interaction",
+      "text": "On the clock on the workbench beside the storage bins, gently turn the short hour hand to 3 and the long minute hand to 12. Let go of both hands so the clock stays at three o’clock.",
+      "objects": [
+        "clock__0",
+        "workbench__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "clock__0",
+          "label": "Turn the short hour hand to 3",
+          "point": [
+            -1.6017,
+            0.5253,
+            -1.99
+          ]
+        },
+        {
+          "object": "clock__0",
+          "label": "Turn the long minute hand to 12",
+          "point": [
+            -1.7155,
+            0.5626,
+            -1.979
+          ]
+        },
+        {
+          "object": "clock__0",
+          "label": "Release both hands at three o’clock",
+          "point": [
+            -1.655,
+            0.483,
+            -1.973
+          ]
+        }
+      ]
+    },
+    {
+      "id": "train_tidy_and_play",
+      "kind": "Interaction",
+      "text": "Lift the green rear carriage of the wooden toy train off its straight track, behind the red carriage. Set it inside the white bin on the floor beside the toy garage, then lift it out and put its wheels back on the same track behind the red carriage.",
+      "objects": [
+        "toy__372",
+        "bin__20",
+        "toy__400"
+      ],
+      "locatorSteps": [
+        {
+          "object": "toy__372",
+          "label": "Lift the green rear carriage off the track",
+          "point": [
+            -1.54,
+            0.0605,
+            0.27
+          ]
+        },
+        {
+          "object": "bin__20",
+          "label": "Set the carriage inside the white floor bin",
+          "point": [
+            -1.92,
+            0.015,
+            -0.7
+          ]
+        },
+        {
+          "object": "toy__372",
+          "label": "Lift the carriage out of the bin",
+          "point": [
+            -1.92,
+            0.063,
+            -0.7
+          ]
+        },
+        {
+          "object": "toy__400",
+          "label": "Set its wheels on the track behind the red carriage",
+          "point": [
+            -1.54,
+            0.012,
+            0.27
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turn_stool_cloth",
+      "kind": "Interaction",
+      "text": "Find the towel draped over the stool between the storage bins and the bed. Lift the low hem on the side facing the bins above the stool seat, hold it there briefly, then release it so it hangs back where it started.",
+      "objects": [
+        "towel__0",
+        "stool__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "towel__0",
+          "label": "Lift the hanging hem on the side facing the bins",
+          "point": [
+            0.9121,
+            0.0782,
+            -1.8337
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "stool__0",
+          "label": "Hold the hem above the stool seat",
+          "point": [
+            0.9121,
+            0.3782,
+            -1.8337
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "towel__0",
+          "label": "Release the hem so it hangs back down",
+          "point": [
+            0.9121,
+            0.0782,
+            -1.8337
+          ],
+          "referenceArea": true
+        }
+      ]
+    },
+    {
+      "id": "turn_blanket_corner",
+      "kind": "Interaction",
+      "text": "At the foot of the bed, take the corner of the striped blanket that faces into the room, near the chest. Lift that corner clear of the mattress, hold it up briefly, then release it so it settles back in place.",
+      "objects": [
+        "blanket__0",
+        "mattress__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "blanket__0",
+          "label": "Lift the room-facing corner at the foot of the bed",
+          "point": [
+            1.5428,
+            0.5197,
+            0.0507
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "mattress__0",
+          "label": "Hold the corner clear of the mattress",
+          "point": [
+            1.5428,
+            0.59,
+            0.0507
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "blanket__0",
+          "label": "Release the corner and let it settle back",
+          "point": [
+            1.5428,
+            0.5197,
+            0.0507
+          ],
+          "referenceArea": true
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "floor": "floor",
+    "walls": "walls",
+    "ceiling": "ceiling",
+    "cabinet__0": "object",
+    "bin__0": "object",
+    "bin__6": "object",
+    "bin__1": "object",
+    "bin__7": "object",
+    "bin__2": "object",
+    "bin__8": "object",
+    "cabinet__1": "object",
+    "bin__3": "object",
+    "bin__9": "object",
+    "bin__4": "object",
+    "bin__10": "object",
+    "bin__5": "object",
+    "bin__11": "object",
+    "shelf__0": "object",
+    "bed__0": "object",
+    "mattress__0": "object",
+    "mattress__1": "object",
+    "mattress__2": "object",
+    "mattress__3": "object",
+    "chest__0": "object",
+    "stool__0": "object",
+    "stool__1": "object",
+    "desk__0": "object",
+    "chair__0": "object",
+    "bookcase__0": "object",
+    "table__0": "object",
+    "door__0": "object",
+    "rug__0": "object",
+    "toy__0": "object",
+    "toy__300": "object",
+    "toy__301": "object",
+    "toy__302": "object",
+    "toy__303": "object",
+    "toy__304": "object",
+    "toy__305": "object",
+    "toy__306": "object",
+    "toy__307": "object",
+    "toy__310": "object",
+    "toy__311": "object",
+    "toy__312": "object",
+    "toy__313": "object",
+    "toy__314": "object",
+    "toy__315": "object",
+    "toy__320": "object",
+    "toy__321": "object",
+    "toy__322": "object",
+    "toy__323": "object",
+    "toy__324": "object",
+    "toy__325": "object",
+    "toy__326": "object",
+    "toy__327": "object",
+    "toy__328": "object",
+    "toy__329": "object",
+    "toy__330": "object",
+    "toy__331": "object",
+    "toy__332": "object",
+    "toy__350": "object",
+    "toy__351": "object",
+    "toy__352": "object",
+    "toy__353": "object",
+    "toy__354": "object",
+    "toy__355": "object",
+    "toy__356": "object",
+    "toy__357": "object",
+    "toy__358": "object",
+    "toy__520": "object",
+    "toy__521": "object",
+    "toy__522": "object",
+    "toy__523": "object",
+    "toy__524": "object",
+    "workbench__0": "object",
+    "clock__0": "object",
+    "box__20": "object",
+    "tray__0": "object",
+    "toolbox__0": "object",
+    "hammer__20": "object",
+    "hammer__21": "object",
+    "toy__500": "object",
+    "cash_register__0": "object",
+    "toy__400": "object",
+    "toy__401": "object",
+    "toy__402": "object",
+    "toy__403": "object",
+    "toy__404": "object",
+    "toy__405": "object",
+    "toy__406": "object",
+    "toy__370": "object",
+    "toy__371": "object",
+    "toy__372": "object",
+    "toy__420": "object",
+    "toy__421": "object",
+    "toy__422": "object",
+    "toy__423": "object",
+    "toy__424": "object",
+    "toy__425": "object",
+    "toy__426": "object",
+    "toy__427": "object",
+    "toy__428": "object",
+    "toy__429": "object",
+    "toy__430": "object",
+    "toy__440": "object",
+    "wall_art__0": "object",
+    "wall_art__1": "object",
+    "wall_art__2": "object",
+    "wall_art__3": "object",
+    "wall_art__4": "object",
+    "wall_art__10": "object",
+    "wall_art__11": "object",
+    "wall_art__12": "object",
+    "ornament__0": "object",
+    "paper__0": "object",
+    "pencil__0": "object",
+    "pencil__1": "object",
+    "pencil__2": "object",
+    "book__0": "object",
+    "book__1": "object",
+    "paper__1": "object",
+    "pencil__3": "object",
+    "pencil__4": "object",
+    "pencil__5": "object",
+    "book__2": "object",
+    "book__3": "object",
+    "book__4": "object",
+    "book__5": "object",
+    "book__30": "object",
+    "book__31": "object",
+    "book__32": "object",
+    "ceiling_lamp__0": "object",
+    "table_lamp__0": "object",
+    "ball__0": "object",
+    "teddy_bear__1": "object",
+    "teddy_bear__0": "object",
+    "shirt__0": "object",
+    "shirt__1": "object",
+    "shirt__2": "object",
+    "shirt__3": "object",
+    "teddy_bear__3": "object",
+    "teddy_bear__2": "object",
+    "pillow__0": "object",
+    "pillow__1": "object",
+    "cushion__0": "object",
+    "teddy_bear__4": "object",
+    "teddy_bear__301": "object",
+    "doll__210": "object",
+    "book__20": "object",
+    "doll__220": "object",
+    "doll__221": "object",
+    "bin__20": "object",
+    "toy__510": "object",
+    "toy__511": "object",
+    "toy__512": "object",
+    "toy__513": "object",
+    "blanket__0": "object",
+    "towel__0": "object",
+    "doll__200": "object",
+    "doll__201": "object",
+    "doll__202": "object",
+    "ornament__1": "object",
+    "ornament__2": "object",
+    "ornament__3": "object"
+  },
+  "mobility": {
+    "free": 147,
+    "fixed": 14,
+    "jointOnly": 0,
+    "nonrigid": 0,
+    "objects": {
+      "cabinet__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shelf__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bed__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mattress__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mattress__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mattress__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mattress__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chest__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "stool__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "desk__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "chair__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bookcase__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rug__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__300": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__301": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__302": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__303": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__304": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__305": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__306": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__307": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__310": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__311": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__312": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__313": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__314": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__315": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__320": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__321": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__322": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__323": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__324": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__325": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__326": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__327": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__328": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__329": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__330": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__331": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__332": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__350": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__351": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__352": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__353": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__354": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__355": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__356": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__357": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__358": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__520": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__521": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__522": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__523": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__524": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "workbench__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "clock__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tray__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toolbox__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hammer__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "hammer__21": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__500": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cash_register__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__400": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__401": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__402": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__403": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__404": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__405": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__406": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__370": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__371": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__372": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__420": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__421": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__422": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__423": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__424": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__425": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__426": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__427": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__428": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__429": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__430": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__440": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__10": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__11": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wall_art__12": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ornament__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pencil__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pencil__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pencil__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "paper__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pencil__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pencil__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pencil__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__30": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__31": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__32": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "table_lamp__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ball__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "teddy_bear__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "teddy_bear__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shirt__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shirt__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shirt__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shirt__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "teddy_bear__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "teddy_bear__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pillow__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pillow__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cushion__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "teddy_bear__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "teddy_bear__301": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "doll__210": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "book__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "doll__220": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "doll__221": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__20": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__510": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__511": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__512": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "toy__513": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "blanket__0": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "towel__0": {
+        "status": "fixed",
+        "softDefinition": true,
+        "worldGeometry": false
+      },
+      "doll__200": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "doll__201": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "doll__202": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ornament__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ornament__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ornament__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/childrens-room-001/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "55231534edcbf7ba3609cb2d872edf10905dd0fdf37cbf1bc5f7bee2fd565cb8",
+      "previewSha256": "4002e0bf89ffbc68b48542a89159fa48ca15dc78ac98b61ef1f156180a978d12",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "36eea1f1412654cafb9d733f3023094490a98103418431881ac15d43bca54a41",
+      "previewSha256": "3c3e4b6116f8fb78e6be7ae10e5b60ac3b8e33715755486442c5ce50c5865032",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "9431733f21786c16e02b5b43d122d437a6bf0fbc0dac0308f5f56da0b5931bdf",
+      "previewSha256": "fa29bbfb05af3e96032a1f53fd333d13827a5179c9cb1a0377798a47359b1600",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "4fdb1d54770c50d7d74e10ab75b8a480f1ccbe080fe6786d4fba1bdf63442ffe",
+      "previewSha256": "7a396b74cb0148f8680cdfc36bb319e1b24320fa6d7844676911d7cf63be4ddf",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.25687930632996
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "284fcff13191583b370817a539a96b555fefcee231453780f65ec0f7e193ce74",
+      "previewSha256": "f5305bed98bf3118f0944bfe3c4e9f7093ba22c28d9ab78fd9e8a165b5f31578",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "cc5af4e9cef0367e0e9f32d62a0438bc2f899aad9bbee5ee9a847155612bbb49",
+      "previewSha256": "43117dda6e12540d4e616138d7faaf1ee5ae1372e065ede4543bd90002ad38df",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.204413595360506
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "277e1219d04aea9133f1340a04f7483d4f8f16b67ec934dba52fba2fd7045258",
+      "previewSha256": "39c9b5b693ebaadb9102ff9d60050876fc1fac488f6782f5dff4cc7149d63153",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "38fd7c6cc29291391787caa200c01b41fd2a57ff50aca29da04339afad319f92",
+      "previewSha256": "fa5652a1e5ece7553176397e3876b05bd97d6671632b6efb82457324e08bf54c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.25490074596287
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "4fa1c25501b585f9a5693481041e105053ff01a80e04dd537b0b2c924b04cc51",
+      "previewSha256": "d076986feff7abc74846ae4c7da46437f27e3512ab627f90029f96502ace4d44",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.67688142827287
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "1fb27a8d2643558db980076c6e9a35a67eb3e32e67afd133828f979dbd73c936",
+      "previewSha256": "67ede496fd4fee735c0edb0b579823a776f6cb7647b40028423a925671f479f9",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "8214bc71a7a7f327d0112b0137cbea7aa792ebeca629aae0a88b3fb400cb50d4",
+      "previewSha256": "0e3bab4cb7e4b532dc48c35f2d531330a5ad22c30282167a3cd910f2efef8480",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.42183850600705
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "828e40fd09a67e7558950750576a284f1bf5e8efd6fdd1b9f57a00ae9568d5a4",
+      "previewSha256": "41dc862f8ceb7edf4b496f27f13d4f854a20ca6469fab1de2e338bad41a2bca0",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.170648507147774
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "946865e87b71a261e314f89cf33af6b63b701f7b9e26b77457625edaf80315a3",
+      "previewSha256": "23183090c7d282629b5b2a5a790c6cac29a672601d09a9e53ccea5af26be0914",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.123844497409
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "3460d2009f29d777bf8f98b0ec5562779cf02e481778f6bf047dbfe29a2119e8",
+      "previewSha256": "c47e4bbaea00a4589d8ebdee2bcf515e951a817bf3e8d88a8bcd2f6a3105bbee",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "716c9435e8b1bdf4dc5c80712fabe045704dfd0360c6e5c714c603e59b0bb131",
+      "previewSha256": "c850585c9528202a6b6e59c1aa0d096d7bbdc938064fee5991b51f83cf87822b",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.935608121980366
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "e0d0d2cc3a55eeeeda46e753d3dac569c96b44d797edfe6e2091c45070302e66",
+      "previewSha256": "10d617de19ee3f3161f1db88ebab5175f3e8db1d35bc0d69f24e0a2721d0f14f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.52700183771034
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "c5ecee9c5bcd370685e375737ec5735151bf55a252e25af264f52d3171b541af",
+      "previewSha256": "4d99d1fa725e13916051ba9080573e0a6a476b5446c42ff3fac376eb7eaf8a73",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.136965640040415
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "985abccf297bdcabfaca33987fe32fce6220085d2f92c8ccec743def7665966d",
+      "previewSha256": "23fdbd9fb06973c8902d9c4f54b44c72c8cd838a61f68fc3aa629268335d8f65",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "78b9571889ea67d8b8a8e886a63450ded7b22986016d79d0bbeb5f2cf2660000",
+      "previewSha256": "49c6f7d74b0f8fdd135a8cd928ee9230e68931c0a51c92873bff628b7665f06d",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "03a4b465cc2a5cf2c5745b5bd7eebcc51a1d33ea0bb1096f6ac1821e3bfd8f38",
+      "previewSha256": "2ff83f4391cc2f8e2b99328ae1da8d8393544cb5cd682020a7950d588abe24f8",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.9132797559478
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "d060ba7441d9f51f56cdec34260843bc878a7d2fda39f2d715a9a9d0aef7409b",
+      "previewSha256": "ffdc05a6cf2b1cb38ce0a059d90383e4a411318f99138bc25b43ac7c19c3f2e1",
+      "previewEncoding": "WebP lossless",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": null
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "29def9503296ec6e31c16038d56d77ddb869c7ec3fdc543016fbb4308b13e0f3",
+      "previewSha256": "7c36ae44a5774840a789f7c196f01dbef21f2db14cf9b72233994028e47acf96",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.632005094717826
+    },
+    {
+      "src": "assets/rooms/childrens-room-001/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "5c55f4b6c01daf5f76707c85e8f76b788b8049afa1e8b0dd0211c7f3d6f1c8e7",
+      "previewSha256": "24a97c0f4915209e7d608049657119466409eafe395081a991dd1539210d7e82",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 38.48237213056714
+    }
+  ],
+  "joints": [
+    {
+      "id": "bed__0_bed__0_drawer0_slide",
+      "objectId": "bed__0",
+      "body": "bed__0_bed__0_drawer0",
+      "type": "slide",
+      "pivot": [
+        1.938,
+        0.057000000000000016,
+        -0.1399999999999999
+      ],
+      "axis": [
+        -1.0000000000000002,
+        0,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.56,
+      "closed": 0,
+      "open": 0.56,
+      "range": [
+        0,
+        0.56
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "bed__0_bed__0_drawer1_slide",
+      "objectId": "bed__0",
+      "body": "bed__0_bed__0_drawer1",
+      "type": "slide",
+      "pivot": [
+        1.938,
+        0.057000000000000016,
+        -0.9
+      ],
+      "axis": [
+        -1.0000000000000002,
+        0,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.56,
+      "closed": 0,
+      "open": 0.56,
+      "range": [
+        0,
+        0.56
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "chest__0_chest__0_drawer_slide",
+      "objectId": "chest__0",
+      "body": "chest__0_chest__0_drawer",
+      "type": "slide",
+      "pivot": [
+        1.938,
+        0.05900000000000001,
+        0.6
+      ],
+      "axis": [
+        -1.0000000000000002,
+        0,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.34,
+      "closed": 0,
+      "open": 0.34,
+      "range": [
+        0,
+        0.34
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "chest__0_chest__0_lid0_hinge",
+      "objectId": "chest__0",
+      "body": "chest__0_chest__0_lid0",
+      "type": "hinge",
+      "pivot": [
+        2.043,
+        0.9160000000000003,
+        0.853
+      ],
+      "axis": [
+        0.8077909605171772,
+        0.5894690527133178,
+        -2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5,
+      "closed": 0,
+      "open": 1.5,
+      "range": [
+        0,
+        1.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "chest__0_chest__0_lid1_hinge",
+      "objectId": "chest__0",
+      "body": "chest__0_chest__0_lid1",
+      "type": "hinge",
+      "pivot": [
+        2.043,
+        0.9160000000000003,
+        0.3469999999999999
+      ],
+      "axis": [
+        -0.8077909605171772,
+        -0.5894690527133178,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5,
+      "closed": 0,
+      "open": 1.5,
+      "range": [
+        0,
+        1.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "desk__0_desk__0_drawer0_slide",
+      "objectId": "desk__0",
+      "body": "desk__0_desk__0_drawer0",
+      "type": "slide",
+      "pivot": [
+        1.32,
+        0,
+        1.91
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.21,
+      "closed": 0,
+      "open": 0.21,
+      "range": [
+        0,
+        0.21
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "desk__0_desk__0_drawer1_slide",
+      "objectId": "desk__0",
+      "body": "desk__0_desk__0_drawer1",
+      "type": "slide",
+      "pivot": [
+        1.32,
+        0,
+        1.91
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.21,
+      "closed": 0,
+      "open": 0.21,
+      "range": [
+        0,
+        0.21
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__0_door__0_hinge",
+      "objectId": "door__0",
+      "body": "door__0_door__0_leaf",
+      "type": "hinge",
+      "pivot": [
+        -0.7740000006719544,
+        0.012,
+        2.1779999989745837
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 1.65,
+      "start": 1.65,
+      "end": 0,
+      "closed": 1.65,
+      "open": 0,
+      "range": [
+        0,
+        1.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "door__0_door__0_handle_hinge",
+      "objectId": "door__0",
+      "body": "door__0_door__0_handle",
+      "type": "hinge",
+      "pivot": [
+        -0.811409616860807,
+        0.9600000000000002,
+        1.4286105670924663
+      ],
+      "axis": [
+        0.9968650305433785,
+        0,
+        -0.07912086248107619
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.7,
+      "closed": 0,
+      "open": 0.7,
+      "range": [
+        0,
+        0.7
+      ],
+      "parentJointId": "door__0_door__0_hinge"
+    },
+    {
+      "id": "door__0_door__0_latch_slide",
+      "objectId": "door__0",
+      "body": "door__0_door__0_latch",
+      "type": "slide",
+      "pivot": [
+        -0.8197964282838012,
+        0.9600000000000002,
+        1.322942873854868
+      ],
+      "axis": [
+        0.07912086248107619,
+        0,
+        0.9968650305433785
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.013,
+      "closed": 0,
+      "open": 0.013,
+      "range": [
+        0,
+        0.013
+      ],
+      "parentJointId": "door__0_door__0_hinge"
+    },
+    {
+      "id": "toy__302_toy__116_door_hinge",
+      "objectId": "toy__302",
+      "body": "toy__302_toy__116_door",
+      "type": "hinge",
+      "pivot": [
+        -1.056,
+        0.59,
+        -1.9809999999999999
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.65,
+      "closed": 0,
+      "open": 1.65,
+      "range": [
+        0,
+        1.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__306_toy__119_door_hinge",
+      "objectId": "toy__306",
+      "body": "toy__306_toy__119_door",
+      "type": "hinge",
+      "pivot": [
+        -0.7135,
+        0.59,
+        -1.976
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.65,
+      "closed": 0,
+      "open": 1.65,
+      "range": [
+        0,
+        1.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__354_toy__4_bed_hinge",
+      "objectId": "toy__354",
+      "body": "toy__354_toy__4_bed",
+      "type": "hinge",
+      "pivot": [
+        -1.665918219193593,
+        0.044000000000000004,
+        -0.5903908895918115
+      ],
+      "axis": [
+        -0.29552013901176144,
+        0,
+        0.9553365100520702
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.15,
+      "closed": 0,
+      "open": 1.15,
+      "range": [
+        0,
+        1.15
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__355_toy__210_arm_hinge",
+      "objectId": "toy__355",
+      "body": "toy__355_toy__210_arm",
+      "type": "hinge",
+      "pivot": [
+        -1.07,
+        0.06600000000000002,
+        -0.852
+      ],
+      "axis": [
+        1.0000000000000002,
+        0,
+        -2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.1,
+      "closed": 0,
+      "open": 1.1,
+      "range": [
+        0,
+        1.1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__355_toy__210_bucket_hinge",
+      "objectId": "toy__355",
+      "body": "toy__355_toy__210_bucket",
+      "type": "hinge",
+      "pivot": [
+        -1.07,
+        0.03300000000000001,
+        -0.935
+      ],
+      "axis": [
+        -1.0000000000000002,
+        0,
+        2.220446049250313e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.1,
+      "closed": 0,
+      "open": 1.1,
+      "range": [
+        -0.25,
+        1.1
+      ],
+      "parentJointId": "toy__355_toy__210_arm_hinge"
+    },
+    {
+      "id": "toy__356_toy__5_crane_hinge",
+      "objectId": "toy__356",
+      "body": "toy__356_toy__5_crane",
+      "type": "hinge",
+      "pivot": [
+        -0.8601316712303153,
+        0.07000000000000002,
+        -0.9242836010646184
+      ],
+      "axis": [
+        0.38941827860166917,
+        0,
+        -0.9210610209377622
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1,
+      "closed": 0,
+      "open": 1,
+      "range": [
+        0,
+        1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__356_toy__5_hook_hinge",
+      "objectId": "toy__356",
+      "body": "toy__356_toy__5_hook",
+      "type": "hinge",
+      "pivot": [
+        -0.9568430784287804,
+        0.08600000000000002,
+        -0.9651725203177937
+      ],
+      "axis": [
+        0.38941827860166917,
+        0,
+        -0.9210610209377622
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.2,
+      "closed": 0,
+      "open": 1.2,
+      "range": [
+        -1.2,
+        1.2
+      ],
+      "parentJointId": "toy__356_toy__5_crane_hinge"
+    },
+    {
+      "id": "toy__357_toy__12_ladder_hinge",
+      "objectId": "toy__357",
+      "body": "toy__357_toy__12_ladder",
+      "type": "hinge",
+      "pivot": [
+        -0.164,
+        1.2269999999999999,
+        -2.055
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.25,
+      "closed": 0,
+      "open": 1.25,
+      "range": [
+        0,
+        1.25
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__520_toy__5_crane_hinge",
+      "objectId": "toy__520",
+      "body": "toy__520_toy__5_crane",
+      "type": "hinge",
+      "pivot": [
+        -0.376,
+        1.21,
+        -2.055
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1,
+      "closed": 0,
+      "open": 1,
+      "range": [
+        0,
+        1
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__520_toy__5_hook_hinge",
+      "objectId": "toy__520",
+      "body": "toy__520_toy__5_hook",
+      "type": "hinge",
+      "pivot": [
+        -0.481,
+        1.226,
+        -2.055
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.2,
+      "closed": 0,
+      "open": 1.2,
+      "range": [
+        -1.2,
+        1.2
+      ],
+      "parentJointId": "toy__520_toy__5_crane_hinge"
+    },
+    {
+      "id": "toy__524_toy__12_ladder_hinge",
+      "objectId": "toy__524",
+      "body": "toy__524_toy__12_ladder",
+      "type": "hinge",
+      "pivot": [
+        -0.5527242609851452,
+        0.087,
+        0.31271483715457643
+      ],
+      "axis": [
+        0.19866933054025693,
+        0,
+        0.980066577892893
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.25,
+      "closed": 0,
+      "open": 1.25,
+      "range": [
+        0,
+        1.25
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_0_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_0",
+      "type": "slide",
+      "pivot": [
+        -1.6265,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.307,
+      "closed": 0,
+      "open": 0.307,
+      "range": [
+        0,
+        0.307
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_1_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_1",
+      "type": "slide",
+      "pivot": [
+        -1.6425,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.291,
+      "closed": 0,
+      "open": 0.291,
+      "range": [
+        -0.016,
+        0.291
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_2_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_2",
+      "type": "slide",
+      "pivot": [
+        -1.6585,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.275,
+      "closed": 0,
+      "open": 0.275,
+      "range": [
+        -0.032,
+        0.275
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_3_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_3",
+      "type": "slide",
+      "pivot": [
+        -1.6745,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.259,
+      "closed": 0,
+      "open": 0.259,
+      "range": [
+        -0.048,
+        0.259
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_4_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_4",
+      "type": "slide",
+      "pivot": [
+        -1.6905000000000001,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.243,
+      "closed": 0,
+      "open": 0.243,
+      "range": [
+        -0.064,
+        0.243
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_5_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_5",
+      "type": "slide",
+      "pivot": [
+        -1.7065000000000001,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.227,
+      "closed": 0,
+      "open": 0.227,
+      "range": [
+        -0.08,
+        0.227
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_6_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_6",
+      "type": "slide",
+      "pivot": [
+        -1.7225,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.211,
+      "closed": 0,
+      "open": 0.211,
+      "range": [
+        -0.096,
+        0.211
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_7_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_7",
+      "type": "slide",
+      "pivot": [
+        -1.7385,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.195,
+      "closed": 0,
+      "open": 0.195,
+      "range": [
+        -0.112,
+        0.195
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_8_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_8",
+      "type": "slide",
+      "pivot": [
+        -1.7545,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.179,
+      "closed": 0,
+      "open": 0.179,
+      "range": [
+        -0.128,
+        0.179
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_9_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_0_9",
+      "type": "slide",
+      "pivot": [
+        -1.7705,
+        1.112,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.163,
+      "closed": 0,
+      "open": 0.163,
+      "range": [
+        -0.144,
+        0.163
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_0_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_0",
+      "type": "slide",
+      "pivot": [
+        -1.6265,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.307,
+      "closed": 0,
+      "open": 0.307,
+      "range": [
+        0,
+        0.307
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_1_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_1",
+      "type": "slide",
+      "pivot": [
+        -1.6425,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.291,
+      "closed": 0,
+      "open": 0.291,
+      "range": [
+        -0.016,
+        0.291
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_2_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_2",
+      "type": "slide",
+      "pivot": [
+        -1.6585,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.275,
+      "closed": 0,
+      "open": 0.275,
+      "range": [
+        -0.032,
+        0.275
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_3_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_3",
+      "type": "slide",
+      "pivot": [
+        -1.6745,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.259,
+      "closed": 0,
+      "open": 0.259,
+      "range": [
+        -0.048,
+        0.259
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_4_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_4",
+      "type": "slide",
+      "pivot": [
+        -1.6905000000000001,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.243,
+      "closed": 0,
+      "open": 0.243,
+      "range": [
+        -0.064,
+        0.243
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_5_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_5",
+      "type": "slide",
+      "pivot": [
+        -1.7065000000000001,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.227,
+      "closed": 0,
+      "open": 0.227,
+      "range": [
+        -0.08,
+        0.227
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_6_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_6",
+      "type": "slide",
+      "pivot": [
+        -1.7225,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.211,
+      "closed": 0,
+      "open": 0.211,
+      "range": [
+        -0.096,
+        0.211
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_7_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_7",
+      "type": "slide",
+      "pivot": [
+        -1.7385,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.195,
+      "closed": 0,
+      "open": 0.195,
+      "range": [
+        -0.112,
+        0.195
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_8_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_8",
+      "type": "slide",
+      "pivot": [
+        -1.7545,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.179,
+      "closed": 0,
+      "open": 0.179,
+      "range": [
+        -0.128,
+        0.179
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_9_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_1_9",
+      "type": "slide",
+      "pivot": [
+        -1.7705,
+        1.1520000000000001,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.163,
+      "closed": 0,
+      "open": 0.163,
+      "range": [
+        -0.144,
+        0.163
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_0_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_0",
+      "type": "slide",
+      "pivot": [
+        -1.6265,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.307,
+      "closed": 0,
+      "open": 0.307,
+      "range": [
+        0,
+        0.307
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_1_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_1",
+      "type": "slide",
+      "pivot": [
+        -1.6425,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.291,
+      "closed": 0,
+      "open": 0.291,
+      "range": [
+        -0.016,
+        0.291
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_2_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_2",
+      "type": "slide",
+      "pivot": [
+        -1.6585,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.275,
+      "closed": 0,
+      "open": 0.275,
+      "range": [
+        -0.032,
+        0.275
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_3_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_3",
+      "type": "slide",
+      "pivot": [
+        -1.6745,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.259,
+      "closed": 0,
+      "open": 0.259,
+      "range": [
+        -0.048,
+        0.259
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_4_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_4",
+      "type": "slide",
+      "pivot": [
+        -1.6905000000000001,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.243,
+      "closed": 0,
+      "open": 0.243,
+      "range": [
+        -0.064,
+        0.243
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_5_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_5",
+      "type": "slide",
+      "pivot": [
+        -1.7065000000000001,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.227,
+      "closed": 0,
+      "open": 0.227,
+      "range": [
+        -0.08,
+        0.227
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_6_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_6",
+      "type": "slide",
+      "pivot": [
+        -1.7225,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.211,
+      "closed": 0,
+      "open": 0.211,
+      "range": [
+        -0.096,
+        0.211
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_7_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_7",
+      "type": "slide",
+      "pivot": [
+        -1.7385,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.195,
+      "closed": 0,
+      "open": 0.195,
+      "range": [
+        -0.112,
+        0.195
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_8_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_8",
+      "type": "slide",
+      "pivot": [
+        -1.7545,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.179,
+      "closed": 0,
+      "open": 0.179,
+      "range": [
+        -0.128,
+        0.179
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_9_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_2_9",
+      "type": "slide",
+      "pivot": [
+        -1.7705,
+        1.1920000000000002,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.163,
+      "closed": 0,
+      "open": 0.163,
+      "range": [
+        -0.144,
+        0.163
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_0_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_0",
+      "type": "slide",
+      "pivot": [
+        -1.6265,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.307,
+      "closed": 0,
+      "open": 0.307,
+      "range": [
+        0,
+        0.307
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_1_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_1",
+      "type": "slide",
+      "pivot": [
+        -1.6425,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.291,
+      "closed": 0,
+      "open": 0.291,
+      "range": [
+        -0.016,
+        0.291
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_2_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_2",
+      "type": "slide",
+      "pivot": [
+        -1.6585,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.275,
+      "closed": 0,
+      "open": 0.275,
+      "range": [
+        -0.032,
+        0.275
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_3_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_3",
+      "type": "slide",
+      "pivot": [
+        -1.6745,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.259,
+      "closed": 0,
+      "open": 0.259,
+      "range": [
+        -0.048,
+        0.259
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_4_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_4",
+      "type": "slide",
+      "pivot": [
+        -1.6905000000000001,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.243,
+      "closed": 0,
+      "open": 0.243,
+      "range": [
+        -0.064,
+        0.243
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_5_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_5",
+      "type": "slide",
+      "pivot": [
+        -1.7065000000000001,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.227,
+      "closed": 0,
+      "open": 0.227,
+      "range": [
+        -0.08,
+        0.227
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_6_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_6",
+      "type": "slide",
+      "pivot": [
+        -1.7225,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.211,
+      "closed": 0,
+      "open": 0.211,
+      "range": [
+        -0.096,
+        0.211
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_7_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_7",
+      "type": "slide",
+      "pivot": [
+        -1.7385,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.195,
+      "closed": 0,
+      "open": 0.195,
+      "range": [
+        -0.112,
+        0.195
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_8_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_8",
+      "type": "slide",
+      "pivot": [
+        -1.7545,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.179,
+      "closed": 0,
+      "open": 0.179,
+      "range": [
+        -0.128,
+        0.179
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_9_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_3_9",
+      "type": "slide",
+      "pivot": [
+        -1.7705,
+        1.232,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.163,
+      "closed": 0,
+      "open": 0.163,
+      "range": [
+        -0.144,
+        0.163
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_0_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_0",
+      "type": "slide",
+      "pivot": [
+        -1.6265,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.307,
+      "closed": 0,
+      "open": 0.307,
+      "range": [
+        0,
+        0.307
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_1_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_1",
+      "type": "slide",
+      "pivot": [
+        -1.6425,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.291,
+      "closed": 0,
+      "open": 0.291,
+      "range": [
+        -0.016,
+        0.291
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_2_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_2",
+      "type": "slide",
+      "pivot": [
+        -1.6585,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.275,
+      "closed": 0,
+      "open": 0.275,
+      "range": [
+        -0.032,
+        0.275
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_3_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_3",
+      "type": "slide",
+      "pivot": [
+        -1.6745,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.259,
+      "closed": 0,
+      "open": 0.259,
+      "range": [
+        -0.048,
+        0.259
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_4_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_4",
+      "type": "slide",
+      "pivot": [
+        -1.6905000000000001,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.243,
+      "closed": 0,
+      "open": 0.243,
+      "range": [
+        -0.064,
+        0.243
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_5_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_5",
+      "type": "slide",
+      "pivot": [
+        -1.7065000000000001,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.227,
+      "closed": 0,
+      "open": 0.227,
+      "range": [
+        -0.08,
+        0.227
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_6_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_6",
+      "type": "slide",
+      "pivot": [
+        -1.7225,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.211,
+      "closed": 0,
+      "open": 0.211,
+      "range": [
+        -0.096,
+        0.211
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_7_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_7",
+      "type": "slide",
+      "pivot": [
+        -1.7385,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.195,
+      "closed": 0,
+      "open": 0.195,
+      "range": [
+        -0.112,
+        0.195
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_8_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_8",
+      "type": "slide",
+      "pivot": [
+        -1.7545,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.179,
+      "closed": 0,
+      "open": 0.179,
+      "range": [
+        -0.128,
+        0.179
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_9_slide",
+      "objectId": "toy__500",
+      "body": "toy__500_toy__11_bead_4_9",
+      "type": "slide",
+      "pivot": [
+        -1.7705,
+        1.272,
+        -1.987
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.163,
+      "closed": 0,
+      "open": 0.163,
+      "range": [
+        -0.144,
+        0.163
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_00_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_00",
+      "type": "slide",
+      "pivot": [
+        -1.86,
+        0.1716707288794123,
+        -1.9691156701612982
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_01_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_01",
+      "type": "slide",
+      "pivot": [
+        -1.82,
+        0.1716707288794123,
+        -1.9691156701612982
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_02_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_02",
+      "type": "slide",
+      "pivot": [
+        -1.78,
+        0.1716707288794123,
+        -1.9691156701612982
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_03_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_03",
+      "type": "slide",
+      "pivot": [
+        -1.74,
+        0.1716707288794123,
+        -1.9691156701612982
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_04_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_04",
+      "type": "slide",
+      "pivot": [
+        -1.7,
+        0.1716707288794123,
+        -1.9691156701612982
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_05_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_05",
+      "type": "slide",
+      "pivot": [
+        -1.86,
+        0.16035587931936485,
+        -1.9381160866248457
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_06_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_06",
+      "type": "slide",
+      "pivot": [
+        -1.82,
+        0.16035587931936485,
+        -1.9381160866248457
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_07_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_07",
+      "type": "slide",
+      "pivot": [
+        -1.78,
+        0.16035587931936485,
+        -1.9381160866248457
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_08_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_08",
+      "type": "slide",
+      "pivot": [
+        -1.74,
+        0.16035587931936485,
+        -1.9381160866248457
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_09_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_09",
+      "type": "slide",
+      "pivot": [
+        -1.7,
+        0.16035587931936485,
+        -1.9381160866248457
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_10_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_10",
+      "type": "slide",
+      "pivot": [
+        -1.86,
+        0.14904102975931738,
+        -1.9071165030883932
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_11_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_11",
+      "type": "slide",
+      "pivot": [
+        -1.82,
+        0.14904102975931738,
+        -1.9071165030883932
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_12_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_12",
+      "type": "slide",
+      "pivot": [
+        -1.78,
+        0.14904102975931738,
+        -1.9071165030883932
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_13_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_13",
+      "type": "slide",
+      "pivot": [
+        -1.74,
+        0.14904102975931738,
+        -1.9071165030883932
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_14_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_14",
+      "type": "slide",
+      "pivot": [
+        -1.7,
+        0.14904102975931738,
+        -1.9071165030883932
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_15_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_15",
+      "type": "slide",
+      "pivot": [
+        -1.86,
+        0.13772618019926994,
+        -1.8761169195519407
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_16_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_16",
+      "type": "slide",
+      "pivot": [
+        -1.82,
+        0.13772618019926994,
+        -1.8761169195519407
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_17_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_17",
+      "type": "slide",
+      "pivot": [
+        -1.78,
+        0.13772618019926994,
+        -1.8761169195519407
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_18_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_18",
+      "type": "slide",
+      "pivot": [
+        -1.74,
+        0.13772618019926994,
+        -1.8761169195519407
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_19_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_key_19",
+      "type": "slide",
+      "pivot": [
+        -1.7,
+        0.13772618019926994,
+        -1.8761169195519407
+      ],
+      "axis": [
+        4.1989982746040936e-17,
+        -0.9393813192864381,
+        -0.3428742290923468
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.003,
+      "closed": 0,
+      "open": 0.003,
+      "range": [
+        0,
+        0.003
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cash_register__0_cash_register__0_drawer_slide",
+      "objectId": "cash_register__0",
+      "body": "cash_register__0_cash_register__0_drawer",
+      "type": "slide",
+      "pivot": [
+        -1.78,
+        0.0532,
+        -1.957
+      ],
+      "axis": [
+        -1.2246468e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.135,
+      "closed": 0,
+      "open": 0.135,
+      "range": [
+        0,
+        0.135
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__440_toy__8_lift_slide",
+      "objectId": "toy__440",
+      "body": "toy__440_toy__8_lift",
+      "type": "slide",
+      "pivot": [
+        -1.258,
+        0.019,
+        -1.03
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.2,
+      "closed": 0,
+      "open": 0.2,
+      "range": [
+        0,
+        0.2
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "toy__440_toy__8_crank_hinge",
+      "objectId": "toy__440",
+      "body": "toy__440_toy__8_crank",
+      "type": "hinge",
+      "pivot": [
+        -1.188,
+        0.13,
+        -1.03
+      ],
+      "axis": [
+        -1,
+        0,
+        -1.2246468e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 6.283185,
+      "closed": 0,
+      "open": 6.283185,
+      "range": [
+        0,
+        6.283185
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "table_lamp__0_table_lamp__0_tilt",
+      "objectId": "table_lamp__0",
+      "body": "table_lamp__0_table_lamp__0_shade",
+      "type": "hinge",
+      "pivot": [
+        2.275,
+        1.1,
+        -1.55
+      ],
+      "axis": [
+        0,
+        -3.74199426087212e-18,
+        -1
+      ],
+      "reference": 0.6,
+      "start": 0.6,
+      "end": 1.15,
+      "closed": 0.6,
+      "open": 1.15,
+      "range": [
+        0.15,
+        1.15
+      ],
+      "parentJointId": null
+    }
+  ],
+  "nonrigidPreview": {
+    "added": [],
+    "unsupported": []
+  },
+  "equalityJoints": [
+    {
+      "joint1": "door__0_door__0_latch_slide",
+      "joint2": "door__0_door__0_handle_hinge",
+      "polycoef": "0 0.018 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "name": "toy__440_toy__8_winch_drive",
+      "joint1": "toy__440_toy__8_lift_slide",
+      "joint2": "toy__440_toy__8_crank_hinge",
+      "polycoef": "0 0.03183099 0 0 0",
+      "solref": "0.004 1",
+      "solimp": "0.9999 0.9999 0.001 0.5 2"
+    }
+  ],
+  "equalityConstraintCount": 2,
+  "articulations": [
+    {
+      "id": "bed__0_bed__0_drawer0_slide",
+      "objectId": "bed__0",
+      "title": "bed / 0 bed / 0 drawer0 slide",
+      "clip": "bed__0_bed__0_drawer0_slide_motion",
+      "joints": [
+        "bed__0_bed__0_drawer0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 56.00000000000001,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "bed__0_bed__0_drawer1_slide",
+      "objectId": "bed__0",
+      "title": "bed / 0 bed / 0 drawer1 slide",
+      "clip": "bed__0_bed__0_drawer1_slide_motion",
+      "joints": [
+        "bed__0_bed__0_drawer1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 56.00000000000001,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "chest__0_chest__0_drawer_slide",
+      "objectId": "chest__0",
+      "title": "chest / 0 chest / 0 drawer slide",
+      "clip": "chest__0_chest__0_drawer_slide_motion",
+      "joints": [
+        "chest__0_chest__0_drawer_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 34,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "chest__0_chest__0_lid0_hinge",
+      "objectId": "chest__0",
+      "title": "chest / 0 chest / 0 lid0 hinge",
+      "clip": "chest__0_chest__0_lid0_hinge_motion",
+      "joints": [
+        "chest__0_chest__0_lid0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 85.94366926962348,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "chest__0_chest__0_lid1_hinge",
+      "objectId": "chest__0",
+      "title": "chest / 0 chest / 0 lid1 hinge",
+      "clip": "chest__0_chest__0_lid1_hinge_motion",
+      "joints": [
+        "chest__0_chest__0_lid1_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 85.94366926962348,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "desk__0_desk__0_drawer0_slide",
+      "objectId": "desk__0",
+      "title": "desk / 0 desk / 0 drawer0 slide",
+      "clip": "desk__0_desk__0_drawer0_slide_motion",
+      "joints": [
+        "desk__0_desk__0_drawer0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 21,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "desk__0_desk__0_drawer1_slide",
+      "objectId": "desk__0",
+      "title": "desk / 0 desk / 0 drawer1 slide",
+      "clip": "desk__0_desk__0_drawer1_slide_motion",
+      "joints": [
+        "desk__0_desk__0_drawer1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 21,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__0_door__0_hinge",
+      "objectId": "door__0",
+      "title": "door / 0 door / 0 hinge",
+      "clip": "door__0_door__0_hinge_motion",
+      "joints": [
+        "door__0_door__0_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 94.53803619658582,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__302_toy__116_door_hinge",
+      "objectId": "toy__302",
+      "title": "toy / 302 toy / 116 door hinge",
+      "clip": "toy__302_toy__116_door_hinge_motion",
+      "joints": [
+        "toy__302_toy__116_door_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 94.53803619658582,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__306_toy__119_door_hinge",
+      "objectId": "toy__306",
+      "title": "toy / 306 toy / 119 door hinge",
+      "clip": "toy__306_toy__119_door_hinge_motion",
+      "joints": [
+        "toy__306_toy__119_door_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 94.53803619658582,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__354_toy__4_bed_hinge",
+      "objectId": "toy__354",
+      "title": "toy / 354 toy / 4 bed hinge",
+      "clip": "toy__354_toy__4_bed_hinge_motion",
+      "joints": [
+        "toy__354_toy__4_bed_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 65.89014644004466,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__355_toy__210_arm_hinge",
+      "objectId": "toy__355",
+      "title": "toy / 355 toy / 210 arm hinge",
+      "clip": "toy__355_toy__210_arm_hinge_motion",
+      "joints": [
+        "toy__355_toy__210_arm_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 63.02535746439056,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__355_toy__210_bucket_hinge",
+      "objectId": "toy__355",
+      "title": "toy / 355 toy / 210 bucket hinge",
+      "clip": "toy__355_toy__210_bucket_hinge_motion",
+      "joints": [
+        "toy__355_toy__210_bucket_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 63.02535746439056,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__356_toy__5_crane_hinge",
+      "objectId": "toy__356",
+      "title": "toy / 356 toy / 5 crane hinge",
+      "clip": "toy__356_toy__5_crane_hinge_motion",
+      "joints": [
+        "toy__356_toy__5_crane_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 57.29577951308232,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__356_toy__5_hook_hinge",
+      "objectId": "toy__356",
+      "title": "toy / 356 toy / 5 hook hinge",
+      "clip": "toy__356_toy__5_hook_hinge_motion",
+      "joints": [
+        "toy__356_toy__5_hook_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 68.75493541569878,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__357_toy__12_ladder_hinge",
+      "objectId": "toy__357",
+      "title": "toy / 357 toy / 12 ladder hinge",
+      "clip": "toy__357_toy__12_ladder_hinge_motion",
+      "joints": [
+        "toy__357_toy__12_ladder_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 71.6197243913529,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__520_toy__5_crane_hinge",
+      "objectId": "toy__520",
+      "title": "toy / 520 toy / 5 crane hinge",
+      "clip": "toy__520_toy__5_crane_hinge_motion",
+      "joints": [
+        "toy__520_toy__5_crane_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 57.29577951308232,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__520_toy__5_hook_hinge",
+      "objectId": "toy__520",
+      "title": "toy / 520 toy / 5 hook hinge",
+      "clip": "toy__520_toy__5_hook_hinge_motion",
+      "joints": [
+        "toy__520_toy__5_hook_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 68.75493541569878,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__524_toy__12_ladder_hinge",
+      "objectId": "toy__524",
+      "title": "toy / 524 toy / 12 ladder hinge",
+      "clip": "toy__524_toy__12_ladder_hinge_motion",
+      "joints": [
+        "toy__524_toy__12_ladder_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 71.6197243913529,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_0_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 0 slide",
+      "clip": "toy__500_toy__11_bead_0_0_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 30.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_1_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 1 slide",
+      "clip": "toy__500_toy__11_bead_0_1_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 29.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_2_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 2 slide",
+      "clip": "toy__500_toy__11_bead_0_2_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_2_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 27.500000000000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_3_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 3 slide",
+      "clip": "toy__500_toy__11_bead_0_3_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_3_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25.900000000000002,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_4_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 4 slide",
+      "clip": "toy__500_toy__11_bead_0_4_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_4_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_5_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 5 slide",
+      "clip": "toy__500_toy__11_bead_0_5_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_5_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 22.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_6_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 6 slide",
+      "clip": "toy__500_toy__11_bead_0_6_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_6_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 21.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_7_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 7 slide",
+      "clip": "toy__500_toy__11_bead_0_7_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_7_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 19.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_8_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 8 slide",
+      "clip": "toy__500_toy__11_bead_0_8_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_8_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 17.9,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_0_9_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 0 9 slide",
+      "clip": "toy__500_toy__11_bead_0_9_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_0_9_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 16.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_0_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 0 slide",
+      "clip": "toy__500_toy__11_bead_1_0_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 30.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_1_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 1 slide",
+      "clip": "toy__500_toy__11_bead_1_1_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 29.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_2_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 2 slide",
+      "clip": "toy__500_toy__11_bead_1_2_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_2_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 27.500000000000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_3_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 3 slide",
+      "clip": "toy__500_toy__11_bead_1_3_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_3_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25.900000000000002,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_4_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 4 slide",
+      "clip": "toy__500_toy__11_bead_1_4_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_4_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_5_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 5 slide",
+      "clip": "toy__500_toy__11_bead_1_5_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_5_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 22.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_6_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 6 slide",
+      "clip": "toy__500_toy__11_bead_1_6_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_6_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 21.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_7_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 7 slide",
+      "clip": "toy__500_toy__11_bead_1_7_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_7_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 19.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_8_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 8 slide",
+      "clip": "toy__500_toy__11_bead_1_8_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_8_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 17.9,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_1_9_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 1 9 slide",
+      "clip": "toy__500_toy__11_bead_1_9_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_1_9_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 16.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_0_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 0 slide",
+      "clip": "toy__500_toy__11_bead_2_0_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 30.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_1_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 1 slide",
+      "clip": "toy__500_toy__11_bead_2_1_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 29.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_2_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 2 slide",
+      "clip": "toy__500_toy__11_bead_2_2_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_2_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 27.500000000000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_3_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 3 slide",
+      "clip": "toy__500_toy__11_bead_2_3_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_3_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25.900000000000002,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_4_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 4 slide",
+      "clip": "toy__500_toy__11_bead_2_4_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_4_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_5_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 5 slide",
+      "clip": "toy__500_toy__11_bead_2_5_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_5_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 22.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_6_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 6 slide",
+      "clip": "toy__500_toy__11_bead_2_6_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_6_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 21.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_7_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 7 slide",
+      "clip": "toy__500_toy__11_bead_2_7_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_7_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 19.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_8_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 8 slide",
+      "clip": "toy__500_toy__11_bead_2_8_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_8_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 17.9,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_2_9_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 2 9 slide",
+      "clip": "toy__500_toy__11_bead_2_9_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_2_9_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 16.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_0_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 0 slide",
+      "clip": "toy__500_toy__11_bead_3_0_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 30.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_1_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 1 slide",
+      "clip": "toy__500_toy__11_bead_3_1_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 29.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_2_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 2 slide",
+      "clip": "toy__500_toy__11_bead_3_2_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_2_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 27.500000000000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_3_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 3 slide",
+      "clip": "toy__500_toy__11_bead_3_3_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_3_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25.900000000000002,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_4_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 4 slide",
+      "clip": "toy__500_toy__11_bead_3_4_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_4_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_5_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 5 slide",
+      "clip": "toy__500_toy__11_bead_3_5_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_5_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 22.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_6_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 6 slide",
+      "clip": "toy__500_toy__11_bead_3_6_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_6_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 21.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_7_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 7 slide",
+      "clip": "toy__500_toy__11_bead_3_7_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_7_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 19.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_8_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 8 slide",
+      "clip": "toy__500_toy__11_bead_3_8_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_8_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 17.9,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_3_9_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 3 9 slide",
+      "clip": "toy__500_toy__11_bead_3_9_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_3_9_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 16.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_0_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 0 slide",
+      "clip": "toy__500_toy__11_bead_4_0_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 30.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_1_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 1 slide",
+      "clip": "toy__500_toy__11_bead_4_1_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 29.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_2_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 2 slide",
+      "clip": "toy__500_toy__11_bead_4_2_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_2_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 27.500000000000004,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_3_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 3 slide",
+      "clip": "toy__500_toy__11_bead_4_3_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_3_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25.900000000000002,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_4_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 4 slide",
+      "clip": "toy__500_toy__11_bead_4_4_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_4_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_5_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 5 slide",
+      "clip": "toy__500_toy__11_bead_4_5_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_5_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 22.7,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_6_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 6 slide",
+      "clip": "toy__500_toy__11_bead_4_6_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_6_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 21.099999999999998,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_7_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 7 slide",
+      "clip": "toy__500_toy__11_bead_4_7_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_7_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 19.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_8_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 8 slide",
+      "clip": "toy__500_toy__11_bead_4_8_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_8_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 17.9,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "toy__500_toy__11_bead_4_9_slide",
+      "objectId": "toy__500",
+      "title": "toy / 500 toy / 11 bead 4 9 slide",
+      "clip": "toy__500_toy__11_bead_4_9_slide_motion",
+      "joints": [
+        "toy__500_toy__11_bead_4_9_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 16.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_00_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 00 slide",
+      "clip": "cash_register__0_cash_register__0_key_00_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_00_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_01_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 01 slide",
+      "clip": "cash_register__0_cash_register__0_key_01_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_01_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_02_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 02 slide",
+      "clip": "cash_register__0_cash_register__0_key_02_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_02_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_03_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 03 slide",
+      "clip": "cash_register__0_cash_register__0_key_03_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_03_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_04_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 04 slide",
+      "clip": "cash_register__0_cash_register__0_key_04_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_04_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_05_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 05 slide",
+      "clip": "cash_register__0_cash_register__0_key_05_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_05_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_06_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 06 slide",
+      "clip": "cash_register__0_cash_register__0_key_06_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_06_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_07_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 07 slide",
+      "clip": "cash_register__0_cash_register__0_key_07_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_07_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_08_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 08 slide",
+      "clip": "cash_register__0_cash_register__0_key_08_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_08_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_09_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 09 slide",
+      "clip": "cash_register__0_cash_register__0_key_09_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_09_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_10_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 10 slide",
+      "clip": "cash_register__0_cash_register__0_key_10_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_10_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_11_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 11 slide",
+      "clip": "cash_register__0_cash_register__0_key_11_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_11_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_12_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 12 slide",
+      "clip": "cash_register__0_cash_register__0_key_12_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_12_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_13_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 13 slide",
+      "clip": "cash_register__0_cash_register__0_key_13_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_13_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_14_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 14 slide",
+      "clip": "cash_register__0_cash_register__0_key_14_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_14_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_15_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 15 slide",
+      "clip": "cash_register__0_cash_register__0_key_15_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_15_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_16_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 16 slide",
+      "clip": "cash_register__0_cash_register__0_key_16_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_16_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_17_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 17 slide",
+      "clip": "cash_register__0_cash_register__0_key_17_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_17_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_18_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 18 slide",
+      "clip": "cash_register__0_cash_register__0_key_18_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_18_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_key_19_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 key 19 slide",
+      "clip": "cash_register__0_cash_register__0_key_19_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_key_19_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cash_register__0_cash_register__0_drawer_slide",
+      "objectId": "cash_register__0",
+      "title": "cash register / 0 cash register / 0 drawer slide",
+      "clip": "cash_register__0_cash_register__0_drawer_slide_motion",
+      "joints": [
+        "cash_register__0_cash_register__0_drawer_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 13.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "table_lamp__0_table_lamp__0_tilt",
+      "objectId": "table_lamp__0",
+      "title": "table lamp / 0 table lamp / 0 tilt",
+      "clip": "table_lamp__0_table_lamp__0_tilt_motion",
+      "joints": [
+        "table_lamp__0_table_lamp__0_tilt"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 31.512678732195273,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "door__0_door__0_handle_hinge",
+      "objectId": "door__0",
+      "title": "door / 0 door / 0 handle hinge (linked parts)",
+      "clip": "door__0_door__0_handle_hinge_motion",
+      "joints": [
+        "door__0_door__0_handle_hinge",
+        "door__0_door__0_latch_slide"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 40.10704565915762,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "door__0_door__0_handle_hinge": 0.7,
+        "door__0_door__0_latch_slide": 0.012599999999999998
+      },
+      "linked": true,
+      "couplingGains": {
+        "door__0_door__0_handle_hinge": 1,
+        "door__0_door__0_latch_slide": 0.018
+      }
+    },
+    {
+      "id": "toy__440_toy__8_crank_hinge",
+      "objectId": "toy__440",
+      "title": "toy / 440 toy / 8 crank hinge (linked parts)",
+      "clip": "toy__440_toy__8_crank_hinge_motion",
+      "joints": [
+        "toy__440_toy__8_crank_hinge",
+        "toy__440_toy__8_lift_slide"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 359.9999823999061,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "toy__440_toy__8_crank_hinge": 6.283185,
+        "toy__440_toy__8_lift_slide": 0.19999999890315
+      },
+      "linked": true,
+      "couplingGains": {
+        "toy__440_toy__8_crank_hinge": 1,
+        "toy__440_toy__8_lift_slide": 0.03183099
+      }
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "bed__0_bed__0_drawer0_wheel0_axle",
+      "body": "bed__0_bed__0_drawer0_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bed__0_bed__0_drawer0_wheel1_axle",
+      "body": "bed__0_bed__0_drawer0_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bed__0_bed__0_drawer0_wheel2_axle",
+      "body": "bed__0_bed__0_drawer0_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bed__0_bed__0_drawer0_wheel3_axle",
+      "body": "bed__0_bed__0_drawer0_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bed__0_bed__0_drawer1_wheel0_axle",
+      "body": "bed__0_bed__0_drawer1_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bed__0_bed__0_drawer1_wheel1_axle",
+      "body": "bed__0_bed__0_drawer1_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bed__0_bed__0_drawer1_wheel2_axle",
+      "body": "bed__0_bed__0_drawer1_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "bed__0_bed__0_drawer1_wheel3_axle",
+      "body": "bed__0_bed__0_drawer1_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__350_toy__3_wheel0_axle",
+      "body": "toy__350_toy__3_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__350_toy__3_wheel1_axle",
+      "body": "toy__350_toy__3_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__350_toy__3_wheel2_axle",
+      "body": "toy__350_toy__3_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__350_toy__3_wheel3_axle",
+      "body": "toy__350_toy__3_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__351_toy__201_wheel0_axle",
+      "body": "toy__351_toy__201_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__351_toy__201_wheel1_axle",
+      "body": "toy__351_toy__201_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__351_toy__201_wheel2_axle",
+      "body": "toy__351_toy__201_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__351_toy__201_wheel3_axle",
+      "body": "toy__351_toy__201_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__352_toy__202_wheel0_axle",
+      "body": "toy__352_toy__202_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__352_toy__202_wheel1_axle",
+      "body": "toy__352_toy__202_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__352_toy__202_wheel2_axle",
+      "body": "toy__352_toy__202_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__352_toy__202_wheel3_axle",
+      "body": "toy__352_toy__202_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__353_toy__203_wheel0_axle",
+      "body": "toy__353_toy__203_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__353_toy__203_wheel1_axle",
+      "body": "toy__353_toy__203_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__353_toy__203_wheel2_axle",
+      "body": "toy__353_toy__203_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__353_toy__203_wheel3_axle",
+      "body": "toy__353_toy__203_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__354_toy__4_wheel0_axle",
+      "body": "toy__354_toy__4_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__354_toy__4_wheel1_axle",
+      "body": "toy__354_toy__4_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__354_toy__4_wheel2_axle",
+      "body": "toy__354_toy__4_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__354_toy__4_wheel3_axle",
+      "body": "toy__354_toy__4_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__355_toy__210_wheel0_axle",
+      "body": "toy__355_toy__210_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__355_toy__210_wheel1_axle",
+      "body": "toy__355_toy__210_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__355_toy__210_wheel2_axle",
+      "body": "toy__355_toy__210_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__355_toy__210_wheel3_axle",
+      "body": "toy__355_toy__210_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__356_toy__5_wheel0_axle",
+      "body": "toy__356_toy__5_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__356_toy__5_wheel1_axle",
+      "body": "toy__356_toy__5_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__356_toy__5_wheel2_axle",
+      "body": "toy__356_toy__5_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__356_toy__5_wheel3_axle",
+      "body": "toy__356_toy__5_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__357_toy__12_wheel0_axle",
+      "body": "toy__357_toy__12_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__357_toy__12_wheel1_axle",
+      "body": "toy__357_toy__12_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__357_toy__12_wheel2_axle",
+      "body": "toy__357_toy__12_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__357_toy__12_wheel3_axle",
+      "body": "toy__357_toy__12_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__358_toy__10_rotor_hinge",
+      "body": "toy__358_toy__10_rotor",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__520_toy__5_wheel0_axle",
+      "body": "toy__520_toy__5_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__520_toy__5_wheel1_axle",
+      "body": "toy__520_toy__5_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__520_toy__5_wheel2_axle",
+      "body": "toy__520_toy__5_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__520_toy__5_wheel3_axle",
+      "body": "toy__520_toy__5_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__521_toy__201_wheel0_axle",
+      "body": "toy__521_toy__201_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__521_toy__201_wheel1_axle",
+      "body": "toy__521_toy__201_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__521_toy__201_wheel2_axle",
+      "body": "toy__521_toy__201_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__521_toy__201_wheel3_axle",
+      "body": "toy__521_toy__201_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__522_toy__3_wheel0_axle",
+      "body": "toy__522_toy__3_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__522_toy__3_wheel1_axle",
+      "body": "toy__522_toy__3_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__522_toy__3_wheel2_axle",
+      "body": "toy__522_toy__3_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__522_toy__3_wheel3_axle",
+      "body": "toy__522_toy__3_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__523_toy__202_wheel0_axle",
+      "body": "toy__523_toy__202_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__523_toy__202_wheel1_axle",
+      "body": "toy__523_toy__202_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__523_toy__202_wheel2_axle",
+      "body": "toy__523_toy__202_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__523_toy__202_wheel3_axle",
+      "body": "toy__523_toy__202_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__524_toy__12_wheel0_axle",
+      "body": "toy__524_toy__12_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__524_toy__12_wheel1_axle",
+      "body": "toy__524_toy__12_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__524_toy__12_wheel2_axle",
+      "body": "toy__524_toy__12_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__524_toy__12_wheel3_axle",
+      "body": "toy__524_toy__12_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "clock__0_clock__0_hour_hinge",
+      "body": "clock__0_clock__0_hour",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "clock__0_clock__0_minute_hinge",
+      "body": "clock__0_clock__0_minute",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__370_toy__6_wheel0_axle",
+      "body": "toy__370_toy__6_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__370_toy__6_wheel1_axle",
+      "body": "toy__370_toy__6_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__370_toy__6_wheel2_axle",
+      "body": "toy__370_toy__6_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__370_toy__6_wheel3_axle",
+      "body": "toy__370_toy__6_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__371_toy__221_wheel0_axle",
+      "body": "toy__371_toy__221_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__371_toy__221_wheel1_axle",
+      "body": "toy__371_toy__221_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__371_toy__221_wheel2_axle",
+      "body": "toy__371_toy__221_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__371_toy__221_wheel3_axle",
+      "body": "toy__371_toy__221_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__372_toy__222_wheel0_axle",
+      "body": "toy__372_toy__222_wheel0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__372_toy__222_wheel1_axle",
+      "body": "toy__372_toy__222_wheel1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__372_toy__222_wheel2_axle",
+      "body": "toy__372_toy__222_wheel2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "toy__372_toy__222_wheel3_axle",
+      "body": "toy__372_toy__222_wheel3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 15,
+  "jointCouplings": {
+    "linearEqualities": 2,
+    "linkedClips": 2,
+    "unsupported": [],
+    "method": "Source zero-offset linear equalities, evaluated relative to each joint qpos0; common range intersection."
+  },
+  "modelBytes": 14128096,
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "77666dbe5b2fd504dc25d335ca9640b276ed9c5e28a7b189ebcc9545869d57e7",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "modelParts": [
+    "assets/rooms/childrens-room-001/room.gzip-01.bin"
+  ],
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 15883604,
+  "decodedModelSha256": "9e120a3f6f02aa55ef0bd67eb15879bc6d4e58cb0581a26a9bec9c678621fdef",
+  "sourcePicturesArchiveSha256": "69390fc15fd8c28941919b712bf64e9ea657d70182096a9271f95a2a7be301a4",
+  "taskCards": "assets/rooms/childrens-room-001/tasks/manifest.json"
+}

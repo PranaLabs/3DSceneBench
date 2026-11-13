@@ -1,0 +1,2073 @@
+{
+  "id": "humanoid-test-lab-001",
+  "title": "Humanoid test lab",
+  "description": "A humanoid robotics test laboratory with a matte black panel enclosure and one grey door curtain. It has climbing obstacles and crash pads, a mobile crane carrying a humanoid, and a parts-sequencing area with slotted carts, picking bins, a roller conveyor and a small laptop and battery trolley.",
+  "dimensions": [
+    10,
+    8,
+    3.8
+  ],
+  "dimensionSource": "authored room dimensions",
+  "bounds": {
+    "min": [
+      -5.16,
+      -0.12,
+      -4.16
+    ],
+    "max": [
+      5.16,
+      3.92,
+      4.16
+    ]
+  },
+  "tasks": [
+    {
+      "id": "activity_1",
+      "kind": "Robot",
+      "text": "Lift the top box from the stack of two on the conveyor. Set it down on the empty end of that same conveyor, then pick it up again. Place it upright on the empty front corner of the cart with the laptop and two batteries. Release the box and let it settle, leaving both batteries in place.",
+      "objects": [
+        "box__7",
+        "conveyor__0",
+        "cart__0",
+        "laptop__0",
+        "battery__0",
+        "battery__1"
+      ],
+      "locatorSteps": [
+        {
+          "object": "box__7",
+          "label": "Pick up the top box from the stack of two.",
+          "point": [
+            3.55,
+            1.0079,
+            2.6502
+          ],
+          "outline": true
+        },
+        {
+          "object": "conveyor__0",
+          "label": "Set the box on this empty end of the conveyor.",
+          "point": [
+            2.91,
+            0.74508,
+            2.77
+          ],
+          "onSurface": true,
+          "view": [
+            -0.68,
+            0.98,
+            0.82
+          ]
+        },
+        {
+          "object": "cart__0",
+          "label": "Pick it up again and place it on this corner of the cart.",
+          "point": [
+            3.68,
+            0.854,
+            1.4015
+          ],
+          "onSurface": true,
+          "view": [
+            -0.68,
+            0.98,
+            0.82
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_2",
+      "kind": "Robot",
+      "text": "Find the blue roll of tape on the cart with the laptop and two batteries. Slide it along the cart top toward the batteries, then slide it back toward the laptop. Leave the roll flat and still, with the laptop and batteries in place.",
+      "objects": [
+        "tape__0",
+        "cart__0",
+        "battery__0",
+        "battery__1",
+        "laptop__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "tape__0",
+          "label": "Slide the blue tape roll toward the batteries.",
+          "point": [
+            3.68,
+            0.854,
+            1.27
+          ]
+        },
+        {
+          "object": "tape__0",
+          "label": "Slide it back toward the laptop and leave it flat.",
+          "point": [
+            3.68,
+            0.854,
+            1.07
+          ]
+        }
+      ]
+    },
+    {
+      "id": "probe_loaded_gantry",
+      "kind": "Interaction",
+      "text": "Gently push the blue wheeled crane carrying the suspended humanoid robot along the open strip of floor, away from the conveyor. Release the crane and let it coast to a stop. Keep the robot suspended and clear of the floor and nearby equipment throughout.",
+      "objects": [
+        "crane__0",
+        "robot__0",
+        "conveyor__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "crane__0",
+          "label": "Push the blue crane away from the conveyor.",
+          "point": [
+            0.38,
+            1.04,
+            2.75
+          ]
+        },
+        {
+          "object": "crane__0",
+          "label": "Release the crane and let it coast to a stop."
+        },
+        {
+          "object": "robot__0",
+          "label": "Check that the hanging robot stays clear of the floor."
+        }
+      ]
+    },
+    {
+      "id": "probe_laptop_hinge",
+      "kind": "Interaction",
+      "text": "On the cart with the two batteries, lower the open laptop lid partway. Give the lid a light touch and check that it holds that angle. Close it fully, let go and check that it stays shut.",
+      "objects": [
+        "laptop__0",
+        "cart__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "laptop__0",
+          "label": "Lower the laptop lid partway.",
+          "point": [
+            3.8978,
+            1.0681,
+            0.85
+          ]
+        },
+        {
+          "object": "laptop__0",
+          "label": "Touch the lid lightly and check that it holds.",
+          "point": [
+            3.8978,
+            1.0681,
+            0.85
+          ]
+        },
+        {
+          "object": "laptop__0",
+          "label": "Close the lid and check that it stays shut.",
+          "point": [
+            3.785,
+            0.878,
+            0.85
+          ]
+        }
+      ]
+    },
+    {
+      "id": "probe_curtain_release",
+      "kind": "Interaction",
+      "text": "Find the grey door curtain behind the camera tripod nearest the blue wheeled crane. Lift the bottom edge and hold it up to make an opening. Release the edge and let the opening close while the top of the curtain stays attached to the curtain rod.",
+      "objects": [
+        "curtain__5",
+        "curtain_rod__5",
+        "tripod__0",
+        "crane__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "curtain__5",
+          "label": "Lift the middle of the grey curtain’s bottom edge.",
+          "point": [
+            -4.7252,
+            0.0611,
+            2.8992
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "curtain__5",
+          "label": "Hold the opening. The ring shows the reference run’s held height.",
+          "point": [
+            -4.7252,
+            0.3,
+            2.8992
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "curtain__5",
+          "label": "Release the hem and let it fall back near the floor.",
+          "point": [
+            -4.7252,
+            0.06285,
+            2.8992
+          ],
+          "referenceArea": true
+        },
+        {
+          "object": "curtain_rod__5",
+          "label": "Check that the curtain top stays on the rod.",
+          "point": [
+            -4.725,
+            2.2,
+            2.9
+          ]
+        }
+      ],
+      "locatorView": {
+        "position": [
+          -1.8,
+          1.45,
+          4.85
+        ],
+        "target": [
+          -4.72,
+          1.15,
+          3.48
+        ]
+      }
+    },
+    {
+      "id": "activity_sequence_parts",
+      "kind": "Interaction",
+      "text": "Take one part at a time from the rack with four bins. Seat the cover from the lower red bin, the bracket from the upper blue bin and the housing from the lower blue bin in the first, middle and last slots of the other rack’s lower slotted shelf. Check that all three are seated. Roll that rack toward the conveyor and stop before the laptop cart, with the parts still in order, the blue bin aboard and nearby equipment undisturbed.",
+      "objects": [
+        "cover__0",
+        "bracket__0",
+        "housing__0",
+        "rack__1",
+        "bin__4",
+        "rack__0",
+        "bin__0",
+        "bin__1",
+        "bin__2",
+        "conveyor__0",
+        "cart__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cover__0",
+          "label": "Lift the cover from the lower red bin.",
+          "point": [
+            2.9,
+            0.3325,
+            -2.9
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Seat the cover in the first slot on the lower slotted shelf.",
+          "point": [
+            4.08,
+            0.835,
+            -1.1
+          ]
+        },
+        {
+          "object": "bracket__0",
+          "label": "Lift the bracket from the upper blue bin.",
+          "point": [
+            2.9,
+            0.6753,
+            -2.9008
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Seat the bracket in the middle slot.",
+          "point": [
+            4.08,
+            0.835,
+            -0.76
+          ]
+        },
+        {
+          "object": "housing__0",
+          "label": "Lift the housing from the lower blue bin.",
+          "point": [
+            3.45,
+            0.34,
+            -2.9
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Seat the housing in the last slot and check all three.",
+          "point": [
+            4.08,
+            0.835,
+            -0.42
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Roll the rack toward the conveyor and stop before the cart.",
+          "point": [
+            4.08,
+            0.804,
+            -0.76
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Check that the parts stayed in order and the bin rode along."
+        }
+      ]
+    },
+    {
+      "id": "activity_battery_service",
+      "kind": "Interaction",
+      "text": "Take the empty blue bin from the lower shelf of the rack with just one bin and set it on the clear end of the conveyor. On the laptop cart, lift the battery nearest the laptop out of its charger and set it on the clear front of the cart. Stand the other battery in the bin, carry the loaded bin back to its original shelf, then reseat the first battery in its charger. Leave it seated and the other battery upright in the bin, with nearby equipment undisturbed.",
+      "objects": [
+        "battery__0",
+        "battery__1",
+        "bin__4",
+        "rack__1",
+        "conveyor__0",
+        "cart__0",
+        "laptop__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bin__4",
+          "label": "Lift the empty blue bin from its lower shelf.",
+          "point": [
+            4.0765,
+            0.347,
+            -0.98
+          ]
+        },
+        {
+          "object": "conveyor__0",
+          "label": "Set the bin on the empty end of the conveyor.",
+          "point": [
+            3.02,
+            0.7381,
+            2.65
+          ]
+        },
+        {
+          "object": "battery__0",
+          "label": "Lift the battery nearest the laptop from its charger.",
+          "point": [
+            3.9445,
+            1.016,
+            1.27
+          ]
+        },
+        {
+          "object": "cart__0",
+          "label": "Set that battery on the clear front of the cart.",
+          "point": [
+            3.68,
+            0.854,
+            1.36
+          ]
+        },
+        {
+          "object": "battery__1",
+          "label": "Lift the other battery from its charger.",
+          "point": [
+            3.9445,
+            1.016,
+            1.41
+          ]
+        },
+        {
+          "object": "bin__4",
+          "label": "Stand the second battery inside the bin.",
+          "point": [
+            3.02,
+            0.7481,
+            2.65
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Return the loaded bin to its original lower shelf.",
+          "point": [
+            4.08,
+            0.265,
+            -0.98
+          ]
+        },
+        {
+          "object": "battery__0",
+          "label": "Pick up the battery you staged on the cart.",
+          "point": [
+            3.68,
+            0.972,
+            1.36
+          ]
+        },
+        {
+          "object": "cart__0",
+          "label": "Reseat it in its original charger.",
+          "point": [
+            3.945,
+            0.898,
+            1.27
+          ]
+        },
+        {
+          "object": "bin__4",
+          "label": "Check that the other battery stayed upright in the bin.",
+          "point": [
+            4.08,
+            0.275,
+            -0.98
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_arena_reset",
+      "kind": "Interaction",
+      "text": "Move the orange entry cone beside the white foam block to just outside the nearest blue floor marking, at the trial corner. Bring the wooden crate from beside the yellow barrier to the floor beside the low wooden platform. Set the large box from the floor beside that platform on top of the crate. Once the box, crate and cone are stable, move the box to the middle of the platform and return the crate to its original spot. Leave the cone marking the corner and the surrounding equipment in place.",
+      "objects": [
+        "cone__2",
+        "crate__0",
+        "box__2",
+        "marking__1",
+        "platform__1",
+        "foam__1",
+        "barrier__1"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cone__2",
+          "label": "Pick up the entry cone beside the white foam block.",
+          "point": [
+            0.8,
+            0.1225,
+            0.95
+          ]
+        },
+        {
+          "object": "marking__1",
+          "label": "Place the cone just outside the blue trial corner.",
+          "point": [
+            0.8226,
+            0.0,
+            0.5168
+          ]
+        },
+        {
+          "object": "crate__0",
+          "label": "Pick up the wooden crate beside the yellow barrier.",
+          "point": [
+            -1.85,
+            0.47,
+            -2.55
+          ]
+        },
+        {
+          "object": "platform__1",
+          "label": "Set the crate on the floor beside the low platform.",
+          "point": [
+            -1.85,
+            0.0,
+            0.5
+          ]
+        },
+        {
+          "object": "box__2",
+          "label": "Lift the large floor box beside the platform.",
+          "point": [
+            -2.0,
+            0.3809,
+            -0.1498
+          ]
+        },
+        {
+          "object": "crate__0",
+          "label": "Place the box on the crate and let it settle.",
+          "point": [
+            -1.85,
+            0.45,
+            0.5
+          ]
+        },
+        {
+          "object": "platform__1",
+          "label": "Move the box to the middle of the low platform.",
+          "point": [
+            -3.25,
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "object": "crate__0",
+          "label": "Return the crate to its spot beside the yellow barrier.",
+          "point": [
+            -1.85,
+            0.0,
+            -2.55
+          ]
+        }
+      ]
+    },
+    {
+      "id": "activity_padded_drop",
+      "kind": "Interaction",
+      "text": "Pick up the large box on the floor beside the low wooden platform. Carry it over the white pad between the low platform and the taller one, then let go. Once the pad has caught the box and it has settled upright, pick it up again and set it on the roller conveyor. Leave it upright and still, with nearby equipment undisturbed.",
+      "objects": [
+        "box__2",
+        "pad__0",
+        "conveyor__0",
+        "platform__1",
+        "platform__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "box__2",
+          "label": "Lift the large floor box beside the low platform.",
+          "point": [
+            -2.0,
+            0.3809,
+            -0.1498
+          ]
+        },
+        {
+          "object": "pad__0",
+          "label": "Release the box over the white pad and let it settle upright.",
+          "point": [
+            -3.25,
+            0.27,
+            -1.03
+          ]
+        },
+        {
+          "object": "box__2",
+          "label": "Pick the box back up from the pad.",
+          "point": [
+            -3.25,
+            0.5195,
+            -1.03
+          ]
+        },
+        {
+          "object": "conveyor__0",
+          "label": "Set it upright on the conveyor and let it settle.",
+          "point": [
+            3.05,
+            0.7451,
+            2.65
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow_trial_preparation",
+      "kind": "Interaction",
+      "text": "At the rack with four bins, take the housing from the lower blue bin, the bracket from the upper blue bin and the cover from the lower red bin, one at a time. Seat them in that order in the first, middle and last slots of the other rack’s lower slotted shelf. Roll the loaded rack toward the conveyor and stop before the laptop cart. Check that all three parts and the blue bin stayed aboard. Carry the unstacked conveyor box to the middle of the low wooden platform. Move the entry cone beside the white foam block to just outside the nearest blue floor marking, then close the laptop on the cart. Roll the blue wheeled crane away from the conveyor and let it stop with the suspended humanoid robot clear of the floor and equipment. Leave the parts, box and cone stable and nearby equipment in place.",
+      "objects": [
+        "housing__0",
+        "bracket__0",
+        "cover__0",
+        "rack__1",
+        "bin__4",
+        "box__6",
+        "cone__2",
+        "laptop__0",
+        "crane__0",
+        "robot__0",
+        "rack__0",
+        "bin__0",
+        "bin__1",
+        "bin__2",
+        "platform__1",
+        "marking__1",
+        "conveyor__0",
+        "cart__0",
+        "foam__1"
+      ],
+      "locatorSteps": [
+        {
+          "object": "housing__0",
+          "label": "Lift the housing from the lower blue bin.",
+          "point": [
+            3.45,
+            0.34,
+            -2.9
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Seat it in the first slot on the lower slotted shelf.",
+          "point": [
+            4.08,
+            0.835,
+            -1.1
+          ]
+        },
+        {
+          "object": "bracket__0",
+          "label": "Lift the bracket from the upper blue bin.",
+          "point": [
+            2.9,
+            0.6753,
+            -2.9008
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Seat the bracket in the middle slot.",
+          "point": [
+            4.08,
+            0.835,
+            -0.76
+          ]
+        },
+        {
+          "object": "cover__0",
+          "label": "Lift the cover from the lower red bin.",
+          "point": [
+            2.9,
+            0.3325,
+            -2.9
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Seat the cover in the last slot.",
+          "point": [
+            4.08,
+            0.835,
+            -0.42
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Roll the rack toward the conveyor and stop before the cart.",
+          "point": [
+            4.08,
+            0.804,
+            -0.76
+          ]
+        },
+        {
+          "object": "rack__1",
+          "label": "Check that the three parts and blue bin stayed aboard."
+        },
+        {
+          "object": "box__6",
+          "label": "Lift the unstacked box from the conveyor.",
+          "point": [
+            4.1,
+            0.8979,
+            2.6502
+          ]
+        },
+        {
+          "object": "platform__1",
+          "label": "Set the box in the middle of the low platform.",
+          "point": [
+            -3.25,
+            0.3,
+            0.4
+          ]
+        },
+        {
+          "object": "cone__2",
+          "label": "Pick up the entry cone beside the white foam block.",
+          "point": [
+            0.8,
+            0.1225,
+            0.95
+          ]
+        },
+        {
+          "object": "marking__1",
+          "label": "Set the cone just outside the blue trial corner.",
+          "point": [
+            0.8226,
+            0.0,
+            0.5168
+          ]
+        },
+        {
+          "object": "laptop__0",
+          "label": "Close the laptop on the cart.",
+          "point": [
+            4.0541,
+            1.0871,
+            0.85
+          ]
+        },
+        {
+          "object": "crane__0",
+          "label": "Roll the blue crane away from the conveyor and let it stop.",
+          "point": [
+            0.38,
+            1.04,
+            2.75
+          ]
+        },
+        {
+          "object": "robot__0",
+          "label": "Check that the hanging robot is clear of the floor."
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "ceiling": "ceiling",
+    "floor": "floor",
+    "walls": "walls",
+    "gantry__0": "object",
+    "platform__0": "object",
+    "platform__1": "object",
+    "ramp__0": "object",
+    "crate__0": "object",
+    "barrier__0": "object",
+    "barrier__1": "object",
+    "barrier__2": "object",
+    "barrier__3": "object",
+    "barrier__4": "object",
+    "barrier__5": "object",
+    "pad__0_look": "object",
+    "pad__1_look": "object",
+    "pad__2_look": "object",
+    "pad__3_look": "object",
+    "pad__4_look": "object",
+    "mat__0": "object",
+    "mat__1": "object",
+    "mat__2": "object",
+    "mat__3": "object",
+    "mat__4": "object",
+    "mat__5": "object",
+    "mat__6": "object",
+    "mat__7": "object",
+    "mat__8": "object",
+    "mat__9": "object",
+    "mat__10": "object",
+    "rack__0": "object",
+    "rack__1": "object",
+    "bin__0": "object",
+    "bin__1": "object",
+    "bin__2": "object",
+    "bin__3": "object",
+    "bin__4": "object",
+    "cover__0": "object",
+    "housing__0": "object",
+    "bracket__0": "object",
+    "housing__1": "object",
+    "cover__1": "object",
+    "bracket__1": "object",
+    "housing__2": "object",
+    "cover__2": "object",
+    "conveyor__0": "object",
+    "cart__0": "object",
+    "laptop__0": "object",
+    "battery__0": "object",
+    "battery__1": "object",
+    "tape__0": "object",
+    "crane__0": "object",
+    "robot__0": "object",
+    "tripod__0": "object",
+    "tripod__1": "object",
+    "cone__0": "object",
+    "cone__1": "object",
+    "cone__2": "object",
+    "cable__0": "object",
+    "cable__1": "object",
+    "cable__2": "object",
+    "tape__1": "object",
+    "tape__2": "object",
+    "marking__0": "object",
+    "marking__1": "object",
+    "box__0": "object",
+    "box__1": "object",
+    "box__2": "object",
+    "box__3": "object",
+    "box__4": "object",
+    "box__5": "object",
+    "box__6": "object",
+    "box__7": "object",
+    "box__8": "object",
+    "box__9": "object",
+    "foam__0": "object",
+    "foam__1": "object",
+    "curtain__5_look": "object",
+    "curtain_rod__5": "object",
+    "curtain__5": "object",
+    "pad__0": "object",
+    "pad__1": "object",
+    "pad__2": "object",
+    "pad__3": "object",
+    "pad__4": "object"
+  },
+  "mobility": {
+    "free": 40,
+    "fixed": 36,
+    "jointOnly": 0,
+    "nonrigid": 6,
+    "objects": {
+      "gantry__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "platform__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "platform__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ramp__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crate__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barrier__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barrier__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barrier__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barrier__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barrier__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barrier__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pad__0_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pad__1_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pad__2_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pad__3_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pad__4_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__7": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__8": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__9": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__10": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bin__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cover__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "housing__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bracket__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "housing__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cover__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bracket__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "housing__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cover__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "conveyor__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "laptop__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "battery__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "battery__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tape__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "crane__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "robot__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tripod__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tripod__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cone__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cone__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cone__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cable__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cable__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cable__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tape__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tape__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "marking__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "marking__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__6": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__7": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__8": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "box__9": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "foam__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "foam__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "curtain__5_look": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "curtain_rod__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false,
+        "description": "Fixed support for the curtain’s six clips."
+      },
+      "curtain__5": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "thin_shell",
+        "staticPreview": true,
+        "description": "Grey door curtain · Genesis simulates the fabric. Six clips hold its top to the rod. The viewer shows the resting curtain.",
+        "visualProxy": "curtain__5_look"
+      },
+      "pad__0": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "soft_body",
+        "staticPreview": true
+      },
+      "pad__1": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "soft_body",
+        "staticPreview": true
+      },
+      "pad__2": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "soft_body",
+        "staticPreview": true
+      },
+      "pad__3": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "soft_body",
+        "staticPreview": true
+      },
+      "pad__4": {
+        "status": "nonrigid",
+        "softDefinition": true,
+        "nonrigidKind": "soft_body",
+        "staticPreview": true
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "8f93b4ea601f04e4e533ffe8f2793bc0ec6a3d8b234e11745459f6d281efab8a",
+      "previewSha256": "6bd089dcab5f1c4fe60dc9dc34de72fbb307df16674439aa88904cf3b675536d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.19763009918237
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "608fbf50c2cd791bf4f2656645deb1bf8f8362fb329166c8d7a2947017e261a6",
+      "previewSha256": "cf600b034b53506661a7c53e4e1a5d8dd28cfb6b1e24dd04a1771565b842ea1c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.86866904743067
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "04c5ce724467657d759b58d3bb7ee15ae671bd29596c404fb9bbb62fd054d3a5",
+      "previewSha256": "0e91d27384a522fb1583be933b470953f00d5f82489abc5031649f94adfe24c0",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.10721156672325
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "38942c47094825bfd708f56fd30591262fa2dae58d40da323e3dab8efafda083",
+      "previewSha256": "233ffd1d7193c7bf7cd2cc2006ceac956b1bb573d7b93768a272c1dd82982616",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.723802836872444
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "8f87870094cd22a334d0cb546a858756890a51f1265b61de3410bb6230c79f03",
+      "previewSha256": "7f691fdc8e02ebadf01884f3084da7742f23c1a9e579885a47757b7a9ef9dd6b",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.73087825846321
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "194fdead38324aed64f6ae16a116e9f601c6a1df1d71cad63be3a41d00f252b6",
+      "previewSha256": "aaa50951675ad974bf85525c918d1be7366d4b0728ebe9c5508e1fb1fa9db001",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.55540816137834
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "f49abbe675bd0b1da56e727666434899fb4a0fa1828d55a77b40e1a9385adede",
+      "previewSha256": "05ebed146ae77d1d04e8db53878398cb07151ef91fcc2342d490f4948c57c412",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.34888892232692
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "90159e9883c9fc2380c5e5c060210d88acd1d236864f0bbfd15548cc334ac45e",
+      "previewSha256": "b8fe4382c8b9ec663c495855aa6896c093c1f4b7bcc2fa0c8c2d3afd61b7fa8f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.18158488805653
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "380b89174e3c13f7820438b2a9494edc6c4a5b209f4e8dbaec022837e4ae7c98",
+      "previewSha256": "36b69ee8a9f2304262895447ef35941118bca231497f9c635bcb622868ce0316",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.74471596186203
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "0adb72c5bf100a7636731029903225ad056d86013ce18b962b2134a1a9a75282",
+      "previewSha256": "8015ef134c0f970540a7903f50e29e4cb4f6c0b0657db00a6b30d8d20f67ffdf",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.329987109377065
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "8e92f20e2aa879aa4110a09210dfb5a7ee4b93a6299170e08815202bc4edd43b",
+      "previewSha256": "1b74856d11c25628af48d1d9a67b6102a7556001cf005e5b31338153f12aeb07",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.65617708688384
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "6dec0799be322d0c909d6891db2ec6b1dff2ca1bcaa1435ff8e0f8d89d9ae927",
+      "previewSha256": "708a1be409b60807c8261c2bbc62406f300effa4a407a21b70552bf7bfa25c8d",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.72518792913328
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "6a510e6fa305ea26ed1d7255b54a0c0869715af1b6f5ca92b6716766847e4af7",
+      "previewSha256": "77002b1a13c85219c306c7a5b7c728f5ecb284ccc00abf066bca4bced8ea4b4a",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.11128620892291
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "c7d4050de32a4429b7e0280853029fae4d3b1b72e78a05f9615ae30933db3543",
+      "previewSha256": "bd69bc9829fb3ffaf4fd890428852910fd253777667db64a07988367201b2fd0",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.0630029374417
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "d1396b3d924eac19d0792a47a3aeaaed9669f67772c926d085cd65a13fca6be0",
+      "previewSha256": "44977eb20117500f2b168cc6c1c8508710321f0ab768fa1256c35f469045caf9",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.89598526692801
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "d74ec039026ae45e004c4590df1e7490c6642a71837a26649df4116dbc385b22",
+      "previewSha256": "df4cc57fc1d01a92e117f6542c79aff79e7dcdf9904d38e4d460a734e20c5950",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.73057195884513
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "988d746b39c33e67b332ae59ad12a362971c23a1eb3a44dd2854c63c485e7251",
+      "previewSha256": "7294c2a5370b441c1d54a1890ab7b621f87ba934998561af1440f43b5adc1c4e",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.17373231538604
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "429022f0c5271ed84facd6369bb534843fef240b00d5497d58686ccec6143434",
+      "previewSha256": "d5043e20ddd1419dfbc280cd259435f30c646c2aac76996a0e245e4b061c1882",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.404921817118456
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "09b97983effae38327d8cab634d826e8244c7ce9ab24c89c0ec7292e2437a0a0",
+      "previewSha256": "edac56c823c5e5822452b6a756f686a29327bbd30ac930576069957f62ffafb2",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.82471150988803
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "f1cdd81d4cb6ca4e03df1277a37ab4e6c65c5af846a157b0925c46e4b02cde50",
+      "previewSha256": "c1bebf5bfec79554a3bb4bae740c59816e009d42bef76af5970ff54726971014",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.457498592834106
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "e0857efa27a14bb825c04c0df92ffe511c4ef57b49565f916b97f3386b9b0f1f",
+      "previewSha256": "049d6cd6c2126814e7a0300e31f73997606e5d1c99e172f558371d6eefc681a9",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.60169753065605
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "5ec272d3d77b3f19de53db521f145aba1755a733f5e92e837eb5c9840bcd170b",
+      "previewSha256": "aed28364f2f8b6753ac95a0e0f56bab422ad21dbbca60f5974c214c8c1653224",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 39.890282560332196
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "a88af4de9724d332ebcbee130dd63e2136a8b5bd6594bfa345c094e7fd0c684f",
+      "previewSha256": "5718cba983488907a9944b8b2fda241f9ff67b9d1b8d18b899e93cc1d6aeddf6",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.32620659809433
+    },
+    {
+      "src": "assets/rooms/humanoid-test-lab-001/extra-15.webp",
+      "label": "Extra 16",
+      "group": "extra",
+      "sourceSha256": "81d30483be4a09972af84f777794fc5ccc11705bb03b746347feda9340fe4bda",
+      "previewSha256": "edab5451bc24a6fc266d9b647e086940e53cbadcad7e261d7cd62c6a81ae3b9e",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.36973326004349
+    }
+  ],
+  "joints": [
+    {
+      "id": "i57_laptop_hinge",
+      "objectId": "laptop__0",
+      "body": "i57_laptop_lid",
+      "type": "hinge",
+      "pivot": [
+        4,
+        0.879,
+        0.85
+      ],
+      "axis": [
+        -2.220446049250313e-16,
+        -1.2808405367765268e-17,
+        1.0000000000000002
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.83,
+      "closed": 0,
+      "open": 1.83,
+      "range": [
+        -0.44,
+        1.83
+      ],
+      "parentJointId": null
+    }
+  ],
+  "previewPolicy": {
+    "method": "Preserve source geometry; exclude exterior backdrops from initial framing. Oversized architecture crossing a source-derived room footprint is partitioned into room/backdrop triangles with interpolated UVs and normals.",
+    "backdropGeoms": [],
+    "partitionedGeoms": [],
+    "planes": [],
+    "roomFootprintXY": null
+  },
+  "fullGeometryBounds": {
+    "min": [
+      -5.16,
+      -0.12,
+      -4.16
+    ],
+    "max": [
+      5.16,
+      3.92,
+      4.16
+    ]
+  },
+  "nonrigidPreview": {
+    "added": [
+      {
+        "id": "curtain__5",
+        "kind": "thin_shell",
+        "shapeType": "mesh",
+        "staticPreview": true,
+        "geometrySource": "source mesh: curtain__5.obj",
+        "bounds": {
+          "min": [
+            -4.74458819,
+            0.06,
+            2.4
+          ],
+          "max": [
+            -4.705567879999999,
+            2.16,
+            3.4
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 3144,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      },
+      {
+        "id": "pad__0",
+        "kind": "soft_body",
+        "shapeType": "box",
+        "staticPreview": true,
+        "geometrySource": "nonrigid.json box dimensions",
+        "bounds": {
+          "min": [
+            -3.75,
+            0,
+            -1.2550000000000001
+          ],
+          "max": [
+            -2.75,
+            0.12,
+            -0.805
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 12,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      },
+      {
+        "id": "pad__1",
+        "kind": "soft_body",
+        "shapeType": "box",
+        "staticPreview": true,
+        "geometrySource": "nonrigid.json box dimensions",
+        "bounds": {
+          "min": [
+            -3.75,
+            0,
+            -2.605
+          ],
+          "max": [
+            -2.75,
+            0.12,
+            -2.155
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 12,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      },
+      {
+        "id": "pad__2",
+        "kind": "soft_body",
+        "shapeType": "box",
+        "staticPreview": true,
+        "geometrySource": "nonrigid.json box dimensions",
+        "bounds": {
+          "min": [
+            -1.2750000000000001,
+            0,
+            -1.25
+          ],
+          "max": [
+            -0.8250000000000001,
+            0.12,
+            -0.25
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 12,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      },
+      {
+        "id": "pad__3",
+        "kind": "soft_body",
+        "shapeType": "box",
+        "staticPreview": true,
+        "geometrySource": "nonrigid.json box dimensions",
+        "bounds": {
+          "min": [
+            -1.2750000000000001,
+            0,
+            -2.35
+          ],
+          "max": [
+            -0.8250000000000001,
+            0.12,
+            -1.35
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 12,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      },
+      {
+        "id": "pad__4",
+        "kind": "soft_body",
+        "shapeType": "box",
+        "staticPreview": true,
+        "geometrySource": "nonrigid.json box dimensions",
+        "bounds": {
+          "min": [
+            0.625,
+            0,
+            -2.2
+          ],
+          "max": [
+            1.075,
+            0.12,
+            -1.2
+          ]
+        },
+        "meshCount": 1,
+        "triangleCount": 12,
+        "warning": "Source shape has no appearance material; neutral static preview surface used."
+      }
+    ],
+    "unsupported": []
+  },
+  "equalityJoints": [],
+  "equalityConstraintCount": 0,
+  "articulations": [
+    {
+      "id": "i57_laptop_hinge",
+      "objectId": "laptop__0",
+      "title": "i57 laptop hinge",
+      "clip": "i57_laptop_hinge_motion",
+      "joints": [
+        "i57_laptop_hinge"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 104.85127650894066,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "i41_caster_swivel_0",
+      "body": "i41_caster_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i41_wheel_axle_0",
+      "body": "i41_wheel_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i41_caster_swivel_1",
+      "body": "i41_caster_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i41_wheel_axle_1",
+      "body": "i41_wheel_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i41_caster_swivel_2",
+      "body": "i41_caster_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i41_wheel_axle_2",
+      "body": "i41_wheel_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i41_caster_swivel_3",
+      "body": "i41_caster_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i41_wheel_axle_3",
+      "body": "i41_wheel_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_caster_swivel_0",
+      "body": "i42_caster_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_wheel_axle_0",
+      "body": "i42_wheel_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_caster_swivel_1",
+      "body": "i42_caster_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_wheel_axle_1",
+      "body": "i42_wheel_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_caster_swivel_2",
+      "body": "i42_caster_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_wheel_axle_2",
+      "body": "i42_wheel_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_caster_swivel_3",
+      "body": "i42_caster_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i42_wheel_axle_3",
+      "body": "i42_wheel_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_0",
+      "body": "i56_roller_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_1",
+      "body": "i56_roller_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_2",
+      "body": "i56_roller_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_3",
+      "body": "i56_roller_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_4",
+      "body": "i56_roller_4",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_5",
+      "body": "i56_roller_5",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_6",
+      "body": "i56_roller_6",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_7",
+      "body": "i56_roller_7",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_8",
+      "body": "i56_roller_8",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_9",
+      "body": "i56_roller_9",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_10",
+      "body": "i56_roller_10",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_11",
+      "body": "i56_roller_11",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_12",
+      "body": "i56_roller_12",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_13",
+      "body": "i56_roller_13",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_14",
+      "body": "i56_roller_14",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_15",
+      "body": "i56_roller_15",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_16",
+      "body": "i56_roller_16",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_17",
+      "body": "i56_roller_17",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_18",
+      "body": "i56_roller_18",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_19",
+      "body": "i56_roller_19",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_20",
+      "body": "i56_roller_20",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_21",
+      "body": "i56_roller_21",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_22",
+      "body": "i56_roller_22",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_23",
+      "body": "i56_roller_23",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_24",
+      "body": "i56_roller_24",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i56_roller_axle_25",
+      "body": "i56_roller_25",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_caster_swivel_0",
+      "body": "i57_caster_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_wheel_axle_0",
+      "body": "i57_wheel_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_caster_swivel_1",
+      "body": "i57_caster_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_wheel_axle_1",
+      "body": "i57_wheel_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_caster_swivel_2",
+      "body": "i57_caster_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_wheel_axle_2",
+      "body": "i57_wheel_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_caster_swivel_3",
+      "body": "i57_caster_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i57_wheel_axle_3",
+      "body": "i57_wheel_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_caster_swivel_0",
+      "body": "i58_caster_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_wheel_axle_0",
+      "body": "i58_wheel_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_caster_swivel_1",
+      "body": "i58_caster_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_wheel_axle_1",
+      "body": "i58_wheel_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_caster_swivel_2",
+      "body": "i58_caster_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_wheel_axle_2",
+      "body": "i58_wheel_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_caster_swivel_3",
+      "body": "i58_caster_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "i58_wheel_axle_3",
+      "body": "i58_wheel_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 16,
+  "jointCouplings": {
+    "linearEqualities": 0,
+    "linkedClips": 0,
+    "unsupported": [],
+    "method": "Source zero-offset linear equalities, evaluated relative to each joint qpos0; common range intersection."
+  },
+  "modelBytes": 5017094,
+  "sourcePicturesArchiveSha256": "21feef74b0e4c195f736c32feedb8e3bf75ea2a7cd7bfdbc87c297421f679de8",
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "4845a77e122ab4eb3ab644099d7b97dafcbe51b3c352227595e0cac65e3a80c2",
+  "modelParts": [
+    "assets/rooms/humanoid-test-lab-001/room.gzip-01.bin"
+  ],
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 5953108,
+  "decodedModelSha256": "b68466ac13cb4ca896af379f7b171638bed93895fc5514bef8fcc6a488ec4564",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "taskCards": "assets/rooms/humanoid-test-lab-001/tasks/manifest.json"
+}

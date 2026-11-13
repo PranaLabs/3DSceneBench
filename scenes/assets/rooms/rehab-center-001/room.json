@@ -1,0 +1,6849 @@
+{
+  "id": "rehab-center-001",
+  "title": "Rehab center",
+  "description": "A bright rehabilitation therapy hall with connected areas for supported walking, mobility practice, transfers, fitted aids, exercise and daily living. Adjustable equipment and movable accessories share clear circulation routes. Furnishings and accessories use rigid physical approximations.",
+  "dimensions": [
+    14.250199880885305,
+    11.34501076274553,
+    3.3200000001490126
+  ],
+  "dimensionSource": "visible geometry bounds",
+  "bounds": {
+    "min": [
+      -0.15000000149011639,
+      -0.20000000149011654,
+      -10.109999998658896
+    ],
+    "max": [
+      14.100199879395188,
+      3.119999998658896,
+      1.2350107640866335
+    ]
+  },
+  "tasks": [
+    {
+      "id": "pick_place_1",
+      "kind": "Robot",
+      "text": "Lift the light dumbbell from the upper tray of the cart beside the workbench. Set it on the workbench near the front edge, directly in front of the tray holding the two cuffs and at the end nearest the cart.",
+      "objects": [
+        "dumbbell__0",
+        "workbench__0",
+        "cart__0",
+        "tray__2"
+      ],
+      "locatorSteps": [
+        {
+          "object": "dumbbell__0",
+          "label": "Lift the light dumbbell from the cart’s upper tray."
+        },
+        {
+          "object": "workbench__0",
+          "label": "Set it in front of the cuff tray at the cart end.",
+          "point": [
+            12.1,
+            0.8,
+            -6.35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "push_1",
+      "kind": "Robot",
+      "text": "Find the bowl on the kitchen cabinet countertop next to the two cups. Push it 20 cm along the front edge of the counter toward the sink, away from the cups.",
+      "objects": [
+        "bowl__0",
+        "cabinet__0",
+        "sink__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "bowl__0",
+          "label": "Push the bowl 20 cm along the counter toward the sink.",
+          "point": [
+            13.32,
+            0.85,
+            -2.3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "supported_travel",
+      "kind": "Interaction",
+      "text": "Move the trolley carrying the harness and training dummy along the ceiling support track. Pass the halfway point and continue until the dummy is 2 m from its starting position. Release the trolley and leave it still with the dummy supported by the harness.",
+      "objects": [
+        "support_track__0",
+        "harness__0",
+        "training_dummy__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "support_track__0",
+          "label": "Move the loaded trolley past the midpoint.",
+          "point": [
+            2.05,
+            2.808,
+            -3.25
+          ]
+        },
+        {
+          "object": "support_track__0",
+          "label": "Continue to 2 m from the starting point.",
+          "point": [
+            3.15,
+            2.808,
+            -3.25
+          ]
+        },
+        {
+          "object": "support_track__0",
+          "label": "Release the trolley and let it stop.",
+          "point": [
+            3.15,
+            2.808,
+            -3.25
+          ]
+        },
+        {
+          "object": "training_dummy__0",
+          "label": "Check that the harness still supports the dummy.",
+          "point": [
+            3.155,
+            1.347,
+            -3.25
+          ],
+          "referenceArea": true
+        }
+      ]
+    },
+    {
+      "id": "bar_height_lock",
+      "kind": "Interaction",
+      "text": "On the parallel bars, use the rail closest to the floor mat. Withdraw its locking pin, raise that rail 12 cm, then reinsert the pin. Press down on the rail to check that it holds its new height.",
+      "objects": [
+        "parallel_bars__0",
+        "mat__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "parallel_bars__0",
+          "label": "Withdraw the pin on the rail nearest the mat.",
+          "point": [
+            1.157,
+            0.433,
+            -6.39
+          ]
+        },
+        {
+          "object": "parallel_bars__0",
+          "label": "Raise that rail 12 cm.",
+          "point": [
+            2.15,
+            0.9,
+            -6.39
+          ]
+        },
+        {
+          "object": "parallel_bars__0",
+          "label": "Reinsert the locking pin.",
+          "point": [
+            1.157,
+            0.433,
+            -6.39
+          ]
+        },
+        {
+          "object": "parallel_bars__0",
+          "label": "Press down to check that the rail holds.",
+          "point": [
+            2.15,
+            0.9,
+            -6.39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board_transfer_setup",
+      "kind": "Interaction",
+      "text": "Park the wheelchair beside the plinth and engage both brakes. Lift the armrest on the plinth side and swing the footrests and footplates clear. Raise the plinth, then lift the transfer board from its top and lay it across the gap with one end on the wheelchair seat and the other on the plinth. Release the board and press down to check that both ends stay supported.",
+      "objects": [
+        "transfer_board__0",
+        "wheelchair__0",
+        "plinth__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "wheelchair__0",
+          "label": "Park beside the plinth and engage both brakes."
+        },
+        {
+          "object": "wheelchair__0",
+          "label": "Lift the armrest on the plinth side.",
+          "point": [
+            9.19,
+            0.7,
+            -8.815
+          ]
+        },
+        {
+          "object": "wheelchair__0",
+          "label": "Swing the footrests and footplates clear."
+        },
+        {
+          "object": "plinth__0",
+          "label": "Raise the plinth.",
+          "point": [
+            10.17,
+            0.087,
+            -8.51
+          ]
+        },
+        {
+          "object": "transfer_board__0",
+          "label": "Lift the board off the plinth."
+        },
+        {
+          "object": "transfer_board__0",
+          "label": "Bridge the wheelchair seat and plinth with the board.",
+          "point": [
+            9.279,
+            0.513,
+            -8.69
+          ]
+        },
+        {
+          "object": "transfer_board__0",
+          "label": "Release and press down to check both ends hold.",
+          "point": [
+            9.279,
+            0.513,
+            -8.69
+          ]
+        }
+      ]
+    },
+    {
+      "id": "powered_plinth",
+      "kind": "Interaction",
+      "text": "Facing the pair of foot pedals on the loaded plinth beside the wheelchair, press the left pedal to raise the top 12 cm above its starting height. Release it and let the top hold. Press the right pedal to lower the top to 3 cm above its starting height, then release it and let the top hold again.",
+      "objects": [
+        "plinth__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "plinth__0",
+          "label": "Press the left pedal to raise the top 12 cm.",
+          "point": [
+            10.17,
+            0.087,
+            -8.51
+          ]
+        },
+        {
+          "object": "plinth__0",
+          "label": "Release the pedal and let the top hold.",
+          "point": [
+            10.17,
+            0.087,
+            -8.51
+          ]
+        },
+        {
+          "object": "plinth__0",
+          "label": "Lower to 3 cm above the start with the right pedal.",
+          "point": [
+            10.43,
+            0.087,
+            -8.51
+          ]
+        },
+        {
+          "object": "plinth__0",
+          "label": "Release the pedal and let the top hold again.",
+          "point": [
+            10.43,
+            0.087,
+            -8.51
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trainer_reach",
+      "kind": "Interaction",
+      "text": "Withdraw the locking pin below the pedal trainer’s seat. Slide the seat 8 cm along its adjustment rail, away from the pedals. Reinsert the pin, then push on the seat to check that it stays in place.",
+      "objects": [
+        "pedal_trainer__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "pedal_trainer__0",
+          "label": "Withdraw the pin beneath the seat.",
+          "point": [
+            6.96,
+            0.475,
+            -1.75
+          ]
+        },
+        {
+          "object": "pedal_trainer__0",
+          "label": "Slide the seat 8 cm away from the pedals.",
+          "point": [
+            7.06,
+            0.613,
+            -1.8
+          ]
+        },
+        {
+          "object": "pedal_trainer__0",
+          "label": "Reinsert the seat pin.",
+          "point": [
+            6.96,
+            0.475,
+            -1.75
+          ]
+        },
+        {
+          "object": "pedal_trainer__0",
+          "label": "Push on the seat to check that it holds.",
+          "point": [
+            7.06,
+            0.613,
+            -1.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "move_ramp",
+      "kind": "Interaction",
+      "text": "Slide the entire ramp lengthwise toward the training stairs. Move it halfway first, then continue until it is 35 cm from its starting position. Release the ramp and leave it upright and still.",
+      "objects": [
+        "ramp__0",
+        "training_stairs__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "ramp__0",
+          "label": "Slide the ramp halfway toward the training stairs.",
+          "point": [
+            2.33,
+            0.0,
+            -8.9
+          ]
+        },
+        {
+          "object": "ramp__0",
+          "label": "Continue to 35 cm from its starting position.",
+          "point": [
+            2.5,
+            0.0,
+            -8.9
+          ]
+        },
+        {
+          "object": "ramp__0",
+          "label": "Release it upright and let it come to rest.",
+          "point": [
+            2.5,
+            0.0,
+            -8.9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kitchen_access",
+      "kind": "Interaction",
+      "text": "Face the kitchen cabinet and open the left of the two doors directly beneath the cutlery drawer. With that door open, pull the drawer out 30 cm. Push the drawer fully back in, then close the door and leave both still.",
+      "objects": [
+        "cabinet__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "cabinet__0",
+          "label": "Open the left door beneath the cutlery drawer.",
+          "point": [
+            13.145,
+            0.456,
+            -2.003
+          ]
+        },
+        {
+          "object": "cabinet__0",
+          "label": "Pull the drawer out 30 cm.",
+          "point": [
+            13.141,
+            0.758,
+            -1.937
+          ]
+        },
+        {
+          "object": "cabinet__0",
+          "label": "Push the drawer fully closed.",
+          "point": [
+            13.141,
+            0.758,
+            -1.937
+          ]
+        },
+        {
+          "object": "cabinet__0",
+          "label": "Close the cabinet door and leave both still.",
+          "point": [
+            13.145,
+            0.456,
+            -2.003
+          ]
+        }
+      ]
+    },
+    {
+      "id": "washer_inspection",
+      "kind": "Interaction",
+      "text": "At the washing machine beside the dryer, open the front door and turn the empty drum half a turn by hand. Close the door and leave both the door and the drum still.",
+      "objects": [
+        "washing_machine__0"
+      ],
+      "locatorSteps": [
+        {
+          "object": "washing_machine__0",
+          "label": "Open the front door of the washing machine.",
+          "point": [
+            10.483,
+            0.455,
+            -0.866
+          ]
+        },
+        {
+          "object": "washing_machine__0",
+          "label": "Turn the empty drum half a turn by hand.",
+          "point": [
+            10.7,
+            0.671,
+            -0.696
+          ]
+        },
+        {
+          "object": "washing_machine__0",
+          "label": "Close the door and leave it and the drum still.",
+          "point": [
+            10.483,
+            0.455,
+            -0.866
+          ]
+        }
+      ]
+    }
+  ],
+  "objects": {
+    "floor": "floor",
+    "walls": "walls",
+    "window__0": "object",
+    "window__1": "object",
+    "window__2": "object",
+    "window__3": "object",
+    "window__4": "object",
+    "door__0": "object",
+    "barre__0": "object",
+    "mirror__0": "object",
+    "mirror__1": "object",
+    "ceiling_lamp__0": "object",
+    "ceiling_lamp__1": "object",
+    "ceiling_lamp__2": "object",
+    "ceiling_lamp__3": "object",
+    "ceiling_lamp__4": "object",
+    "ceiling_lamp__5": "object",
+    "ceiling_lamp__6": "object",
+    "ceiling_lamp__7": "object",
+    "ceiling_lamp__8": "object",
+    "ceiling_lamp__9": "object",
+    "ceiling_lamp__10": "object",
+    "ceiling_lamp__11": "object",
+    "support_track__0": "object",
+    "support_frame__0": "object",
+    "treadmill__0": "object",
+    "parallel_bars__0": "object",
+    "training_stairs__0": "object",
+    "ramp__0": "object",
+    "plinth__0": "object",
+    "wheelchair__0": "object",
+    "walker__0": "object",
+    "workbench__0": "object",
+    "pedal_trainer__0": "object",
+    "arm_ergometer__0": "object",
+    "shoulder_wheel__0": "object",
+    "cabinet__0": "object",
+    "sink__0": "object",
+    "washing_machine__0": "object",
+    "dryer__0": "object",
+    "cart__0": "object",
+    "rack__0": "object",
+    "shelf__0": "object",
+    "mat_table__0": "object",
+    "harness__0": "object",
+    "training_dummy__0": "object",
+    "transfer_board__0": "object",
+    "splint__0": "object",
+    "splint__1": "object",
+    "buckle__0": "object",
+    "buckle__1": "object",
+    "buckle__2": "object",
+    "buckle__3": "object",
+    "strap__0": "object",
+    "strap__1": "object",
+    "strap__2": "object",
+    "adaptive_handle__0": "object",
+    "adaptive_handle__1": "object",
+    "cuff__0": "object",
+    "cuff__1": "object",
+    "utensil__0": "object",
+    "utensil__1": "object",
+    "utensil__2": "object",
+    "tray__0": "object",
+    "tray__1": "object",
+    "tray__2": "object",
+    "dumbbell__0": "object",
+    "dumbbell__1": "object",
+    "dumbbell__2": "object",
+    "dumbbell__3": "object",
+    "dumbbell__4": "object",
+    "dumbbell__5": "object",
+    "resistance_band__0": "object",
+    "resistance_band__1": "object",
+    "resistance_band__2": "object",
+    "towel__0": "object",
+    "towel__1": "object",
+    "towel__2": "object",
+    "towel__3": "object",
+    "towel__4": "object",
+    "ball__0": "object",
+    "ball__1": "object",
+    "ball__2": "object",
+    "mat__0": "object",
+    "therapy_wedge__0": "object",
+    "pillow__0": "object",
+    "cup__0": "object",
+    "cup__1": "object",
+    "bowl__0": "object",
+    "plate__0": "object"
+  },
+  "mobility": {
+    "free": 59,
+    "fixed": 28,
+    "jointOnly": 1,
+    "nonrigid": 0,
+    "objects": {
+      "window__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "window__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "window__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "window__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "window__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "door__0": {
+        "status": "joint_only",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "barre__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mirror__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mirror__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__1": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__2": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__3": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__4": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__5": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__6": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__7": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__8": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__9": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__10": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ceiling_lamp__11": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "support_track__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "support_frame__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "treadmill__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "parallel_bars__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "training_stairs__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ramp__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plinth__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "wheelchair__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "walker__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "workbench__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pedal_trainer__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "arm_ergometer__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shoulder_wheel__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cabinet__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "sink__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "washing_machine__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dryer__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cart__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "rack__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "shelf__0": {
+        "status": "fixed",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat_table__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "harness__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "training_dummy__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "transfer_board__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "splint__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "splint__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "buckle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "buckle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "buckle__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "buckle__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "strap__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "strap__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "strap__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "adaptive_handle__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "adaptive_handle__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cuff__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cuff__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "utensil__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "utensil__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "utensil__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tray__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tray__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "tray__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dumbbell__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dumbbell__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dumbbell__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dumbbell__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dumbbell__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "dumbbell__5": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "resistance_band__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "resistance_band__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "resistance_band__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "towel__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "towel__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "towel__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "towel__3": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "towel__4": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ball__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ball__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "ball__2": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "mat__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "therapy_wedge__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "pillow__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "cup__1": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "bowl__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      },
+      "plate__0": {
+        "status": "free",
+        "softDefinition": false,
+        "worldGeometry": false
+      }
+    },
+    "basis": "Structural source joint inventory; free-body movement and task success not tested by this export."
+  },
+  "source": "SceneBench V3",
+  "model": null,
+  "referenceImages": [
+    {
+      "src": "assets/rooms/rehab-center-001/view-0.webp",
+      "label": "Main 01",
+      "group": "main",
+      "sourceSha256": "445208b7648fb8cb435005467e2a32343ac04a0a20f3cd4673f2072407fa70ec",
+      "previewSha256": "2835798771365e6a4abafc9a6ce14e7da789f74f5db4f2e1ef75dbda57ba1a6c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.122850038152286
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/view-1.webp",
+      "label": "Main 02",
+      "group": "main",
+      "sourceSha256": "108e58b22e1e25b8689b873a9bce4a2822af2cc31d0edb365246634029ae8838",
+      "previewSha256": "db70803fa3839e97f14577204c2cecc5676baf2935c18e7dda1419d97b14992b",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.5842692196025
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/view-2.webp",
+      "label": "Main 03",
+      "group": "main",
+      "sourceSha256": "01a4669912721783cde7a769b31eaffda35d972468b4ca3918bd9771a8782332",
+      "previewSha256": "a20787eade399368387b3a10148edceb977c3dff601422ea20dd962f4c625f7f",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.428988293054495
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/view-3.webp",
+      "label": "Main 04",
+      "group": "main",
+      "sourceSha256": "caec79611ea2ac4a79536928d2b8fc4cc750b0c5855931633115cde6356f707c",
+      "previewSha256": "5d64c093ce5069cd303e0ff87ab23dcfb3d14ed98f3fe2a91898c93c616203d6",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.205867338136656
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/view-4.webp",
+      "label": "Main 05",
+      "group": "main",
+      "sourceSha256": "5739b7acbe2df000d181a2515210a164843938440a6d0bcad7e207a7a350bc44",
+      "previewSha256": "561248387115eadcc03abb1d1e8efe779fcf23ba6e61f3040c38d20f1eceac4c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.08152710534848
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/view-5.webp",
+      "label": "Main 06",
+      "group": "main",
+      "sourceSha256": "377505de6ce69af26bd6b6479ea576f46e63cbea5f97941154480901216277cc",
+      "previewSha256": "77f3e3b5cc9ad026193f9687fb7b25b80162839aa9b13d398bc8534a99e9728a",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.04077468272293
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/view-6.webp",
+      "label": "Main 07",
+      "group": "main",
+      "sourceSha256": "1af5042ab1331e2702a28232aacf7beb70be35b308b93484490243a3c63168fd",
+      "previewSha256": "61f14b5c11e0b4fb0a5a4f0f936d41b124140653b3d99f1fd2574695ba65a4f2",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.672477881337294
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/view-7.webp",
+      "label": "Main 08",
+      "group": "main",
+      "sourceSha256": "fd78ebe1135ac4152ec6acc796dacff93432ed871f90eb470f63052b3fc94719",
+      "previewSha256": "188bc90e33c51d380c83702eb5cb4dff7eae6df529b3f23c44c1e3da55083c61",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 45.23056624403213
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-0.webp",
+      "label": "Extra 01",
+      "group": "extra",
+      "sourceSha256": "e75d5f758d1792586cd1d089e924be67b2e26b7a37c27662dce96c64352bee7b",
+      "previewSha256": "42e2fb765539c36e7f76004bca5bd844288314c24ef67e00645d6e644fa29661",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.82533602387138
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-1.webp",
+      "label": "Extra 02",
+      "group": "extra",
+      "sourceSha256": "98e36757b952c89bf88e79f1afe6800c212b6829f0d798d4b5953ce3f9a5958b",
+      "previewSha256": "2155000a7b0a2ad3946e3595ed71565d0dac4fa530ba4e94631a1f456870d4b5",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.17983037524498
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-2.webp",
+      "label": "Extra 03",
+      "group": "extra",
+      "sourceSha256": "aa11ab06eb1c3062edf86eebe1f357d9b1be668db94a817de841c181f16d05f5",
+      "previewSha256": "c38bc0dbc62f8c73e8b91c081d112295f252d36d3928b2750f5a4314b23b013c",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.278191782583555
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-3.webp",
+      "label": "Extra 04",
+      "group": "extra",
+      "sourceSha256": "971cb6e018275dd0318a2249b082802515c4665dd7f5581b8ff073bbaff20f96",
+      "previewSha256": "5cb7781bcb39636ba00452b1ff37fdaa3357fd9b7599f65ecead5d15228650e5",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.07720308330568
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-4.webp",
+      "label": "Extra 05",
+      "group": "extra",
+      "sourceSha256": "940de00753223ea5018e98b423ba898149476140a6c95357d072fa32388d11b9",
+      "previewSha256": "3b1cad83dee8b74875d2c7f5d0ecd99c66cac2a220dfddc57cb3c758519d4619",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.94023663257499
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-5.webp",
+      "label": "Extra 06",
+      "group": "extra",
+      "sourceSha256": "21592e0d216f6a2e1bdf50118fcf5411fda4aa71cb92e1b5dbf35cc821fdc3b3",
+      "previewSha256": "454cb0412f53349c307bd06b757319a9c318113db59ea0b281d8d46b7b3380b5",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.47410658882368
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-6.webp",
+      "label": "Extra 07",
+      "group": "extra",
+      "sourceSha256": "094979f5418fe31f8ee88fb3cfa14101f55d7d113d30198e4d6a0c83fcac887b",
+      "previewSha256": "b8dbf7247eee1c2fc0b5812998d4ddae8bb59cd192f0c98d08eb16e2b7672553",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.35125393202497
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-7.webp",
+      "label": "Extra 08",
+      "group": "extra",
+      "sourceSha256": "ecd8905551f0c55aef2baaca7f7079f796238ff88a72a3340c6a97ed96b8a57f",
+      "previewSha256": "7d2db90f7c55ee1d6c95add925686007a1a227be7f857fc278d573c4f2df9199",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.481442995788186
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-8.webp",
+      "label": "Extra 09",
+      "group": "extra",
+      "sourceSha256": "29e6f8bf63885eb09eacec949eec7925e26b889a1bec21645eca926409d2ae8b",
+      "previewSha256": "56e1f8f9ea1700aaf2d1d6aa5ee3a77ef0b0406fd54175ea802ac9c32aff7c55",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.2717150601167
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-9.webp",
+      "label": "Extra 10",
+      "group": "extra",
+      "sourceSha256": "0c0ace7c8be238d470f07e964f44b873a0cf5f239e8250afafd26bd043daafb9",
+      "previewSha256": "38a52c40495be6eb004672daded50a500ae051514bc0c8eb409aec6416e093bd",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.303342041677155
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-10.webp",
+      "label": "Extra 11",
+      "group": "extra",
+      "sourceSha256": "917bc76c4571dc7fabbef09193c1f79db5984ab15d5dc80e8a8e12bdfcfea44f",
+      "previewSha256": "3eb86ddb99673a39333fd5f6d1db51b1f5c11e57b8c8fa1f572cded814685078",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 41.01187334935173
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-11.webp",
+      "label": "Extra 12",
+      "group": "extra",
+      "sourceSha256": "cc0ea6b40af3ea9a7d24e6c40ed61eaaaf9314c794e4b250d3746a9bb57b2030",
+      "previewSha256": "9935a63e76cac5ddc7fc2e1d26711085764715de636e4dde6f261ed222c80d5b",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 43.950786522968265
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-12.webp",
+      "label": "Extra 13",
+      "group": "extra",
+      "sourceSha256": "d4edfe649ee7d0d3d48259107b6b52da31a3d6e0172e8e3c6d6a0e32af62249b",
+      "previewSha256": "9472e11eedbff5089fbb3fed0137bf5e5bc991bb0b75c39bf9a003b74f031c67",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 44.72566423039675
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-13.webp",
+      "label": "Extra 14",
+      "group": "extra",
+      "sourceSha256": "9a0df691ae7a6a832980664d396413dc7ebbb71ef68eb7511c1eeee85c9d3fbc",
+      "previewSha256": "94834e4f57d5e93e964c799d48bc2714de58dbd480f9d44d6d2f29138db58bee",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 42.45786652088796
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-14.webp",
+      "label": "Extra 15",
+      "group": "extra",
+      "sourceSha256": "17f403a7bfab69f11974a72383ea100e506b6d99ecade24d1922cd0625fdbade",
+      "previewSha256": "d8fe0b552b8481628627c343bcbde12449992c8f67c65de5ca7ff6dcbecbefb3",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 47.15753059501065
+    },
+    {
+      "src": "assets/rooms/rehab-center-001/extra-15.webp",
+      "label": "Extra 16",
+      "group": "extra",
+      "sourceSha256": "864f30d1c1582358a0356a60911e31aedf131befc3536dae60778bb568fa63f7",
+      "previewSha256": "cccf3cd730344a4681175b613231855f20fd442ffd7944eb4064d710c452c679",
+      "previewEncoding": "WebP quality 98",
+      "sourceDimensions": [
+        512,
+        512
+      ],
+      "previewPsnrDb": 40.20799880593202
+    }
+  ],
+  "joints": [
+    {
+      "id": "hall_fixtures_0_entrance_open",
+      "objectId": "door__0",
+      "body": "door__0",
+      "type": "hinge",
+      "pivot": [
+        4.02,
+        0.025,
+        0.075
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 1.57,
+      "start": 1.57,
+      "end": 0,
+      "closed": 1.57,
+      "open": 0,
+      "range": [
+        0,
+        1.57
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_track_0_trolley_travel",
+      "objectId": "support_track__0",
+      "body": "support_track_0_trolley__0",
+      "type": "slide",
+      "pivot": [
+        1.0499999999999998,
+        2.808,
+        -3.25
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": -1.1,
+      "start": -1.1,
+      "end": 1.2,
+      "closed": -1.1,
+      "open": 1.2,
+      "range": [
+        -1.2,
+        1.2
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_track_0_trolley_cable_pitch",
+      "objectId": "support_track__0",
+      "body": "support_track_0_trolley_cable_upper",
+      "type": "hinge",
+      "pivot": [
+        1.0499999999999998,
+        2.4979999999999998,
+        -3.25
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.55,
+      "closed": 0,
+      "open": 0.55,
+      "range": [
+        -0.55,
+        0.55
+      ],
+      "parentJointId": "support_track_0_trolley_travel"
+    },
+    {
+      "id": "support_track_0_trolley_cable_roll",
+      "objectId": "support_track__0",
+      "body": "support_track_0_trolley_cable_lower",
+      "type": "hinge",
+      "pivot": [
+        1.0499999999999998,
+        2.158,
+        -3.25
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.55,
+      "closed": 0,
+      "open": 0.55,
+      "range": [
+        -0.55,
+        0.55
+      ],
+      "parentJointId": "support_track_0_trolley_cable_pitch"
+    },
+    {
+      "id": "support_track_0_trolley_hook_0_gate_open",
+      "objectId": "support_track__0",
+      "body": "support_track_0_trolley_hook_0_gate",
+      "type": "hinge",
+      "pivot": [
+        1.0659999999999998,
+        1.713,
+        -3.04
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": "support_track_0_trolley_cable_roll"
+    },
+    {
+      "id": "support_track_0_trolley_hook_1_gate_open",
+      "objectId": "support_track__0",
+      "body": "support_track_0_trolley_hook_1_gate",
+      "type": "hinge",
+      "pivot": [
+        1.0659999999999998,
+        1.713,
+        -3.46
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": "support_track_0_trolley_cable_roll"
+    },
+    {
+      "id": "support_frame_0_frame_castor_0_brake_release",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_castor_0_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        0.5899999999999999,
+        0.08579999999999999,
+        -0.843
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_frame_0_frame_castor_1_brake_release",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_castor_1_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        0.5899999999999999,
+        0.08579999999999999,
+        -2.1430000000000002
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_frame_0_frame_castor_2_brake_release",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_castor_2_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        2.67,
+        0.08579999999999999,
+        -0.843
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_frame_0_frame_castor_3_brake_release",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_castor_3_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        2.67,
+        0.08579999999999999,
+        -2.1430000000000002
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_frame_0_support_frame_height",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_support_frame_upper",
+      "type": "slide",
+      "pivot": [
+        1.75,
+        -0.0002,
+        -1.45
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.4,
+      "closed": 0,
+      "open": 0.4,
+      "range": [
+        0,
+        0.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_frame_0_frame_hook_0_gate_open",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_hook_0_gate",
+      "type": "hinge",
+      "pivot": [
+        1.946,
+        2.0648,
+        -1.1099999999999999
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": "support_frame_0_support_frame_height"
+    },
+    {
+      "id": "support_frame_0_frame_hook_1_gate_open",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_hook_1_gate",
+      "type": "hinge",
+      "pivot": [
+        1.946,
+        2.0648,
+        -1.79
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.65,
+      "closed": 0,
+      "open": 0.65,
+      "range": [
+        0,
+        0.65
+      ],
+      "parentJointId": "support_frame_0_support_frame_height"
+    },
+    {
+      "id": "support_frame_0_frame_up_press",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_up",
+      "type": "slide",
+      "pivot": [
+        0.6499999999999999,
+        1.2668,
+        -1.1949999999999998
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "support_frame_0_frame_down_press",
+      "objectId": "support_frame__0",
+      "body": "support_frame_0_frame_down",
+      "type": "slide",
+      "pivot": [
+        0.6499999999999999,
+        1.1998,
+        -1.1949999999999998
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "treadmill_0_treadmill_control_0_press",
+      "objectId": "treadmill__0",
+      "body": "treadmill_0_treadmill_control_0",
+      "type": "slide",
+      "pivot": [
+        1.1587314807461575,
+        1.2226091040729012,
+        -1.22
+      ],
+      "axis": [
+        0.31456656798276855,
+        -0.9492354156412108,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "treadmill_0_treadmill_control_1_press",
+      "objectId": "treadmill__0",
+      "body": "treadmill_0_treadmill_control_1",
+      "type": "slide",
+      "pivot": [
+        1.1587314807461575,
+        1.2226091040729012,
+        -1.3299999999999998
+      ],
+      "axis": [
+        0.31456656798276855,
+        -0.9492354156412108,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "treadmill_0_treadmill_control_2_press",
+      "objectId": "treadmill__0",
+      "body": "treadmill_0_treadmill_control_2",
+      "type": "slide",
+      "pivot": [
+        1.1587314807461575,
+        1.2226091040729012,
+        -1.45
+      ],
+      "axis": [
+        0.31456656798276855,
+        -0.9492354156412108,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "treadmill_0_treadmill_control_3_press",
+      "objectId": "treadmill__0",
+      "body": "treadmill_0_treadmill_control_3",
+      "type": "slide",
+      "pivot": [
+        1.1587314807461575,
+        1.2226091040729012,
+        -1.57
+      ],
+      "axis": [
+        0.31456656798276855,
+        -0.9492354156412108,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "treadmill_0_treadmill_control_4_press",
+      "objectId": "treadmill__0",
+      "body": "treadmill_0_treadmill_control_4",
+      "type": "slide",
+      "pivot": [
+        1.1587314807461575,
+        1.2226091040729012,
+        -1.68
+      ],
+      "axis": [
+        0.31456656798276855,
+        -0.9492354156412108,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "parallel_bars_0_bars_0_height",
+      "objectId": "parallel_bars__0",
+      "body": "parallel_bars_0_bars_0_moving_rail",
+      "type": "slide",
+      "pivot": [
+        2.15,
+        -0.0002,
+        -6.75
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.24,
+      "closed": 0,
+      "open": 0.24,
+      "range": [
+        0,
+        0.24
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "parallel_bars_0_bars_0_unlock",
+      "objectId": "parallel_bars__0",
+      "body": "parallel_bars_0_bars_0_locking_pin",
+      "type": "slide",
+      "pivot": [
+        1.107,
+        0.4328,
+        -6.39
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        0,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "parallel_bars_0_bars_1_height",
+      "objectId": "parallel_bars__0",
+      "body": "parallel_bars_0_bars_1_moving_rail",
+      "type": "slide",
+      "pivot": [
+        2.15,
+        -0.0002,
+        -6.75
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.24,
+      "closed": 0,
+      "open": 0.24,
+      "range": [
+        0,
+        0.24
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "parallel_bars_0_bars_1_unlock",
+      "objectId": "parallel_bars__0",
+      "body": "parallel_bars_0_bars_1_locking_pin",
+      "type": "slide",
+      "pivot": [
+        1.107,
+        0.4328,
+        -7.11
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        0,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "training_stairs_0_stairs_0_height",
+      "objectId": "training_stairs__0",
+      "body": "training_stairs_0_stairs_0_moving_rail",
+      "type": "slide",
+      "pivot": [
+        6,
+        -0.0002,
+        -8.8
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.24,
+      "closed": 0,
+      "open": 0.24,
+      "range": [
+        0,
+        0.24
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "training_stairs_0_stairs_0_unlock",
+      "objectId": "training_stairs__0",
+      "body": "training_stairs_0_stairs_0_locking_pin",
+      "type": "slide",
+      "pivot": [
+        5.107,
+        0.4328,
+        -8.21
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        0,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "training_stairs_0_stairs_1_height",
+      "objectId": "training_stairs__0",
+      "body": "training_stairs_0_stairs_1_moving_rail",
+      "type": "slide",
+      "pivot": [
+        6,
+        -0.0002,
+        -8.8
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.24,
+      "closed": 0,
+      "open": 0.24,
+      "range": [
+        0,
+        0.24
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "training_stairs_0_stairs_1_unlock",
+      "objectId": "training_stairs__0",
+      "body": "training_stairs_0_stairs_1_locking_pin",
+      "type": "slide",
+      "pivot": [
+        5.107,
+        0.4328,
+        -9.39
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        0,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ramp_0_ramp_0_height",
+      "objectId": "ramp__0",
+      "body": "ramp_0_ramp_0_moving_rail",
+      "type": "slide",
+      "pivot": [
+        2.15,
+        -0.0002,
+        -8.9
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.24,
+      "closed": 0,
+      "open": 0.24,
+      "range": [
+        0,
+        0.24
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ramp_0_ramp_0_unlock",
+      "objectId": "ramp__0",
+      "body": "ramp_0_ramp_0_locking_pin",
+      "type": "slide",
+      "pivot": [
+        1.107,
+        0.4328,
+        -8.41
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        0,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ramp_0_ramp_1_height",
+      "objectId": "ramp__0",
+      "body": "ramp_0_ramp_1_moving_rail",
+      "type": "slide",
+      "pivot": [
+        2.15,
+        -0.0002,
+        -8.9
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.24,
+      "closed": 0,
+      "open": 0.24,
+      "range": [
+        0,
+        0.24
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "ramp_0_ramp_1_unlock",
+      "objectId": "ramp__0",
+      "body": "ramp_0_ramp_1_locking_pin",
+      "type": "slide",
+      "pivot": [
+        1.107,
+        0.4328,
+        -9.39
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        0,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "plinth_0_plinth_middle",
+      "objectId": "plinth__0",
+      "body": "plinth_0_plinth_column_middle",
+      "type": "slide",
+      "pivot": [
+        10.3,
+        -0.0002,
+        -8.8
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.195,
+      "closed": 0,
+      "open": 0.195,
+      "range": [
+        0,
+        0.195
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "plinth_0_plinth_height",
+      "objectId": "plinth__0",
+      "body": "plinth_0_plinth_lifting_frame",
+      "type": "slide",
+      "pivot": [
+        10.3,
+        -0.0002,
+        -8.8
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.39,
+      "closed": 0,
+      "open": 0.39,
+      "range": [
+        0,
+        0.39
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "plinth_0_plinth_backrest_angle",
+      "objectId": "plinth__0",
+      "body": "plinth_0_plinth_backrest",
+      "type": "hinge",
+      "pivot": [
+        10.58,
+        0.40480000000000005,
+        -8.8
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.3,
+      "closed": 0,
+      "open": 1.3,
+      "range": [
+        0,
+        1.3
+      ],
+      "parentJointId": "plinth_0_plinth_height"
+    },
+    {
+      "id": "plinth_0_plinth_gas_pivot",
+      "objectId": "plinth__0",
+      "body": "plinth_0_plinth_gas_cylinder",
+      "type": "hinge",
+      "pivot": [
+        10.67,
+        0.3098,
+        -8.8
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.6,
+      "closed": 0,
+      "open": 1.6,
+      "range": [
+        -0.15,
+        1.6
+      ],
+      "parentJointId": "plinth_0_plinth_height"
+    },
+    {
+      "id": "plinth_0_plinth_gas_extension",
+      "objectId": "plinth__0",
+      "body": "plinth_0_plinth_gas_rod",
+      "type": "slide",
+      "pivot": [
+        10.798488320723585,
+        0.3295674337644806,
+        -8.8
+      ],
+      "axis": [
+        0.9883716978737317,
+        0.15205718280369673,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.25,
+      "closed": 0,
+      "open": 0.25,
+      "range": [
+        -0.02,
+        0.25
+      ],
+      "parentJointId": "plinth_0_plinth_gas_pivot"
+    },
+    {
+      "id": "plinth_0_plinth_up_press",
+      "objectId": "plinth__0",
+      "body": "plinth_0_plinth_up_pedal",
+      "type": "slide",
+      "pivot": [
+        10.17,
+        0.08679999999999999,
+        -8.510000000000002
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.009,
+      "closed": 0,
+      "open": 0.009,
+      "range": [
+        0,
+        0.009
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "plinth_0_plinth_down_press",
+      "objectId": "plinth__0",
+      "body": "plinth_0_plinth_down_pedal",
+      "type": "slide",
+      "pivot": [
+        10.430000000000001,
+        0.08679999999999999,
+        -8.510000000000002
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.009,
+      "closed": 0,
+      "open": 0.009,
+      "range": [
+        0,
+        0.009
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_brake_lift_0",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_pawl_0",
+      "type": "slide",
+      "pivot": [
+        8.691999999999998,
+        0.4048000000000002,
+        -9
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.035,
+      "closed": 0,
+      "open": 0.035,
+      "range": [
+        0,
+        0.035
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_brake_release_0",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_brake_lever_0",
+      "type": "hinge",
+      "pivot": [
+        8.704999999999998,
+        0.4348000000000002,
+        -8.940000000000001
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.8,
+      "closed": 0,
+      "open": 0.8,
+      "range": [
+        0,
+        0.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_arm_flip_0",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_arm_0",
+      "type": "hinge",
+      "pivot": [
+        8.709999999999999,
+        0.6798000000000004,
+        -9.020000000000001
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.65,
+      "closed": 0,
+      "open": 1.65,
+      "range": [
+        0,
+        1.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_footrest_swing_0",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_footrest_0",
+      "type": "hinge",
+      "pivot": [
+        8.75,
+        0.44980000000000026,
+        -8.55
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.6,
+      "closed": 0,
+      "open": 1.6,
+      "range": [
+        0,
+        1.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_footplate_flip_0",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_footplate_0",
+      "type": "hinge",
+      "pivot": [
+        8.75,
+        0.19980000000000014,
+        -8.42
+      ],
+      "axis": [
+        -4.440892098500626e-16,
+        0,
+        1.0000000000000004
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.55,
+      "closed": 0,
+      "open": 1.55,
+      "range": [
+        0,
+        1.55
+      ],
+      "parentJointId": "wheelchair_0_chair_footrest_swing_0"
+    },
+    {
+      "id": "wheelchair_0_chair_brake_lift_1",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_pawl_1",
+      "type": "slide",
+      "pivot": [
+        9.208,
+        0.4048000000000002,
+        -9
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.035,
+      "closed": 0,
+      "open": 0.035,
+      "range": [
+        0,
+        0.035
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_brake_release_1",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_brake_lever_1",
+      "type": "hinge",
+      "pivot": [
+        9.195,
+        0.4348000000000002,
+        -8.940000000000001
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.8,
+      "closed": 0,
+      "open": 0.8,
+      "range": [
+        0,
+        0.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_arm_flip_1",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_arm_1",
+      "type": "hinge",
+      "pivot": [
+        9.19,
+        0.6798000000000004,
+        -9.020000000000001
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.65,
+      "closed": 0,
+      "open": 1.65,
+      "range": [
+        0,
+        1.65
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_footrest_swing_1",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_footrest_1",
+      "type": "hinge",
+      "pivot": [
+        9.149999999999999,
+        0.44980000000000026,
+        -8.55
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.6,
+      "closed": 0,
+      "open": 1.6,
+      "range": [
+        0,
+        1.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "wheelchair_0_chair_footplate_flip_1",
+      "objectId": "wheelchair__0",
+      "body": "wheelchair_0_chair_footplate_1",
+      "type": "hinge",
+      "pivot": [
+        9.149999999999999,
+        0.19980000000000014,
+        -8.42
+      ],
+      "axis": [
+        4.440892098500626e-16,
+        0,
+        -1.0000000000000004
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.55,
+      "closed": 0,
+      "open": 1.55,
+      "range": [
+        0,
+        1.55
+      ],
+      "parentJointId": "wheelchair_0_chair_footrest_swing_1"
+    },
+    {
+      "id": "walker_0_walker_fold_0",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_side_0",
+      "type": "hinge",
+      "pivot": [
+        11.94,
+        0.5998,
+        -9.75
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5707963,
+      "closed": 0,
+      "open": 1.5707963,
+      "range": [
+        0,
+        1.5707963
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "walker_0_walker_leg_0_0_extension",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_0_0",
+      "type": "slide",
+      "pivot": [
+        11.94,
+        0.2998,
+        -9.75
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.15,
+      "closed": 0,
+      "open": 0.15,
+      "range": [
+        0,
+        0.15
+      ],
+      "parentJointId": "walker_0_walker_fold_0"
+    },
+    {
+      "id": "walker_0_walker_leg_0_0_release",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_0_0_pin",
+      "type": "slide",
+      "pivot": [
+        11.94,
+        0.3998,
+        -9.772
+      ],
+      "axis": [
+        1.2246467992e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.05,
+      "closed": 0,
+      "open": 0.05,
+      "range": [
+        0,
+        0.05
+      ],
+      "parentJointId": "walker_0_walker_fold_0"
+    },
+    {
+      "id": "walker_0_walker_leg_0_1_extension",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_0_1",
+      "type": "slide",
+      "pivot": [
+        11.52,
+        0.2998,
+        -9.75
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.15,
+      "closed": 0,
+      "open": 0.15,
+      "range": [
+        0,
+        0.15
+      ],
+      "parentJointId": "walker_0_walker_fold_0"
+    },
+    {
+      "id": "walker_0_walker_leg_0_1_release",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_0_1_pin",
+      "type": "slide",
+      "pivot": [
+        11.52,
+        0.3998,
+        -9.772
+      ],
+      "axis": [
+        1.2246467992e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.05,
+      "closed": 0,
+      "open": 0.05,
+      "range": [
+        0,
+        0.05
+      ],
+      "parentJointId": "walker_0_walker_fold_0"
+    },
+    {
+      "id": "walker_0_walker_fold_release_0",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_fold_pin_0",
+      "type": "slide",
+      "pivot": [
+        11.876,
+        0.6528,
+        -9.75
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.045,
+      "closed": 0,
+      "open": 0.045,
+      "range": [
+        0,
+        0.045
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "walker_0_walker_fold_1",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_side_1",
+      "type": "hinge",
+      "pivot": [
+        12,
+        0.5998,
+        -9.25
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5707963,
+      "closed": 0,
+      "open": 1.5707963,
+      "range": [
+        0,
+        1.5707963
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "walker_0_walker_leg_1_0_extension",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_1_0",
+      "type": "slide",
+      "pivot": [
+        12,
+        0.2998,
+        -9.25
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.15,
+      "closed": 0,
+      "open": 0.15,
+      "range": [
+        0,
+        0.15
+      ],
+      "parentJointId": "walker_0_walker_fold_1"
+    },
+    {
+      "id": "walker_0_walker_leg_1_0_release",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_1_0_pin",
+      "type": "slide",
+      "pivot": [
+        12,
+        0.3998,
+        -9.272
+      ],
+      "axis": [
+        1.2246467992e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.05,
+      "closed": 0,
+      "open": 0.05,
+      "range": [
+        0,
+        0.05
+      ],
+      "parentJointId": "walker_0_walker_fold_1"
+    },
+    {
+      "id": "walker_0_walker_leg_1_1_extension",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_1_1",
+      "type": "slide",
+      "pivot": [
+        11.58,
+        0.2998,
+        -9.25
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.15,
+      "closed": 0,
+      "open": 0.15,
+      "range": [
+        0,
+        0.15
+      ],
+      "parentJointId": "walker_0_walker_fold_1"
+    },
+    {
+      "id": "walker_0_walker_leg_1_1_release",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_leg_1_1_pin",
+      "type": "slide",
+      "pivot": [
+        11.58,
+        0.3998,
+        -9.272
+      ],
+      "axis": [
+        1.2246467992e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.05,
+      "closed": 0,
+      "open": 0.05,
+      "range": [
+        0,
+        0.05
+      ],
+      "parentJointId": "walker_0_walker_fold_1"
+    },
+    {
+      "id": "walker_0_walker_fold_release_1",
+      "objectId": "walker__0",
+      "body": "walker_0_walker_fold_pin_1",
+      "type": "slide",
+      "pivot": [
+        11.936,
+        0.6528,
+        -9.25
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.045,
+      "closed": 0,
+      "open": 0.045,
+      "range": [
+        0,
+        0.045
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "workbench_0_drawer_0_slide",
+      "objectId": "workbench__0",
+      "body": "workbench_0_drawer_0",
+      "type": "slide",
+      "pivot": [
+        10.58,
+        0.5898,
+        -6.55
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "workbench_0_drawer_1_slide",
+      "objectId": "workbench__0",
+      "body": "workbench_0_drawer_1",
+      "type": "slide",
+      "pivot": [
+        11.35,
+        0.5898,
+        -6.55
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "workbench_0_drawer_2_slide",
+      "objectId": "workbench__0",
+      "body": "workbench_0_drawer_2",
+      "type": "slide",
+      "pivot": [
+        12.12,
+        0.5898,
+        -6.55
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.42,
+      "closed": 0,
+      "open": 0.42,
+      "range": [
+        0,
+        0.42
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_reach",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_seat",
+      "type": "slide",
+      "pivot": [
+        6.55,
+        -0.0002,
+        -1.8
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        -0.12,
+        0.12
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_reach_release",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_reach_pin",
+      "type": "slide",
+      "pivot": [
+        6.96,
+        0.4748,
+        -1.75
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.06,
+      "closed": 0,
+      "open": 0.06,
+      "range": [
+        0,
+        0.06
+      ],
+      "parentJointId": "pedal_trainer_0_trainer_reach"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_step_0",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_pedal_slide_0",
+      "type": "slide",
+      "pivot": [
+        6.08,
+        0.32980000000000004,
+        -1.57
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        -0.12,
+        0.12
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_0_strap_open",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_foot_0_strap",
+      "type": "hinge",
+      "pivot": [
+        6.0764976772875245,
+        0.3587436303116538,
+        -1.49
+      ],
+      "axis": [
+        0.9130889393864353,
+        -0.407760455132857,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.75,
+      "closed": 0,
+      "open": 1.75,
+      "range": [
+        0,
+        1.75
+      ],
+      "parentJointId": "pedal_trainer_0_trainer_step_0"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_0_strap_release",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_foot_0_latch",
+      "type": "slide",
+      "pivot": [
+        6.044539564409,
+        0.3730152462413038,
+        -1.6500000000000001
+      ],
+      "axis": [
+        -0.9130889393864353,
+        0.407760455132857,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.06,
+      "closed": 0,
+      "open": 0.06,
+      "range": [
+        0,
+        0.06
+      ],
+      "parentJointId": "pedal_trainer_0_trainer_step_0"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_handle_angle_0",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_handle_0",
+      "type": "hinge",
+      "pivot": [
+        5.8999999999999995,
+        0.1798,
+        -1.455
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.25,
+      "closed": 0,
+      "open": 0.25,
+      "range": [
+        -0.25,
+        0.25
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_step_1",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_pedal_slide_1",
+      "type": "slide",
+      "pivot": [
+        6.08,
+        0.32980000000000004,
+        -2.0300000000000002
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.12,
+      "closed": 0,
+      "open": 0.12,
+      "range": [
+        -0.12,
+        0.12
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_1_strap_open",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_foot_1_strap",
+      "type": "hinge",
+      "pivot": [
+        6.0764976772875245,
+        0.3587436303116538,
+        -1.9500000000000002
+      ],
+      "axis": [
+        0.9130889393864353,
+        -0.407760455132857,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.75,
+      "closed": 0,
+      "open": 1.75,
+      "range": [
+        0,
+        1.75
+      ],
+      "parentJointId": "pedal_trainer_0_trainer_step_1"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_1_strap_release",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_foot_1_latch",
+      "type": "slide",
+      "pivot": [
+        6.044539564409,
+        0.3730152462413038,
+        -2.1100000000000003
+      ],
+      "axis": [
+        -0.9130889393864353,
+        0.407760455132857,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.06,
+      "closed": 0,
+      "open": 0.06,
+      "range": [
+        0,
+        0.06
+      ],
+      "parentJointId": "pedal_trainer_0_trainer_step_1"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_handle_angle_1",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_handle_1",
+      "type": "hinge",
+      "pivot": [
+        5.8999999999999995,
+        0.1798,
+        -2.145
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.25,
+      "closed": 0,
+      "open": 0.25,
+      "range": [
+        -0.25,
+        0.25
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_control_0_press",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_control_0",
+      "type": "slide",
+      "pivot": [
+        6.175,
+        0.9898,
+        -1.71
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_control_1_press",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_control_1",
+      "type": "slide",
+      "pivot": [
+        6.175,
+        0.9898,
+        -1.8
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "pedal_trainer_0_trainer_control_2_press",
+      "objectId": "pedal_trainer__0",
+      "body": "pedal_trainer_0_trainer_control_2",
+      "type": "slide",
+      "pivot": [
+        6.175,
+        0.9898,
+        -1.8900000000000001
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_height",
+      "objectId": "arm_ergometer__0",
+      "body": "arm_ergometer_0_ergometer_height_carriage",
+      "type": "slide",
+      "pivot": [
+        8.45,
+        -0.0002,
+        -1.55
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.24,
+      "closed": 0,
+      "open": 0.24,
+      "range": [
+        0,
+        0.24
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_control_press",
+      "objectId": "arm_ergometer__0",
+      "body": "arm_ergometer_0_ergometer_control",
+      "type": "slide",
+      "pivot": [
+        8.45,
+        1.2548000000000006,
+        -1.7200000000000002
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": "arm_ergometer_0_ergometer_height"
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_unlock",
+      "objectId": "arm_ergometer__0",
+      "body": "arm_ergometer_0_ergometer_pin",
+      "type": "slide",
+      "pivot": [
+        8.514999999999999,
+        0.7798000000000004,
+        -1.57
+      ],
+      "axis": [
+        1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.08,
+      "closed": 0,
+      "open": 0.08,
+      "range": [
+        0,
+        0.08
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "shoulder_wheel_0_shoulder_rotation",
+      "objectId": "shoulder_wheel__0",
+      "body": "shoulder_wheel_0_wheel_rotor",
+      "type": "hinge",
+      "pivot": [
+        8.5,
+        1.25,
+        -0.16
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 6.28,
+      "closed": 0,
+      "open": 6.28,
+      "range": [
+        -6.28,
+        6.28
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "shoulder_wheel_0_shoulder_grip_radius",
+      "objectId": "shoulder_wheel__0",
+      "body": "shoulder_wheel_0_radial_grip_slide",
+      "type": "slide",
+      "pivot": [
+        8.72,
+        1.25,
+        -0.16
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.18,
+      "closed": 0,
+      "open": 0.18,
+      "range": [
+        0,
+        0.18
+      ],
+      "parentJointId": "shoulder_wheel_0_shoulder_rotation"
+    },
+    {
+      "id": "kitchen_0_kitchen_door_0_open",
+      "objectId": "cabinet__0",
+      "body": "kitchen_0_kitchen_door_0",
+      "type": "hinge",
+      "pivot": [
+        13.1985,
+        0.46750000000000025,
+        -3.7625
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.4,
+      "closed": 0,
+      "open": 1.4,
+      "range": [
+        0,
+        1.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "kitchen_0_kitchen_door_1_open",
+      "objectId": "cabinet__0",
+      "body": "kitchen_0_kitchen_door_1",
+      "type": "hinge",
+      "pivot": [
+        13.1985,
+        0.46750000000000025,
+        -2.5625
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.4,
+      "closed": 0,
+      "open": 1.4,
+      "range": [
+        0,
+        1.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "kitchen_0_kitchen_door_2_open",
+      "objectId": "cabinet__0",
+      "body": "kitchen_0_kitchen_door_2",
+      "type": "hinge",
+      "pivot": [
+        13.1985,
+        0.3960000000000002,
+        -2.5374999999999996
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.4,
+      "closed": 0,
+      "open": 1.4,
+      "range": [
+        0,
+        1.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "kitchen_0_kitchen_door_3_open",
+      "objectId": "cabinet__0",
+      "body": "kitchen_0_kitchen_door_3",
+      "type": "hinge",
+      "pivot": [
+        13.1985,
+        0.3960000000000002,
+        -1.3374999999999995
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.4,
+      "closed": 0,
+      "open": 1.4,
+      "range": [
+        0,
+        1.4
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "kitchen_0_kitchen_drawer_slide",
+      "objectId": "cabinet__0",
+      "body": "kitchen_0_kitchen_cutlery_drawer",
+      "type": "slide",
+      "pivot": [
+        13.5735,
+        0.7580000000000003,
+        -1.9374999999999996
+      ],
+      "axis": [
+        -1.0000000000000004,
+        0,
+        -4.440892098500626e-16
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.45,
+      "closed": 0,
+      "open": 0.45,
+      "range": [
+        0,
+        0.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "kitchen_0_kitchen_faucet_turn",
+      "objectId": "sink__0",
+      "body": "kitchen_0_kitchen_faucet_lever",
+      "type": "hinge",
+      "pivot": [
+        13.888499999999999,
+        0.8900000000000005,
+        -3.12
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.5,
+      "closed": 0,
+      "open": 1.5,
+      "range": [
+        0,
+        1.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "washing_machine_0_washer_door_open",
+      "objectId": "washing_machine__0",
+      "body": "washing_machine_0_washer_door",
+      "type": "hinge",
+      "pivot": [
+        10.955,
+        0.455,
+        -0.8005
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.45,
+      "closed": 0,
+      "open": 1.45,
+      "range": [
+        0,
+        1.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "washing_machine_0_washer_selector_turn",
+      "objectId": "washing_machine__0",
+      "body": "washing_machine_0_washer_selector",
+      "type": "hinge",
+      "pivot": [
+        10.709999999999999,
+        0.827,
+        -0.8305
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.5,
+      "closed": 0,
+      "open": 2.5,
+      "range": [
+        -2.5,
+        2.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "washing_machine_0_washer_button_0_press",
+      "objectId": "washing_machine__0",
+      "body": "washing_machine_0_washer_button_0",
+      "type": "slide",
+      "pivot": [
+        10.6,
+        0.827,
+        -0.8305
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "washing_machine_0_washer_button_1_press",
+      "objectId": "washing_machine__0",
+      "body": "washing_machine_0_washer_button_1",
+      "type": "slide",
+      "pivot": [
+        10.53,
+        0.827,
+        -0.8305
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "washing_machine_0_washer_detergent_slide",
+      "objectId": "washing_machine__0",
+      "body": "washing_machine_0_washer_detergent_drawer",
+      "type": "slide",
+      "pivot": [
+        10.92,
+        0.827,
+        -0.6205
+      ],
+      "axis": [
+        1.2246467992e-16,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.22,
+      "closed": 0,
+      "open": 0.22,
+      "range": [
+        0,
+        0.22
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dryer_0_dryer_door_open",
+      "objectId": "dryer__0",
+      "body": "dryer_0_dryer_door",
+      "type": "hinge",
+      "pivot": [
+        11.805000000000001,
+        0.455,
+        -0.8005
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.45,
+      "closed": 0,
+      "open": 1.45,
+      "range": [
+        0,
+        1.45
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dryer_0_dryer_selector_turn",
+      "objectId": "dryer__0",
+      "body": "dryer_0_dryer_selector",
+      "type": "hinge",
+      "pivot": [
+        11.56,
+        0.827,
+        -0.8305
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.5,
+      "closed": 0,
+      "open": 2.5,
+      "range": [
+        -2.5,
+        2.5
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dryer_0_dryer_button_0_press",
+      "objectId": "dryer__0",
+      "body": "dryer_0_dryer_button_0",
+      "type": "slide",
+      "pivot": [
+        11.450000000000001,
+        0.827,
+        -0.8305
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "dryer_0_dryer_button_1_press",
+      "objectId": "dryer__0",
+      "body": "dryer_0_dryer_button_1",
+      "type": "slide",
+      "pivot": [
+        11.38,
+        0.827,
+        -0.8305
+      ],
+      "axis": [
+        -1.2246467992e-16,
+        0,
+        1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.004,
+      "closed": 0,
+      "open": 0.004,
+      "range": [
+        0,
+        0.004
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart_0_cart_castor_0_brake_release",
+      "objectId": "cart__0",
+      "body": "cart_0_cart_castor_0_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        12.915000000000001,
+        0.08579999999999999,
+        -6.058
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart_0_cart_castor_1_brake_release",
+      "objectId": "cart__0",
+      "body": "cart_0_cart_castor_1_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        12.915000000000001,
+        0.08579999999999999,
+        -6.628
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart_0_cart_castor_2_brake_release",
+      "objectId": "cart__0",
+      "body": "cart_0_cart_castor_2_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        13.405,
+        0.08579999999999999,
+        -6.058
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cart_0_cart_castor_3_brake_release",
+      "objectId": "cart__0",
+      "body": "cart_0_cart_castor_3_parking_pawl",
+      "type": "slide",
+      "pivot": [
+        13.405,
+        0.08579999999999999,
+        -6.628
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.025,
+      "closed": 0,
+      "open": 0.025,
+      "range": [
+        0,
+        0.025
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "harness_0_harness_open",
+      "objectId": "harness__0",
+      "body": "harness_0_harness_front",
+      "type": "hinge",
+      "pivot": [
+        0.988,
+        1.2964,
+        -3.0941154
+      ],
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.75,
+      "closed": 0,
+      "open": 0.75,
+      "range": [
+        0,
+        0.75
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "harness_0_harness_open_left",
+      "objectId": "harness__0",
+      "body": "harness_0_harness_front_left",
+      "type": "hinge",
+      "pivot": [
+        0.988,
+        1.2964,
+        -3.4058846
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.75,
+      "closed": 0,
+      "open": 0.75,
+      "range": [
+        0,
+        0.75
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "harness_0_harness_release",
+      "objectId": "harness__0",
+      "body": "harness_0_harness_latch",
+      "type": "hinge",
+      "pivot": [
+        1.182,
+        1.2964,
+        -3.279
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.3,
+      "closed": 0,
+      "open": 1.3,
+      "range": [
+        0,
+        1.3
+      ],
+      "parentJointId": "harness_0_harness_open_left"
+    },
+    {
+      "id": "harness_0_harness_sway_0",
+      "objectId": "harness__0",
+      "body": "harness_0_harness_load_0",
+      "type": "hinge",
+      "pivot": [
+        0.93,
+        1.3664,
+        -3.12
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.35,
+      "closed": 0,
+      "open": 0.35,
+      "range": [
+        -0.35,
+        0.35
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "harness_0_harness_sway_1",
+      "objectId": "harness__0",
+      "body": "harness_0_harness_load_1",
+      "type": "hinge",
+      "pivot": [
+        0.93,
+        1.3664,
+        -3.38
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.35,
+      "closed": 0,
+      "open": 0.35,
+      "range": [
+        -0.35,
+        0.35
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_0_splint_wrap_0_open",
+      "objectId": "splint__0",
+      "body": "splint_0_splint_wrap_0",
+      "type": "hinge",
+      "pivot": [
+        10.375,
+        0.8269732949999999,
+        -6.35994481
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_0_splint_wrap_0_release",
+      "objectId": "splint__0",
+      "body": "splint_0_splint_wrap_0_pin",
+      "type": "slide",
+      "pivot": [
+        10.375,
+        0.819473295,
+        -6.440055190000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.023,
+      "closed": 0,
+      "open": 0.023,
+      "range": [
+        0,
+        0.023
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_0_splint_wrap_1_open",
+      "objectId": "splint__0",
+      "body": "splint_0_splint_wrap_1",
+      "type": "hinge",
+      "pivot": [
+        10.455,
+        0.8299789179999999,
+        -6.371597732000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_0_splint_wrap_1_release",
+      "objectId": "splint__0",
+      "body": "splint_0_splint_wrap_1_pin",
+      "type": "slide",
+      "pivot": [
+        10.455,
+        0.822478918,
+        -6.428402268
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.023,
+      "closed": 0,
+      "open": 0.023,
+      "range": [
+        0,
+        0.023
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_0_splint_wrap_2_open",
+      "objectId": "splint__0",
+      "body": "splint_0_splint_wrap_2",
+      "type": "hinge",
+      "pivot": [
+        10.585,
+        0.8335157289999999,
+        -6.341395698
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_0_splint_wrap_2_release",
+      "objectId": "splint__0",
+      "body": "splint_0_splint_wrap_2_pin",
+      "type": "slide",
+      "pivot": [
+        10.585,
+        0.826015729,
+        -6.458604302
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.023,
+      "closed": 0,
+      "open": 0.023,
+      "range": [
+        0,
+        0.023
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_1_splint_wrap_0_open",
+      "objectId": "splint__1",
+      "body": "splint_1_splint_wrap_0",
+      "type": "hinge",
+      "pivot": [
+        10.775,
+        0.8269732949999999,
+        -6.35994481
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_1_splint_wrap_0_release",
+      "objectId": "splint__1",
+      "body": "splint_1_splint_wrap_0_pin",
+      "type": "slide",
+      "pivot": [
+        10.775,
+        0.819473295,
+        -6.440055190000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.023,
+      "closed": 0,
+      "open": 0.023,
+      "range": [
+        0,
+        0.023
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_1_splint_wrap_1_open",
+      "objectId": "splint__1",
+      "body": "splint_1_splint_wrap_1",
+      "type": "hinge",
+      "pivot": [
+        10.855,
+        0.8299789179999999,
+        -6.371597732000001
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_1_splint_wrap_1_release",
+      "objectId": "splint__1",
+      "body": "splint_1_splint_wrap_1_pin",
+      "type": "slide",
+      "pivot": [
+        10.855,
+        0.822478918,
+        -6.428402268
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.023,
+      "closed": 0,
+      "open": 0.023,
+      "range": [
+        0,
+        0.023
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_1_splint_wrap_2_open",
+      "objectId": "splint__1",
+      "body": "splint_1_splint_wrap_2",
+      "type": "hinge",
+      "pivot": [
+        10.985000000000001,
+        0.8335157289999999,
+        -6.341395698
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 2.6,
+      "closed": 0,
+      "open": 2.6,
+      "range": [
+        0,
+        2.6
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "splint_1_splint_wrap_2_release",
+      "objectId": "splint__1",
+      "body": "splint_1_splint_wrap_2_pin",
+      "type": "slide",
+      "pivot": [
+        10.985000000000001,
+        0.826015729,
+        -6.458604302
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 0.023,
+      "closed": 0,
+      "open": 0.023,
+      "range": [
+        0,
+        0.023
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "buckle_0_buckle_release",
+      "objectId": "buckle__0",
+      "body": "buckle_0_buckle_latch",
+      "type": "hinge",
+      "pivot": [
+        11.33,
+        0.8168,
+        -6.29
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.3,
+      "closed": 0,
+      "open": 1.3,
+      "range": [
+        0,
+        1.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "buckle_1_buckle_release",
+      "objectId": "buckle__2",
+      "body": "buckle_1_buckle_latch",
+      "type": "hinge",
+      "pivot": [
+        11.33,
+        0.8168,
+        -6.41
+      ],
+      "axis": [
+        0,
+        0,
+        -1
+      ],
+      "reference": 0,
+      "start": 0,
+      "end": 1.3,
+      "closed": 0,
+      "open": 1.3,
+      "range": [
+        0,
+        1.3
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_0",
+      "objectId": "cuff__0",
+      "body": "cuff_0_cuff_tail_0",
+      "type": "hinge",
+      "pivot": [
+        12.049999856610455,
+        0.8270219578262225,
+        -6.709570899336067
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530183890493e-15,
+        -6.439747778878969e-08
+      ],
+      "reference": -0.17503312744677796,
+      "start": -0.17503312744677796,
+      "end": 0.8,
+      "closed": -0.17503312744677796,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_1",
+      "objectId": "cuff__0",
+      "body": "cuff_0_cuff_tail_1",
+      "type": "hinge",
+      "pivot": [
+        12.049999856367908,
+        0.8168822249504948,
+        -6.713337305741235
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530192586935e-15,
+        -6.43974777887897e-08
+      ],
+      "reference": -0.26416535301773203,
+      "start": -0.26416535301773203,
+      "end": 0.8,
+      "closed": -0.26416535301773203,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": "cuff_0_cuff_tail_flex_0"
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_2",
+      "objectId": "cuff__0",
+      "body": "cuff_0_cuff_tail_2",
+      "type": "hinge",
+      "pivot": [
+        12.049999856962511,
+        0.8082366873164646,
+        -6.704103959705341
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530177874025e-15,
+        -6.439747778878972e-08
+      ],
+      "reference": -0.21281894789381398,
+      "start": -0.21281894789381398,
+      "end": 0.8,
+      "closed": -0.21281894789381398,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": "cuff_0_cuff_tail_flex_1"
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_3",
+      "objectId": "cuff__0",
+      "body": "cuff_0_cuff_tail_3",
+      "type": "hinge",
+      "pivot": [
+        12.049999857765945,
+        0.8044492076684748,
+        -6.6916277824897
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530203715605e-15,
+        -6.439747778878973e-08
+      ],
+      "reference": -0.029501356837880036,
+      "start": -0.029501356837880036,
+      "end": 0.8,
+      "closed": -0.029501356837880036,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": "cuff_0_cuff_tail_flex_2"
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_0",
+      "objectId": "cuff__1",
+      "body": "cuff_1_cuff_tail_0",
+      "type": "hinge",
+      "pivot": [
+        12.179999856610456,
+        0.8270219578262225,
+        -6.709570899336067
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530183890493e-15,
+        -6.439747778878969e-08
+      ],
+      "reference": -0.17503312744677796,
+      "start": -0.17503312744677796,
+      "end": 0.8,
+      "closed": -0.17503312744677796,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": null
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_1",
+      "objectId": "cuff__1",
+      "body": "cuff_1_cuff_tail_1",
+      "type": "hinge",
+      "pivot": [
+        12.179999856367909,
+        0.8168822249504948,
+        -6.713337305741235
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530192586935e-15,
+        -6.43974777887897e-08
+      ],
+      "reference": -0.26416535301773203,
+      "start": -0.26416535301773203,
+      "end": 0.8,
+      "closed": -0.26416535301773203,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": "cuff_1_cuff_tail_flex_0"
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_2",
+      "objectId": "cuff__1",
+      "body": "cuff_1_cuff_tail_2",
+      "type": "hinge",
+      "pivot": [
+        12.179999856962512,
+        0.8082366873164646,
+        -6.704103959705341
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530177874025e-15,
+        -6.439747778878972e-08
+      ],
+      "reference": -0.21281894789381398,
+      "start": -0.21281894789381398,
+      "end": 0.8,
+      "closed": -0.21281894789381398,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": "cuff_1_cuff_tail_flex_1"
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_3",
+      "objectId": "cuff__1",
+      "body": "cuff_1_cuff_tail_3",
+      "type": "hinge",
+      "pivot": [
+        12.179999857765946,
+        0.8044492076684748,
+        -6.6916277824897
+      ],
+      "axis": [
+        0.9999999999999979,
+        2.0321530203715605e-15,
+        -6.439747778878973e-08
+      ],
+      "reference": -0.029501356837880036,
+      "start": -0.029501356837880036,
+      "end": 0.8,
+      "closed": -0.029501356837880036,
+      "open": 0.8,
+      "range": [
+        -0.8,
+        0.8
+      ],
+      "parentJointId": "cuff_1_cuff_tail_flex_2"
+    }
+  ],
+  "previewPolicy": {
+    "method": "Preserve source geometry; exclude exterior backdrops from initial framing. Oversized architecture crossing a source-derived room footprint is partitioned into room/backdrop triangles with interpolated UVs and normals.",
+    "backdropGeoms": [],
+    "partitionedGeoms": [],
+    "planes": [
+      {
+        "geom": "hall_fixtures_0_floor_finish_plane",
+        "localFootprintMin": [
+          -7.4930974716559335,
+          -6.235015542046522
+        ],
+        "localFootprintMax": [
+          7.496915174228448,
+          5.656247506601886
+        ],
+        "basis": "Finite non-backdrop room geometry projected into source plane local coordinates; excluded from framing."
+      },
+      {
+        "geom": "hall_fixtures_0_mirror_shared_plane",
+        "localFootprintMin": [
+          -1.8793560957031332,
+          -8.960015542046524
+        ],
+        "localFootprintMax": [
+          1.5787087007402336,
+          2.931247506601887
+        ],
+        "basis": "Finite non-backdrop room geometry projected into source plane local coordinates; excluded from framing."
+      }
+    ],
+    "roomFootprintXY": null
+  },
+  "fullGeometryBounds": {
+    "min": [
+      -0.49309747165593354,
+      -0.22935609570313376,
+      -10.656247506601886
+    ],
+    "max": [
+      14.496915174228448,
+      3.228708700740234,
+      1.2350155420465256
+    ]
+  },
+  "nonrigidPreview": {
+    "added": [],
+    "unsupported": []
+  },
+  "equalityJoints": [
+    {
+      "joint1": "support_track_0_trolley_roller_turn_0",
+      "joint2": "support_track_0_trolley_travel",
+      "polycoef": "0 27.777778 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "support_track_0_trolley_roller_turn_1",
+      "joint2": "support_track_0_trolley_travel",
+      "polycoef": "0 27.777778 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "support_track_0_trolley_roller_turn_2",
+      "joint2": "support_track_0_trolley_travel",
+      "polycoef": "0 27.777778 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "support_track_0_trolley_roller_turn_3",
+      "joint2": "support_track_0_trolley_travel",
+      "polycoef": "0 27.777778 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "plinth_0_plinth_middle",
+      "joint2": "plinth_0_plinth_height",
+      "polycoef": "0 0.5 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "wheelchair_0_chair_brake_lift_0",
+      "joint2": "wheelchair_0_chair_brake_release_0",
+      "polycoef": "0 0.04375 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "wheelchair_0_chair_brake_lift_1",
+      "joint2": "wheelchair_0_chair_brake_release_1",
+      "polycoef": "0 0.04375 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "pedal_trainer_0_trainer_handle_angle_0",
+      "joint2": "pedal_trainer_0_trainer_step_0",
+      "polycoef": "0 -1.4 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "pedal_trainer_0_trainer_handle_angle_1",
+      "joint2": "pedal_trainer_0_trainer_step_1",
+      "polycoef": "0 -1.4 0 0 0",
+      "solref": "0.004 1"
+    },
+    {
+      "joint1": "pedal_trainer_0_trainer_step_1",
+      "joint2": "pedal_trainer_0_trainer_step_0",
+      "polycoef": "0 -1 0 0 0",
+      "solref": "0.004 1"
+    }
+  ],
+  "equalityConstraintCount": 13,
+  "articulations": [
+    {
+      "id": "hall_fixtures_0_entrance_open",
+      "objectId": "door__0",
+      "title": "hall fixtures 0 entrance open",
+      "clip": "hall_fixtures_0_entrance_open_motion",
+      "joints": [
+        "hall_fixtures_0_entrance_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 89.95437383553924,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_track_0_trolley_travel",
+      "objectId": "support_track__0",
+      "title": "support track 0 trolley travel",
+      "clip": "support_track_0_trolley_travel_motion",
+      "joints": [
+        "support_track_0_trolley_travel"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 229.99999999999997,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_track_0_trolley_cable_pitch",
+      "objectId": "support_track__0",
+      "title": "support track 0 trolley cable pitch",
+      "clip": "support_track_0_trolley_cable_pitch_motion",
+      "joints": [
+        "support_track_0_trolley_cable_pitch"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 31.51267873219528,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_track_0_trolley_cable_roll",
+      "objectId": "support_track__0",
+      "title": "support track 0 trolley cable roll",
+      "clip": "support_track_0_trolley_cable_roll_motion",
+      "joints": [
+        "support_track_0_trolley_cable_roll"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 31.51267873219528,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_track_0_trolley_hook_0_gate_open",
+      "objectId": "support_track__0",
+      "title": "support track 0 trolley hook 0 gate open",
+      "clip": "support_track_0_trolley_hook_0_gate_open_motion",
+      "joints": [
+        "support_track_0_trolley_hook_0_gate_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_track_0_trolley_hook_1_gate_open",
+      "objectId": "support_track__0",
+      "title": "support track 0 trolley hook 1 gate open",
+      "clip": "support_track_0_trolley_hook_1_gate_open_motion",
+      "joints": [
+        "support_track_0_trolley_hook_1_gate_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_castor_0_brake_release",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame castor 0 brake release",
+      "clip": "support_frame_0_frame_castor_0_brake_release_motion",
+      "joints": [
+        "support_frame_0_frame_castor_0_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_castor_1_brake_release",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame castor 1 brake release",
+      "clip": "support_frame_0_frame_castor_1_brake_release_motion",
+      "joints": [
+        "support_frame_0_frame_castor_1_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_castor_2_brake_release",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame castor 2 brake release",
+      "clip": "support_frame_0_frame_castor_2_brake_release_motion",
+      "joints": [
+        "support_frame_0_frame_castor_2_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_castor_3_brake_release",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame castor 3 brake release",
+      "clip": "support_frame_0_frame_castor_3_brake_release_motion",
+      "joints": [
+        "support_frame_0_frame_castor_3_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_support_frame_height",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 support frame height",
+      "clip": "support_frame_0_support_frame_height_motion",
+      "joints": [
+        "support_frame_0_support_frame_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 40,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_hook_0_gate_open",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame hook 0 gate open",
+      "clip": "support_frame_0_frame_hook_0_gate_open_motion",
+      "joints": [
+        "support_frame_0_frame_hook_0_gate_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_hook_1_gate_open",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame hook 1 gate open",
+      "clip": "support_frame_0_frame_hook_1_gate_open_motion",
+      "joints": [
+        "support_frame_0_frame_hook_1_gate_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 37.24225668350351,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_up_press",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame up press",
+      "clip": "support_frame_0_frame_up_press_motion",
+      "joints": [
+        "support_frame_0_frame_up_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "support_frame_0_frame_down_press",
+      "objectId": "support_frame__0",
+      "title": "support frame 0 frame down press",
+      "clip": "support_frame_0_frame_down_press_motion",
+      "joints": [
+        "support_frame_0_frame_down_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "treadmill_0_treadmill_control_0_press",
+      "objectId": "treadmill__0",
+      "title": "treadmill 0 treadmill control 0 press",
+      "clip": "treadmill_0_treadmill_control_0_press_motion",
+      "joints": [
+        "treadmill_0_treadmill_control_0_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "treadmill_0_treadmill_control_1_press",
+      "objectId": "treadmill__0",
+      "title": "treadmill 0 treadmill control 1 press",
+      "clip": "treadmill_0_treadmill_control_1_press_motion",
+      "joints": [
+        "treadmill_0_treadmill_control_1_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "treadmill_0_treadmill_control_2_press",
+      "objectId": "treadmill__0",
+      "title": "treadmill 0 treadmill control 2 press",
+      "clip": "treadmill_0_treadmill_control_2_press_motion",
+      "joints": [
+        "treadmill_0_treadmill_control_2_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "treadmill_0_treadmill_control_3_press",
+      "objectId": "treadmill__0",
+      "title": "treadmill 0 treadmill control 3 press",
+      "clip": "treadmill_0_treadmill_control_3_press_motion",
+      "joints": [
+        "treadmill_0_treadmill_control_3_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "treadmill_0_treadmill_control_4_press",
+      "objectId": "treadmill__0",
+      "title": "treadmill 0 treadmill control 4 press",
+      "clip": "treadmill_0_treadmill_control_4_press_motion",
+      "joints": [
+        "treadmill_0_treadmill_control_4_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "parallel_bars_0_bars_0_height",
+      "objectId": "parallel_bars__0",
+      "title": "parallel bars 0 bars 0 height",
+      "clip": "parallel_bars_0_bars_0_height_motion",
+      "joints": [
+        "parallel_bars_0_bars_0_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "parallel_bars_0_bars_0_unlock",
+      "objectId": "parallel_bars__0",
+      "title": "parallel bars 0 bars 0 unlock",
+      "clip": "parallel_bars_0_bars_0_unlock_motion",
+      "joints": [
+        "parallel_bars_0_bars_0_unlock"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "parallel_bars_0_bars_1_height",
+      "objectId": "parallel_bars__0",
+      "title": "parallel bars 0 bars 1 height",
+      "clip": "parallel_bars_0_bars_1_height_motion",
+      "joints": [
+        "parallel_bars_0_bars_1_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "parallel_bars_0_bars_1_unlock",
+      "objectId": "parallel_bars__0",
+      "title": "parallel bars 0 bars 1 unlock",
+      "clip": "parallel_bars_0_bars_1_unlock_motion",
+      "joints": [
+        "parallel_bars_0_bars_1_unlock"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "training_stairs_0_stairs_0_height",
+      "objectId": "training_stairs__0",
+      "title": "training stairs 0 stairs 0 height",
+      "clip": "training_stairs_0_stairs_0_height_motion",
+      "joints": [
+        "training_stairs_0_stairs_0_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "training_stairs_0_stairs_0_unlock",
+      "objectId": "training_stairs__0",
+      "title": "training stairs 0 stairs 0 unlock",
+      "clip": "training_stairs_0_stairs_0_unlock_motion",
+      "joints": [
+        "training_stairs_0_stairs_0_unlock"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "training_stairs_0_stairs_1_height",
+      "objectId": "training_stairs__0",
+      "title": "training stairs 0 stairs 1 height",
+      "clip": "training_stairs_0_stairs_1_height_motion",
+      "joints": [
+        "training_stairs_0_stairs_1_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "training_stairs_0_stairs_1_unlock",
+      "objectId": "training_stairs__0",
+      "title": "training stairs 0 stairs 1 unlock",
+      "clip": "training_stairs_0_stairs_1_unlock_motion",
+      "joints": [
+        "training_stairs_0_stairs_1_unlock"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ramp_0_ramp_0_height",
+      "objectId": "ramp__0",
+      "title": "ramp 0 ramp 0 height",
+      "clip": "ramp_0_ramp_0_height_motion",
+      "joints": [
+        "ramp_0_ramp_0_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ramp_0_ramp_0_unlock",
+      "objectId": "ramp__0",
+      "title": "ramp 0 ramp 0 unlock",
+      "clip": "ramp_0_ramp_0_unlock_motion",
+      "joints": [
+        "ramp_0_ramp_0_unlock"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ramp_0_ramp_1_height",
+      "objectId": "ramp__0",
+      "title": "ramp 0 ramp 1 height",
+      "clip": "ramp_0_ramp_1_height_motion",
+      "joints": [
+        "ramp_0_ramp_1_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "ramp_0_ramp_1_unlock",
+      "objectId": "ramp__0",
+      "title": "ramp 0 ramp 1 unlock",
+      "clip": "ramp_0_ramp_1_unlock_motion",
+      "joints": [
+        "ramp_0_ramp_1_unlock"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "plinth_0_plinth_backrest_angle",
+      "objectId": "plinth__0",
+      "title": "plinth 0 plinth backrest angle",
+      "clip": "plinth_0_plinth_backrest_angle_motion",
+      "joints": [
+        "plinth_0_plinth_backrest_angle"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 74.48451336700703,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "plinth_0_plinth_gas_pivot",
+      "objectId": "plinth__0",
+      "title": "plinth 0 plinth gas pivot",
+      "clip": "plinth_0_plinth_gas_pivot_motion",
+      "joints": [
+        "plinth_0_plinth_gas_pivot"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 91.67324722093173,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "plinth_0_plinth_gas_extension",
+      "objectId": "plinth__0",
+      "title": "plinth 0 plinth gas extension",
+      "clip": "plinth_0_plinth_gas_extension_motion",
+      "joints": [
+        "plinth_0_plinth_gas_extension"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 25,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "plinth_0_plinth_up_press",
+      "objectId": "plinth__0",
+      "title": "plinth 0 plinth up press",
+      "clip": "plinth_0_plinth_up_press_motion",
+      "joints": [
+        "plinth_0_plinth_up_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.8999999999999999,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "plinth_0_plinth_down_press",
+      "objectId": "plinth__0",
+      "title": "plinth 0 plinth down press",
+      "clip": "plinth_0_plinth_down_press_motion",
+      "joints": [
+        "plinth_0_plinth_down_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.8999999999999999,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "wheelchair_0_chair_arm_flip_0",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair arm flip 0",
+      "clip": "wheelchair_0_chair_arm_flip_0_motion",
+      "joints": [
+        "wheelchair_0_chair_arm_flip_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 94.53803619658582,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "wheelchair_0_chair_footrest_swing_0",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair footrest swing 0",
+      "clip": "wheelchair_0_chair_footrest_swing_0_motion",
+      "joints": [
+        "wheelchair_0_chair_footrest_swing_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 91.67324722093173,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "wheelchair_0_chair_footplate_flip_0",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair footplate flip 0",
+      "clip": "wheelchair_0_chair_footplate_flip_0_motion",
+      "joints": [
+        "wheelchair_0_chair_footplate_flip_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 88.8084582452776,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "wheelchair_0_chair_arm_flip_1",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair arm flip 1",
+      "clip": "wheelchair_0_chair_arm_flip_1_motion",
+      "joints": [
+        "wheelchair_0_chair_arm_flip_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 94.53803619658582,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "wheelchair_0_chair_footrest_swing_1",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair footrest swing 1",
+      "clip": "wheelchair_0_chair_footrest_swing_1_motion",
+      "joints": [
+        "wheelchair_0_chair_footrest_swing_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 91.67324722093173,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "wheelchair_0_chair_footplate_flip_1",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair footplate flip 1",
+      "clip": "wheelchair_0_chair_footplate_flip_1_motion",
+      "joints": [
+        "wheelchair_0_chair_footplate_flip_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 88.8084582452776,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_fold_0",
+      "objectId": "walker__0",
+      "title": "walker 0 walker fold 0",
+      "clip": "walker_0_walker_fold_0_motion",
+      "joints": [
+        "walker_0_walker_fold_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 89.99999846476551,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_0_0_extension",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 0 0 extension",
+      "clip": "walker_0_walker_leg_0_0_extension_motion",
+      "joints": [
+        "walker_0_walker_leg_0_0_extension"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 15,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_0_0_release",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 0 0 release",
+      "clip": "walker_0_walker_leg_0_0_release_motion",
+      "joints": [
+        "walker_0_walker_leg_0_0_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_0_1_extension",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 0 1 extension",
+      "clip": "walker_0_walker_leg_0_1_extension_motion",
+      "joints": [
+        "walker_0_walker_leg_0_1_extension"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 15,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_0_1_release",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 0 1 release",
+      "clip": "walker_0_walker_leg_0_1_release_motion",
+      "joints": [
+        "walker_0_walker_leg_0_1_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_fold_release_0",
+      "objectId": "walker__0",
+      "title": "walker 0 walker fold release 0",
+      "clip": "walker_0_walker_fold_release_0_motion",
+      "joints": [
+        "walker_0_walker_fold_release_0"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 4.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_fold_1",
+      "objectId": "walker__0",
+      "title": "walker 0 walker fold 1",
+      "clip": "walker_0_walker_fold_1_motion",
+      "joints": [
+        "walker_0_walker_fold_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 89.99999846476551,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_1_0_extension",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 1 0 extension",
+      "clip": "walker_0_walker_leg_1_0_extension_motion",
+      "joints": [
+        "walker_0_walker_leg_1_0_extension"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 15,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_1_0_release",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 1 0 release",
+      "clip": "walker_0_walker_leg_1_0_release_motion",
+      "joints": [
+        "walker_0_walker_leg_1_0_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_1_1_extension",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 1 1 extension",
+      "clip": "walker_0_walker_leg_1_1_extension_motion",
+      "joints": [
+        "walker_0_walker_leg_1_1_extension"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 15,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_leg_1_1_release",
+      "objectId": "walker__0",
+      "title": "walker 0 walker leg 1 1 release",
+      "clip": "walker_0_walker_leg_1_1_release_motion",
+      "joints": [
+        "walker_0_walker_leg_1_1_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "walker_0_walker_fold_release_1",
+      "objectId": "walker__0",
+      "title": "walker 0 walker fold release 1",
+      "clip": "walker_0_walker_fold_release_1_motion",
+      "joints": [
+        "walker_0_walker_fold_release_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 4.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "workbench_0_drawer_0_slide",
+      "objectId": "workbench__0",
+      "title": "workbench 0 drawer 0 slide",
+      "clip": "workbench_0_drawer_0_slide_motion",
+      "joints": [
+        "workbench_0_drawer_0_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "workbench_0_drawer_1_slide",
+      "objectId": "workbench__0",
+      "title": "workbench 0 drawer 1 slide",
+      "clip": "workbench_0_drawer_1_slide_motion",
+      "joints": [
+        "workbench_0_drawer_1_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "workbench_0_drawer_2_slide",
+      "objectId": "workbench__0",
+      "title": "workbench 0 drawer 2 slide",
+      "clip": "workbench_0_drawer_2_slide_motion",
+      "joints": [
+        "workbench_0_drawer_2_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 42,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_reach",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer reach",
+      "clip": "pedal_trainer_0_trainer_reach_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_reach"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_reach_release",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer reach release",
+      "clip": "pedal_trainer_0_trainer_reach_release_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_reach_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 6,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_0_strap_open",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer foot 0 strap open",
+      "clip": "pedal_trainer_0_trainer_foot_0_strap_open_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_foot_0_strap_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 100.26761414789407,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_0_strap_release",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer foot 0 strap release",
+      "clip": "pedal_trainer_0_trainer_foot_0_strap_release_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_foot_0_strap_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 6,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_1_strap_open",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer foot 1 strap open",
+      "clip": "pedal_trainer_0_trainer_foot_1_strap_open_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_foot_1_strap_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 100.26761414789407,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_foot_1_strap_release",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer foot 1 strap release",
+      "clip": "pedal_trainer_0_trainer_foot_1_strap_release_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_foot_1_strap_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 6,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_control_0_press",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer control 0 press",
+      "clip": "pedal_trainer_0_trainer_control_0_press_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_control_0_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_control_1_press",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer control 1 press",
+      "clip": "pedal_trainer_0_trainer_control_1_press_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_control_1_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_control_2_press",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer control 2 press",
+      "clip": "pedal_trainer_0_trainer_control_2_press_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_control_2_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_height",
+      "objectId": "arm_ergometer__0",
+      "title": "arm ergometer 0 ergometer height",
+      "clip": "arm_ergometer_0_ergometer_height_motion",
+      "joints": [
+        "arm_ergometer_0_ergometer_height"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 24,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_control_press",
+      "objectId": "arm_ergometer__0",
+      "title": "arm ergometer 0 ergometer control press",
+      "clip": "arm_ergometer_0_ergometer_control_press_motion",
+      "joints": [
+        "arm_ergometer_0_ergometer_control_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_unlock",
+      "objectId": "arm_ergometer__0",
+      "title": "arm ergometer 0 ergometer unlock",
+      "clip": "arm_ergometer_0_ergometer_unlock_motion",
+      "joints": [
+        "arm_ergometer_0_ergometer_unlock"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 8,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "shoulder_wheel_0_shoulder_rotation",
+      "objectId": "shoulder_wheel__0",
+      "title": "shoulder wheel 0 shoulder rotation",
+      "clip": "shoulder_wheel_0_shoulder_rotation_motion",
+      "joints": [
+        "shoulder_wheel_0_shoulder_rotation"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 359.817495342157,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "shoulder_wheel_0_shoulder_grip_radius",
+      "objectId": "shoulder_wheel__0",
+      "title": "shoulder wheel 0 shoulder grip radius",
+      "clip": "shoulder_wheel_0_shoulder_grip_radius_motion",
+      "joints": [
+        "shoulder_wheel_0_shoulder_grip_radius"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 18,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "kitchen_0_kitchen_door_0_open",
+      "objectId": "cabinet__0",
+      "title": "kitchen 0 kitchen door 0 open",
+      "clip": "kitchen_0_kitchen_door_0_open_motion",
+      "joints": [
+        "kitchen_0_kitchen_door_0_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 80.21409131831524,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "kitchen_0_kitchen_door_1_open",
+      "objectId": "cabinet__0",
+      "title": "kitchen 0 kitchen door 1 open",
+      "clip": "kitchen_0_kitchen_door_1_open_motion",
+      "joints": [
+        "kitchen_0_kitchen_door_1_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 80.21409131831524,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "kitchen_0_kitchen_door_2_open",
+      "objectId": "cabinet__0",
+      "title": "kitchen 0 kitchen door 2 open",
+      "clip": "kitchen_0_kitchen_door_2_open_motion",
+      "joints": [
+        "kitchen_0_kitchen_door_2_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 80.21409131831524,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "kitchen_0_kitchen_door_3_open",
+      "objectId": "cabinet__0",
+      "title": "kitchen 0 kitchen door 3 open",
+      "clip": "kitchen_0_kitchen_door_3_open_motion",
+      "joints": [
+        "kitchen_0_kitchen_door_3_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 80.21409131831524,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "kitchen_0_kitchen_drawer_slide",
+      "objectId": "cabinet__0",
+      "title": "kitchen 0 kitchen drawer slide",
+      "clip": "kitchen_0_kitchen_drawer_slide_motion",
+      "joints": [
+        "kitchen_0_kitchen_drawer_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 45,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "kitchen_0_kitchen_faucet_turn",
+      "objectId": "sink__0",
+      "title": "kitchen 0 kitchen faucet turn",
+      "clip": "kitchen_0_kitchen_faucet_turn_motion",
+      "joints": [
+        "kitchen_0_kitchen_faucet_turn"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 85.94366926962348,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "washing_machine_0_washer_door_open",
+      "objectId": "washing_machine__0",
+      "title": "washing machine 0 washer door open",
+      "clip": "washing_machine_0_washer_door_open_motion",
+      "joints": [
+        "washing_machine_0_washer_door_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "washing_machine_0_washer_selector_turn",
+      "objectId": "washing_machine__0",
+      "title": "washing machine 0 washer selector turn",
+      "clip": "washing_machine_0_washer_selector_turn_motion",
+      "joints": [
+        "washing_machine_0_washer_selector_turn"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 143.2394487827058,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "washing_machine_0_washer_button_0_press",
+      "objectId": "washing_machine__0",
+      "title": "washing machine 0 washer button 0 press",
+      "clip": "washing_machine_0_washer_button_0_press_motion",
+      "joints": [
+        "washing_machine_0_washer_button_0_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "washing_machine_0_washer_button_1_press",
+      "objectId": "washing_machine__0",
+      "title": "washing machine 0 washer button 1 press",
+      "clip": "washing_machine_0_washer_button_1_press_motion",
+      "joints": [
+        "washing_machine_0_washer_button_1_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "washing_machine_0_washer_detergent_slide",
+      "objectId": "washing_machine__0",
+      "title": "washing machine 0 washer detergent slide",
+      "clip": "washing_machine_0_washer_detergent_slide_motion",
+      "joints": [
+        "washing_machine_0_washer_detergent_slide"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 22,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dryer_0_dryer_door_open",
+      "objectId": "dryer__0",
+      "title": "dryer 0 dryer door open",
+      "clip": "dryer_0_dryer_door_open_motion",
+      "joints": [
+        "dryer_0_dryer_door_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 83.07888029396936,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dryer_0_dryer_selector_turn",
+      "objectId": "dryer__0",
+      "title": "dryer 0 dryer selector turn",
+      "clip": "dryer_0_dryer_selector_turn_motion",
+      "joints": [
+        "dryer_0_dryer_selector_turn"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 143.2394487827058,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dryer_0_dryer_button_0_press",
+      "objectId": "dryer__0",
+      "title": "dryer 0 dryer button 0 press",
+      "clip": "dryer_0_dryer_button_0_press_motion",
+      "joints": [
+        "dryer_0_dryer_button_0_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "dryer_0_dryer_button_1_press",
+      "objectId": "dryer__0",
+      "title": "dryer 0 dryer button 1 press",
+      "clip": "dryer_0_dryer_button_1_press_motion",
+      "joints": [
+        "dryer_0_dryer_button_1_press"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 0.4,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart_0_cart_castor_0_brake_release",
+      "objectId": "cart__0",
+      "title": "cart 0 cart castor 0 brake release",
+      "clip": "cart_0_cart_castor_0_brake_release_motion",
+      "joints": [
+        "cart_0_cart_castor_0_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart_0_cart_castor_1_brake_release",
+      "objectId": "cart__0",
+      "title": "cart 0 cart castor 1 brake release",
+      "clip": "cart_0_cart_castor_1_brake_release_motion",
+      "joints": [
+        "cart_0_cart_castor_1_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart_0_cart_castor_2_brake_release",
+      "objectId": "cart__0",
+      "title": "cart 0 cart castor 2 brake release",
+      "clip": "cart_0_cart_castor_2_brake_release_motion",
+      "joints": [
+        "cart_0_cart_castor_2_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cart_0_cart_castor_3_brake_release",
+      "objectId": "cart__0",
+      "title": "cart 0 cart castor 3 brake release",
+      "clip": "cart_0_cart_castor_3_brake_release_motion",
+      "joints": [
+        "cart_0_cart_castor_3_brake_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.5,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "harness_0_harness_open",
+      "objectId": "harness__0",
+      "title": "harness 0 harness open",
+      "clip": "harness_0_harness_open_motion",
+      "joints": [
+        "harness_0_harness_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 42.97183463481174,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "harness_0_harness_open_left",
+      "objectId": "harness__0",
+      "title": "harness 0 harness open left",
+      "clip": "harness_0_harness_open_left_motion",
+      "joints": [
+        "harness_0_harness_open_left"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 42.97183463481174,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "harness_0_harness_release",
+      "objectId": "harness__0",
+      "title": "harness 0 harness release",
+      "clip": "harness_0_harness_release_motion",
+      "joints": [
+        "harness_0_harness_release"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 74.48451336700703,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "harness_0_harness_sway_0",
+      "objectId": "harness__0",
+      "title": "harness 0 harness sway 0",
+      "clip": "harness_0_harness_sway_0_motion",
+      "joints": [
+        "harness_0_harness_sway_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 20.05352282957881,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "harness_0_harness_sway_1",
+      "objectId": "harness__0",
+      "title": "harness 0 harness sway 1",
+      "clip": "harness_0_harness_sway_1_motion",
+      "joints": [
+        "harness_0_harness_sway_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 20.05352282957881,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_0_splint_wrap_0_open",
+      "objectId": "splint__0",
+      "title": "splint 0 splint wrap 0 open",
+      "clip": "splint_0_splint_wrap_0_open_motion",
+      "joints": [
+        "splint_0_splint_wrap_0_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_0_splint_wrap_0_release",
+      "objectId": "splint__0",
+      "title": "splint 0 splint wrap 0 release",
+      "clip": "splint_0_splint_wrap_0_release_motion",
+      "joints": [
+        "splint_0_splint_wrap_0_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_0_splint_wrap_1_open",
+      "objectId": "splint__0",
+      "title": "splint 0 splint wrap 1 open",
+      "clip": "splint_0_splint_wrap_1_open_motion",
+      "joints": [
+        "splint_0_splint_wrap_1_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_0_splint_wrap_1_release",
+      "objectId": "splint__0",
+      "title": "splint 0 splint wrap 1 release",
+      "clip": "splint_0_splint_wrap_1_release_motion",
+      "joints": [
+        "splint_0_splint_wrap_1_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_0_splint_wrap_2_open",
+      "objectId": "splint__0",
+      "title": "splint 0 splint wrap 2 open",
+      "clip": "splint_0_splint_wrap_2_open_motion",
+      "joints": [
+        "splint_0_splint_wrap_2_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_0_splint_wrap_2_release",
+      "objectId": "splint__0",
+      "title": "splint 0 splint wrap 2 release",
+      "clip": "splint_0_splint_wrap_2_release_motion",
+      "joints": [
+        "splint_0_splint_wrap_2_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_1_splint_wrap_0_open",
+      "objectId": "splint__1",
+      "title": "splint 1 splint wrap 0 open",
+      "clip": "splint_1_splint_wrap_0_open_motion",
+      "joints": [
+        "splint_1_splint_wrap_0_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_1_splint_wrap_0_release",
+      "objectId": "splint__1",
+      "title": "splint 1 splint wrap 0 release",
+      "clip": "splint_1_splint_wrap_0_release_motion",
+      "joints": [
+        "splint_1_splint_wrap_0_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_1_splint_wrap_1_open",
+      "objectId": "splint__1",
+      "title": "splint 1 splint wrap 1 open",
+      "clip": "splint_1_splint_wrap_1_open_motion",
+      "joints": [
+        "splint_1_splint_wrap_1_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_1_splint_wrap_1_release",
+      "objectId": "splint__1",
+      "title": "splint 1 splint wrap 1 release",
+      "clip": "splint_1_splint_wrap_1_release_motion",
+      "joints": [
+        "splint_1_splint_wrap_1_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_1_splint_wrap_2_open",
+      "objectId": "splint__1",
+      "title": "splint 1 splint wrap 2 open",
+      "clip": "splint_1_splint_wrap_2_open_motion",
+      "joints": [
+        "splint_1_splint_wrap_2_open"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 148.96902673401405,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "splint_1_splint_wrap_2_release",
+      "objectId": "splint__1",
+      "title": "splint 1 splint wrap 2 release",
+      "clip": "splint_1_splint_wrap_2_release_motion",
+      "joints": [
+        "splint_1_splint_wrap_2_release"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 2.3,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "buckle_0_buckle_release",
+      "objectId": "buckle__0",
+      "title": "buckle 0 buckle release",
+      "clip": "buckle_0_buckle_release_motion",
+      "joints": [
+        "buckle_0_buckle_release"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 74.48451336700703,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "buckle_1_buckle_release",
+      "objectId": "buckle__2",
+      "title": "buckle 1 buckle release",
+      "clip": "buckle_1_buckle_release_motion",
+      "joints": [
+        "buckle_1_buckle_release"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 74.48451336700703,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_0",
+      "objectId": "cuff__0",
+      "title": "cuff 0 cuff tail flex 0",
+      "clip": "cuff_0_cuff_tail_flex_0_motion",
+      "joints": [
+        "cuff_0_cuff_tail_flex_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 55.865283088141695,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_1",
+      "objectId": "cuff__0",
+      "title": "cuff 0 cuff tail flex 1",
+      "clip": "cuff_0_cuff_tail_flex_1_motion",
+      "joints": [
+        "cuff_0_cuff_tail_flex_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 60.972183431965384,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_2",
+      "objectId": "cuff__0",
+      "title": "cuff 0 cuff tail flex 2",
+      "clip": "cuff_0_cuff_tail_flex_2_motion",
+      "joints": [
+        "cuff_0_cuff_tail_flex_2"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 58.03025112519599,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_0_cuff_tail_flex_3",
+      "objectId": "cuff__0",
+      "title": "cuff 0 cuff tail flex 3",
+      "clip": "cuff_0_cuff_tail_flex_3_motion",
+      "joints": [
+        "cuff_0_cuff_tail_flex_3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 47.5269268471858,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_0",
+      "objectId": "cuff__1",
+      "title": "cuff 1 cuff tail flex 0",
+      "clip": "cuff_1_cuff_tail_flex_0_motion",
+      "joints": [
+        "cuff_1_cuff_tail_flex_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 55.865283088141695,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_1",
+      "objectId": "cuff__1",
+      "title": "cuff 1 cuff tail flex 1",
+      "clip": "cuff_1_cuff_tail_flex_1_motion",
+      "joints": [
+        "cuff_1_cuff_tail_flex_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 60.972183431965384,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_2",
+      "objectId": "cuff__1",
+      "title": "cuff 1 cuff tail flex 2",
+      "clip": "cuff_1_cuff_tail_flex_2_motion",
+      "joints": [
+        "cuff_1_cuff_tail_flex_2"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 58.03025112519599,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "cuff_1_cuff_tail_flex_3",
+      "objectId": "cuff__1",
+      "title": "cuff 1 cuff tail flex 3",
+      "clip": "cuff_1_cuff_tail_flex_3_motion",
+      "joints": [
+        "cuff_1_cuff_tail_flex_3"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 47.5269268471858,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit"
+    },
+    {
+      "id": "pedal_trainer_0_trainer_step_0",
+      "objectId": "pedal_trainer__0",
+      "title": "pedal trainer 0 trainer step 0 (linked parts)",
+      "clip": "pedal_trainer_0_trainer_step_0_motion",
+      "joints": [
+        "pedal_trainer_0_trainer_step_0",
+        "pedal_trainer_0_trainer_handle_angle_0",
+        "pedal_trainer_0_trainer_step_1",
+        "pedal_trainer_0_trainer_handle_angle_1"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 12,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "pedal_trainer_0_trainer_step_0": 0.12,
+        "pedal_trainer_0_trainer_handle_angle_0": -0.16799999999999998,
+        "pedal_trainer_0_trainer_step_1": -0.12,
+        "pedal_trainer_0_trainer_handle_angle_1": 0.16799999999999998
+      },
+      "linked": true,
+      "couplingGains": {
+        "pedal_trainer_0_trainer_step_0": 1,
+        "pedal_trainer_0_trainer_handle_angle_0": -1.4,
+        "pedal_trainer_0_trainer_step_1": -1,
+        "pedal_trainer_0_trainer_handle_angle_1": 1.4
+      }
+    },
+    {
+      "id": "plinth_0_plinth_height",
+      "objectId": "plinth__0",
+      "title": "plinth 0 plinth height (linked parts)",
+      "clip": "plinth_0_plinth_height_motion",
+      "joints": [
+        "plinth_0_plinth_height",
+        "plinth_0_plinth_middle"
+      ],
+      "kind": "slide",
+      "unit": "cm",
+      "travel": 39,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "plinth_0_plinth_height": 0.39,
+        "plinth_0_plinth_middle": 0.195
+      },
+      "linked": true,
+      "couplingGains": {
+        "plinth_0_plinth_height": 1,
+        "plinth_0_plinth_middle": 0.5
+      }
+    },
+    {
+      "id": "wheelchair_0_chair_brake_release_0",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair brake release 0 (linked parts)",
+      "clip": "wheelchair_0_chair_brake_release_0_motion",
+      "joints": [
+        "wheelchair_0_chair_brake_release_0",
+        "wheelchair_0_chair_brake_lift_0"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 45.836623610465864,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "wheelchair_0_chair_brake_release_0": 0.8,
+        "wheelchair_0_chair_brake_lift_0": 0.034999999999999996
+      },
+      "linked": true,
+      "couplingGains": {
+        "wheelchair_0_chair_brake_release_0": 1,
+        "wheelchair_0_chair_brake_lift_0": 0.04375
+      }
+    },
+    {
+      "id": "wheelchair_0_chair_brake_release_1",
+      "objectId": "wheelchair__0",
+      "title": "wheelchair 0 chair brake release 1 (linked parts)",
+      "clip": "wheelchair_0_chair_brake_release_1_motion",
+      "joints": [
+        "wheelchair_0_chair_brake_release_1",
+        "wheelchair_0_chair_brake_lift_1"
+      ],
+      "kind": "hinge",
+      "unit": "degrees",
+      "travel": 45.836623610465864,
+      "initialFraction": 0,
+      "startLabel": "Initial",
+      "endLabel": "Limit",
+      "motionTargets": {
+        "wheelchair_0_chair_brake_release_1": 0.8,
+        "wheelchair_0_chair_brake_lift_1": 0.034999999999999996
+      },
+      "linked": true,
+      "couplingGains": {
+        "wheelchair_0_chair_brake_release_1": 1,
+        "wheelchair_0_chair_brake_lift_1": 0.04375
+      }
+    }
+  ],
+  "unsupportedJoints": [
+    {
+      "id": "support_track_0_trolley_roller_turn_0",
+      "body": "support_track_0_trolley_roller_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_track_0_trolley_roller_turn_1",
+      "body": "support_track_0_trolley_roller_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_track_0_trolley_roller_turn_2",
+      "body": "support_track_0_trolley_roller_2",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_track_0_trolley_roller_turn_3",
+      "body": "support_track_0_trolley_roller_3",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_0_swivel_angle",
+      "body": "support_frame_0_frame_castor_0_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_0_roll",
+      "body": "support_frame_0_frame_castor_0_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_1_swivel_angle",
+      "body": "support_frame_0_frame_castor_1_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_1_roll",
+      "body": "support_frame_0_frame_castor_1_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_2_swivel_angle",
+      "body": "support_frame_0_frame_castor_2_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_2_roll",
+      "body": "support_frame_0_frame_castor_2_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_3_swivel_angle",
+      "body": "support_frame_0_frame_castor_3_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "support_frame_0_frame_castor_3_roll",
+      "body": "support_frame_0_frame_castor_3_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "treadmill_0_treadmill_transport_roll_0",
+      "body": "treadmill_0_treadmill_transport_wheel_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "treadmill_0_treadmill_transport_roll_1",
+      "body": "treadmill_0_treadmill_transport_wheel_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheelchair_0_chair_rear_roll_0",
+      "body": "wheelchair_0_chair_rear_wheel_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheelchair_0_chair_caster_swivel_0",
+      "body": "wheelchair_0_chair_caster_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheelchair_0_chair_front_roll_0",
+      "body": "wheelchair_0_chair_front_wheel_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheelchair_0_chair_rear_roll_1",
+      "body": "wheelchair_0_chair_rear_wheel_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheelchair_0_chair_caster_swivel_1",
+      "body": "wheelchair_0_chair_caster_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "wheelchair_0_chair_front_roll_1",
+      "body": "wheelchair_0_chair_front_wheel_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_rotation",
+      "body": "arm_ergometer_0_ergometer_crank",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_handle_spin_0",
+      "body": "arm_ergometer_0_ergometer_grip_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "arm_ergometer_0_ergometer_handle_spin_1",
+      "body": "arm_ergometer_0_ergometer_grip_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "washing_machine_0_washer_drum_turn",
+      "body": "washing_machine_0_washer_drum",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "dryer_0_dryer_drum_turn",
+      "body": "dryer_0_dryer_drum",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_0_swivel_angle",
+      "body": "cart_0_cart_castor_0_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_0_roll",
+      "body": "cart_0_cart_castor_0_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_1_swivel_angle",
+      "body": "cart_0_cart_castor_1_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_1_roll",
+      "body": "cart_0_cart_castor_1_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_2_swivel_angle",
+      "body": "cart_0_cart_castor_2_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_2_roll",
+      "body": "cart_0_cart_castor_2_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_3_swivel_angle",
+      "body": "cart_0_cart_castor_3_swivel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "cart_0_cart_castor_3_roll",
+      "body": "cart_0_cart_castor_3_wheel",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "harness_0_harness_riser_flex_0_0",
+      "body": "harness_0_harness_front_riser_0_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "harness_0_harness_riser_flex_0_1",
+      "body": "harness_0_harness_front_riser_0_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "harness_0_harness_riser_flex_1_0",
+      "body": "harness_0_harness_front_riser_1_0",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    },
+    {
+      "id": "harness_0_harness_riser_flex_1_1",
+      "body": "harness_0_harness_front_riser_1_1",
+      "reason": "Unlimited or non-hinge/slide joint; no bounded preview clip"
+    }
+  ],
+  "mainViewCount": 8,
+  "extraViewCount": 16,
+  "jointCouplings": {
+    "linearEqualities": 6,
+    "linkedClips": 4,
+    "unsupported": [
+      {
+        "joint1": "support_track_0_trolley_roller_turn_0",
+        "joint2": "support_track_0_trolley_travel",
+        "polycoef": "0 27.777778 0 0 0",
+        "solref": "0.004 1"
+      },
+      {
+        "joint1": "support_track_0_trolley_roller_turn_1",
+        "joint2": "support_track_0_trolley_travel",
+        "polycoef": "0 27.777778 0 0 0",
+        "solref": "0.004 1"
+      },
+      {
+        "joint1": "support_track_0_trolley_roller_turn_2",
+        "joint2": "support_track_0_trolley_travel",
+        "polycoef": "0 27.777778 0 0 0",
+        "solref": "0.004 1"
+      },
+      {
+        "joint1": "support_track_0_trolley_roller_turn_3",
+        "joint2": "support_track_0_trolley_travel",
+        "polycoef": "0 27.777778 0 0 0",
+        "solref": "0.004 1"
+      }
+    ],
+    "method": "Source zero-offset linear equalities, evaluated relative to each joint qpos0; common range intersection."
+  },
+  "modelBytes": 4643885,
+  "sourcePicturesArchiveSha256": "3a220c4584c8b80bb3eac4b53ed5ccdf632f8c7b927753958f217f3fbf4625b8",
+  "sourceRevision": "0914d3123cff7e77b0ce76bcd6e91f7b22d77c27",
+  "sourceArchiveSha256": "3b31683192005df3ca6d5720830ac70ce48c4dcb5bc2daee936a4fe31131a50e",
+  "modelParts": [
+    "assets/rooms/rehab-center-001/room.gzip-01.bin"
+  ],
+  "modelEncoding": "gzip",
+  "decodedModelBytes": 7536324,
+  "decodedModelSha256": "7c69efaed31639aa828f4ea8168d38295903da1a7de8558e0a8fe994f2f2aab0",
+  "referenceImagePolicy": "Full-resolution WebP previews; quality 98 with lossless fallback below 38 dB PSNR. Original images remain in the linked source pictures.zip.",
+  "taskCards": "assets/rooms/rehab-center-001/tasks/manifest.json"
+}
