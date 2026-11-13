@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Yani Zhang<sup>1&ast;</sup>, Xinyu Wang<sup>1&ast;</sup>, Hanwei Wu<sup>1&ast;</sup>, Jindu Wang<sup>1</sup>, Wenkai Li<sup>1</sup>, Siyuan Luo<sup>1</sup>, Zonglin Di<sup>2</sup>, Yiyou Sun<sup>2</sup>, Yi Zhu<sup>1†</sup>
+  Yani Zhang<sup>1&ast;</sup>, Xinyu Wang<sup>1&ast;</sup>, Hanwei Wu<sup>1&ast;</sup>, Jindu Wang<sup>1</sup>, Siyuan Luo<sup>1</sup>, Jason Pho<sup>1</sup>, Zonglin Di<sup>2</sup>, Yiyou Sun<sup>2</sup>, Yi Zhu<sup>1†</sup>
 </p>
 <p align="center">
   <sup>1</sup>Prana Labs &nbsp;&nbsp;&nbsp; <sup>2</sup>University of California, Berkeley
@@ -542,7 +542,7 @@ The words this page uses, in the order a run meets them.
 ```bibtex
 @article{zhang20263dscenebench,
   title   = {3DSceneBench: Can Coding Agents Build Functional and Versatile 3D Worlds?},
-  author  = {Zhang, Yani and Wang, Xinyu and Wu, Hanwei and Wang, Jindu and Li, Wenkai and Luo, Siyuan and
+  author  = {Zhang, Yani and Wang, Xinyu and Wu, Hanwei and Wang, Jindu and Luo, Siyuan and Pho, Jason and
              Di, Zonglin and Sun, Yiyou and Zhu, Yi},
   journal = {arXiv preprint},
   year    = {2026}
