@@ -308,7 +308,7 @@ function cases() {
    same recorded test together. A row of examples to pick from; the first starts when the section scrolls into view. */
 const DUELS = [
   { name: 'The stock pot', head: 'carries', scene: 'f6-commercial-kitchen-001', task: 'stock_pot_to_burner', world: 'kitchen-gemini', back: 1.7,
-    truth: 'The pot is taken off the shelf and set on the burner.', agent: 'The pot is not pulled clear of the shelf. It ends 3.5 m from the burner.', who: 'Commercial kitchen · Gemini 4 · appearance 67.9' },
+    truth: 'The pot is taken off the shelf and set on the burner.', agent: 'The pot is not pulled clear of the shelf. It ends 3.5 m from the burner.', who: 'Commercial kitchen · Gemini 4.0 Argon · appearance 67.9' },
   { name: 'The supply drawer', head: 'holds', scene: 'delivery-room-001', task: 'access_warmer_storage', world: 'delivery-astra', back: 1.6,
     truth: 'The warmer rises, the drawer opens with its boxes, and closes.', agent: 'The warmer never rises. None of the four steps is completed.', who: 'Delivery room · GPT-6 Astra, max effort · appearance 85.7' },
   { name: 'The mail folder', head: 'comes out', scene: 'school-front-office-001', task: 'distribute_mail_folder', world: 'school-kimi', back: 1.6,
