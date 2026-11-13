@@ -19,3 +19,6 @@ appearance_ref_*/
 
 # the downloaded benchmark (harbor download), when it is fetched into the repository root
 /3dscenebench/
+/3dscenebench-mini/
+# the README's self-check folder
+/selfcheck/

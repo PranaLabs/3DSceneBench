@@ -16,3 +16,8 @@ results
 /tasks/
 /jobs/
 /trials/
+# the downloaded benchmark (harbor download) and the README's self-check folder, when they sit in the repository root:
+# they hold reference rooms, and the images need none of them
+/3dscenebench/
+/3dscenebench-mini/
+/selfcheck/
