@@ -1,6 +1,6 @@
 /* The 3D scene gallery. Loads the browser models of the ten rooms already shown in the room explorer
    (scenes/assets, see README) and lets a visitor orbit them, open their moving parts and find each task. */
-import { buildRigidReplay } from './rigid-replay.js?v=20261113035012';
+import { buildRigidReplay } from './rigid-replay.js?v=20261113085748';
 import * as THREE from 'three';
 import { OrbitControls } from '../scenes/vendor/OrbitControls.js';
 import { GLTFLoader } from '../scenes/vendor/GLTFLoader.js';
