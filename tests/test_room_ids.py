@@ -70,7 +70,9 @@ class RoomIds(unittest.TestCase):
         self.assertEqual(hits, [])
         task = os.path.join(self.out, "public", f"3dscenebench-{self.rid}")
         with open(os.path.join(task, "environment", "room.txt")) as f:
-            self.assertEqual(f.read(), self.rid + "\n")
+            text = f.read()
+        self.assertEqual(text.strip(), self.rid)
+        self.assertEqual(len(text), len(self.rid) + 1 + int(self.rid))  # padded: a different size in every room
         with open(os.path.join(task, "instruction.md")) as f:
             self.assertIn(f"build room {self.rid} as", f.read())
 
@@ -177,6 +179,22 @@ class RoomIds(unittest.TestCase):
             )  # a render that stopped half way
             M.main(run)
             self.assertEqual(calls, ["1"] * 3)
+
+    def test_files_docker_could_mix_up_between_tasks_are_found(self):
+        d = tempfile.mkdtemp(prefix="sbv_same_size_")
+        for task, cpus in (("3dscenebench-003", 4), ("3dscenebench-034", 8)):
+            for ctx in ("environment", "tests"):
+                os.makedirs(os.path.join(d, task, ctx))
+            with open(os.path.join(d, task, "environment", "categories.txt"), "w") as f:
+                f.write("same in every task\n")  # same size, same content: no risk
+            with open(os.path.join(d, task, "tests", "test.sh"), "w") as f:
+                f.write(f"procs={cpus}\n")  # same size, different content: the file Docker reused
+        self.assertEqual(
+            M.same_size_files(d), [(os.path.join("tests", "test.sh"), "3dscenebench-003", "3dscenebench-034")]
+        )
+        for task in os.listdir(d):
+            M.pad_test(os.path.join(d, task, "tests", "test.sh"), task.split("-")[1])
+        self.assertEqual(M.same_size_files(d), [])  # padded by the room's number: every size differs
 
     def test_a_stopped_render_leaves_no_spec_behind(self):
         from sbv.appearance import views as App

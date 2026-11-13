@@ -29,11 +29,7 @@
 
 <div align="center">
 
-
-
 https://github.com/user-attachments/assets/1e72c69a-2ca8-4415-b3fd-d0b6753d390c
-
-
 
 </div>
 
@@ -300,7 +296,7 @@ mean                          55.1           75.9           55.1           34.3 
 
 The numbers above are only an example. Every score of a scene is in that trial's `verifier/reward.json`, under `jobs/<your job>/<trial>/`. A world that cannot load gets zeros, with the reason in `verifier/summary.txt`.
 
-For scale: a scene's reference room scores 100 on everything. Over all 49 scenes, the best results on the [leaderboard](https://pranalabs.github.io/3DSceneBench/leaderboard.html) are about 79 for appearance, 58 for geometry and 42 for functionality, each from the agent that does best on that score.
+For scale: a scene's reference room scores 100 on everything. Over all 49 scenes, the best results on the [leaderboard](https://pranalabs.github.io/3DSceneBench/leaderboard.html) are about 79 for appearance, 62 for geometry and 42 for functionality, each from the agent that does best on that score.
 
 ### 2. Read the report
 
