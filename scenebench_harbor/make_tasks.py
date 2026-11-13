@@ -818,6 +818,46 @@ def write_agent_files(env):
             f.write(text)
 
 
+def pad_length(room):
+    """How much padding a room's files get: its number. A name that is not a number gets none (main() still stops on
+    files Docker could mix up, see same_size_files)."""
+    return int(room) if room.isdigit() else 0
+
+
+def pad_test(path, room):
+    """Close test.sh with a comment line as long as the room's number, so the file has a different size in every room.
+    A task downloaded from Harbor Hub has every file's time set to 0, and Docker reuses a file from the last build of
+    a same-named folder (environment/, tests/) when its path, size and time all match: without the padding one room's
+    container can hold another room's room.txt or test.sh. room.txt is padded with blank lines for the same reason."""
+    with open(path, "a") as f:
+        f.write(f"# scene {room} " + "#" * pad_length(room) + "\n")
+
+
+def same_size_files(tasks_dir):
+    """The files Docker could mix up between the tasks of one folder (see pad_test): the same path inside
+    environment/ or tests/, the same size, different content. Returns [(path in the task, task, other task)]."""
+    seen, hits = {}, []
+    for task in sorted(os.listdir(tasks_dir)):
+        for ctx in ("environment", "tests"):
+            base = os.path.join(tasks_dir, task, ctx)
+            for d, _, fs in os.walk(base):
+                for x in fs:
+                    full = os.path.join(d, x)
+                    key = (os.path.join(ctx, os.path.relpath(full, base)), os.path.getsize(full))
+                    seen.setdefault(key, []).append((task, full))
+    for (rel, _), group in seen.items():
+        first = None
+        for task, full in group:
+            with open(full, "rb") as f:
+                data = f.read()
+            if first is None:
+                first = (task, data)
+            elif data != first[1]:
+                hits.append((rel, first[0], task))
+                break
+    return hits
+
+
 def write_task(
     out,
     org,
@@ -869,7 +909,9 @@ def write_task(
     with open(os.path.join(env, "categories.txt"), "w") as f:
         f.write(word_file())
     with open(os.path.join(env, "room.txt"), "w") as f:
-        f.write(room + "\n")  # the room's number, read by the submit-files agent
+        f.write(
+            room + "\n" * (1 + pad_length(room))
+        )  # the room's number, read by the submit-files agent; padded, see pad_test
     write_agent_files(env)
     for rel, data in (files or {}).items():  # a level's extra files (levels.py), copied to /task/
         os.makedirs(os.path.dirname(os.path.join(env, "files", rel)), exist_ok=True)
@@ -935,6 +977,7 @@ def write_task(
         with open(os.path.join(sol, "solve.sh"), "w") as f:
             f.write("#!/bin/bash\nmkdir -p /output/scene && cp -r /solution/room/. /output/scene/\n")
         os.chmod(os.path.join(sol, "solve.sh"), 0o755)
+    pad_test(os.path.join(tests, "test.sh"), room)
     os.chmod(os.path.join(tests, "test.sh"), 0o755)
     runs, extra = 0, 0
     if nonrigid and grader:
@@ -1225,6 +1268,14 @@ def main(argv=None):
                     room,
                     f"(agent {a.budget[0]} min, {a.budget[1]:,} output tokens; grader {bud['cpus']} CPUs, {bud['memory_mb']} MB, {bud['minutes']} min)",
                 )
+    for side in ("public", "private"):
+        mixed = same_size_files(os.path.join(a.out, side))
+        if mixed:
+            raise SystemExit(
+                f"{side} tasks: files with the same path and size but different content, which Docker can mix up "
+                "between tasks downloaded from Harbor Hub (see pad_test): "
+                + "; ".join(f"{rel} in {x} and {y}" for rel, x, y in mixed[:20])
+            )
     return rooms
 
 
