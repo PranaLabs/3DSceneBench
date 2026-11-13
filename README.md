@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <a href="#how-to-cite"><img alt="Paper: arXiv" src="https://img.shields.io/badge/Paper-arXiv-d5efb4?style=flat&logo=arxiv&logoColor=white"></a>
+  <a href="paper/3DSceneBench.pdf"><img alt="Paper: PDF" src="https://img.shields.io/badge/Paper-PDF-d5efb4?style=flat&logo=readthedocs&logoColor=white"></a>
   <a href="https://pranalabs.github.io/3DSceneBench/"><img alt="Project Page" src="https://img.shields.io/badge/Project-Page-a2cf97?style=flat&logo=googlechrome&logoColor=white"></a>
   <a href="https://pranalabs.github.io/3DSceneBench/leaderboard.html"><img alt="Leaderboard Page" src="https://img.shields.io/badge/Leaderboard-Page-6fae7a?style=flat&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik03IDNoMTB2MmgzdjNhNCA0IDAgMCAxLTMuMiAzLjkyQTUgNSAwIDAgMSAxMyAxNC45VjE4aDN2M0g4di0zaDN2LTMuMWE1IDUgMCAwIDEtMy44LTIuOThBNCA0IDAgMCAxIDQgOFY1aDNWM3ptMCA0SDZ2MWEyIDIgMCAwIDAgMSAxLjczVjd6bTEwIDB2Mi43M0EyIDIgMCAwIDAgMTggOFY3aC0xeiIvPjwvc3ZnPg%3D%3D&logoColor=white"></a>
   <a href="https://hub.harborframework.com/datasets/pranalabs-ai-team/3dscenebench-mini"><img alt="Dataset: Harbor Hub" src="https://img.shields.io/badge/Dataset-Harbor_Hub-477c5a?style=flat&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd%2BUAAAABGdBTUEAALGPC%2FxhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeGVYSWZNTQAqAAAACAAEARoABQAAAAEAAAA%2BARsABQAAAAEAAABGASgAAwAAAAEAAgAAh2kABAAAAAEAAABOAAAAAAAAAEgAAAABAAAASAAAAAEAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAHKADAAQAAAABAAAAHAAAAABXMsCVAAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNi4wLjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPkZpZ21hPC94bXA6Q3JlYXRvclRvb2w%2BCiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY%2BCjwveDp4bXBtZXRhPgoE%2F1zIAAACcklEQVRIDb1WTYuSURg9fn%2B18YtxIdrSpEIXs3ARCINCGLSbTQP%2BgNn0H4L%2BQdDGchW4VhCi1iIiGMK0FEHUxcAUwSwisHMuvWHT%2B46S6QPnvZfnuc85z3u5Xx5sb1kOfUQ8Jd4RzwkfESO%2BE1%2BInS1EhjPiPfGVWDlAMY3RWOX8kz1m1pBwEnHyK0e5W5ubI18QPwgn0k1%2B5YpDXLeah9HXxCbCbePiEqejqaptybYdJ05bq9K7yzQ6FSBOcf9hWlkjwilpV%2F8ncofXFZ%2FtUcwqVhrGXPx%2BJKzAvtoP1JAWMsQ3Yl9CFq80stonD4k7xG9zu93w%2BXRqOVsgEHAO2kek8UCC%2BZvxTCaD09NTRKNRE0omk%2FD7%2FQiFQohEIkilUqjX6zg6OjJx%2BePxOFSo4olEwqngvJcZ5zcFlXh8fIx0Oo1Op4OTkxO4XC6MRiPUajUMh0Pk83mEw2EsFgsjINHBYIBqtYrZbIZ2u23aG9zntkeP1%2BtFr9dDv99HuVzG9fU1stks5vM5Li4u0Gq1sFwu0Ww2UalUcHV1ZQT059PpFI1Gw07MaOvY8ROV9UqCwaCZEhFpKmOxGC4vL%2BHxeJDL5TCZTKBpL5VK6Ha70JQXCgWMx2MUi0WsViszZp3zV%2F%2Bl2ieEtZJsWy4g4%2BdUrzi1K7XKsfzqsxjjU9zq2%2FBKC1niUNtCW9BsRm1KU%2BEeWx0uLi0aCb0l9m1vKCAtYzpYdcDu6y91Mfz19Djo9WR%2Bk5%2BDXsAS1b486BNDolpI%2BtNdbn%2FlisP2JKPf1g72TFxX18o6I%2F7bQ9jcwOsKt%2FTvMnafuEdYN8wr9j8TY2JKbLSfk9b6aXGRuc4AAAAASUVORK5CYII%3D&logoColor=white"></a>
@@ -489,7 +489,8 @@ So the question a score answers is not "did the world recover the exact weight" 
 ├── requirements/           the Python packages
 ├── scripts/                small tools, such as summarize.py for a job's score table
 ├── tests/                  self-tests of this code
-└── docs/                   the entrant guide, what is tested, every verifier
+├── docs/                   the entrant guide, what is tested, every verifier
+└── paper/                  the paper, as a PDF
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -534,6 +535,8 @@ The words this page uses, in the order a run meets them.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## How to cite
+
+The paper is in this repository: [paper/3DSceneBench.pdf](paper/3DSceneBench.pdf).
 
 ```bibtex
 @article{zhang20263dscenebench,
