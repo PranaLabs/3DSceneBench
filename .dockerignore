@@ -1,0 +1,18 @@
+# Keep the image to the code: no local environments, robot download, git data or run folders
+.git
+.venv
+.venv-metrics
+.venv-nonrigid
+.DS_Store
+MUJOCO_LOG.TXT
+data
+work
+results
+**/__pycache__
+**/*_renders
+**/appearance_ref_*
+.venv-soft
+# Harbor task trees (the private half holds reference rooms and cases) and job folders: never in the repository or an image
+/tasks/
+/jobs/
+/trials/

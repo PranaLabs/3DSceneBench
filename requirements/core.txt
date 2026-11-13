@@ -1,0 +1,7 @@
+# Physics, geometry and robot verifiers, the core environment .venv (versions the self-tests pass with)
+mujoco==3.14.0
+numpy==1.26.4
+scipy==1.17.1
+trimesh==3.22.5
+# Pillow reads and writes pictures; same version as metrics.txt
+pillow==12.3.0

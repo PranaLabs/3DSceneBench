@@ -1,0 +1,235 @@
+# The category words for naming objects (<category>__<n>). Every 3DSceneBench task gives this same list, so the list says
+# nothing about any one room. make_tasks refuses a room that uses a word not listed here: add the word to its group and
+# keep the groups broad. Words are separated by spaces; lines starting with # are comments.
+# Each word sits under its topic, the comment line above it. Pairing by place pairs words of one topic only
+# (sbv/common/scene.py topic()), so a pillow is never taken for a plant: put a new word under the topic of its kind.
+# The list only grows (sbv/words.py): a released word keeps its main word and its topic and is never removed, so
+# adding words moves no released room's scores. sbv/common/categories_released.txt is the released list, and
+# tests/test_words.py fails when a released word changed. A word for a new kind of thing goes on its topic's line; a
+# variant of a kind already here goes into that kind's group below, as an alias.
+
+# seating
+armchair bean_bag bench chair dining_chair office_chair ottoman recliner rocking_chair sofa stool
+chaise_lounge high_chair
+lab_chair wood_stool mushroom_seat
+wheelchair
+cafe_chair workshop_stool banquette
+# tables and desks
+coffee_table console counter desk dining_table nightstand side_table table tv_stand workbench
+changing_table dressing_table
+island_bench microscopy_table culture_counter
+mat_table plinth
+back_bar_counter communal_table outlet_table pedestal_table prep_counter refrigerated_counter service_counter bulk_counter checkout_counter produce_display_table corner_worktable esd_bench dish_return_station
+# storage
+basket bin bookcase bookshelf box cabinet chest crate cupboard dresser drawer enamel_box file_cabinet food_box hamper
+index_case jar locker rack roll_basket shelf shoe_rack sideboard storage_bin suitcase trunk utility_basket wardrobe
+safe umbrella_stand
+drawer_cabinet storage_tray supply_box blue_supply_box
+carrier_tray coffee_canister component_bin cooking_basket cup_rack drying_shelf flat_rack foam_tray pass_cabinet pcb_tray plate_rack rack_stack reel_rack retail_shelf scrape_bin wall_shelf drawer_bank gondola_run hand_basket impulse_shelf produce_box produce_crate scoop_bin spice_end_cap supply_shelf tool_rack parts_tray wire_shelving line_overshelf pan_shelving pastry_case display_barrel supply_caddy bulk_tub pedal_bin
+# beds and soft furnishings
+bed blanket crib curtain cushion duvet mattress pillow quilt rug towel
+blind curtain_rod sleeping_bag
+bar_towel
+folded_sheet
+# lighting
+candle ceiling_lamp chandelier floor_lamp heat_lamp lamp lantern shade_lamp table_lamp
+candlestick light_bulb night_light sconce string_lights
+globe_chandelier magnifier_lamp batten_light
+# decor
+art branch ceramic clock figurine flower frame framed_art globe large_plant mirror ornament photo_frame plant pot
+sculpture statue trinket vase wall_art
+terrarium wreath artificial_tree mural scroll
+arched_mirror orchid_planter department_sign digital_menu
+# kitchen and dining
+bottle bowl can chopsticks coffee_maker cup cutting_board dish fork glass kettle knife ladle mug napkin pan
+pepper_grinder pitcher plate salt_shaker saucer spoon teapot thermos tray utensil wine_glass
+bottle_opener can_opener coaster colander cooking_pot dish_rack drinking_straw funnel grater knife_block lunch_box
+measuring_cup mortar napkin_holder oven_mitt paper_towel_holder peeler placemat rolling_pin spatula tablecloth tongs
+utensil_holder whisk
+adaptive_handle
+bowl_stack espresso_cup cappuccino_cup takeaway_cup takeaway_lid cutlery_cylinder drainer_tray gooseneck_kettle milk_pitcher olive_oil_bottle plate_stack service_tray sink_strainer squeeze_bottle syrup_bottle water_tumbler stock_pot hotel_pan_full hotel_pan_lid hotel_pan_sixth hotel_pan_third portafilter tamper tamping_stand knock_box coffee_server pour_over_dripper brew_scale drying_mat bulk_scoop sugar_caddy bus_tub
+distribution_tool milk_thermometer
+# food and drink
+apple banana bread burger cereal coffee food fries juice milk oil snack tea water wine
+avocado bagel beer bell_pepper broccoli butter cabbage cake candy carrot cheese cherry chips chocolate cookie corn
+cracker cucumber donut drink egg eggplant flour fruit garlic grape honey hot_dog ice_cream jam ketchup lemon lettuce
+lime mango mayonnaise meat melon mushroom mustard onion orange pasta peach peanut_butter pear pie pineapple pizza plum
+potato rice sandwich sausage soda strawberry sugar tomato vegetable watermelon yogurt
+coffee_puck bread_loaf bulk_piece strawberry_case strawberry_clamshell pastry yogurt_tub retail_coffee_bag produce_bag
+# appliances
+air_purifier dishwasher drink_dispenser fan food_warmer fryer griddle heater ice_cream_machine microwave oven
+range_hood refrigerator sink stove toaster vacuum washing_machine
+air_conditioner blender coffee_grinder dehumidifier dryer fireplace food_processor freezer hot_plate humidifier iron
+ironing_board juicer mixer pressure_cooker radiator rice_cooker sewing_machine slow_cooker toaster_oven vending_machine
+vent
+bar_sink pot_sink utility_sink hood_dishwasher reach_in_fridge glass_door_fridge milk_fridge compact_cooling_cabinet gravity_dispenser upright_vacuum water_softener boiler_unit canopy_hood chargrill range_with_ovens prerinse_unit
+# electronics
+camera card_reader cash_register charger computer game_console headphones keyboard kiosk laptop monitor mouse phone
+printer radio remote router speaker tablet telephone television
+battery cable drone dvd_player extension_cord game_controller hard_drive light_switch microphone power_socket
+power_strip projector scanner smoke_detector thermostat turntable vr_headset
+computer_tower projection_screen
+amplifier mixing_console tape_recorder
+atx_psu banana_plug bench_supply component_reel connector drive_caddy mini_pc network_switch patch_panel pcb pdu power_cord server side_panel solder_station test_fixture test_lead pos_terminal blanking_panel ventilated_panel cable_tray antistatic_bag
+robot tripod
+circuit_board enclosure enclosure_cover power_plug resistor_module service_feed test_probe
+# office and study
+binder book calculator calendar document envelope folder magazine marker notebook open_book paper pen
+pen_cup pencil pinboard print rolled_plan ruler scissors shelf_book stapler stationery tape whiteboard
+blackboard clipboard crayon desk_organizer eraser hole_punch letter_tray magnifying_glass map newspaper pencil_case
+film photo_album sharpener tape_dispenser
+teaching_board lab_notebook cardboard
+binding_machine brochure_holder mail_cubby toner_cartridge
+# tools and hardware
+bucket drill hammer ladder plier saw screwdriver toolbox wrench
+air_compressor axe barrel chisel clamp crowbar drill_press fire_extinguisher first_aid_kit flashlight gas_cylinder
+glue_gun goggles grinder hand_truck handle hex_key jerry_can lathe level mallet multimeter nail_gun paint_can paint_roller
+paintbrush pallet pegboard pipe rope sander sawhorse soldering_iron tape_measure tire utility_knife valve vise
+chute conveyor tool
+hanging_tool_set tool_board tile_lifter pallet_jack wall_isolator cnc_machine billet bushing coolant_bucket hopper_lid ibc_tank
+barrier bracket cone cover crane foam gantry housing marking air_socket auto_parts body_materials bolt booth creeper drainpan fender fixture framebench hose_reel lift lug_nut oildrain panel_stand partswasher service_supplies socket tire_changer transmissionjack trolley_jack wheel wheel_balancer wheeldolly glue rod
+cable_restraint clip fastener iron_holder
+basket_strainer drum_pump ibc_tote lockout_station padlock pressure_gauge process_skid pump
+bearing coupling motor rotor shim seal
+# clothing and carry
+backpack bag belt coat coat_rack coat_stand dress hanger hat jacket scarf shirt shoe sweater tote umbrella
+apron briefcase glasses glove jewelry pants robe shorts skirt sock sunglasses tie wallet watch
+buckle cuff splint strap
+# bathroom
+bathtub shampoo shower soap toilet toilet_paper toothbrush
+bath_mat faucet hair_dryer hairbrush lotion plunger razor shower_curtain soap_dispenser tissue_box toilet_brush
+hair_straightener toilet_paper_holder toothbrush_holder toothpaste towel_rack vanity
+grab_bar shower_chair shower_seat support_rail
+amenity_bottle
+folded_bath_towel toilet_roll_pack
+# play and hobby
+ball board_game doll guitar piano puzzle teddy_bear toy
+binoculars canvas dartboard dice dollhouse drum easel flute kite music_stand playing_cards pool_table rocking_horse
+table_tennis_table telescope trumpet violin yarn playhouse board clay inkstone palette pedal pottery_wheel rest tube
+guitar_stand mic_stand
+# doors (a room's own doors: a door to a terrace or another room)
+door
+room_door
+entry_door interior_door
+# other household things
+coins doormat flowerpot hook key laundry_basket trash trash_can watering_can
+broom cart cloth credit_card detergent drying_rack dustpan garbage_bag mop paper_towel scale scrub_brush sign sponge
+spray_bottle partition
+transfer_board walker
+detergent_container detergent_bottle flat_mop mop_bucket wet_floor_sign housekeeping_cart linen_bag_holder waste_bag_holder linen_support_tray store_overhead curved_bulkhead timber_canopy lifting_tile bus_cart stainless_cart restock_cart bag_roll_stand belt_divider checkout_conveyor hanging_scale
+flat_mop_pad microfibre_cloth waste_bag linen_bag
+# garden and outdoor
+bird_feeder birdhouse fire_pit garden_hose grill hoe lawn_mower mailbox parasol pitchfork pruning_shears rake shovel
+sprinkler stroller swing trowel wheelbarrow
+car
+# sports and fitness
+barbell baseball_bat bicycle cooler dumbbell exercise_ball exercise_bike fishing_rod golf_bag golf_club helmet
+barbell_collar battle_rope cable_trainer dumbbell_rack elliptical functional_rig half_rack landmine_post leg_extension_machine lifting_platform plate_tree power_rack seated_strength_machine weight_plate weight_stack_machine
+hockey_stick jump_rope kettlebell punching_bag racket rowing_machine scooter skateboard skis snowboard surfboard tent
+treadmill weight_bench yoga_mat
+arm_ergometer barre harness mat parallel_bars pedal_trainer resistance_band shoulder_wheel support_frame support_track therapy_wedge training_dummy training_stairs
+pad platform ramp
+# pets
+aquarium birdcage cat_tree dog_house litter_box pet_bed pet_bowl pet_carrier
+# laboratory
+beaker bunsen_burner burette centrifuge crucible flask fume_hood graduated_cylinder incubator microscope petri_dish
+pipette reagent_bottle retort_stand test_tube test_tube_rack vial wash_bottle
+biosafety_cabinet microcentrifuge microtube glass_slide slide_box sample_dish culture_bottle pipette_tip_box tube_stand
+dry_bath shaking_incubator cover_tray glove_box bench_services
+interferometer laser microwave_polarizer optical_imaging_setup optical_mount optical_tank optical_transmitter
+oscilloscope polarimeter prism quantum_cryptography_setup quantum_eraser_setup random_number_generator schlieren_setup
+spectrometer
+apparatus bottle_cap drain instrument stand
+circuit_trainer dc_supply fume_extractor signal_generator trainer_panel
+
+# Kinds of thing with several words, as main/alias/alias with the main word first. An alias is scored as its main word
+# (sbv/common/scene.py category()), and the instruction shows it as "main (also: alias, alias)". Two words are aliases
+# only when no verifier would treat the two objects differently; otherwise each stays its own word.
+blanket/duvet/quilt/comforter/bedspread/bed_sheet book/shelf_book/open_book/textbook/paperback/novel bookcase/bookshelf
+cabinet/cupboard/kitchen_cabinet/storage_cabinet/medicine_cabinet/display_cabinet/display_case/china_cabinet
+chair/dining_chair/side_chair/kitchen_chair/folding_chair/patio_chair/lawn_chair
+cup/mug/teacup/coffee_cup/coffee_mug/paper_cup
+ornament/trinket/figurine/ceramic/knick_knack/trophy/hourglass/bookend/garden_gnome
+plant/large_plant/flowerpot/potted_plant/houseplant/succulent/cactus/bonsai sculpture/statue/bust
+table_lamp/lamp/shade_lamp/desk_lamp/bedside_lamp
+trash_can/trash/waste_bin/wastebasket/garbage_can/dustbin/recycling_bin
+utensil/knife/fork/spoon/cutlery/silverware/teaspoon/kitchen_knife/wooden_spoon
+wall_art/art/framed_art/framed_print/wall_frame/poster/painting/tapestry
+sofa/couch/settee/loveseat/sectional/sofa_bed/futon ottoman/footstool/pouf stool/step_stool/bar_stool
+office_chair/desk_chair/swivel_chair armchair/accent_chair bean_bag/beanbag chaise_lounge/sun_lounger
+side_table/end_table nightstand/night_table/bedside_table console/console_table/entry_table
+counter/countertop/kitchen_counter/kitchen_island desk/writing_desk/computer_desk/standing_desk
+tv_stand/media_console/tv_cabinet/tv_unit dining_table/kitchen_table table/folding_table/patio_table/picnic_table
+workbench/work_table/lab_bench dressing_table/vanity_table dresser/chest_of_drawers file_cabinet/filing_cabinet
+wardrobe/armoire sideboard/credenza shelf/shelving_unit/etagere/open_shelf
+box/storage_box/cardboard_box/carton/package/jewelry_box crate/plastic_crate/wooden_crate chest/toy_chest
+storage_bin/plastic_bin/storage_cube basket/wicker_basket/storage_basket/wire_basket
+jar/glass_jar/mason_jar/cookie_jar/spice_jar/canister shoe_rack/shoe_shelf/shoe_cabinet
+rack/wine_rack/magazine_rack/mug_tree/mug_stand/pallet_rack suitcase/luggage hamper/laundry_hamper
+food_box/food_container/food_storage_container/takeout_box bed/double_bed/single_bed/bunk_bed/daybed/bed_frame
+pillow/bolster cushion/throw_pillow/seat_cushion curtain/drape/drapes rug/carpet/area_rug
+towel/bath_towel/hand_towel/dish_towel/tea_towel blind/window_blind/venetian_blind/roller_blind curtain_rod/curtain_rail
+ceiling_lamp/pendant_lamp/pendant_light/light_fixture floor_lamp/standing_lamp candle/pillar_candle/tea_light
+candlestick/candle_holder string_lights/fairy_lights light_bulb/bulb flower/flowers/bouquet/artificial_flower
+pot/planter/plant_pot vase/flower_vase mirror/standing_mirror clock/alarm_clock/desk_clock
+photo_frame/picture_frame/photo pan/frying_pan/skillet/wok/saucepan/grill_pan/cake_pan cooking_pot/stockpot/dutch_oven
+bowl/mixing_bowl/salad_bowl/soup_bowl/serving_bowl/fruit_bowl/sugar_bowl
+plate/dinner_plate/side_plate/platter/paper_plate/cake_stand dish/casserole_dish/baking_dish/serving_dish/butter_dish
+tray/serving_tray/baking_tray/baking_sheet/muffin_tin/ice_cube_tray kettle/teakettle/electric_kettle
+coffee_maker/coffee_machine/espresso_machine/french_press thermos/vacuum_flask/travel_mug
+bottle/water_bottle/wine_bottle/beer_bottle/glass_bottle/plastic_bottle/baby_bottle/sauce_bottle
+can/tin/soda_can/beer_can/canned_food glass/tumbler/drinking_glass/water_glass wine_glass/goblet/champagne_flute
+pitcher/jug/carafe/decanter cutting_board/chopping_board pepper_grinder/pepper_mill salt_shaker/pepper_shaker
+colander/strainer/sieve spatula/turner bottle_opener/corkscrew measuring_cup/measuring_jug dish_rack/dish_drainer
+oven_mitt/pot_holder lunch_box/lunchbox/lunch_bag mortar/mortar_and_pestle/pestle drinking_straw/straw
+napkin_holder/napkin_dispenser coaster/trivet orange/tangerine/mandarin melon/cantaloupe grape/grapes
+potato/sweet_potato cabbage/bok_choy egg/fried_egg cake/cupcake/cheesecake cookie/biscuit donut/doughnut
+bread/loaf/baguette/bread_roll/bun/toast/croissant meat/steak/ham/bacon sausage/salami burger/hamburger/cheeseburger
+fries/french_fries chocolate/chocolate_bar/candy_bar candy/lollipop/sweets chips/potato_chips/crisps
+soda/soft_drink/cola juice/juice_box milk/milk_carton water/bottled_water cereal/cereal_box oil/olive_oil/cooking_oil
+pasta/spaghetti/noodles drink/beverage refrigerator/fridge/mini_fridge microwave/microwave_oven
+stove/cooktop/hob/gas_stove/electric_stove washing_machine/washer dryer/clothes_dryer/tumble_dryer
+fan/desk_fan/standing_fan/electric_fan heater/space_heater/electric_heater vacuum/vacuum_cleaner/robot_vacuum
+drink_dispenser/water_dispenser/water_cooler fryer/deep_fryer/air_fryer range_hood/extractor_hood/cooker_hood
+mixer/stand_mixer/hand_mixer freezer/chest_freezer air_conditioner/ac_unit fireplace/wood_stove vent/air_vent
+sink/basin/washbasin television/tv/flat_screen_tv phone/smartphone/cell_phone/mobile_phone telephone/landline
+computer/desktop_computer/pc laptop/notebook_computer monitor/computer_monitor/display/screen keyboard/computer_keyboard
+mouse/computer_mouse speaker/loudspeaker/smart_speaker/soundbar headphones/earphones/earbuds/headset
+camera/webcam/security_camera tablet/tablet_computer/e_reader game_console/video_game_console remote/remote_control
+router/modem radio/stereo charger/phone_charger/power_adapter power_socket/outlet/power_outlet light_switch/switch
+power_strip/surge_protector game_controller/gamepad/joystick turntable/record_player smoke_detector/smoke_alarm
+cash_register/till card_reader/payment_terminal notebook/notepad/journal/diary/sketchbook magazine/comic_book
+pinboard/corkboard/bulletin_board blackboard/chalkboard pen/ballpoint_pen marker/highlighter
+pen_cup/pencil_holder/pen_holder tape/adhesive_tape/masking_tape/duct_tape paper/paper_stack folder/file_folder
+rolled_plan/blueprint sharpener/pencil_sharpener letter_tray/paper_tray magnifying_glass/magnifier plier/pliers
+wrench/spanner/pipe_wrench/socket_wrench hex_key/allen_key hammer/sledgehammer mallet/rubber_mallet
+saw/hand_saw/handsaw/hacksaw/circular_saw drill/power_drill/cordless_drill ladder/stepladder/step_ladder bucket/pail
+toolbox/tool_box/tool_chest tape_measure/measuring_tape level/spirit_level axe/hatchet crowbar/pry_bar vise/vice
+grinder/angle_grinder glue_gun/hot_glue_gun utility_knife/box_cutter flashlight/torch paintbrush/paint_brush
+paint_can/paint_tin barrel/keg gas_cylinder/gas_tank/propane_tank jerry_can/jerrycan/fuel_can/gas_can
+goggles/safety_goggles/safety_glasses air_compressor/compressor hand_truck/dolly
+bag/shopping_bag/paper_bag/plastic_bag/handbag/purse/duffel_bag tote/tote_bag backpack/rucksack/school_bag
+hat/cap/baseball_cap/beanie shoe/sneaker/boot/sandal/slipper shirt/t_shirt/blouse
+sweater/jumper/hoodie/cardigan/sweatshirt coat/overcoat/raincoat/lab_coat jacket/blazer pants/trousers/jeans sock/socks
+glove/gloves/mitten tie/necktie glasses/eyeglasses watch/wristwatch jewelry/necklace/bracelet robe/bathrobe
+coat_rack/clothes_rack/garment_rack coat_stand/hat_stand hanger/coat_hanger bathtub/bath/tub shower/shower_head
+toilet_paper/toilet_roll/toilet_paper_roll shampoo/conditioner/body_wash/shower_gel soap_dispenser/hand_soap
+towel_rack/towel_rail/towel_bar bath_mat/bath_rug hair_dryer/hairdryer razor/shaver hairbrush/comb faucet/tap
+tissue_box/tissues toilet_paper_holder/toilet_roll_holder teddy_bear/stuffed_animal/stuffed_toy/plush_toy
+toy/toy_car/toy_train/rubber_duck/toy_blocks/building_blocks/pet_toy doll/action_figure
+ball/basketball/football/soccer_ball/tennis_ball/beach_ball board_game/chess_set/chessboard puzzle/jigsaw_puzzle
+guitar/acoustic_guitar/electric_guitar/ukulele piano/upright_piano/grand_piano/digital_piano drum/drum_kit violin/fiddle
+playing_cards/cards pool_table/billiard_table table_tennis_table/ping_pong_table
+door/patio_door/sliding_door/french_door/front_door garbage_bag/trash_bag/bin_bag broom/push_broom sponge/scouring_pad
+scrub_brush/cleaning_brush detergent/laundry_detergent/dish_soap paper_towel/kitchen_roll
+drying_rack/clothes_drying_rack scale/bathroom_scale/kitchen_scale cart/trolley/utility_cart/shopping_cart/bar_cart
+sign/signboard doormat/welcome_mat cloth/rag key/keys/keyring coins/coin laundry_basket/clothes_basket garden_hose/hose
+lawn_mower/lawnmower shovel/spade trowel/garden_trowel pitchfork/garden_fork pruning_shears/secateurs/garden_shears
+parasol/patio_umbrella/beach_umbrella grill/barbecue/bbq stroller/pram/pushchair mailbox/letterbox bicycle/bike
+helmet/bike_helmet/hard_hat dumbbell/hand_weight yoga_mat/exercise_mat exercise_ball/yoga_ball
+exercise_bike/stationary_bike punching_bag/boxing_bag jump_rope/skipping_rope racket/racquet/tennis_racket skis/ski
+fishing_rod/fishing_pole cooler/cool_box/ice_chest pet_bed/dog_bed/cat_bed pet_bowl/dog_bowl/cat_bowl
+cat_tree/scratching_post litter_box/litter_tray pet_carrier/cat_carrier aquarium/fish_tank birdcage/bird_cage
+dog_house/kennel flask/erlenmeyer_flask/round_bottom_flask/volumetric_flask pipette/micropipette/dropper
+graduated_cylinder/measuring_cylinder retort_stand/ring_stand vial/sample_vial fume_hood/fume_cupboard
+reagent_bottle/lab_bottle

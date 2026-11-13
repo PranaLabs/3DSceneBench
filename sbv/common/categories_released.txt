@@ -1,0 +1,56 @@
+# The shared word list as last released: a copy of categories.txt taken when a release was cut. Never edit it by hand;
+# the release owner copies categories.txt over it at each release (sbv/words.py). tests/test_words.py checks that
+# every word here is still in categories.txt, scored as the same main word and under the same topic.
+# The category words for naming objects (<category>__<n>). Every 3DSceneBench task gives this same list, so the list says
+# nothing about any one room. make_tasks refuses a room that uses a word not listed here: add the word to its group and
+# keep the groups broad. Words are separated by spaces; lines starting with # are comments.
+# Each word sits under its topic, the comment line above it. Pairing by place pairs words of one topic only
+# (sbv/common/scene.py topic()), so a pillow is never taken for a plant: put a new word under the topic of its kind.
+
+# seating
+armchair bean_bag bench chair dining_chair office_chair ottoman recliner rocking_chair sofa stool
+# tables and desks
+coffee_table console counter desk dining_table nightstand side_table table tv_stand workbench
+# storage
+basket bin bookcase bookshelf box cabinet chest crate cupboard dresser drawer enamel_box file_cabinet food_box hamper
+index_case jar locker rack roll_basket shelf shoe_rack sideboard storage_bin suitcase trunk utility_basket wardrobe
+# beds and soft furnishings
+bed blanket crib curtain cushion duvet mattress pillow quilt rug towel
+# lighting
+candle ceiling_lamp chandelier floor_lamp heat_lamp lamp lantern shade_lamp table_lamp
+# decor
+art branch ceramic clock figurine flower frame framed_art globe large_plant mirror ornament photo_frame plant pot
+sculpture statue trinket vase wall_art
+# kitchen and dining
+bottle bowl can chopsticks coffee_maker cup cutting_board dish fork glass kettle knife ladle mug napkin pan
+pepper_grinder pitcher plate salt_shaker saucer spoon teapot thermos tray utensil wine_glass
+# food and drink
+apple banana bread burger cereal coffee food fries juice milk oil snack tea water wine
+# appliances
+air_purifier dishwasher drink_dispenser fan food_warmer fryer griddle heater ice_cream_machine microwave oven
+range_hood refrigerator sink stove toaster vacuum washing_machine
+# electronics
+camera card_reader cash_register charger computer game_console headphones keyboard kiosk laptop monitor mouse phone
+printer radio remote router speaker tablet telephone television
+# office and study
+binder book calculator calendar document envelope folder magazine marker notebook open_book paper pen
+pen_cup pencil pinboard print rolled_plan ruler scissors shelf_book stapler stationery tape whiteboard
+# tools and hardware
+bucket drill hammer ladder plier saw screwdriver toolbox wrench
+# clothing and carry
+backpack bag belt coat coat_rack coat_stand dress hanger hat jacket scarf shirt shoe sweater tote umbrella
+# bathroom
+bathtub shampoo shower soap toilet toilet_paper toothbrush
+# play and hobby
+ball board_game doll guitar piano puzzle teddy_bear toy
+# doors (a room's own doors: a door to a terrace or another room)
+door
+# other household things
+coins doormat flowerpot hook key laundry_basket trash trash_can watering_can
+
+# Kinds of thing with several words, as main/alias/alias with the main word first. An alias is scored as its main word
+# (sbv/common/scene.py category()), and the instruction shows it as "main (also: alias, alias)". Two words are aliases
+# only when no verifier would treat the two objects differently; otherwise each stays its own word.
+blanket/duvet/quilt book/shelf_book/open_book bookcase/bookshelf cabinet/cupboard chair/dining_chair cup/mug
+ornament/trinket/figurine/ceramic plant/large_plant/flowerpot sculpture/statue table_lamp/lamp/shade_lamp
+trash_can/trash/waste_bin utensil/knife/fork/spoon wall_art/art/framed_art/framed_print/wall_frame/poster

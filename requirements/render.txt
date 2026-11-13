@@ -1,0 +1,2 @@
+# Appearance renders: Blender's Python module, in the same environment as core.txt (.venv)
+bpy==4.2.0

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 330" width="1120" height="330" role="img" aria-label="The steps of a run: get the requirements, choose way 1 or way 2, Harbor runs each scene and grades the world against the scene's reference room, then read your scores in each scene's reward.json.">
+<rect width="1120" height="330" rx="14" fill="#12211b"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#8fd19a"/></marker></defs>
+<rect x="28" y="80.0" width="236" height="170" rx="12" fill="#1a2e26" stroke="#2f4a3e" stroke-width="1.5"/>
+<text x="46" y="108.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#8fd19a" letter-spacing="1">REQUIREMENTS</text>
+<text x="46" y="131.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f6f8ec">Get ready</text>
+<text x="46" y="156.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">Docker and Python 3.12+</text>
+<text x="46" y="176.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">Harbor</text>
+<text x="46" y="196.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">this repository</text>
+<text x="46" y="216.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">the benchmark and grader</text>
+<text x="46" y="236.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">a model API key (way 1)</text>
+<rect x="304" y="31.0" width="236" height="122" rx="12" fill="#24463a" stroke="#8fd19a" stroke-width="1.5"/>
+<text x="322" y="59.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#8fd19a" letter-spacing="1">WAY 1</text>
+<text x="322" y="82.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#eaf6dc">Your agent builds</text>
+<text x="322" y="107.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#eaf6dc">Harbor starts your agent in</text>
+<text x="322" y="127.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#eaf6dc">each scene's container</text>
+<rect x="304" y="177.0" width="236" height="122" rx="12" fill="#24463a" stroke="#8fd19a" stroke-width="1.5"/>
+<text x="322" y="205.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#8fd19a" letter-spacing="1">WAY 2</text>
+<text x="322" y="228.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#eaf6dc">You bring worlds</text>
+<text x="322" y="253.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#eaf6dc">built by your own pipeline,</text>
+<text x="322" y="273.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#eaf6dc">one per scene</text>
+<rect x="580" y="80.0" width="236" height="170" rx="12" fill="#1a2e26" stroke="#2f4a3e" stroke-width="1.5"/>
+<text x="598" y="108.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#8fd19a" letter-spacing="1">RUN</text>
+<text x="598" y="131.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f6f8ec">Harbor runs and grades</text>
+<text x="598" y="156.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">each world is built, then</text>
+<text x="598" y="176.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">graded on your machine</text>
+<text x="598" y="196.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">against the scene's</text>
+<text x="598" y="216.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">reference room</text>
+<rect x="856" y="80.0" width="236" height="170" rx="12" fill="#1a2e26" stroke="#2f4a3e" stroke-width="1.5"/>
+<text x="874" y="108.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#8fd19a" letter-spacing="1">RESULT</text>
+<text x="874" y="131.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" font-weight="700" fill="#f6f8ec">Get your scores</text>
+<text x="874" y="156.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">appearance, geometry</text>
+<text x="874" y="176.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">and functionality,</text>
+<text x="874" y="196.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">in each scene's</text>
+<text x="874" y="216.0" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#b9c7bd">reward.json</text>
+<path d="M268 165.0L284.0 165.0L284.0 92.0L298 92.0" stroke="#8fd19a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M284.0 165.0L284.0 238.0L298 238.0" stroke="#8fd19a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M544 92.0L560.0 92.0L560.0 149.0L574 149.0" stroke="#8fd19a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M544 238.0L560.0 238.0L560.0 181.0L574 181.0" stroke="#8fd19a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+<path d="M820 165.0L850 165.0" stroke="#8fd19a" stroke-width="2" fill="none" marker-end="url(#a)"/>
+</svg>

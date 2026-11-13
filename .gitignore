@@ -1,0 +1,21 @@
+.venv
+.venv-metrics
+.venv-nonrigid
+__pycache__/
+*.pyc
+.DS_Store
+MUJOCO_LOG.TXT
+# robot model download (scripts/get_robot.sh), run folders, renders
+/data
+work/
+results/
+*_renders/
+appearance_ref_*/
+.venv-soft
+# Harbor task trees (the private half holds reference rooms and cases) and job folders: never in the repository or an image
+/tasks/
+/jobs/
+/trials/
+
+# the downloaded benchmark (harbor download), when it is fetched into the repository root
+/3dscenebench/
