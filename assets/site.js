@@ -158,8 +158,8 @@
     var h = items.map(function (t) { return '<span>' + esc(t) + '</span><i>◆</i>'; }).join('');
     el.innerHTML = h + h;
   }
-  // Short names for the scene strip, written from each scene's public description.
-  var NAMES = {"001": "Gym", "002": "Breakfast shop", "003": "Open-plan office", "004": "Operating room", "005": "Living room", "006": "Family bathroom", "007": "Recording studio", "008": "Assisted-living bathroom", "009": "Laundry room", "010": "Hotel bedroom", "011": "Convenience store", "012": "Cozy bedroom", "013": "Housekeeping stockroom", "014": "Pump overhaul hall", "015": "Delivery room", "016": "Dining room", "017": "Biology lab", "018": "Open-plan living area", "019": "Utility-skid training room", "020": "Commercial kitchen", "021": "Parcel sorting hall", "022": "Outdoor equipment shop", "023": "Furniture workshop", "024": "Electronics workshop", "025": "Datacenter service room", "026": "Specialty café", "027": "Rehabilitation hall", "028": "Auto repair workshop", "029": "Supermarket", "030": "Hospital patient room", "031": "Udon restaurant", "032": "School front office", "033": "Machining cell", "034": "Chemistry teaching lab", "035": "Car assembly hall", "036": "Art studio", "037": "Children's playroom", "038": "Carpentry workshop", "039": "Home kitchen", "040": "Bakery café", "041": "Robotics test lab", "042": "Diner", "043": "Bedroom", "044": "Public library", "045": "Electronics lab", "046": "Optics lab", "047": "Family garage", "048": "Study", "049": "Packing workshop"};
+  // Scene names for the scene strip, as in the paper's scene catalog (Table 2).
+  var NAMES = {"001": "Gym", "002": "Breakfast Café", "003": "Shared Office", "004": "Operating Room", "005": "Living Room", "006": "Bathroom", "007": "Music Recording Studio", "008": "Accessible Bathroom", "009": "Laundry Room", "010": "Hotel Room", "011": "Convenience Store", "012": "Cozy Bedroom", "013": "Housekeeping Room", "014": "Pump Repair Workshop", "015": "Childbirth Room", "016": "Dining Room", "017": "Biology Lab", "018": "Poolside Living Room", "019": "Pipe Maintenance Room", "020": "Restaurant Kitchen", "021": "Package Sorting Center", "022": "Outdoor Gear Store", "023": "Furniture Assembly Workshop", "024": "Electronics Repair Workshop", "025": "Data Center", "026": "Coffee Shop", "027": "Rehabilitation Center", "028": "Auto Repair Workshop", "029": "Supermarket", "030": "Hospital Room", "031": "Udon Restaurant", "032": "School Office", "033": "Metalworking Workshop", "034": "Chemistry Lab", "035": "Car Assembly Factory", "036": "Art Studio", "037": "Children's Room", "038": "Carpentry Workshop", "039": "Home Kitchen", "040": "Bakery", "041": "Humanoid Testing Lab", "042": "Fast Food Restaurant", "043": "Bedroom", "044": "Library", "045": "Electronics Lab", "046": "Photon Lab", "047": "Garage", "048": "Home Office", "049": "Package Returns Center"};
   function wall(rooms) {
     var half = Math.ceil(rooms.length / 2);
     [['#wall-a', rooms.slice(0, half)], ['#wall-b', rooms.slice(half)]].forEach(function (x) {
@@ -204,12 +204,12 @@
     if (vids.length < 2 || !box || still) return;
     var F = 'scenes/assets/films/';
     var list = [
-      { src: 'media/hero.mp4', len: 7, name: 'Living room with pool' },
-      { src: F + 'biology-lab.mp4', len: 6, name: 'Biology lab' },
-      { src: F + 'f6-commercial-kitchen-001.mp4', len: 6, name: 'Commercial kitchen' },
-      { src: F + 'auto-repair-001.mp4', len: 6, name: 'Auto repair workshop' },
-      { src: F + 'childrens-room-001.mp4', len: 5, name: "Children's room" },
-      { src: F + 'rehab-center-001.mp4', len: 6, name: 'Rehab center' }
+      { src: 'media/hero.mp4', len: 7, name: 'Poolside Living Room' },
+      { src: F + 'biology-lab.mp4', len: 6, name: 'Biology Lab' },
+      { src: F + 'restaurant-kitchen.mp4', len: 6, name: 'Restaurant Kitchen' },
+      { src: F + 'auto-repair-workshop.mp4', len: 6, name: 'Auto Repair Workshop' },
+      { src: F + 'childrens-room.mp4', len: 5, name: "Children's Room" },
+      { src: F + 'rehabilitation-center.mp4', len: 6, name: 'Rehabilitation Center' }
     ];
     var name = $('.reelname', box), dots = $('.reeldots', box), i = 0, front = 0, timer, fails = 0;
     dots.innerHTML = list.map(function (c) { return '<button type="button" aria-label="' + esc(c.name) + '"></button>'; }).join('');

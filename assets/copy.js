@@ -307,21 +307,21 @@ function cases() {
 /* "Looks against works": one test, twice. The reference world and one submitted world, from the same camera, playing the
    same recorded test together. A row of examples to pick from; the first starts when the section scrolls into view. */
 const DUELS = [
-  { name: 'The stock pot', head: 'carries', scene: 'f6-commercial-kitchen-001', task: 'stock_pot_to_burner', world: 'kitchen-gemini', back: 1.7,
-    truth: 'The pot is taken off the shelf and set on the burner.', agent: 'The pot is not pulled clear of the shelf. It ends 3.5 m from the burner.', who: 'Commercial kitchen · Gemini 4.0 Argon · appearance 67.9' },
-  { name: 'The supply drawer', head: 'holds', scene: 'delivery-room-001', task: 'access_warmer_storage', world: 'delivery-astra', back: 1.6,
-    truth: 'The warmer rises, the drawer opens with its boxes, and closes.', agent: 'The warmer never rises. None of the four steps is completed.', who: 'Delivery room · GPT-6 Astra, max effort · appearance 85.7' },
-  { name: 'The mail folder', head: 'comes out', scene: 'school-front-office-001', task: 'distribute_mail_folder', world: 'school-kimi', back: 1.6,
-    truth: 'The folder is pulled from its cubby and laid on the table.', agent: 'The folder does not come out. It ends 2.3 m from the table spot.', who: 'School front office · Kimi K3.1 Pro · appearance 65.2' },
+  { name: 'The stock pot', head: 'carries', scene: 'restaurant-kitchen', task: 'stock_pot_to_burner', world: 'kitchen-gemini', back: 1.7,
+    truth: 'The pot is taken off the shelf and set on the burner.', agent: 'The pot is not pulled clear of the shelf. It ends 3.5 m from the burner.', who: 'Restaurant Kitchen · Gemini 4.0 Argon · appearance 67.9' },
+  { name: 'The supply drawer', head: 'holds', scene: 'childbirth-room', task: 'access_warmer_storage', world: 'delivery-astra', back: 1.6,
+    truth: 'The warmer rises, the drawer opens with its boxes, and closes.', agent: 'The warmer never rises. None of the four steps is completed.', who: 'Childbirth Room · GPT-6 Astra, max effort · appearance 85.7' },
+  { name: 'The mail folder', head: 'comes out', scene: 'school-office', task: 'distribute_mail_folder', world: 'school-kimi', back: 1.6,
+    truth: 'The folder is pulled from its cubby and laid on the table.', agent: 'The folder does not come out. It ends 2.3 m from the table spot.', who: 'School Office · Kimi K3.1 Pro · appearance 65.2' },
   { name: 'The culture bottle', head: 'fits', scene: 'biology-lab', task: 'bottle_to_fridge', world: 'biology-astra', back: 1.6,
-    truth: 'The bottle goes from the cabinet onto a fridge shelf.', agent: 'The bottle jams on the way: the grasp pulls with 51 N.', who: 'Biology lab · GPT-6 Astra, max effort · appearance 87.7' },
-  { name: 'The laptop', head: 'closes', scene: 'humanoid-test-lab-001', task: 'probe_laptop_hinge', world: 'humanoid-astra', back: 1.6,
-    truth: 'The lid is set partly closed, holds there, then shuts.', agent: 'The lid cannot be set partly closed. All four steps fail.', who: 'Humanoid test lab · GPT-6 Astra · appearance 89.8' },
-  { name: 'The monitor', head: 'tilts', scene: 'delivery-room-001', task: 'prepare_monitor_cart', world: 'delivery-astra', back: 1.6,
-    truth: 'The drawer opens, the display tilts toward you, the drawer closes.', agent: 'The drawer opens and closes. The display does not tilt.', who: 'Delivery room · GPT-6 Astra, max effort · appearance 85.7' },
-  { name: 'The stapler', head: 'opens', scene: 'school-front-office-001', task: 'open_staple_magazine', world: 'school-astra', back: 1.6,
-    truth: 'The head lifts and the staple magazine slides out, then stows.', agent: 'The head does not lift. The magazine moves 1 mm.', who: 'School front office · GPT-6 Astra, max effort · appearance 81.4' },
-  { name: 'The toy car', head: 'rolls', scene: 'childrens-room-001', task: 'push_road_car', world: 'childrens-opus', back: 2.1,
+    truth: 'The bottle goes from the cabinet onto a fridge shelf.', agent: 'The bottle jams on the way: the grasp pulls with 51 N.', who: 'Biology Lab · GPT-6 Astra, max effort · appearance 87.7' },
+  { name: 'The laptop', head: 'closes', scene: 'humanoid-testing-lab', task: 'probe_laptop_hinge', world: 'humanoid-astra', back: 1.6,
+    truth: 'The lid is set partly closed, holds there, then shuts.', agent: 'The lid cannot be set partly closed. All four steps fail.', who: 'Humanoid Testing Lab · GPT-6 Astra · appearance 89.8' },
+  { name: 'The monitor', head: 'tilts', scene: 'childbirth-room', task: 'prepare_monitor_cart', world: 'delivery-astra', back: 1.6,
+    truth: 'The drawer opens, the display tilts toward you, the drawer closes.', agent: 'The drawer opens and closes. The display does not tilt.', who: 'Childbirth Room · GPT-6 Astra, max effort · appearance 85.7' },
+  { name: 'The stapler', head: 'opens', scene: 'school-office', task: 'open_staple_magazine', world: 'school-astra', back: 1.6,
+    truth: 'The head lifts and the staple magazine slides out, then stows.', agent: 'The head does not lift. The magazine moves 1 mm.', who: 'School Office · GPT-6 Astra, max effort · appearance 81.4' },
+  { name: 'The toy car', head: 'rolls', scene: 'childrens-room', task: 'push_road_car', world: 'childrens-opus', back: 2.1,
     truth: 'Pushed once, the car rolls across the rug.', agent: 'Same push. The car does not move: 0.0 cm.', who: "Children's room · Claude Opus 5.5, max effort · appearance 84.0" }
 ];
 function duel() {

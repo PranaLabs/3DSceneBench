@@ -1,6 +1,6 @@
 /* The 3D scene gallery. Loads the browser models of the ten rooms already shown in the room explorer
    (scenes/assets, see README) and lets a visitor orbit them, open their moving parts and find each task. */
-import { buildRigidReplay } from './rigid-replay.js?v=20261113094815';
+import { buildRigidReplay } from './rigid-replay.js?v=20261116105729';
 import * as THREE from 'three';
 import { OrbitControls } from '../scenes/vendor/OrbitControls.js';
 import { GLTFLoader } from '../scenes/vendor/GLTFLoader.js';
@@ -14,10 +14,10 @@ const nice = id => String(id).replace(/__\d+$/, '').replaceAll('_', ' ').replace
 const smooth = t => t * t * (3 - 2 * t);
 
 const WALLS_ON = new Set();   // scenes that open with their walls up (never the roof)
-const HIDDEN = new Set(['living-room-pool-013', 'humanoid-test-lab-001']);
+const HIDDEN = new Set(['poolside-living-room', 'humanoid-testing-lab']);
 const REMOVED = { 'biology-lab': ['pick_place_1', 'push_1'] };   // tasks left out of a scene's list
 const TABPIC = { 'biology-lab': 'assets/rooms/biology-lab/view-1.webp' };   // the first picture of this scene is mostly ceiling
-const TITLES = { 'f6-commercial-kitchen-001': 'Commercial kitchen' };
+const TITLES = {};   // titles come from scenes/assets/rooms.json (tools/rename_rooms.py sets the paper's names)
 
 export function createViewer(canvas, stage, onStatus, wheelZoom = true) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
