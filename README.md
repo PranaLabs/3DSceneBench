@@ -128,9 +128,9 @@ The last command writes a folder `3dscenebench-mini/` with seven task folders, o
 | Pipe Maintenance Room | Industry and infrastructure | 333 | 16 GB | `3dscenebench-019-l0` |
 | Outdoor Gear Store | Retail | 980 | 48 GB | `3dscenebench-022-l0` |
 | Rehabilitation Center | Healthcare and assisted living | 83 | 35 GB | `3dscenebench-027-l0` |
-| Chemistry Lab | Science and research | 362 | 20 GB | `3dscenebench-034-l0` |
+| Chemistry Lab | Science and research | 366 | 20 GB | `3dscenebench-034-l0` |
 | Bakery | Hospitality and food service | 1,127 | 48 GB | `3dscenebench-040-l0` |
-| Home Office | Homes | 235 | 48 GB | `3dscenebench-048-l0` |
+| Home Office | Homes | 238 | 48 GB | `3dscenebench-048-l0` |
 
 A folder's number is the scene's place among the full benchmark's 49 scenes, which is why the seven do not count from 1.
 
