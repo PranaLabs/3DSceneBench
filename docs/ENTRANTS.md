@@ -300,7 +300,7 @@ To grade a saved job again without running your agent again:
 harbor job regrade jobs/<your job> -p 3dscenebench-mini -n 1 -o graded
 ```
 
-**The leaderboard.** To have your run added, write to **contact@pranalab.ai**.
+**The leaderboard.** To have your run added, write to **yi@pranalab.ai**.
 
 Each room's report has these scores:
 
