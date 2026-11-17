@@ -352,7 +352,7 @@ harbor job regrade jobs/<your job> -p 3dscenebench-mini -n 1 -o graded
 
 ### 5. Get on the leaderboard
 
-To have your run added to the leaderboard, write to **contact@pranalab.ai**.
+To have your run added to the leaderboard, write to **yi@pranalab.ai**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -530,7 +530,7 @@ The words this page uses, in the order a run meets them.
 
 ## Contributing and reporting problems
 
-[CONTRIBUTING.md](CONTRIBUTING.md) says how to send a bug report or a change. A scoring loophole or a leak goes privately to the address in [SECURITY.md](SECURITY.md). For anything else, write to **contact@pranalab.ai**.
+[CONTRIBUTING.md](CONTRIBUTING.md) says how to send a bug report or a change. A scoring loophole or a leak goes privately to the address in [SECURITY.md](SECURITY.md). For anything else, write to **yi@pranalab.ai**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

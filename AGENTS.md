@@ -35,7 +35,7 @@ Follow "Getting started" in [README.md](README.md), in its order: Requirements, 
 
 - Each scene is graded when its run ends. From each trial's `verifier/reward.json`, report `reward`, `reward_appearance`, `reward_geometry` and `reward_functionality`, in one table. `python3 scripts/summarize.py jobs/<job>` prints it.
 - Say which scenes could not be graded and why. A grader that runs out of memory reports `status: grader_failed`, which is not a score.
-- If the person wants the run on the leaderboard, tell them to write to contact@pranalab.ai. Do not send that email yourself.
+- If the person wants the run on the leaderboard, tell them to write to yi@pranalab.ai. Do not send that email yourself.
 
 **A fair run.** You are the helper, not the agent being tested; that agent runs inside each scene's container. Do not:
 

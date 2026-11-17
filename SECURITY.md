@@ -8,7 +8,7 @@
 
 ## How
 
-Write to **contact@pranalab.ai**. Please do not open a public issue: a loophole that is public before it is closed can change other entrants' results.
+Write to **yi@pranalab.ai**. Please do not open a public issue: a loophole that is public before it is closed can change other entrants' results.
 
 Say what you found, the verifier version (`verifier_version` in a `reward.json`) and, if you can, attach the smallest submission that shows it. We aim to answer within five working days.
 
